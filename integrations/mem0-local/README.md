@@ -6,7 +6,7 @@ This is a local implementation of the official Mem0 Pi workflow using Mem0 OSS, 
 
 - Automatic semantic recall before every agent response
 - Git-root project detection
-- Project, session, and global scopes
+- Repository-wide project scope and isolated session scope
 - Default relevance threshold `0.3`
 - Categories: identity, preferences, goals, projects, decisions, technical, relationships, routines, lessons, and work
 - Tool actions: status, add, search, list/get_all, get, update, delete, and delete_all
@@ -19,8 +19,8 @@ This is a local implementation of the official Mem0 Pi workflow using Mem0 OSS, 
 - `/mem0-remember <text>`
 - `/mem0-forget <query>`
 - `/mem0-search <query>`
-- `/mem0-tour [project|session|global]`
-- `/mem0-scope project|session|global`
+- `/mem0-tour [project|session]`
+- `/mem0-scope project|session`
 - `/mem0-status`
 - `/memory-review`
 

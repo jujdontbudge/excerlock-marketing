@@ -21,9 +21,15 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 HOME = Path.home() / ".pi" / "mem0-oss"
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 USER = "johansardar"
-SCOPES = {"project", "session", "global"}
+SCOPES = {"project", "session"}
 CATEGORIES = {"identity", "preferences", "goals", "projects", "decisions", "technical", "relationships", "routines", "lessons", "work"}
 MUTATIONS = {"add", "update", "delete", "delete_all"}
+# Keep the existing Marketing vector store in place while changing its logical
+# identity from one checkout path to one repository-wide ID. This lets active
+# old-checkout sessions and new worktrees converge without an unsafe live copy.
+PROJECT_STATE_ALIASES = {
+    "github.com/JohanSardar/excerlock-marketing": "a28edc9fdaabbd8ba7eab23a",
+}
 
 
 def configure_environment(download: bool = False) -> None:
@@ -57,16 +63,21 @@ def git_root(project: Path) -> Path:
         return resolved
 
 
-def state_path(project: Path, scope: str = "project", session_id: str | None = None) -> Path:
+def state_path(
+    project: Path,
+    scope: str = "project",
+    session_id: str | None = None,
+    project_id: str | None = None,
+) -> Path:
     root = git_root(project)
-    if scope == "global":
-        return HOME / "global"
+    identity = project_id or str(root)
     if scope == "session":
         if not session_id:
             raise ValueError("session_id is required for session scope")
-        key = f"{root}\0{session_id}"
+        key = f"{identity}\0{session_id}"
         return HOME / "sessions" / hashlib.sha256(key.encode()).hexdigest()[:24]
-    return HOME / "projects" / hashlib.sha256(str(root).encode()).hexdigest()[:24]
+    state_id = PROJECT_STATE_ALIASES.get(identity) or hashlib.sha256(identity.encode()).hexdigest()[:24]
+    return HOME / "projects" / state_id
 
 
 def create_memory(state: Path):
@@ -122,6 +133,14 @@ def validate(request: dict[str, Any]) -> str:
         raise ValueError("Invalid category")
     if "infer" in request and type(request["infer"]) is not bool:
         raise ValueError("infer must be boolean")
+    project_id = request.get("project_id")
+    if project_id is not None and (
+        not isinstance(project_id, str)
+        or not project_id
+        or len(project_id) > 255
+        or any(character in project_id for character in "\0\r\n")
+    ):
+        raise ValueError("Invalid project_id")
     request["action"] = action
     return action
 
@@ -137,7 +156,8 @@ def run(request: dict[str, Any], project: Path) -> dict[str, Any]:
     action = validate(request)
     scope = request.get("scope", "project")
     root = git_root(project)
-    state = state_path(root, scope, request.get("session_id"))
+    project_id = request.get("project_id") or str(root)
+    state = state_path(root, scope, request.get("session_id"), project_id)
     state.mkdir(parents=True, exist_ok=True, mode=0o700)
     if action == "status":
         return {
@@ -145,7 +165,7 @@ def run(request: dict[str, Any], project: Path) -> dict[str, Any]:
             "reasoning": "max", "embeddings": MODEL, "autoCapture": False,
             "automaticRecall": True, "defaultScope": scope, "searchThreshold": 0.3,
             "scopes": sorted(SCOPES), "categories": sorted(CATEGORIES), "telemetry": False,
-            "project": str(root), "rawHistory": "in-memory only",
+            "project": str(root), "projectId": project_id, "rawHistory": "in-memory only",
         }
     from filelock import FileLock
     with FileLock(str(state / "operation.lock"), timeout=5):
