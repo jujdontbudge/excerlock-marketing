@@ -5,23 +5,35 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import time
 import pytest
 from worker import configure_environment, create_memory, no_python_network, state_path, validate
 
 SCRIPT = Path(__file__).with_name('worker.py')
 PROJECT = Path('/tmp/excerlock-mem0-test-project')
+OTHER_CHECKOUT = PROJECT.with_name('excerlock-mem0-test-worktree')
 PROJECT_ID = 'github.com/example/mem0-test-project'
+OTHER_PROJECT_ID = 'github.com/example/other-project'
 MARKETING_PROJECT_ID = 'github.com/JohanSardar/excerlock-marketing'
 
 
-def invoke(request, project=PROJECT):
-    request = {'project_id': PROJECT_ID, **request}
+def start_worker(request, project=PROJECT):
     env = dict(os.environ, PATH='/usr/bin:/bin')  # No Node: read/search/delete must not need an LLM.
-    result = subprocess.run([sys.executable, str(SCRIPT), '--project-dir', str(project)],
-                            input=json.dumps(request), capture_output=True, text=True,
-                            env=env, timeout=40, check=False)
-    assert result.returncode == 0, result.stdout
-    return json.loads(result.stdout)
+    read_end, write_end = os.pipe()
+    with os.fdopen(write_end, 'w') as writer:
+        writer.write(json.dumps(request))
+    process = subprocess.Popen([sys.executable, str(SCRIPT), '--project-dir', str(project)],
+                               stdin=read_end, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                               text=True, env=env)
+    os.close(read_end)
+    return process
+
+
+def invoke(request, project=PROJECT):
+    process = start_worker({'project_id': PROJECT_ID, **request}, project)
+    stdout, _ = process.communicate(timeout=40)
+    assert process.returncode == 0, stdout
+    return json.loads(stdout)
 
 
 @pytest.mark.parametrize('payload', [
@@ -33,23 +45,31 @@ def invoke(request, project=PROJECT):
 ])
 def test_reject_bad_or_unapproved_input(payload):
     with pytest.raises((ValueError, TypeError)):
+        validate({'project_id': PROJECT_ID, **payload})
+
+
+@pytest.mark.parametrize('payload', [
+    {'action': 'status'},
+    {'action': 'status', 'project_id': ''},
+    {'action': 'status', 'project_id': 'x' * 256},
+    {'action': 'status', 'project_id': 'github.com/example/bad\nid'},
+])
+def test_reject_missing_or_invalid_project_id(payload):
+    with pytest.raises(ValueError):
         validate(payload)
 
 
-def test_scope_isolation_and_normalization(tmp_path):
-    assert state_path(tmp_path / 'a') != state_path(tmp_path / 'b')
-    assert state_path(tmp_path / 'a' / '..') == state_path(tmp_path)
+def test_worker_requires_project_id():
+    process = start_worker({'action': 'status'})
+    stdout, _ = process.communicate(timeout=40)
+    assert process.returncode == 2
+    assert json.loads(stdout)['error'] == 'ValueError'
 
 
-def test_stable_project_identity_across_clones_and_worktrees(tmp_path):
-    first_checkout = tmp_path / 'firstmate' / 'projects' / 'marketing'
-    second_checkout = tmp_path / 'treehouse' / 'task-123'
-    assert state_path(first_checkout, project_id=PROJECT_ID) == state_path(second_checkout, project_id=PROJECT_ID)
-    assert state_path(first_checkout, project_id=PROJECT_ID) != state_path(
-        second_checkout,
-        project_id='github.com/JohanSardar/excerlock-app',
-    )
-    assert state_path(first_checkout, project_id=MARKETING_PROJECT_ID).name == 'a28edc9fdaabbd8ba7eab23a'
+def test_project_identity_governs_state_path():
+    assert state_path(PROJECT_ID) != state_path(OTHER_PROJECT_ID)
+    assert state_path(PROJECT_ID, 'session', 'one') != state_path(OTHER_PROJECT_ID, 'session', 'one')
+    assert state_path(MARKETING_PROJECT_ID).name == 'a28edc9fdaabbd8ba7eab23a'
 
 
 def test_config_status_offline():
@@ -62,21 +82,34 @@ def test_config_status_offline():
     assert status['telemetry'] is False
     assert status['rawHistory'] == 'in-memory only'
     assert status['projectId'] == PROJECT_ID
+    assert status['storage'] == invoke({'action': 'status'}, OTHER_CHECKOUT)['storage']
 
 
 def test_scope_paths_are_distinct():
-    assert state_path(PROJECT, 'project') != state_path(PROJECT, 'session', 'one')
-    assert state_path(PROJECT, 'session', 'one') != state_path(PROJECT, 'session', 'two')
+    assert state_path(PROJECT_ID, 'project') != state_path(PROJECT_ID, 'session', 'one')
+    assert state_path(PROJECT_ID, 'session', 'one') != state_path(PROJECT_ID, 'session', 'two')
 
 
 def test_new_actions_and_scope_validation():
-    validate({'action': 'get_all'})
-    validate({'action': 'update', 'id': '00000000-0000-0000-0000-000000000000', 'text': 'new', 'approved': True})
-    validate({'action': 'delete_all', 'approved': True})
+    validate({'action': 'get_all', 'project_id': PROJECT_ID})
+    validate({'action': 'update', 'id': '00000000-0000-0000-0000-000000000000', 'text': 'new', 'approved': True, 'project_id': PROJECT_ID})
+    validate({'action': 'delete_all', 'approved': True, 'project_id': PROJECT_ID})
     with pytest.raises(ValueError):
-        validate({'action': 'search', 'query': 'x', 'scope': 'session'})
+        validate({'action': 'search', 'query': 'x', 'scope': 'session', 'project_id': PROJECT_ID})
     with pytest.raises(ValueError):
-        validate({'action': 'add', 'text': 'x', 'approved': True, 'category': 'invalid'})
+        validate({'action': 'add', 'text': 'x', 'approved': True, 'category': 'invalid', 'project_id': PROJECT_ID})
+
+
+def test_reader_waits_for_in_flight_operation():
+    from filelock import FileLock
+    state = state_path(PROJECT_ID)
+    state.mkdir(parents=True, exist_ok=True, mode=0o700)
+    with FileLock(str(state / 'operation.lock')):
+        reader = start_worker({'action': 'list', 'project_id': PROJECT_ID})
+        time.sleep(8)
+    stdout, _ = reader.communicate(timeout=40)
+    assert reader.returncode == 0, stdout
+    assert 'results' in json.loads(stdout)
 
 
 def test_live_probe_persisted_search_scope_and_delete():
@@ -84,7 +117,7 @@ def test_live_probe_persisted_search_scope_and_delete():
     # this regression suite remains repeatable without another provider request.
     configure_environment()
     no_python_network()
-    state = state_path(PROJECT, project_id=PROJECT_ID)
+    state = state_path(PROJECT_ID)
     state.mkdir(parents=True, exist_ok=True, mode=0o700)
     memory = create_memory(state)
     try:
@@ -101,14 +134,12 @@ def test_live_probe_persisted_search_scope_and_delete():
         assert any(x['id'] in ids for x in listing['results'])
         for ident in ids:
             assert invoke({'action': 'get', 'id': ident})['found'] is True
-            assert invoke(
-                {'action': 'get', 'id': ident, 'project_id': 'github.com/example/other-project'},
-                PROJECT.with_name('mem0-other-test-project'),
-            )['found'] is False
+            assert invoke({'action': 'get', 'id': ident}, OTHER_CHECKOUT)['found'] is True
+            assert invoke({'action': 'get', 'id': ident, 'project_id': OTHER_PROJECT_ID})['found'] is False
     finally:
         for ident in ids:
             invoke({'action': 'delete', 'approved': True, 'id': ident})
     for ident in ids:
         assert invoke({'action': 'get', 'id': ident})['found'] is False
     assert not invoke({'action': 'search', 'query': 'Juniper Observatory violet Thursday'})['results']
-    assert not list(state_path(PROJECT, project_id=PROJECT_ID).rglob('history.db'))
+    assert not list(state_path(PROJECT_ID).rglob('history.db'))

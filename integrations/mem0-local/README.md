@@ -5,7 +5,7 @@ This is a local implementation of the official Mem0 Pi workflow using Mem0 OSS, 
 ## Features
 
 - Automatic semantic recall before every agent response
-- Git-root project detection
+- Stable repository identity shared by every clone and worktree
 - Repository-wide project scope and isolated session scope
 - Default relevance threshold `0.3`
 - Categories: identity, preferences, goals, projects, decisions, technical, relationships, routines, lessons, and work

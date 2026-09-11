@@ -24,9 +24,10 @@ USER = "johansardar"
 SCOPES = {"project", "session"}
 CATEGORIES = {"identity", "preferences", "goals", "projects", "decisions", "technical", "relationships", "routines", "lessons", "work"}
 MUTATIONS = {"add", "update", "delete", "delete_all"}
+LOCK_TIMEOUT_SECONDS = 30
 # Keep the existing Marketing vector store in place while changing its logical
-# identity from one checkout path to one repository-wide ID. This lets active
-# old-checkout sessions and new worktrees converge without an unsafe live copy.
+# identity from one checkout path to one repository-wide ID, so no live copy of
+# the store is needed.
 PROJECT_STATE_ALIASES = {
     "github.com/JohanSardar/excerlock-marketing": "a28edc9fdaabbd8ba7eab23a",
 }
@@ -63,20 +64,13 @@ def git_root(project: Path) -> Path:
         return resolved
 
 
-def state_path(
-    project: Path,
-    scope: str = "project",
-    session_id: str | None = None,
-    project_id: str | None = None,
-) -> Path:
-    root = git_root(project)
-    identity = project_id or str(root)
+def state_path(project_id: str, scope: str = "project", session_id: str | None = None) -> Path:
     if scope == "session":
         if not session_id:
             raise ValueError("session_id is required for session scope")
-        key = f"{identity}\0{session_id}"
+        key = f"{project_id}\0{session_id}"
         return HOME / "sessions" / hashlib.sha256(key.encode()).hexdigest()[:24]
-    state_id = PROJECT_STATE_ALIASES.get(identity) or hashlib.sha256(identity.encode()).hexdigest()[:24]
+    state_id = PROJECT_STATE_ALIASES.get(project_id) or hashlib.sha256(project_id.encode()).hexdigest()[:24]
     return HOME / "projects" / state_id
 
 
@@ -134,7 +128,7 @@ def validate(request: dict[str, Any]) -> str:
     if "infer" in request and type(request["infer"]) is not bool:
         raise ValueError("infer must be boolean")
     project_id = request.get("project_id")
-    if project_id is not None and (
+    if (
         not isinstance(project_id, str)
         or not project_id
         or len(project_id) > 255
@@ -155,9 +149,8 @@ def memory_filters(category: str | None = None) -> dict[str, Any]:
 def run(request: dict[str, Any], project: Path) -> dict[str, Any]:
     action = validate(request)
     scope = request.get("scope", "project")
-    root = git_root(project)
-    project_id = request.get("project_id") or str(root)
-    state = state_path(root, scope, request.get("session_id"), project_id)
+    project_id = request["project_id"]
+    state = state_path(project_id, scope, request.get("session_id"))
     state.mkdir(parents=True, exist_ok=True, mode=0o700)
     if action == "status":
         return {
@@ -165,10 +158,10 @@ def run(request: dict[str, Any], project: Path) -> dict[str, Any]:
             "reasoning": "max", "embeddings": MODEL, "autoCapture": False,
             "automaticRecall": True, "defaultScope": scope, "searchThreshold": 0.3,
             "scopes": sorted(SCOPES), "categories": sorted(CATEGORIES), "telemetry": False,
-            "project": str(root), "projectId": project_id, "rawHistory": "in-memory only",
+            "project": str(git_root(project)), "projectId": project_id, "rawHistory": "in-memory only",
         }
     from filelock import FileLock
-    with FileLock(str(state / "operation.lock"), timeout=5):
+    with FileLock(str(state / "operation.lock"), timeout=LOCK_TIMEOUT_SECONDS):
         memory = create_memory(state)
         try:
             category = request.get("category")

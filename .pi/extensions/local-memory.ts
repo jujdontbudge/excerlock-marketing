@@ -94,6 +94,7 @@ export default function (pi: ExtensionAPI) {
       };
     } catch {
       // Recall must not block the turn.
+      if (!ctx.signal?.aborted) ctx.ui.notify("Memory recall unavailable for this turn.", "warning");
     }
   });
 
