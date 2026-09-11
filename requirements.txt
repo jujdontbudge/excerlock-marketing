@@ -1,0 +1,11 @@
+colorama==0.4.6
+email-validator==2.3.0
+google-api-python-client==2.200.0
+impit==0.14.1
+instaloader==4.15.3
+mcp==2.2.0
+meta-ads-collector==1.4.0
+more-itertools==11.1.0
+nami==5.0.6
+praw==8.0.3
+python-dotenv==1.2.3

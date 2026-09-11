@@ -1,0 +1,7 @@
+# Python 3.12; verified together on macOS. See requirements.lock.txt for transitive pins.
+crawlee[playwright]==1.10.0
+crawl4ai==0.9.3
+playwright==1.62.0
+filelock==3.32.6
+rich==15.0.0
+TikTokApi==7.3.3

@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "fal": {
+      "url": "https://mcp.fal.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FAL_KEY}"
+      },
+      "lifecycle": "lazy",
+      "requestTimeoutMs": 90000,
+      "directTools": false,
+      "approveTools": [
+        "run_model",
+        "submit_job"
+      ]
+    },
+    "x-docs": {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+      "args": [
+        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
+        "x-docs"
+      ]
+    },
+    "xapi": {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+      "args": [
+        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
+        "xapi"
+      ]
+    },
+    "youtube-transcript": {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+      "args": [
+        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
+        "youtube-transcript"
+      ]
+    }
+  }
+}

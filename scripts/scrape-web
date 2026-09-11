@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Isolated Crawlee browser + local Crawl4AI processing; no cloud credentials loaded.
+set -euo pipefail
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+INTEGRATION="$ROOT/integrations/crawlee-crawl4ai"
+if [[ ! -x "$INTEGRATION/.venv/bin/python" ]]; then
+  printf 'Missing integration environment. Follow %s/README.md\n' "$INTEGRATION" >&2
+  exit 2
+fi
+# Avoid the marketing launcher's older/shared browser cache override.
+if [[ -n "${CRAWLEE_BROWSERS_PATH:-}" ]]; then
+  export PLAYWRIGHT_BROWSERS_PATH="$CRAWLEE_BROWSERS_PATH"
+else
+  unset PLAYWRIGHT_BROWSERS_PATH
+fi
+exec "$INTEGRATION/.venv/bin/python" "$INTEGRATION/scraper.py" "$@"

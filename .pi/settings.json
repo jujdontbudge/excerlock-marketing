@@ -1,0 +1,22 @@
+{
+  "skills": [
+    "../skills"
+  ],
+  "pi-browser-use": {
+    "headless": true,
+    "sessionMode": "persistent",
+    "userDataDir": "/Users/johansardar/.pi/browser-profile",
+    "channel": "stable",
+    "viewport": "1280x800",
+    "autoConnect": false,
+    "isolated": false,
+    "usageStatistics": false,
+    "performanceCrux": false,
+    "redactNetworkHeaders": true,
+    "acceptInsecureCerts": false
+  },
+  "packages": [
+    "npm:pi-jina-webtools",
+    "npm:@amaster.ai/pi-browser-use@0.1.14"
+  ]
+}

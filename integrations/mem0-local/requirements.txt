@@ -1,0 +1,4 @@
+# Python 3.12; isolated local Mem0 runtime.
+mem0ai==2.0.20
+fastembed==0.8.0
+filelock==3.32.6
