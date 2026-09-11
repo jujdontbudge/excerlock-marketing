@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""One bounded local Mem0 request on stdin; only inferred adds invoke Luna."""
+"""One bounded local Mem0 request on stdin; only inferred adds invoke Luna.
+
+Every request must carry a stable ``project_id`` (a repository slug, not a
+checkout path). State is keyed by it, so every clone and worktree of one
+repository shares a store while other repositories stay isolated.
+"""
 from __future__ import annotations
 
 import argparse
@@ -24,6 +29,9 @@ USER = "johansardar"
 SCOPES = {"project", "session"}
 CATEGORIES = {"identity", "preferences", "goals", "projects", "decisions", "technical", "relationships", "routines", "lessons", "work"}
 MUTATIONS = {"add", "update", "delete", "delete_all"}
+# Clones and worktrees of one repository share a store, so parallel agents wait
+# for each other's in-flight operation. Keep this under the extension's 45 s
+# read timeout so a held lock surfaces as an error rather than a silent kill.
 LOCK_TIMEOUT_SECONDS = 30
 # Keep the existing Marketing vector store in place while changing its logical
 # identity from one checkout path to one repository-wide ID, so no live copy of
