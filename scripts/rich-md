@@ -1,0 +1,116 @@
+#!/usr/bin/env node
+import { createHash, randomBytes } from "node:crypto";
+import { existsSync, mkdirSync, openSync, readFileSync, realpathSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { homedir, tmpdir } from "node:os";
+import path from "node:path";
+import { spawn, spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+
+const repo = realpathSync(path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."));
+const tool = path.join(repo, "tools/rich-md");
+const requested = process.argv[2];
+if (!requested) {
+  console.error("usage: scripts/rich-md FILE.md");
+  process.exit(2);
+}
+let target;
+try { target = realpathSync(path.resolve(process.cwd(), requested)); }
+catch { console.error(`rich-md: file not found: ${requested}`); process.exit(1); }
+if (!(target.startsWith(repo + path.sep) && path.extname(target).toLowerCase() === ".md")) {
+  console.error("rich-md: choose an existing .md file inside this repository");
+  process.exit(1);
+}
+
+const stateDir = path.join(process.env.TMPDIR || tmpdir(), "excerlock-rich-md");
+mkdirSync(stateDir, { recursive: true, mode: 0o700 });
+const key = createHash("sha256").update(repo).digest("hex").slice(0, 16);
+const metadataPath = path.join(stateDir, `${key}.json`);
+const lockPath = path.join(stateDir, `${key}.lock`);
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+let ownsLock = false;
+function releaseLock() {
+  if (ownsLock) {
+    rmSync(lockPath, { recursive: true, force: true });
+    ownsLock = false;
+  }
+}
+process.on("exit", releaseLock);
+for (let attempt = 0; ; attempt++) {
+  try {
+    mkdirSync(lockPath, { mode: 0o700 });
+    writeFileSync(path.join(lockPath, "owner.json"), JSON.stringify({ pid: process.pid, createdAt: Date.now() }), { mode: 0o600 });
+    ownsLock = true;
+    break;
+  } catch (error) {
+    if (error.code !== "EEXIST") throw error;
+    let owner;
+    try { owner = JSON.parse(readFileSync(path.join(lockPath, "owner.json"), "utf8")); } catch {}
+    let ownerAlive = false;
+    try { if (owner?.pid) { process.kill(owner.pid, 0); ownerAlive = true; } } catch {}
+    let age = Infinity;
+    try { age = Date.now() - statSync(lockPath).mtimeMs; } catch {}
+    if (!ownerAlive && age > 1000) {
+      rmSync(lockPath, { recursive: true, force: true });
+      continue;
+    }
+    if (attempt >= 150) {
+      console.error("rich-md: timed out waiting for another launcher");
+      process.exit(1);
+    }
+    await sleep(100);
+  }
+}
+async function healthy(meta) {
+  if (!meta || meta.identity !== "excerlock-rich-md-v1" || !meta.token || !meta.port || !meta.pid) return false;
+  try {
+    process.kill(meta.pid, 0);
+    const response = await fetch(`http://127.0.0.1:${meta.port}/health?token=${encodeURIComponent(meta.token)}`, { signal: AbortSignal.timeout(700) });
+    const value = await response.json();
+    return response.ok && value.identity === meta.identity && value.pid === meta.pid && value.file === meta.file;
+  } catch { return false; }
+}
+let meta;
+try { meta = JSON.parse(readFileSync(metadataPath, "utf8")); } catch {}
+if (await healthy(meta) && meta.file !== target) {
+  process.kill(meta.pid, "SIGTERM");
+  for (let i = 0; i < 20 && await healthy(meta); i++) await sleep(50);
+  meta = null;
+}
+if (!(await healthy(meta))) {
+  if (!existsSync(path.join(tool, "node_modules"))) {
+    const install = spawnSync("npm", ["install", "--no-audit", "--no-fund"], { cwd: tool, stdio: "inherit" });
+    if (install.status) process.exit(install.status || 1);
+  }
+  const build = spawnSync("npm", ["run", "build"], { cwd: tool, stdio: "inherit" });
+  if (build.status) process.exit(build.status || 1);
+  const token = randomBytes(32).toString("base64url");
+  const logPath = path.join(stateDir, `${key}.log`);
+  const fd = openSync(logPath, "a");
+  const child = spawn(process.execPath, [path.join(tool, "server.js"), repo, target, token], {
+    cwd: repo, detached: true, stdio: ["ignore", fd, fd]
+  });
+  child.unref();
+  for (let i = 0; i < 60; i++) {
+    await sleep(100);
+    const lines = readFileSync(logPath, "utf8").trim().split("\n");
+    try {
+      const started = JSON.parse(lines.at(-1));
+      if (started.pid === child.pid && started.file === target) {
+        meta = { identity: "excerlock-rich-md-v1", token, port: started.port, pid: started.pid, file: target };
+        if (await healthy(meta)) break;
+      }
+    } catch {}
+  }
+  if (!(await healthy(meta))) { console.error(`rich-md: server failed to start; see ${logPath}`); process.exit(1); }
+  const temporary = `${metadataPath}.${process.pid}`;
+  writeFileSync(temporary, JSON.stringify(meta), { mode: 0o600 });
+  renameSync(temporary, metadataPath);
+}
+releaseLock();
+const url = `http://127.0.0.1:${meta.port}/?token=${encodeURIComponent(meta.token)}`;
+const chrome = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", path.join(homedir(), "Applications/Google Chrome.app/Contents/MacOS/Google Chrome")].find(existsSync);
+if (process.env.RICH_MD_NO_OPEN !== "1") {
+  if (chrome) spawn(chrome, [`--app=${url}`], { detached: true, stdio: "ignore" }).unref();
+  else spawn("open", [url], { detached: true, stdio: "ignore" }).unref();
+}
+console.log(`Opened ${path.relative(repo, target)} at ${url.replace(meta.token, "…")}`);

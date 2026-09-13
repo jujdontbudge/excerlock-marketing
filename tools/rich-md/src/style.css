@@ -1,0 +1,26 @@
+:root { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202124; background: #f8f9fa; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { min-height: 100vh; }
+header { height: 72px; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; background: white; border-bottom: 1px solid #dadce0; }
+h1 { font-size: 18px; font-weight: 500; margin: 0 0 3px; }
+header p { margin: 0; color: #5f6368; font-size: 12px; }
+.status { font-size: 13px; color: #5f6368; }
+.status.conflict, .status.error { color: #b3261e; font-weight: 600; }
+.notice, .warning { padding: 8px 24px; font-size: 12px; background: #e8f0fe; color: #174ea6; }
+.warning { background: #fce8e6; color: #8c1d18; }
+.warning button { margin-left: 8px; }
+nav { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 24px; background: #edf2fa; border-bottom: 1px solid #dadce0; }
+button { border: 0; border-radius: 4px; padding: 7px 9px; background: transparent; color: #3c4043; cursor: pointer; }
+button:hover, button.active { background: #d3e3fd; color: #041e49; }
+article { width: min(816px, calc(100% - 32px)); min-height: calc(100vh - 170px); margin: 24px auto 48px; padding: 72px 82px; background: white; box-shadow: 0 1px 4px #3c404333; }
+.tiptap { min-height: 700px; outline: none; line-height: 1.65; }
+.tiptap h1 { font-size: 2em; font-weight: 600; }
+.tiptap h2 { font-size: 1.5em; margin-top: 1.4em; }
+.tiptap blockquote { border-left: 3px solid #9aa0a6; margin-left: 0; padding-left: 18px; color: #5f6368; }
+.tiptap pre { background: #f1f3f4; padding: 14px; border-radius: 6px; overflow-x: auto; }
+.tiptap code { background: #f1f3f4; border-radius: 3px; padding: 2px 4px; }
+.tiptap pre code { padding: 0; }
+.tiptap a { color: #1a73e8; text-decoration: underline; }
+.loading { display: grid; place-items: center; min-height: 100vh; }
+@media (max-width: 650px) { article { padding: 36px 28px; } header, nav, .notice, .warning { padding-left: 12px; padding-right: 12px; } }
