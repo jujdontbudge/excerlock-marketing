@@ -1,6 +1,8 @@
 # ExcerLock Marketing
 
 This workspace supports ExcerLock marketing. The app repository is separate.
+Its purpose is audience and channel research, marketing strategy, creative production, campaign development, and performance learning.
+Judge work by source quality, truthful representation, creative usefulness, platform compliance, publishing approval, and measurable marketing outcomes rather than software-delivery procedure.
 
 ## Method
 - Clarify the target, region, timeframe, output, and platform before collecting.

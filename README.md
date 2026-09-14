@@ -2,6 +2,10 @@
 
 Marketing research and creative-production workspace at `/Users/johansardar/excerlockmarketing`.
 
+This repository exists to research audiences and channels, develop marketing strategy, and produce creative assets and campaigns for ExcerLock.
+It is not the ExcerLock app codebase or a software-delivery workspace.
+Marketing work here is organized around evidence, creative quality, truthful claims, platform rules, publishing approval, and measurable campaign results.
+
 Start Pi with:
 
 ```bash
