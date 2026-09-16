@@ -1,0 +1,87 @@
+{
+  "name": "Bright commercial gym mirror selfie",
+  "slug": "gym-mirror-selfie-bright-commercial",
+  "source": {
+    "url": "https://www.tiktok.com/@graceelizabethlifts/photo/7662822176965266701",
+    "creator_handle": "@graceelizabethlifts",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "773.8K",
+      "likes": "104.7K",
+      "saves": "9,788",
+      "shares": "935",
+      "comments": "87"
+    }
+  },
+  "summary": "Full-body mirror selfie in a bright upscale commercial gym with cream machines, wood-look floor and an open dropped ceiling grid; everything sharp, clean Smart HDR neutrality with a mild warm cast, other members small in the background.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": ["#E7E2D7", "#8A7B6E", "#222327", "#5E5C50", "#F2F0EA", "#C9A88C"],
+    "white_balance": "neutral with a mild warm cast on skin and cream equipment",
+    "contrast": "medium — Smart HDR retains both floor shadow and ceiling detail",
+    "saturation": "natural, slightly lifted warm tones",
+    "notable_casts": ["warm cream cast across equipment and floor", "faint olive tint from the ceiling structure"]
+  },
+  "lighting": {
+    "sources": ["recessed ceiling LEDs across an open dropped grid", "diffuse ambient bounce between machines"],
+    "direction": "top-down, near-shadowless",
+    "hardness": "soft",
+    "time_of_day": "indoor daytime",
+    "artifacts": ["mild highlight clipping on glossy cream machine shells", "faint vignette toward the corners"]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro Max class",
+    "focal_length_equiv": "24mm main (1x)",
+    "angle": "mirror selfie straight-on at chest-to-eye height",
+    "distance": "2–3 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep — foreground floor to back wall sharp"
+  },
+  "composition": {
+    "framing": "full body, head to shoes, generous headroom into the ceiling grid",
+    "subject_placement": "centre-left third, floor plane filling the lower half",
+    "tilt": "near-level",
+    "foreground": "polished wood-look floor and machine bases",
+    "background": "cream/white strength machines, dark olive ceiling beam, a few members training small and anonymous at frame right",
+    "negative_space": "open floor plane bottom-right and upper ceiling grid",
+    "reflections": "subtle screen reflection of the phone on glossy machine shells"
+  },
+  "subject_treatment": {
+    "pose_type": "standing neutral full-body mirror selfie, arms relaxed, one holding the phone up",
+    "face_visibility": "lower half of face covered by the raised phone; eyes visible",
+    "gaze": "at the phone screen (into the mirror)",
+    "wardrobe_category": "matching dark activewear set (sports bra, high-waist leggings) with light trainers",
+    "props": ["over-ear headphones", "smartphone", "wristwatch", "small pendant necklace"]
+  },
+  "environment": "bright upscale commercial gym: cream/white strength machines, wood-look plank floor, open dropped grid ceiling with recessed lights and a dark olive soffit, wide walkways, members training in the far background",
+  "effects_imperfections": [
+    "mild highlight clipping on glossy cream machine surfaces",
+    "luminance noise in the darker floor wood",
+    "slight softness at the frame edges",
+    "natural skin texture retained, no smoothing"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean geometric sans (TikTok/Instagram caption class)",
+    "weight": "regular",
+    "relative_size": "~3% of frame height per line",
+    "color": "#FFFFFF",
+    "position": "centred, ~60–64% down the frame",
+    "shadow_or_stroke": "none — reads against the dark leggings and floor behind it",
+    "lines": 2,
+    "emoji": []
+  },
+  "mood": "clean, bright, aspirational 'good gym' energy",
+  "reusable_prompt_fragment": "bright upscale commercial gym with cream machines and wood-look floor, open grid ceiling with recessed lights, full-body mirror selfie straight-on, everything sharp to the back wall, Smart HDR neutral colour with mild warm cast, mild highlight clipping on glossy machines, faint noise in floor shadows, other members small and anonymous in the background",
+  "avoid": [
+    "dark or moody lighting",
+    "shallow cinematic bokeh",
+    "film grain",
+    "studio strobe look",
+    "brand logos or identifiable faces in frame"
+  ],
+  "excerlock_fit": "hook or opener slide — establishes a credible, aspirational training setting in one frame"
+}

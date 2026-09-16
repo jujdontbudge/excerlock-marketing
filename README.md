@@ -20,7 +20,7 @@ pi-marketing
     
 -   Video download, transcription, clipping, and creative analysis
     
--   Codex still-image generation for TikTok slideshows
+-   Codex still-image generation for TikTok slideshows, with the organic iPhone photo prompt kit (`skills/organic-iphone-photo.md`, saved styles in `content/styles/`)
     
 -   Guarded fal.ai generation for Seedance, Kling, OmniHuman, and WAN video models
     

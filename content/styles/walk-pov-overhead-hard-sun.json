@@ -1,0 +1,88 @@
+{
+  "name": "Walking POV selfie under hard sun",
+  "slug": "walk-pov-overhead-hard-sun",
+  "source": {
+    "url": "https://www.tiktok.com/@graceelizabethlifts/photo/7662822176965266701",
+    "creator_handle": "@graceelizabethlifts",
+    "platform": "tiktok",
+    "slide_index": 3,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "773.8K",
+      "likes": "104.7K",
+      "saves": "9,788",
+      "shares": "935",
+      "comments": "87"
+    }
+  },
+  "summary": "Outstretched-arm selfie taken from above and behind the shoulder while walking an asphalt path in harsh midday sun; the walker's hard black shadow lies on the tarmac, grass verge beside, blown highlights on hair, ultra-wide edge stretch, pronounced tilt.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": ["#8D7E70", "#A8A457", "#6E8F3D", "#1D1E20", "#B07B5A", "#EDE6DA"],
+    "white_balance": "strong warm direct sun with cooler pockets of shade",
+    "contrast": "high — hard-edged shadow against sunlit tarmac",
+    "saturation": "sun-saturated greens and warm asphalt tones",
+    "notable_casts": ["warm tan cast on skin and tarmac", "green bounce in shadows near the grass verge"]
+  },
+  "lighting": {
+    "sources": ["direct overhead midday sun", "no fill"],
+    "direction": "high, slightly frontal-left of the walker",
+    "hardness": "hard — crisp shadow edges, specular skin sheen",
+    "time_of_day": "midday",
+    "artifacts": ["blown highlights on the hair crown and shoulder", "hard black walker shadow cast on the tarmac", "sparkle speculars on the asphalt aggregate"]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro Max class",
+    "focal_length_equiv": "13mm ultra-wide (0.5x)",
+    "angle": "selfie from above and behind the shoulder, arm fully extended",
+    "distance": "0.6–0.9 m to subject",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep — everything sharp"
+  },
+  "composition": {
+    "framing": "head-and-torso crop of the walker, ground plane dominating the lower half",
+    "subject_placement": "right of centre, cropped by the right edge",
+    "tilt": "pronounced diagonal — the path's edge slopes through the frame",
+    "foreground": "cracked asphalt path with the walker's hard shadow",
+    "background": "dry grass verge with green patches and a utility box top-left",
+    "negative_space": "open grass in the upper-left quadrant",
+    "reflections": "none"
+  },
+  "subject_treatment": {
+    "pose_type": "walking POV selfie, arm stretched out of frame",
+    "face_visibility": "profile, downcast — no eye contact",
+    "gaze": "at the path ahead",
+    "wardrobe_category": "oversized dark sweatshirt, shorts, white socks and trainers",
+    "props": ["over-ear headphones"]
+  },
+  "environment": "suburban outdoor path: cracked asphalt, dry grass verge with mixed green patches, utility post and box at the path edge",
+  "effects_imperfections": [
+    "blown highlights on hair and skin sheen",
+    "hard black cast shadow on the tarmac",
+    "ultra-wide edge stretch on the outstretched arm",
+    "slight motion softness in the swing leg",
+    "visible local contrast (Smart HDR halos)"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean geometric sans (TikTok/Instagram caption class)",
+    "weight": "regular",
+    "relative_size": "~2.5% of frame height",
+    "color": "#FFFFFF",
+    "position": "centred, ~66–70% down the frame",
+    "shadow_or_stroke": "none — reads against the dark sweatshirt",
+    "lines": 1,
+    "emoji": []
+  },
+  "mood": "momentum, no-excuses daily-effort energy",
+  "reusable_prompt_fragment": "harsh midday sun with hard black shadows on cracked asphalt, outstretched-arm selfie from above and behind the shoulder, 0.5x ultra-wide with edge stretch, blown highlights on hair, walker's shadow cast on the tarmac, dry grass verge beside the path, tilted snapshot framing, deep focus",
+  "avoid": [
+    "overcast soft light",
+    "golden-hour warmth",
+    "centred symmetrical framing",
+    "shallow depth of field",
+    "visible brand logos"
+  ],
+  "excerlock_fit": "walking/steps slide — mid-slideshow daily-reps beat and B-roll for walk-based ExcerLock use"
+}
