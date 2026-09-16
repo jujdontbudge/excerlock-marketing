@@ -1,112 +1,110 @@
-# Slideshow 01 - lose weight 6 months
+# Slideshow 01 - lose fat, 7 slides
 
-- **Hook:** I couldn't lose weight for 6 months in the gym then I started doing this
-- **Lane:** fat loss / steps
-- **Audience:** first account - gym regulars who still miss daily steps
-- **Core desire:** a walking rule that sticks after the gym session
-- **Product condition shown:** active walking (selected scrolling apps stay locked until she walks)
-- **End action:** none on-image (flat rule close)
-- **Placeholders:** minutes and step figures below are stand-ins. Replace with the account owner's real Apple Health / treadmill / widget screenshots before posting. No weight or fat-loss numbers.
-- **Word counts:** 15 / 9 / 7 / 6 / 6 (median 7)
-- **Styles used:** `gym-mirror-selfie-bright-commercial`, `walk-pov-overhead-hard-sun`, `machine-screen-recap-reflection`, lock-screen phone POV
+On-screen text is the account owner's copy, verbatim. Do not edit the text. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 5, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only.
+
+Overlay defaults for every slide: clean geometric sans, medium weight, white #FFFFFF, soft drop shadow, left-aligned or centred as noted, 9:16.
 
 ---
 
-## Slide 1 - hook
+## Slide 1
 
-**On-image text**
-I couldn't lose weight for 6 months in the gym then I started doing this
+**On-screen text**
+```
+I coulnt lose fat after 6 month in the gym till i stated going this
+```
 
-**Image prompt**
-- **Style:** `gym-mirror-selfie-bright-commercial`
-- **Scene:** generic young woman, athletic build, dark matching activewear, over-ear headphones, full-body gym mirror selfie, phone raised over lower face
-- **Where:** bright commercial gym, cream machines, wood-look floor, overhead LEDs
-- **Camera:** iPhone main 24mm, straight-on mirror, plandid polish, mild Smart HDR sheen, real skin texture
-- **Overlay:** white geometric sans, hook text centred ~60% down over dark leggings
-- **Proof:** none. story open only.
-
----
-
-## Slide 2 - old routine
-
-**On-image text**
-i trained 5 days a week. under 3k steps.
-
-**Image prompt**
-- **Style:** new look, post-gym couch scroll
-- **Scene:** same wardrobe family as slide 1, half-reclined on a couch at night, phone in both hands, gym tote and one sneaker on the floor
-- **Where:** ordinary bedroom corner, warm lamp, wrinkled throw
-- **Camera:** iPhone main 24mm, slightly high angle, phone-screen glow on face, crushed shadows, raw polish
-- **Overlay:** white sans, one line, ~30% down over the dark wall
-- **Proof:** optional Health steps widget in frame only if replaced with a real under-3k day capture. generated stand-in must stay unreadable until then.
+**Image**
+- Style: `gym-mirror-selfie-bright-commercial`, polish: plandid
+- Prompt: full-body mirror selfie of a lean athletic young woman in a matching dark seamless set, phone held over her lower face, standing straight-on in a bright upscale commercial gym with cream machines and wood-look floor, open grid ceiling with recessed lights, everything sharp to the back wall, shot on iPhone 16 Pro Max main 24mm, Smart HDR neutral colour with mild warm cast, mild highlight clipping on glossy machines, faint noise in floor shadows, other members small and anonymous in the background, real skin texture, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, about 60% down, over the leggings, 3 lines
 
 ---
 
-## Slide 3 - the walking rule
+## Slide 2
 
-**On-image text**
-so i walk 40 min every morning.
+**On-screen text**
+```
+Me goign tot he gym 6 times a week
+(nothing was working _
+```
 
-**Image prompt**
-- **Style:** `machine-screen-recap-reflection` or `walk-pov-overhead-hard-sun`
-- **Scene (preferred):** point-down treadmill or stair console showing about 40:00 elapsed, water bottle edge in frame, no readable face
-- **Alt scene:** overhead walking selfie on a cracked asphalt path, hard midday sun, hard walker shadow
-- **Camera:** iPhone main 24mm on console, or ultra-wide 13mm on walk POV, raw polish, glare and smudges on glass
-- **Overlay:** white sans, one line, ~66% down on dark clothing or above the console bezel
-- **Proof:** replace console time with a real 40 min walk screenshot before posting.
-
----
-
-## Slide 4 - how it stuck
-
-**On-image text**
-that's why i keep excerlock on.
-
-**Image prompt**
-- **Style:** new look, handheld lock-screen POV
-- **Scene:** no face, one hand holding a phone in portrait on a sidewalk, lock or home screen filling most of the frame
-- **Screen:** selected scrolling app locked under an active-walking condition. small native chrome only. no pitch layout.
-- **Camera:** iPhone main 24mm close POV, hard sun on hand, fingerprint smudge and glare required
-- **Overlay:** white sans, one line, top third above the bezel
-- **Proof:** replace with a real ExcerLock locked-state capture. product named once in text only.
+**Image**
+- Style: `gym-mirror-selfie-budget-night`, polish: jagged
+- Prompt: full-body mirror selfie of the same young woman with a noticeably heavier softer body, oversized grey hoodie and black leggings, phone covering her face, budget 24-hour gym at night, purple-and-yellow equipment and trim, black glitter-flecked rubber floor, bare fluorescent tubes in a dark exposed ceiling, mixed fluorescent white balance with green-magenta cast, visible mirror frame edge, tilted cramped framing, noise in the shadows, harsh speculars on chrome, cluttered background, shot on iPhone main 24mm, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: line 1 centred about 25% down over the dark ceiling, line 2 smaller directly beneath it
 
 ---
 
-## Slide 5 - close
+## Slide 3
 
-**On-image text**
-the walk gets done every day.
+**On-screen text**
+```
+Lift 4 tiems a week. Your body needs to recover. If your lift to much you volume is bmore but teh qulaity of wokrout drops waehte ryou realize it or not
+```
 
-**Image prompt**
-- **Style:** `walk-pov-overhead-hard-sun`
-- **Scene:** mid-stride outdoor walk, oversized dark sweatshirt, shorts, white socks and trainers, headphones, face downcast only
-- **Where:** cracked asphalt path, grass verge, hard midday shadow on tarmac
-- **Camera:** iPhone ultra-wide 13mm overhead selfie, harsh sun, tilt, blown hair highlights
-- **Overlay:** white sans, one line, ~60% down over the sweatshirt
-- **Proof:** optional real steps widget only if the account owner supplies a real day total. no invented totals. no weight figures.
-
----
-
-## Alternates
-
-| slide | alt a | alt b |
-| --- | --- | --- |
-| 2 | lifted 5 days. scrolled the rest of the day. | gym 5 days a week. steps stuck under 3k. |
-| 3 | 40 min morning walk. every day. | i do a 40 min walk before my phone. |
-| 4 | i use excerlock. tiktok stays locked. | apps stay locked in excerlock till i walk. |
-| 5 | morning walk stays on my calendar. | i don't skip the morning walk. |
+**Image**
+- Style: inline, polish: raw
+- Prompt: close handheld photo of an iPhone held in one hand showing the Notes app, a short typed weekly split on screen with four lifting days and three rest days, thumb at the bottom edge of the screen, gym bench and rubber floor out of focus behind, bright gym LED light, slight glare streak on the glass, fingerprint smudges, tilted framing, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, about 15% down, over the blurred gym behind the phone, 4 to 5 lines
+- After generation: drop in a real Notes screenshot of the split
 
 ---
 
-## Why these lines
+## Slide 4
 
-1. Slide 1 keeps the owner hook. Same open shape as bymaddiefit 7660406966996471070 and myspacegym 7673709531523730719 (time span + unresolved effort, no mechanism).
-2. Slide 2 is flat routine facts with two numbers. Modelled on myspacegym story beats (7662601047931768095, 7673709531523730719) plus the concrete leak muse flagged as human (`i trained 5 days a week...`).
-3. No contrast couplet. Rejects the old "gym was fine / phone wasn't" shape both analyses called the strongest model tell.
-4. Slide 3 is one copyable walking rule with minutes. Modelled on mostofmeg 7455384522960440608 (`40 min morning walk`) and the myspacegym `so I...` hinge.
-5. Slide 3 gives the rule. Slide 4 gives enforcement only. Different nouns so 4 and 5 cannot collapse into one tip.
-6. Slide 4 names excerlock once as a plain noun in user voice. Modelled on bymaddiefit 7660406966996471070 (`That's why I log every workout in Hevy.`).
-7. Slide 4 image carries the lock UI proof. Text stays tiny, same split as myspacegym 7673709531523730719 slide 3 (`and made time` over the console).
-8. Slide 5 is a flat present-tense rule. Modelled on myspacegym 7662601047931768095 closer and www.reesey 7662638384740928781 resolve. No question. No reply CTA.
-9. Word budget follows haifa.munster 7597280332546673975 and both myspacegym posts (body slides 6 to 9 words). Median 7.
-10. Voice stays first person, plain verbs, periods only. Matches the DO lists in `research/liked-slideshows/analysis-grok.md` and `analysis-muse.md`.
+**On-screen text**
+```
+EAT is 90% of the progress. the gym is the ez part each 1 gram of protien per lbs minimum. count calories. stay in a deciet ----> tis his how you dod that
+```
+
+**Image**
+- Style: inline, polish: plandid
+- Prompt: overhead phone photo with flash of a plated meal on a white kitchen counter, grilled chicken breast sliced, white rice, green beans, a fork resting on the plate, an iPhone lying beside the plate showing a food tracking app with a protein bar filled, small crumbs and a glass of water at the edge, flat flash light with a hard shadow ring under the plate, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, top 30% over the empty counter, 4 to 5 lines
+- After generation: drop in a real macro app screenshot on the phone
+
+---
+
+## Slide 5
+
+**On-screen text**
+```
+CARDIO CARDIO CARDIO
+
+you need to be walking. this is the only way us girlies can eat enough but siltl lose fat. its hard having a lose BMR so you need do this. heres you how i get 15 stsp a day
+```
+
+**Image**
+- Style: inline, polish: raw
+- Prompt: close POV of a hand holding an iPhone outdoors on a sidewalk, the screen showing the Apple Health steps page with a daily bar chart and a total in the fifteen thousands, cracked concrete and the toes of white trainers at the bottom of the frame, harsh midday sun with a hard shadow of the hand across the screen, glare on the glass, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: line 1 large centred about 10% down, paragraph centred about 25% down over the concrete, 5 to 6 lines
+- After generation: drop in a real Apple Health steps screenshot
+
+---
+
+## Slide 6
+
+**On-screen text**
+```
+Walk int he mornings and after meals. a few 5-10 walks htourgh the day adds up
+```
+
+**Image**
+- Style: `walk-pov-overhead-hard-sun`, polish: raw
+- Prompt: outstretched-arm selfie from above and behind the shoulder of a young woman mid-stride in an oversized dark sweatshirt, bike shorts, white socks and trainers, over-ear headphones, iced coffee in her free hand, face turned down, harsh morning sun with hard black shadows on cracked asphalt, 0.5x ultra-wide with edge stretch, blown highlights on hair, walker's shadow cast on the tarmac, dry grass verge beside the path, tilted snapshot framing, deep focus, shot on iPhone 16 Pro Max ultra-wide 13mm, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, about 65% down, over the sweatshirt, 2 to 3 lines
+
+---
+
+## Slide 7
+
+**On-screen text**
+```
+Use excerlock to block  media unless your moving. i littery cant scroll unless im moving. this makes it so ez
+```
+
+**Image**
+- Style: inline, polish: raw
+- Prompt: close POV of a hand holding an iPhone in portrait while walking on a sidewalk, the screen showing a plain lock screen with a short blocked-app notice and a walking condition line, sidewalk, moving legs and white trainers blurred at the bottom of the frame, hard afternoon sun on the back of the hand, glare and a fingerprint smudge on the glass, slight motion blur on the background, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no invented app branding
+- Text placement: centred, top 20% above the phone, 3 lines
+- After generation: replace the screen with a real ExcerLock lock screen screenshot showing TikTok blocked until walking
