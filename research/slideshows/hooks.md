@@ -15,6 +15,8 @@ Source notes from three X articles about TikTok slideshow marketing. The short e
 
 Write an ExcerLock equivalent beneath every source pattern. Every prompt includes an example so the kind of answer needed is visible. Most examples come directly from the three articles; a few are simple illustrations where the articles gave only a principle. Do not copy the example into our answer unless it genuinely fits.
 
+Answers ingested from the Google Doc worksheet on 2026-09-16; spelling normalised, wording unchanged.
+
 ### News
 
 **Your ExcerLock hook:**
@@ -27,7 +29,9 @@ Opening image (example: something visibly new or newly discovered):
 
 ### Promise a benefit
 
-**Your ExcerLock hook: The new method to always hit your step goals.**
+**Your ExcerLock hook:**
+
+- The new method to always hit your step goals.
 
 Source example: "How to lose 13 LB in 17 days"
 
@@ -37,9 +41,10 @@ Opening image (example: the desired result shown clearly):
 
 ### Combine news and benefit
 
-**Your ExcerLock hook: How I lost 9 lbs in 13 days 7**
+**Your ExcerLock hook:**
 
-**how i hit 112k steps in the lsat 7 days**
+- How I lost 9 lbs in 13 days
+- how i hit 112k steps in the last 7 days
 
 Illustrative example based on Pounds' formula: "New discovery: the routine that finally cleared my skin"
 
@@ -49,9 +54,12 @@ Opening image (example: a discovery, announcement, or visible result):
 
 ### Specificity
 
-**Your ExcerLock hook: what i use to be consitnt as a gym girly**
+**Your ExcerLock hook:**
 
-the tool i used to become consient in the gym
+- what i use to be consistent as a gym girly
+- How i never miss a day at the gym
+- Me after finding the method to never miss the gym/stepgoals again
+- the tool i used to become consistent in the gym
 
 Source example: "How to lose 13 LB in 17 days"
 
@@ -65,6 +73,9 @@ Opening image (example: a visible measurement, count, or result):
 
 **Your ExcerLock hook:**
 
+- Don't trying hitting your gym goals within these things
+- Don't (unfinished)
+
 Source template: "Don't do \_ until you do \_"
 
 Our equivalent (example structure: "Don't \[action\] until you \[condition\]"):
@@ -77,6 +88,8 @@ Opening image (example: the action shown immediately before a mistake):
 
 **Your ExcerLock hook:**
 
+- Gym consistency hack that feel illegal to know
+
 Source example from Sulfur: "this feels illegal to know"
 
 Our equivalent (example structure: imply useful hidden information):
@@ -88,6 +101,9 @@ Opening image (example: a partial reveal that does not give away the answer):
 ### Numbered list
 
 **Your ExcerLock hook:**
+
+- 4 ways to be more consistent in the gym
+- 5 easy to hit your step goal more consistently (unfinished)
 
 Source template: "17 ways to \_"
 
@@ -113,6 +129,8 @@ Opening image (example: that person in the situation being described):
 
 **Your ExcerLock hook:**
 
+- How to become addicted to walking / gym
+
 Source example: "A Face Lift In a Jar" instead of describing cactus extract
 
 Feature or mechanism (example: cactus-based facial-mask ingredients):
@@ -125,6 +143,8 @@ Opening image (example: the visible transformation rather than an ingredient lis
 
 **Your ExcerLock hook:**
 
+- 10/10 ways to increase your step count
+
 Source example: Gary Halbert attached a penny to the top of a sales letter.
 
 Our equivalent (example: one object, image, or statement viewers do not expect):
@@ -135,6 +155,8 @@ Unusual visual or statement (example: a real coin attached where an advertisemen
 
 **Your ExcerLock hook:**
 
+- 5 Thing that made me consistent in the gym
+
 Source example: "7 things that fixed my gut"
 
 Our equivalent (example structure: "\[number\] things that \[produced result\]"):
@@ -144,6 +166,10 @@ Opening image (example: the result or the most surprising item):
 ### Signs and symptoms
 
 **Your ExcerLock hook:**
+
+- 3 ways to know you can get more steps
+- 3 signs your not walking as much as you can.
+- 3 signs your not as consistent in gym as you can be.
 
 Source example: "3 signs your pores need a deep clean"
 
@@ -165,6 +191,10 @@ Opening image (example: a surprising result with its cause concealed):
 
 **Your ExcerLock hook:**
 
+- Why you can't be consistent in the gym
+- why you aren't hitting your steps
+- Why your phone addiction is holding back your fitness goals
+
 Source example: "why does my flat look like a student loan"
 
 Our equivalent (example structure: describe a familiar pain in casual language):
@@ -176,6 +206,10 @@ Opening image (example: the painful situation shown without polishing it):
 ### Another person, conflict or doubt, then a changed reaction
 
 **Your ExcerLock hook:**
+
+- I thought i could never hit 15k steps a day then started doing this
+- I thought i could never go to the gym every day until i started doing this
+- Everything i tried to hit 15k steps a day didn't work until i did this
 
 Source example: "my landlord said i can't change anything so i showed her what AI thinks it could look like"
 
@@ -193,6 +227,9 @@ Opening image (example: the other person or the disputed situation):
 
 **Your ExcerLock hook:**
 
+- I couldn't lose weight for 6 months in the gym then i started doing this
+- I couldn't be consistent in the gym then started doing this
+
 Source example: "we were together six months, then he sent me this"
 
 Our equivalent (example structure: begin a story but withhold the decisive event):
@@ -205,6 +242,11 @@ Opening image (example: the person reacting before the message is revealed):
 
 **Your ExcerLock hook:**
 
+- How I hit 20k steps a day while working a sit down job
+- How i hit 20k steps a day sitting in school half the day
+- How i consistently go the gym while being a phone addict
+- How i hit 15k steps a day as a phone addict
+
 Source example: "how i kept a 4.5 gpa with adhd"
 
 Our equivalent (example structure: attach the advice to a believable achievement or authority):
@@ -216,6 +258,10 @@ Opening image (example: visible proof of the result or the credible person):
 ### Cultural mystery
 
 **Your ExcerLock hook:**
+
+- Thing i do to hit 15k steps that will shock you
+- Thing i do to consistently go gym working a job that will shock you
+- Gym girl tool i use that will shock you
 
 Source example: "gym rules in japan that will shock westerners"
 
@@ -230,6 +276,9 @@ Opening image (example: a clearly recognizable but unfamiliar setting):
 ### Information as the value
 
 **Your ExcerLock hook:**
+
+- Top 5 tool that will make you lose fat
+- Top 5 tool to get more steps
 
 Source example: "top 10 degrees that make you rich"
 
@@ -267,6 +316,10 @@ Value beyond collecting comments (example: the answers reveal real preferences o
 
 **Your ExcerLock hook:**
 
+- Fat to skinny transformation
+- Steps picture
+- Gym habit tracking picture
+
 Source example: Sulfur says the same story moved from 650K to 3.3M views when a generic image was replaced by a close-up crying face.
 
 Our equivalent (example: choose a visual whose emotion is obvious at thumbnail size):
@@ -276,6 +329,11 @@ Emotion, pain, conflict, or result visible without reading (example: a close-up 
 ### Every-slide hook
 
 **Your ExcerLock hook:**
+
+- 5 steps to hit 10k steps
+- 3 steps to never missing the gym again
+- 5 steps to always your your steps (unfinished)
+- 5 steps to lose fat quick
 
 Source example: "step 2: the trick that feels harder but works 3x faster" instead of only "step 2."
 
