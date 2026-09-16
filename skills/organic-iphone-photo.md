@@ -147,7 +147,7 @@ end of the spectrum (see `content/styles/gym-mirror-selfie-budget-night.json`);
    `--output content/…`.
 4. Generation is a separate, approval-gated step (no paid generation without
    approval). Codex image quota was exhausted on 2026-09-16 with reset expected
-   2026-09-19 — do not attempt generation until the captain approves a run.
+   2026-09-19 — do not attempt generation until a run is approved.
 
 ## Truthful use
 

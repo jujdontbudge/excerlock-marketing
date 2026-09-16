@@ -1,6 +1,6 @@
 # Style clone — standing workflow
 
-The captain's standing procedure whenever they say "copy the style of this
+The standing procedure whenever someone asks to "copy the style of this
 image". Three steps, then injection. Method adapted from
 https://x.com/EXM7777/status/2094848009477685681 (2026-09-01): extract the
 style as structured data, save it, inject it whenever the look is needed again.
@@ -12,9 +12,10 @@ agent-web gallery <post-url> --out raw/<name>          # TikTok photo posts, X p
 agent-web gallery <post-url> --out raw/<name> --metadata-only   # text-only need
 ```
 
-Note in the raw output which slide indexes the captain asked for (1-based,
+Note in the raw output which slide indexes were requested (1-based,
 top-left first as TikTok numbers them). Copy nothing into the repo from here —
-reference images stay in `raw/` or the firstmate data folder.
+reference images stay in `raw/` (gitignored) or another folder outside the
+repository.
 
 ## Step 2 — Extract
 
