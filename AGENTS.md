@@ -24,3 +24,10 @@ Judge work by source quality, truthful representation, creative usefulness, plat
 - Image prompting: organic iPhone photo template `skills/organic-iphone-photo.md`, style cloning `skills/style-clone.md`, saved styles `content/styles/`.
 - Video: `.venv/bin/python scripts/fal-video.py schema|pricing|submit|status|result --endpoint ENDPOINT`. It allows verified Seedance, Kling, OmniHuman, and WAN video endpoints; check schema and price before submission.
 - Memory: relevant Mem0 memories are recalled automatically. `local_memory` supports project/session/global search and full CRUD; mutations require explicit approval. Commands: `/mem0-remember`, `/mem0-forget`, `/mem0-search`, `/mem0-tour`, `/mem0-scope`, `/mem0-status`, and `/memory-review`.
+
+## Maintaining this file
+
+Keep this file for knowledge useful to almost every future agent session in this project.
+Do not repeat what the codebase already shows; point to the authoritative file or command instead.
+Prefer rewriting or pruning existing entries over appending new ones.
+When updating this file, preserve this bar for all agents and keep entries concise.
