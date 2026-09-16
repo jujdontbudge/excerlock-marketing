@@ -1,6 +1,6 @@
 # Slideshow 01 - lose fat, 7 slides
 
-On-screen text is the account owner's copy, verbatim. Do not edit the text. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 5, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only.
+On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 5, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only.
 
 Overlay defaults for every slide: clean geometric sans, medium weight, white #FFFFFF, soft drop shadow, left-aligned or centred as noted, 9:16.
 
@@ -10,7 +10,7 @@ Overlay defaults for every slide: clean geometric sans, medium weight, white #FF
 
 **On-screen text**
 ```
-I coulnt lose fat after 6 month in the gym till i stated going this
+I couldn't lose fat after 6 months in the gym till I started doing this
 ```
 
 **Image**
@@ -24,8 +24,8 @@ I coulnt lose fat after 6 month in the gym till i stated going this
 
 **On-screen text**
 ```
-Me goign tot he gym 6 times a week
-(nothing was working _
+Me going to the gym 6 times a week
+(nothing was working)
 ```
 
 **Image**
@@ -39,7 +39,7 @@ Me goign tot he gym 6 times a week
 
 **On-screen text**
 ```
-Lift 4 tiems a week. Your body needs to recover. If your lift to much you volume is bmore but teh qulaity of wokrout drops waehte ryou realize it or not
+Lift 4 times a week. Your body needs to recover. If you lift too much, your volume is higher but the quality of your workouts drops, whether you realize it or not.
 ```
 
 **Image**
@@ -54,7 +54,7 @@ Lift 4 tiems a week. Your body needs to recover. If your lift to much you volume
 
 **On-screen text**
 ```
-EAT is 90% of the progress. the gym is the ez part each 1 gram of protien per lbs minimum. count calories. stay in a deciet ----> tis his how you dod that
+EATING is 90% of the progress. The gym is the ez part. 1 gram of protein per lb minimum. Count calories. Stay in a deficit. This is how you do that ->
 ```
 
 **Image**
@@ -71,7 +71,7 @@ EAT is 90% of the progress. the gym is the ez part each 1 gram of protien per lb
 ```
 CARDIO CARDIO CARDIO
 
-you need to be walking. this is the only way us girlies can eat enough but siltl lose fat. its hard having a lose BMR so you need do this. heres you how i get 15 stsp a day
+You need to be walking. This is the only way us girlies can eat enough and still lose fat. It's hard having a low BMR, so you need to do this. Here's how I get 15k steps a day
 ```
 
 **Image**
@@ -86,7 +86,7 @@ you need to be walking. this is the only way us girlies can eat enough but siltl
 
 **On-screen text**
 ```
-Walk int he mornings and after meals. a few 5-10 walks htourgh the day adds up
+Walk in the mornings and after meals. A few 5-10 minute walks through the day add up.
 ```
 
 **Image**
@@ -100,7 +100,7 @@ Walk int he mornings and after meals. a few 5-10 walks htourgh the day adds up
 
 **On-screen text**
 ```
-Use excerlock to block  media unless your moving. i littery cant scroll unless im moving. this makes it so ez
+Use ExcerLock to block social media unless you're moving. I literally can't scroll unless I'm moving. This makes it so ez.
 ```
 
 **Image**
