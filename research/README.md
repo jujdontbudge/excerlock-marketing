@@ -61,6 +61,11 @@ repeated structures, audience applications, and claim-safety bounds.
 - `INDEX.md` — one-page captain-facing summary: hooks, 12 structures, white
   space, shoot-first list
 
+### `liked-slideshows/` (see its README)
+Voice taste board from 12 liked TikTok photo posts (54 slides, captured
+2026-09-16): two independent caption analyses plus a post index. Slide
+images and OCR stay private; only the written analyses are committed.
+
 ### `tiktok-comments` (evidence only, no copy)
 The TikTok comment-evidence report (PKG-B) lives at
 `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/tiktok-comments/report.md`
