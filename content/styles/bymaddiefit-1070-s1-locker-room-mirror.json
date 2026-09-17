@@ -1,0 +1,105 @@
+{
+  "name": "Moody locker room mirror selfie grey shorts",
+  "slug": "bymaddiefit-1070-s1-locker-room-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@bymaddiefit/photo/7660406966996471070",
+    "creator_handle": "@bymaddiefit",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "16.9K",
+      "likes": "406",
+      "saves": "101",
+      "shares": "12",
+      "comments": "3"
+    }
+  },
+  "summary": "Full-body mirror selfie in a dark moody upscale locker room: textured concrete wall panels, matte black locker cabinets, warm pin-spot ceiling lights, grey crossover shorts and black sports bra.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#686158",
+      "#2C2A28",
+      "#74726C",
+      "#A79582",
+      "#8F7D6C",
+      "#D7C6B3"
+    ],
+    "white_balance": "warm moody interior with neutral grey and deep shadow accents",
+    "contrast": "high \u2014 bright focused pin spots against deep matte black cabinetry and concrete shadows",
+    "saturation": "understated, desaturated architectural tones with warm skin highlights",
+    "notable_casts": [
+      "warm golden pin-spot glow on skin and vanity counter",
+      "cool neutral grey on concrete walls"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "recessed ceiling pin spotlights overhead",
+      "backlit LED mirror surround"
+    ],
+    "direction": "top-down direct spots combined with diffuse edge backlight",
+    "hardness": "semi-hard overhead with soft ambient fill",
+    "time_of_day": "indoor evening/ambient",
+    "artifacts": [
+      "clean specular reflections on vanity glass",
+      "subtle rim glow around backlit mirror frame"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "chest-level mirror selfie straight-on",
+    "distance": "1.4\u20131.7 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject, concrete panels, and black locker doors sharp"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, vanity mirror frame and frosted glass lettering along bottom edge",
+    "subject_placement": "centred horizontally",
+    "tilt": "level",
+    "foreground": "frosted vanity mirror glass edge and shaker bottle",
+    "background": "architectural concrete tiles, dark matte locker doors, ceiling spotlights",
+    "negative_space": "dark ceiling and locker doors in upper half",
+    "reflections": "crisp vanity mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "standing relaxed posture, phone held at chin level, headphones around neck",
+    "face_visibility": "partially obscured by phone, eyes and forehead visible",
+    "gaze": "at phone screen reflection",
+    "wardrobe_category": "black minimalist sports bra, heather grey crossover waistband biker shorts",
+    "props": [
+      "over-ear headphones resting on collarbone",
+      "phone in patterned protective case",
+      "metal water bottle on counter"
+    ]
+  },
+  "environment": "high-end boutique gym locker room with industrial concrete panels, matte black cabinetry, and designer lighting",
+  "effects_imperfections": [
+    "subtle digital sensor grain in dark shadow zones",
+    "frosted mirror branding text along bottom edge of glass",
+    "authentic natural hair and skin texture"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif with subtle black shadow",
+    "weight": "bold",
+    "relative_size": "~3.2% of frame height",
+    "color": "#FFFFFF",
+    "position": "upper-centre, ~15\u201325% from top",
+    "shadow_or_stroke": "drop shadow",
+    "lines": 3,
+    "emoji": []
+  },
+  "mood": "moody, focused, quiet luxury gym aesthetic, understated dedication",
+  "reusable_prompt_fragment": "dark moody boutique gym locker room with concrete wall panels and matte black lockers, warm overhead pin spotlights, full-body mirror selfie in black sports bra and heather grey biker shorts, headphones around neck, sharp deep focus, authentic post-workout atmosphere",
+  "avoid": [
+    "bright harsh fluorescent lighting",
+    "cluttered messy gym background",
+    "flat low-contrast lighting",
+    "over-saturated vibrant colors"
+  ],
+  "excerlock_fit": "hook / opener slide \u2014 establishing high aesthetic standards and serious workout dedication"
+}

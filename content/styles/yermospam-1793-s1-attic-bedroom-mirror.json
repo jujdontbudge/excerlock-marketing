@@ -1,0 +1,103 @@
+{
+  "name": "Attic bedroom shirtless mirror selfie",
+  "slug": "yermospam-1793-s1-attic-bedroom-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@yermospam/photo/7581568072968981793",
+    "creator_handle": "@yermospam",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "11.6K",
+      "likes": "718",
+      "saves": "257",
+      "shares": "14",
+      "comments": "13"
+    }
+  },
+  "summary": "Casual shirtless mirror selfie in a small sloped-ceiling attic bedroom: warm domestic lamp lighting, timber/wood details, messy bed in background, warm tones and shadow grain.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#5D493B",
+      "#28201A",
+      "#8A7361",
+      "#A69788",
+      "#7A533A",
+      "#C5BDB1"
+    ],
+    "white_balance": "warm indoor incandescent/tungsten balanced",
+    "contrast": "medium-high \u2014 warm skin highlights against deep bedroom shadows",
+    "saturation": "natural warm golden skin tones, muted room neutrals",
+    "notable_casts": [
+      "strong warm incandescent yellow-orange cast",
+      "warm wood reflection"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "bedside table lamp",
+      "ambient domestic bedroom spill"
+    ],
+    "direction": "low-side and front-angled warm lighting",
+    "hardness": "soft with gentle shadow falloff across torso musculature",
+    "time_of_day": "evening/night",
+    "artifacts": [
+      "warm highlight bloom on skin",
+      "luminance noise in dim background corners"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone standard class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "standing mirror selfie at chest height",
+    "distance": "1.2\u20131.5 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 torso and bedroom interior both legible"
+  },
+  "composition": {
+    "framing": "waist-up framing inside room mirror",
+    "subject_placement": "slightly right of centre",
+    "tilt": "slight handheld casual tilt",
+    "foreground": "mirror reflection",
+    "background": "attic bedroom with angled ceiling wall, unmade bed, wooden furniture",
+    "negative_space": "sloped ceiling above, shadows to the left",
+    "reflections": "bedroom mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "relaxed shirtless torso check, one hand holding phone up, other arm relaxed",
+    "face_visibility": "face covered or partially obscured by phone",
+    "gaze": "downward at phone screen",
+    "wardrobe_category": "shirtless, sweatpants or lounge shorts",
+    "props": [
+      "smartphone with dark case"
+    ]
+  },
+  "environment": "cozy lived-in attic bedroom with angled sloped ceiling, unmade bed, warm domestic clutter",
+  "effects_imperfections": [
+    "digital sensor noise in shadow areas",
+    "mild optical distortion from close mirror proximity",
+    "natural lived-in bedroom background disorder"
+  ],
+  "typography_overlay": {
+    "present": false,
+    "text_style": null,
+    "weight": null,
+    "relative_size": null,
+    "color": null,
+    "position": null,
+    "shadow_or_stroke": null,
+    "lines": 0,
+    "emoji": []
+  },
+  "mood": "candid, intimate, authentic everyday check-in, teen/young adult bedroom aesthetic",
+  "reusable_prompt_fragment": "cozy sloped-ceiling attic bedroom at night, warm incandescent bedside lamp glow, shirtless mirror selfie waist-up, warm golden skin tones, unmade bed and wooden furniture in background, soft shadow grain, authentic candid phone photo",
+  "avoid": [
+    "commercial gym lighting",
+    "flash strobe",
+    "studio fitness lighting",
+    "over-edited bodybuilder glamor look"
+  ],
+  "excerlock_fit": "morning/evening check-in slide \u2014 authentic relatable lifestyle setting"
+}

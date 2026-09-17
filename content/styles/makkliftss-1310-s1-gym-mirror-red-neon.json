@@ -1,0 +1,104 @@
+{
+  "name": "Gym mirror selfie under red neon sign",
+  "slug": "makkliftss-1310-s1-gym-mirror-red-neon",
+  "source": {
+    "url": "https://www.tiktok.com/@makk.liftss/photo/7663689734497111310",
+    "creator_handle": "@makk.liftss",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "189.1K",
+      "likes": "45.5K",
+      "saves": "3.1K",
+      "shares": "707",
+      "comments": "273"
+    }
+  },
+  "summary": "Full-body gym mirror selfie in a dark moody bodybuilding gym beneath a glowing red neon wall sign: ruby rim lighting on silhouette, dark athleticwear, cable machines in background.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#6b533e",
+      "#352b24",
+      "#281e1d",
+      "#1d1012",
+      "#08070c"
+    ],
+    "white_balance": "heavily warmed by overhead red neon signage against deep gym shadows",
+    "contrast": "high dramatic contrast \u2014 vivid crimson neon glow against crushed black gym background",
+    "saturation": "vivid crimson red accents, desaturated dark surroundings",
+    "notable_casts": [
+      "strong ruby red neon wash over shoulders and mirror glass",
+      "deep warm amber shadow tones"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead red neon tube typography sign",
+      "ambient gym spotlighting"
+    ],
+    "direction": "top-down and frontal neon wash from mirror reflection",
+    "hardness": "diffuse neon glow with high contrast shadows",
+    "time_of_day": "late night gym session",
+    "artifacts": [
+      "red neon bloom and subtle atmospheric haze around lettering",
+      "sharp reflections on mirror"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro Max class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "straight-on eye-level mirror selfie",
+    "distance": "1.8\u20132.2 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject and background weight equipment sharp"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, red neon sign visible in reflection above head",
+    "subject_placement": "centred in frame",
+    "tilt": "level",
+    "foreground": "rubber gym flooring and phone reflection",
+    "background": "gym cable machines, weight racks, dark textured gym wall",
+    "negative_space": "balanced dark headroom occupied by glowing red neon sign",
+    "reflections": "clear mirror reflection capturing neon glow and training equipment"
+  },
+  "subject_treatment": {
+    "pose_type": "standing full-body mirror selfie holding phone up with one hand",
+    "face_visibility": "partially obscured by phone held at chest/face height",
+    "gaze": "at phone screen",
+    "wardrobe_category": "dark matching activewear set (athletic top, fitted leggings, sneakers)",
+    "props": [
+      "smartphone in case",
+      "gym wrist wrap or watch"
+    ]
+  },
+  "environment": "hardcore or boutique bodybuilding gym at night, moody dark walls, glowing red neon wall signage, heavy strength equipment",
+  "effects_imperfections": [
+    "optical neon glow flare around bright lettering",
+    "fine digital sensor noise in deep shadow areas",
+    "commercial mirror glass edge reflections"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean geometric sans (TikTok native caption)",
+    "weight": "regular",
+    "relative_size": "~3% of frame height",
+    "color": "#FFFFFF",
+    "position": "centred in upper half of frame",
+    "shadow_or_stroke": "subtle dark drop shadow",
+    "lines": 3,
+    "emoji": []
+  },
+  "mood": "cinematic, focused, empowering, late-night sanctuary",
+  "reusable_prompt_fragment": "moody dark bodybuilding gym at night, glowing red neon sign overhead casting vivid ruby red rim light across shoulders and hair, full-body mirror selfie, dark matching activewear, rubber floor, weight racks and cable machines in background, high contrast, deep shadows, cinematic gymtok aesthetic, vertical 9:16",
+  "avoid": [
+    "bright daylight",
+    "flat white office lighting",
+    "cheerful pastel colors",
+    "heavy motion blur",
+    "outdoor park setting"
+  ],
+  "excerlock_fit": "opener/hook slide \u2014 high-engagement aesthetic visual establishing gym discipline and mood"
+}

@@ -1,0 +1,104 @@
+{
+  "name": "Early morning bedroom desk vanity selfie",
+  "slug": "myspacegym-0719-s1-bedroom-desk-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@myspacegym/photo/7673709531523730719",
+    "creator_handle": "@myspacegym",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "538.7K",
+      "likes": "100.8K",
+      "saves": "8.1K",
+      "shares": "1.9K",
+      "comments": "167"
+    }
+  },
+  "summary": "Pre-dawn mirror selfie seated at a wooden desk vanity in a dark bedroom before a 5 AM workout, illuminated by a warm single lamp casting soft golden gradients.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#b7a994",
+      "#9f9384",
+      "#887a6a",
+      "#4f3c34",
+      "#100f0e"
+    ],
+    "white_balance": "very warm incandescent domestic lamp with deep shadows",
+    "contrast": "medium-high \u2014 warm lit subject against dark pre-dawn room interior",
+    "saturation": "naturally muted warm amber and wood tones",
+    "notable_casts": [
+      "warm golden-amber glow from 2800K lamp",
+      "deep espresso shadow cast"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "single bedside or desk lamp",
+      "faint laptop screen ambient light"
+    ],
+    "direction": "side 45-degree domestic angle",
+    "hardness": "soft ambient with warm directional falloff",
+    "time_of_day": "pre-dawn 4:45 AM",
+    "artifacts": [
+      "soft warm glow halo near lamp",
+      "deep shadows across unlit half of room"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro Max class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "straight-on eye-level vanity mirror reflection",
+    "distance": "0.8\u20131.2 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "medium \u2014 seated subject and desk items sharp, quiet bedroom softly fading"
+  },
+  "composition": {
+    "framing": "waist-up vertical mirror selfie seated at desk",
+    "subject_placement": "centred in frame",
+    "tilt": "near-level",
+    "foreground": "desk surface with laptop and warm lamp glow",
+    "background": "dark cozy bedroom interior, neutral wall",
+    "negative_space": "subtle headroom above mirror reflection",
+    "reflections": "vanity mirror reflecting cozy bedroom and phone"
+  },
+  "subject_treatment": {
+    "pose_type": "seated casual posture holding phone up to mirror",
+    "face_visibility": "lower face partially covered by phone",
+    "gaze": "at phone screen",
+    "wardrobe_category": "casual oversized workout tee or hoodie, active shorts",
+    "props": [
+      "smartphone",
+      "laptop computer on desk"
+    ]
+  },
+  "environment": "quiet dark bedroom at 4:45 AM, warm domestic lamplight, pre-dawn gym routine start",
+  "effects_imperfections": [
+    "organic low-light sensor noise across dark walls",
+    "soft natural optical flare from bedside lamp",
+    "authentic early-morning bedhead and unposed relaxed posture"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif (TikTok native caption)",
+    "weight": "bold",
+    "relative_size": "~3.2% of frame height",
+    "color": "#FFFFFF",
+    "position": "centred in frame",
+    "shadow_or_stroke": "semi-opaque dark background pill",
+    "lines": 3,
+    "emoji": []
+  },
+  "mood": "quiet, disciplined, sleepy but committed, 5 AM club routine",
+  "reusable_prompt_fragment": "pre-dawn 4:45 AM candid iPhone mirror selfie seated at a wooden bedroom desk vanity, single warm 2800K lamp casting cozy golden illumination, dark shadows in quiet bedroom, holding phone up to mirror, natural low-light sensor grain, authentic unpolished morning routine, vertical 9:16",
+  "avoid": [
+    "harsh bright daylight",
+    "flash photography",
+    "commercial gym setting",
+    "glamour beauty retouching",
+    "staged perfection"
+  ],
+  "excerlock_fit": "routine opener slide \u2014 establishing early morning discipline and the challenge of waking up for fitness"
+}

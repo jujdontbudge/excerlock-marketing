@@ -1,0 +1,103 @@
+{
+  "name": "Pink bedroom outfit check hands on hips",
+  "slug": "wwwreesey-0928-s1-pink-bedroom-outfit-check",
+  "source": {
+    "url": "https://www.tiktok.com/@www.reesey/photo/7662638384740928781",
+    "creator_handle": "@www.reesey",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "60.7K",
+      "likes": "9,915",
+      "saves": "808",
+      "shares": "229",
+      "comments": "293"
+    }
+  },
+  "summary": "Full-body standing shot in a pink-walled bedroom: black short-sleeve button-front top and denim shorts, hands on hips, soft warm incandescent ceiling lighting and domestic bedroom background with posters and unmade bed.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#211F23",
+      "#B08167",
+      "#C7A684",
+      "#925D47",
+      "#773827",
+      "#E9DEC2"
+    ],
+    "white_balance": "warm domestic incandescent bedroom lighting with soft pink wall wash",
+    "contrast": "medium \u2014 black clothing silhouette against pastel pink walls and white bed linens",
+    "saturation": "warm skin tones, rich black fabric, warm terracotta and pink ambient notes",
+    "notable_casts": [
+      "distinct pinkish-orange warm ambient cast from painted bedroom walls"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead ceiling fan/fixture incandescent light",
+      "daylight spill from bedroom window"
+    ],
+    "direction": "top-frontal ambient illumination",
+    "hardness": "soft domestic room lighting",
+    "time_of_day": "daytime indoor",
+    "artifacts": [
+      "warm glow around ceiling fixture, soft natural room shadows"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone standard class propped on table / tripod",
+    "focal_length_equiv": "26mm main lens",
+    "angle": "chest-level straight-on portrait perspective",
+    "distance": "2.0\u20132.5 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject and bedroom decor in clear focus"
+  },
+  "composition": {
+    "framing": "three-quarter to full-body vertical framing, thighs to head",
+    "subject_placement": "centred in frame",
+    "tilt": "level",
+    "foreground": "open bedroom floor space",
+    "background": "pastel pink bedroom walls, wall tapestry/poster, unmade bed with orange knit blanket and stuffed animals",
+    "negative_space": "ceiling and pink wall surrounding head",
+    "reflections": "none"
+  },
+  "subject_treatment": {
+    "pose_type": "standing confident posture, both hands placed on waist/hips, facing camera",
+    "face_visibility": "fully visible with direct confident expression",
+    "gaze": "looking directly into camera lens",
+    "wardrobe_category": "black button-up short-sleeve fitted blouse, black cutoff denim shorts, pendant necklace",
+    "props": [
+      "bed with pillows and blankets",
+      "wall poster",
+      "table with mug behind"
+    ]
+  },
+  "environment": "lived-in young adult bedroom with pastel pink walls, wall posters, and cozy bedding",
+  "effects_imperfections": [
+    "authentic lived-in room details (unmade bed, items on nightstand)",
+    "natural domestic incandescent light bloom",
+    "candid unretouched snapshot aesthetic"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean modern sans-serif",
+    "weight": "regular",
+    "relative_size": "~2.8% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~60\u201368% down across torso",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 3,
+    "emoji": []
+  },
+  "mood": "honest, determined, vulnerable, start of a fitness journey",
+  "reusable_prompt_fragment": "lived-in bedroom with pastel pink walls and wall poster, full-body portrait standing hands on hips, wearing black short-sleeve button top and denim shorts, warm domestic incandescent lighting, unmade bed with orange throw blanket in background, direct candid eye contact, authentic phone snapshot",
+  "avoid": [
+    "commercial gym setting",
+    "glam studio portraiture",
+    "cold clinical fluorescent tones",
+    "airbrushed fitness perfection"
+  ],
+  "excerlock_fit": "before / transformation beginning slide \u2014 honest and courageous starting point frame ('plan a: lose the weight, get my life together')"
+}

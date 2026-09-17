@@ -1,0 +1,103 @@
+{
+  "name": "Gym floor POV legs resting on barbell pad",
+  "slug": "bymaddiefit-1070-s2-gym-floor-barbell-pov",
+  "source": {
+    "url": "https://www.tiktok.com/@bymaddiefit/photo/7660406966996471070",
+    "creator_handle": "@bymaddiefit",
+    "platform": "tiktok",
+    "slide_index": 2,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "16.9K",
+      "likes": "406",
+      "saves": "101",
+      "shares": "12",
+      "comments": "3"
+    }
+  },
+  "summary": "First-person point-of-view looking down while seated on a commercial gym floor: legs extended in grey sweatpants and sneakers, loaded barbell with thick foam hip thrust pad in front, bright gym floor background.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#0C0D0D",
+      "#3B3A36",
+      "#636059",
+      "#9C988D",
+      "#7C776D",
+      "#BEC0BB"
+    ],
+    "white_balance": "neutral daylight-balanced commercial gym interior",
+    "contrast": "medium-high \u2014 dark rubber weight plate and foam pad against grey gym turf and white sneakers",
+    "saturation": "muted industrial gym palette with clean neutral tones",
+    "notable_casts": [
+      "cool neutral tones from black rubber flooring and metal equipment"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead commercial gym fluorescent/LED troffers",
+      "diffuse ambient daylight"
+    ],
+    "direction": "top-down overhead lighting",
+    "hardness": "medium diffuse",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "mild specular highlights on metallic barbell collar",
+      "subtle floor texture shadow"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "24mm wide angle",
+    "angle": "downward seated first-person POV angle (~40 degrees)",
+    "distance": "0.8\u20131.2 m to barbell",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 feet, barbell, and background benches legible"
+  },
+  "composition": {
+    "framing": "vertical framing looking along extended legs toward loaded barbell",
+    "subject_placement": "legs entering from bottom-left and bottom-right",
+    "tilt": "natural seated perspective tilt",
+    "foreground": "legs in light grey sweatpants, retro running sneakers",
+    "background": "loaded barbell with black foam neck/hip pad, black 45lb plate, gym training floor and weight benches",
+    "negative_space": "gym floor in middle and upper right",
+    "reflections": "none"
+  },
+  "subject_treatment": {
+    "pose_type": "seated rest between sets on gym floor, legs outstretched",
+    "face_visibility": "none (seated POV looking down)",
+    "gaze": "downward POV",
+    "wardrobe_category": "light grey sweatpants, white retro running sneakers",
+    "props": [
+      "loaded barbell with black bumper plate",
+      "thick foam barbell pad"
+    ]
+  },
+  "environment": "spacious commercial gym free-weight and functional area with rubber flooring and training benches",
+  "effects_imperfections": [
+    "authentic scuffs and texture on gym floor and weight plates",
+    "natural fabric folds on sweatpants",
+    "candid handheld angle"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif with subtle black drop shadow",
+    "weight": "bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~30\u201360% down",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 8,
+    "emoji": []
+  },
+  "mood": "honest, gritty, between-sets exhaustion, real workout consistency",
+  "reusable_prompt_fragment": "first-person downward POV seated on gym floor resting between sets, legs in grey sweatpants and white retro sneakers extended toward loaded barbell with black foam pad, black rubber gym floor and benches in background, bright commercial gym lighting, authentic rest pause, deep focus",
+  "avoid": [
+    "clean sterile studio setup",
+    "unrealistic spotless equipment",
+    "dramatic moody flash",
+    "posed model looking at camera"
+  ],
+  "excerlock_fit": "mindset / consistency advice slide \u2014 authentic gym context for discussing workout persistence"
+}

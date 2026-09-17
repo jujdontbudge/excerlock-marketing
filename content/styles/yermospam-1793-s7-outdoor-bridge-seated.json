@@ -1,0 +1,101 @@
+{
+  "name": "European bridge canal sitting outdoor full body",
+  "slug": "yermospam-1793-s7-outdoor-bridge-seated",
+  "source": {
+    "url": "https://www.tiktok.com/@yermospam/photo/7581568072968981793",
+    "creator_handle": "@yermospam",
+    "platform": "tiktok",
+    "slide_index": 7,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "11.6K",
+      "likes": "718",
+      "saves": "257",
+      "shares": "14",
+      "comments": "13"
+    }
+  },
+  "summary": "Full-body outdoor photo of a young man seated on a historic brick bridge ledge over a canal: European town architecture, overcast sky, muted historic brickwork, relaxed casual posture.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#41332C",
+      "#8A98B0",
+      "#A0B5CA",
+      "#9E6A4F",
+      "#675E56",
+      "#C5D1DA"
+    ],
+    "white_balance": "cool overcast daylight with warm terracotta brick accents",
+    "contrast": "medium \u2014 soft diffuse outdoor illumination without harsh shadows",
+    "saturation": "natural muted European cityscape palette",
+    "notable_casts": [
+      "soft slate-blue cast from overcast sky and canal water",
+      "warm red-brown brick tones"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "diffuse overcast sky"
+    ],
+    "direction": "soft top-down ambient daylight",
+    "hardness": "soft shadowless outdoor light",
+    "time_of_day": "daytime overcast",
+    "artifacts": [
+      "gentle atmospheric softness in background buildings"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone standard class shot by friend",
+    "focal_length_equiv": "28mm main lens",
+    "angle": "eye level, slightly stepped back",
+    "distance": "3.0\u20134.0 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject and canal bridge architecture in clear focus"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, subject seated along the lower-middle third",
+    "subject_placement": "slightly right of centre, canal and distant street extending left",
+    "tilt": "level",
+    "foreground": "brick bridge railing and cobblestone surface",
+    "background": "canal water, historic brick townhouses, overcast sky, street trees",
+    "negative_space": "sky and open canal street in upper left",
+    "reflections": "soft reflections in the canal water below"
+  },
+  "subject_treatment": {
+    "pose_type": "casually seated on brick ledge, legs dangling or resting, relaxed slouch",
+    "face_visibility": "fully visible looking toward camera or slightly off to the side",
+    "gaze": "relaxed direct gaze toward camera",
+    "wardrobe_category": "casual streetwear (oversized hoodie or jacket, relaxed-fit pants, sneakers)",
+    "props": [
+      "brick railing ledge"
+    ]
+  },
+  "environment": "picturesque European town canal with historic brick bridge, water, and traditional architecture",
+  "effects_imperfections": [
+    "natural overcast atmospheric haze in background",
+    "gentle wind-tousled hair",
+    "authentic handheld framing by companion"
+  ],
+  "typography_overlay": {
+    "present": false,
+    "text_style": null,
+    "weight": null,
+    "relative_size": null,
+    "color": null,
+    "position": null,
+    "shadow_or_stroke": null,
+    "lines": 0,
+    "emoji": []
+  },
+  "mood": "youthful, relaxed, travel/lifestyle pause, quiet European city mood",
+  "reusable_prompt_fragment": "European historic town canal, overcast sky, young man casually seated on red brick bridge ledge, relaxed streetwear hoodie and pants, canal water and historic brick houses in background, diffuse soft daylight, muted natural tones, full-body candid shot",
+  "avoid": [
+    "bright sunny tourist saturation",
+    "dramatic artificial flash",
+    "heavy vignette",
+    "studio posing"
+  ],
+  "excerlock_fit": "lifestyle / personality slide \u2014 shows authentic life outside the gym in an everyday travel context"
+}

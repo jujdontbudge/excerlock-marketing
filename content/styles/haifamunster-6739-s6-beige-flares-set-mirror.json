@@ -1,0 +1,104 @@
+{
+  "name": "Gym studio mirror selfie beige flare set",
+  "slug": "haifamunster-6739-s6-beige-flares-set-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@haifa.munster/photo/7597280332546673975",
+    "creator_handle": "@haifa.munster",
+    "platform": "tiktok",
+    "slide_index": 6,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "29.3K",
+      "likes": "2,149",
+      "saves": "193",
+      "shares": "31",
+      "comments": "9"
+    }
+  },
+  "summary": "Full-body standing mirror selfie in a gym studio corner: matching warm beige/taupe sports bra and flared activewear pants, over-ear headphones, long dark hair down, warm oak wood paneling.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#A5896E",
+      "#221D1F",
+      "#E0C5A6",
+      "#4B4547",
+      "#7D6559",
+      "#C7A88D"
+    ],
+    "white_balance": "warm cohesive monochromatic beige and wood interior tones",
+    "contrast": "medium \u2014 harmonious earthy tones between outfit, skin, and oak wood",
+    "saturation": "natural warm neutral palette",
+    "notable_casts": [
+      "cohesive warm sand and amber cast across entire frame"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead ceiling recessed canisters",
+      "diffuse mirror bounce"
+    ],
+    "direction": "top-down with soft frontal bounce from mirror",
+    "hardness": "soft-to-medium directional light",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "gentle highlight sheen on skin and hair"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "chest height mirror selfie straight-on",
+    "distance": "1.6\u20131.9 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject and wood walls sharp"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, head to flare pant hems",
+    "subject_placement": "centre-left third, framed by hanging punching bag at right",
+    "tilt": "level",
+    "foreground": "padded mat edge and mirror reflection",
+    "background": "light oak vertical wood paneling, black heavy punching bag hanging at frame right",
+    "negative_space": "warm oak wall behind torso",
+    "reflections": "clean mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "standing front-facing relaxed posture, one hip cocked, phone held beside face",
+    "face_visibility": "fully visible with slight smile",
+    "gaze": "at phone screen in mirror",
+    "wardrobe_category": "monochromatic beige/taupe sports bra and matching high-waisted flared gym pants",
+    "props": [
+      "over-ear headphones",
+      "gold chain necklace",
+      "thin gold bracelet",
+      "phone with white collage case"
+    ]
+  },
+  "environment": "clean modern gym studio corner with vertical light oak paneling and heavy boxing bag",
+  "effects_imperfections": [
+    "subtle digital sensor grain in darker shadow areas",
+    "clean mirror glass reflection",
+    "natural hair falling over shoulders"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif with soft shadow",
+    "weight": "bold",
+    "relative_size": "~2.8% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~52% down",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 4,
+    "emoji": []
+  },
+  "mood": "warm, grounded, aesthetic lifestyle fitness, self-improvement mindset",
+  "reusable_prompt_fragment": "clean modern gym studio with light oak wood wall panels, hanging black heavy bag at right, full-body mirror selfie in matching beige sports bra and flared gym pants, over-ear headphones, long hair down, warm cohesive earthy lighting, sharp clean focus, authentic fitness aesthetic",
+  "avoid": [
+    "harsh flash lighting",
+    "cluttered commercial gym floor",
+    "cold sterile blue hues",
+    "oversaturated garish colors"
+  ],
+  "excerlock_fit": "conclusion / mindset slide \u2014 grounding advice slide reminding viewer of long-term health and confidence"
+}

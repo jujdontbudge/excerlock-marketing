@@ -1,0 +1,108 @@
+{
+  "name": "Full length bedroom mirror selfie blue crop top",
+  "slug": "mostofmeg-0608-s1-bedroom-mirror-blue-top",
+  "source": {
+    "url": "https://www.tiktok.com/@mostofmeg/photo/7455384522960440608",
+    "creator_handle": "@mostofmeg",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "44.0K",
+      "likes": "956",
+      "saves": "396",
+      "shares": "40",
+      "comments": "33"
+    }
+  },
+  "summary": "Full-body mirror selfie in a framed freestanding bedroom mirror: royal blue athletic crop top, black high-waisted leggings, white radiator and cream wall panels behind, soft natural bedroom daylight.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#AB9C8A",
+      "#201B15",
+      "#978674",
+      "#806D59",
+      "#5F5143",
+      "#B9B0A0"
+    ],
+    "white_balance": "warm domestic interior balanced against neutral daylight",
+    "contrast": "medium \u2014 punchy royal blue top and deep black leggings against soft cream walls",
+    "saturation": "vivid blue accent with natural warm domestic neutrals",
+    "notable_casts": [
+      "warm cream/beige cast on interior walls and wooden floor"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "soft diffuse window daylight from side",
+      "warm ceiling room fixture"
+    ],
+    "direction": "diffuse side-frontal lighting",
+    "hardness": "soft with gentle shadow falloff along mirror frame and body",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "clean reflection inside dark wooden mirror frame"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone standard class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "standing mirror selfie at chest height",
+    "distance": "1.8\u20132.2 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 full figure and bedroom details inside mirror sharp"
+  },
+  "composition": {
+    "framing": "full-body vertical framing neatly contained inside dark wooden mirror frame",
+    "subject_placement": "centre-right inside the mirror",
+    "tilt": "level",
+    "foreground": "dark stained wooden mirror frame edge",
+    "background": "cream wardrobe closet doors, white panel radiator, light hardwood flooring",
+    "negative_space": "neutral cream wall and closet doors in background",
+    "reflections": "crisp bedroom mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "standing confident posture check, slight hip pop, phone held up in front of face",
+    "face_visibility": "face completely obscured by black phone",
+    "gaze": "at phone screen reflection",
+    "wardrobe_category": "bright royal blue scoop-neck athletic crop top, black high-waist seamless leggings, white smartwatch",
+    "props": [
+      "dark wooden floor-standing mirror frame",
+      "white smartwatch on wrist",
+      "smartphone"
+    ]
+  },
+  "environment": "cozy modern home bedroom with cream painted wardrobes, white radiator, and wood laminate floor",
+  "effects_imperfections": [
+    "subtle room lighting shadow along wall behind mirror",
+    "natural fabric stretch on leggings and sports bra",
+    "authentic domestic home setting"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "playful italic serif title with sans-serif subtitle",
+    "weight": "italic bold for main line, regular sans for subtitle",
+    "relative_size": "~3.5% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~45% down across chest",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 2,
+    "emoji": [
+      "\u2728",
+      "\ud83d\udeb6\u200d\u2640\ufe0f",
+      "\ud83e\udef6",
+      "\ud83e\udd0d"
+    ]
+  },
+  "mood": "relatable, encouraging, everyday healthy lifestyle, accessible step goal routine",
+  "reusable_prompt_fragment": "full-body mirror selfie inside dark wooden framed bedroom mirror, royal blue athletic crop top and black high-waisted leggings, phone covering face, cream wardrobe closet and white radiator behind, soft natural daylight, clean sharp focus, authentic home fitness check-in",
+  "avoid": [
+    "commercial gym equipment",
+    "harsh artificial strobe",
+    "heavy fitness model contouring",
+    "cluttered messy bedroom background"
+  ],
+  "excerlock_fit": "step goal / daily activity slide \u2014 relatable home setup for introducing 10k steps or non-gym daily habits"
+}

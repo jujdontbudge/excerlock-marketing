@@ -1,0 +1,102 @@
+{
+  "name": "Standing POV down at feet on weight plate with dumbbells",
+  "slug": "bymaddiefit-1070-s5-feet-weight-plate-dumbbells-pov",
+  "source": {
+    "url": "https://www.tiktok.com/@bymaddiefit/photo/7660406966996471070",
+    "creator_handle": "@bymaddiefit",
+    "platform": "tiktok",
+    "slide_index": 5,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "16.9K",
+      "likes": "406",
+      "saves": "101",
+      "shares": "12",
+      "comments": "3"
+    }
+  },
+  "summary": "First-person point-of-view standing and looking directly down at feet: one white sneaker resting on a black Olympic weight plate, two chrome and black dumbbells on the speckled gym floor.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#413A2E",
+      "#312E23",
+      "#3A3326",
+      "#1B1811",
+      "#634A38",
+      "#95928B"
+    ],
+    "white_balance": "neutral commercial gym interior with warm skin tones",
+    "contrast": "high \u2014 dark cast iron/rubber weights against speckled grey rubber floor and white sneakers",
+    "saturation": "understated industrial gym palette",
+    "notable_casts": [
+      "neutral dark charcoal from rubber flooring and weights"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead gym troffer lights"
+    ],
+    "direction": "directly top-down",
+    "hardness": "medium diffuse casting soft drop shadows beneath dumbbells and feet",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "specular reflections on chrome dumbbell handles",
+      "matte texture on black rubber plates"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "24mm wide angle",
+    "angle": "steep downward POV looking directly between knees at floor",
+    "distance": "1.0\u20131.3 m to floor",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 leg, foot, weight plate, and dumbbells all sharp"
+  },
+  "composition": {
+    "framing": "vertical framing looking down from thighs to gym floor",
+    "subject_placement": "subject's legs entering bottom frame, weights arranged in upper half",
+    "tilt": "straight down",
+    "foreground": "bare lower legs, white crew socks, retro runner sneakers",
+    "background": "black rubber Olympic plate underfoot, two dumbbells on speckled rubber floor",
+    "negative_space": "rubber gym floor texture filling margins",
+    "reflections": "none"
+  },
+  "subject_treatment": {
+    "pose_type": "standing casually between sets, one foot resting on top of a weight plate",
+    "face_visibility": "none (first-person POV pointing down)",
+    "gaze": "downward POV",
+    "wardrobe_category": "black gym shorts, white crew socks, white athletic sneakers",
+    "props": [
+      "Olympic barbell weight plate",
+      "two hexagonal dumbbells with chrome handles"
+    ]
+  },
+  "environment": "heavy dumbbell and free-weight zone of commercial fitness center with speckled rubber flooring",
+  "effects_imperfections": [
+    "authentic wear marks and scuffs on rubber plates and dumbbells",
+    "slight wide-angle perspective distortion on floor",
+    "natural skin texture on legs"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif with subtle black drop shadow",
+    "weight": "bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~20\u201375% down",
+    "shadow_or_stroke": "drop shadow",
+    "lines": 11,
+    "emoji": []
+  },
+  "mood": "disciplined, tactical, focused on tracking progress and progressive overload",
+  "reusable_prompt_fragment": "first-person downward POV looking down at gym floor, one white sneaker resting on a black Olympic weight plate, two chrome dumbbells on speckled rubber floor, bare legs in black shorts and white socks, top-down gym lighting, sharp deep focus, authentic training floor snapshot",
+  "avoid": [
+    "studio fitness glamor",
+    "flash glare",
+    "unnatural colorful filters",
+    "shallow depth of field blurring weights"
+  ],
+  "excerlock_fit": "workout tracking / progressive overload slide \u2014 ideal visual backdrop for discussing workout logging or rep progression"
+}

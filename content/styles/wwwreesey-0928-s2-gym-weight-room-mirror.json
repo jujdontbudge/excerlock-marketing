@@ -1,0 +1,106 @@
+{
+  "name": "Commercial gym weight room mirror selfie blonde athlete",
+  "slug": "wwwreesey-0928-s2-gym-weight-room-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@www.reesey/photo/7662638384740928781",
+    "creator_handle": "@www.reesey",
+    "platform": "tiktok",
+    "slide_index": 2,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "60.7K",
+      "likes": "9,915",
+      "saves": "808",
+      "shares": "229",
+      "comments": "293"
+    }
+  },
+  "summary": "Full-body three-quarter back angle mirror selfie in a commercial gym free-weight room: black long-sleeve athletic top, wide-leg track pants, blonde hair, cable crossover towers and barbell rack in background.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#797469",
+      "#191E20",
+      "#968D7B",
+      "#414240",
+      "#675A53",
+      "#C3BBA6"
+    ],
+    "white_balance": "neutral commercial gym interior with industrial ceiling and daylight troffers",
+    "contrast": "high \u2014 dark athletic silhouette against bright high-bay gym lighting and metallic equipment",
+    "saturation": "understated neutral gym tones with warm blonde hair accent",
+    "notable_casts": [
+      "neutral slate-grey industrial cast",
+      "clean daylight fluorescent"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead industrial fluorescent tube fixtures",
+      "gym high-bay skylight spill"
+    ],
+    "direction": "top-down overhead lighting highlighting shoulder and back definition",
+    "hardness": "medium-hard overhead with clean specular glints on chrome pulleys",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "specular reflections on cable guide rods and barbells",
+      "subtle mirror glass streaks"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "24mm main lens (1x)",
+    "angle": "chest-height mirror selfie angled slightly up",
+    "distance": "1.8\u20132.2 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject, cable towers, and background gym members sharp"
+  },
+  "composition": {
+    "framing": "three-quarter to full-body vertical framing, turned slightly to capture back profile",
+    "subject_placement": "centre-left third of frame",
+    "tilt": "slight casual tilt",
+    "foreground": "battle ropes hanging at left, rubber gym floor",
+    "background": "commercial cable crossover machine, loaded barbell on rack, open exposed steel truss ceiling",
+    "negative_space": "ceiling trusses and high gym walls in upper frame",
+    "reflections": "full-height gym wall mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "three-quarter turned stance, phone held up beside face taking mirror selfie, looking over shoulder",
+    "face_visibility": "fully visible looking over shoulder into mirror",
+    "gaze": "at phone screen reflection in mirror",
+    "wardrobe_category": "fitted black long-sleeve athletic crewneck top, black relaxed cargo sweatpants, over-ear wireless headphones",
+    "props": [
+      "pink phone case",
+      "over-ear headphones",
+      "hanging battle ropes",
+      "weight machines"
+    ]
+  },
+  "environment": "spacious commercial gym weight room with open steel truss ceiling, cable stations, and rubber flooring",
+  "effects_imperfections": [
+    "battle ropes hanging into frame left adding realistic gym depth",
+    "subtle digital noise in dark clothing folds",
+    "authentic gym lighting and equipment environment"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean modern sans-serif",
+    "weight": "regular",
+    "relative_size": "~2.8% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~68\u201372% down",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 2,
+    "emoji": []
+  },
+  "mood": "disciplined, accomplished, transformed, resolute determination",
+  "reusable_prompt_fragment": "commercial gym weight room with exposed ceiling trusses and cable crossover machines, three-quarter back angle mirror selfie looking over shoulder, wearing black athletic long-sleeve top and cargo sweatpants with over-ear headphones, battle ropes hanging at frame left, sharp deep focus, authentic fitness transformation atmosphere",
+  "avoid": [
+    "studio beauty lighting",
+    "shallow depth of field blurring out the gym",
+    "airbrushed fitness magazine styling",
+    "oversaturated warm filter"
+  ],
+  "excerlock_fit": "after / payoff slide \u2014 powerful contrast to the starting point slide ('there was never a plan b')"
+}

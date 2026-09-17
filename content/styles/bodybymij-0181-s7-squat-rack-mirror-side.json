@@ -1,0 +1,105 @@
+{
+  "name": "Squat rack mirror selfie side profile",
+  "slug": "bodybymij-0181-s7-squat-rack-mirror-side",
+  "source": {
+    "url": "https://www.tiktok.com/@bodybymij/photo/7530050457604050181",
+    "creator_handle": "@bodybymij",
+    "platform": "tiktok",
+    "slide_index": 7,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "438.9K",
+      "likes": "65.3K",
+      "saves": "13,526",
+      "shares": "768",
+      "comments": "141"
+    }
+  },
+  "summary": "Full-body side profile mirror selfie standing inside a power squat rack in a commercial gym: steel uprights with pinholes, Olympic barbell on J-hooks, black rubber floor, warm overhead spotlights.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#2D2925",
+      "#A09988",
+      "#BDB3A2",
+      "#83796B",
+      "#515B53",
+      "#E1DDD4"
+    ],
+    "white_balance": "warm commercial gym interior with beige and black balance",
+    "contrast": "high \u2014 dark steel rack framing bright skin and neutral outfit",
+    "saturation": "natural with warm skin tone preservation",
+    "notable_casts": [
+      "warm halogen/LED cast on floor and mirror",
+      "neutral dark grey metallic bounce"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead gym spot downlights",
+      "broad mirror face bounce"
+    ],
+    "direction": "top-down with directional highlights along side of body",
+    "hardness": "medium-hard \u2014 crisp shadows cast directly beneath rack",
+    "time_of_day": "indoor daytime/evening",
+    "artifacts": [
+      "specular highlights on chrome barbell knurling and rack pins",
+      "mirror surface reflection"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro Max class",
+    "focal_length_equiv": "24mm main (1x)",
+    "angle": "mirror selfie straight-on at chest height, subject turned in profile",
+    "distance": "2.0 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 squat rack posts, barbell, and background machines all in focus"
+  },
+  "composition": {
+    "framing": "full body framed naturally between vertical black steel uprights of the squat rack",
+    "subject_placement": "centre-left in mirror reflection",
+    "tilt": "slight casual tilt",
+    "foreground": "black rubber gym flooring, edge of safety spotter arms",
+    "background": "commercial gym floor with selectorized machines and mirrored walls",
+    "negative_space": "moderate floor space, upper ceiling structure visible",
+    "reflections": "full reflection in wall-mounted glass gym mirror"
+  },
+  "subject_treatment": {
+    "pose_type": "side-profile standing pose checking posture, one knee slightly bent, one hand holding phone",
+    "face_visibility": "side profile visible, phone held out in front reflecting into mirror",
+    "gaze": "at phone screen in mirror",
+    "wardrobe_category": "fitted athletic activewear set (sports bra and fitted shorts), training shoes",
+    "props": [
+      "black power squat rack cage",
+      "Olympic barbell racked on hooks",
+      "over-ear headphones"
+    ]
+  },
+  "environment": "heavy lifting zone of commercial fitness center with power racks, barbells, and black shock-absorbing rubber flooring",
+  "effects_imperfections": [
+    "subtle digital sensor grain in dark shadows around weight plates",
+    "slight smudge on mirror surface caught in downlight beam",
+    "natural skin texture without artificial smoothing"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean white bold sans-serif with drop shadow",
+    "weight": "bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "upper-middle third",
+    "shadow_or_stroke": "soft dark drop shadow",
+    "lines": 1,
+    "emoji": []
+  },
+  "mood": "strong, dedicated, strength training progress, disciplined routine",
+  "reusable_prompt_fragment": "standing inside commercial black power squat cage, side-profile mirror selfie with Olympic barbell on hooks behind, black rubber mat floor, warm overhead spotlights creating defined contours, natural skin and activewear, sharp deep focus, authentic gym atmosphere",
+  "avoid": [
+    "airbrushed fitness model look",
+    "shallow depth of field blurring the gym equipment",
+    "ring light or front beauty dish lighting",
+    "distorted fish-eye camera angles"
+  ],
+  "excerlock_fit": "strength workout / leg day slide \u2014 establishes hard training credentials and progressive overload context"
+}

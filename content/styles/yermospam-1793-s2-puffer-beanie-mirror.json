@@ -1,0 +1,101 @@
+{
+  "name": "Bedroom outfit mirror selfie puffer and beanie",
+  "slug": "yermospam-1793-s2-puffer-beanie-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@yermospam/photo/7581568072968981793",
+    "creator_handle": "@yermospam",
+    "platform": "tiktok",
+    "slide_index": 2,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "11.6K",
+      "likes": "718",
+      "saves": "257",
+      "shares": "14",
+      "comments": "13"
+    }
+  },
+  "summary": "Winter streetwear outfit mirror selfie in an attic bedroom: dark puffer jacket, knit beanie, phone held in front of face, soft indirect room daylight and warm shadows.",
+  "polish_level": "raw",
+  "colors": {
+    "palette": [
+      "#252324",
+      "#B7A99A",
+      "#DCD4C1",
+      "#8B735F",
+      "#4D4A45",
+      "#F1EDD7"
+    ],
+    "white_balance": "neutral daylight mixed with warm interior wall bounce",
+    "contrast": "medium-high \u2014 dark puffer jacket and beanie against cream attic walls",
+    "saturation": "natural muted winter tones",
+    "notable_casts": [
+      "slight warm cream cast on walls and ceiling"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "natural window light from side",
+      "diffuse room ambient"
+    ],
+    "direction": "side window light falloff",
+    "hardness": "soft diffuse natural light",
+    "time_of_day": "daytime indoor",
+    "artifacts": [
+      "mild shadow noise on black fabric folds"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone standard class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "chest-level mirror selfie straight-on",
+    "distance": "1.3\u20131.6 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject and room background both in focus"
+  },
+  "composition": {
+    "framing": "waist-up mirror selfie framing",
+    "subject_placement": "centred",
+    "tilt": "slight casual tilt",
+    "foreground": "mirror glass reflection",
+    "background": "bedroom interior with angled sloped ceiling, clothing rack or shelf edge",
+    "negative_space": "neutral cream wall space above and around shoulders",
+    "reflections": "clear mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "standing winter outfit check, phone raised in front of mouth/chin",
+    "face_visibility": "eyes and forehead visible under beanie, lower face obscured by phone",
+    "gaze": "at phone screen reflection",
+    "wardrobe_category": "dark quilted puffer jacket, knit beanie, casual winter streetwear",
+    "props": [
+      "smartphone held in hand"
+    ]
+  },
+  "environment": "attic apartment bedroom with angled ceiling architecture and neutral cream walls",
+  "effects_imperfections": [
+    "slight handheld camera shake / soft edge definition",
+    "fabric texture detail on knit beanie and nylon puffer",
+    "natural uncurated bedroom background"
+  ],
+  "typography_overlay": {
+    "present": false,
+    "text_style": null,
+    "weight": null,
+    "relative_size": null,
+    "color": null,
+    "position": null,
+    "shadow_or_stroke": null,
+    "lines": 0,
+    "emoji": []
+  },
+  "mood": "chill, casual, urban youth aesthetic, everyday winter outfit check",
+  "reusable_prompt_fragment": "attic bedroom with angled cream walls, winter streetwear outfit mirror selfie waist-up, wearing dark puffer jacket and knit beanie, phone held at chin level, soft diffuse window light, muted natural tones, authentic phone snapshot",
+  "avoid": [
+    "bright studio fashion lighting",
+    "over-sharpened digital commercial look",
+    "gym equipment in frame",
+    "flash harshness"
+  ],
+  "excerlock_fit": "lifestyle / everyday casual slide \u2014 relatable outside-the-gym context"
+}

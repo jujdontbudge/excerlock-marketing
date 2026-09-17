@@ -1,0 +1,102 @@
+{
+  "name": "Gym studio mirror selfie green set and white cap",
+  "slug": "haifamunster-6739-s5-green-set-white-cap-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@haifa.munster/photo/7597280332546673975",
+    "creator_handle": "@haifa.munster",
+    "platform": "tiktok",
+    "slide_index": 5,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "29.3K",
+      "likes": "2,149",
+      "saves": "193",
+      "shares": "31",
+      "comments": "9"
+    }
+  },
+  "summary": "Full-body three-quarter glute and leg pose in a gym mirror: dark forest green sports bra and leggings set, white baseball cap, phone covering face, light wood wall paneling and hanging punching bag.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#9F876F",
+      "#1F2226",
+      "#40434A",
+      "#E0CAAF",
+      "#6B6161",
+      "#C6AE96"
+    ],
+    "white_balance": "warm interior tungsten/LED balanced",
+    "contrast": "medium-high \u2014 dark green activewear set and black punching bag against warm oak wood",
+    "saturation": "deep forest green tones with warm skin and wood backdrop",
+    "notable_casts": [
+      "golden amber cast on wood panels and arms"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead gym spotlight canisters"
+    ],
+    "direction": "top-down with directional rim light on shoulders and back",
+    "hardness": "semi-hard downlight creating sculptural muscle shadows",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "specular reflection on phone case and vinyl bag"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "chest height mirror selfie angled slightly down",
+    "distance": "1.5\u20131.8 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 sharp throughout"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, turned three-quarter back toward mirror",
+    "subject_placement": "centre frame",
+    "tilt": "level",
+    "foreground": "padded mat edge and mirror reflection",
+    "background": "light oak vertical wood paneling, hanging black heavy bag at right",
+    "negative_space": "wood wall to left, dark punching bag at right",
+    "reflections": "clear mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "three-quarter rear pose checking lower body progress, phone held up in front of face",
+    "face_visibility": "face obscured by phone and cap brim",
+    "gaze": "at phone screen",
+    "wardrobe_category": "deep forest green activewear set (sports bra and leggings), white baseball cap, white socks",
+    "props": [
+      "white baseball cap",
+      "smartphone with collage case",
+      "hanging heavy punching bag"
+    ]
+  },
+  "environment": "clean modern gym functional studio corner with light oak wood acoustic paneling",
+  "effects_imperfections": [
+    "subtle digital sensor grain in dark green fabric shadows",
+    "clean mirror glass reflection with minor floor seam",
+    "natural hair falling down back"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif with drop shadow",
+    "weight": "bold",
+    "relative_size": "~2.8% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre frame, ~55% down",
+    "shadow_or_stroke": "soft drop shadow",
+    "lines": 3,
+    "emoji": []
+  },
+  "mood": "disciplined, consistent, athletic progress, quiet confidence",
+  "reusable_prompt_fragment": "modern gym studio with light oak wood wall panels and hanging black punching bag, three-quarter rear pose mirror selfie in deep forest green sports bra and leggings set with white baseball cap, phone covering face, warm overhead spotlights creating defined contours, sharp deep focus",
+  "avoid": [
+    "commercial gym equipment clutter",
+    "harsh flash lighting",
+    "cold clinical fluorescent tones",
+    "shallow portrait blur"
+  ],
+  "excerlock_fit": "workout advice / exercise selection slide \u2014 visually engaging athletic pose supporting workout tips"
+}

@@ -1,0 +1,105 @@
+{
+  "name": "Gym floor seated cross legged on mat mirror selfie",
+  "slug": "gabylrei-1069-s1-gym-mat-cross-legged-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@gabylrei/photo/7663840390155341069",
+    "creator_handle": "@gabylrei",
+    "platform": "tiktok",
+    "slide_index": 1,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "233.6K",
+      "likes": "32.5K",
+      "saves": "4,750",
+      "shares": "411",
+      "comments": "74"
+    }
+  },
+  "summary": "Full-body mirror selfie seated cross-legged on a black workout mat in a commercial gym functional zone: curly hair, black oversized t-shirt and grey shorts, TRX straps and diamond plate wall trim behind.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#4A433E",
+      "#8A7C70",
+      "#2D2A26",
+      "#B5A28C",
+      "#61554F",
+      "#CFBFA3"
+    ],
+    "white_balance": "neutral commercial gym interior with warm wood floor tones",
+    "contrast": "medium \u2014 soft daylight and overhead panels across wide gym space",
+    "saturation": "natural muted streetwear/gymwear palette with yellow TRX strap accents",
+    "notable_casts": [
+      "warm natural wood tone from floor laminate",
+      "cool dark charcoal on functional wall"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead square LED ceiling panels",
+      "ambient gym interior wash"
+    ],
+    "direction": "top-down diffuse commercial lighting",
+    "hardness": "soft-to-medium diffuse",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "clean reflection in wall mirror with diamond-plate trim at base"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "24mm main lens (1x)",
+    "angle": "seated eye level mirror selfie looking straight ahead",
+    "distance": "2.2\u20132.8 m to mirror",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 subject, mat, and wide open gym floor sharp"
+  },
+  "composition": {
+    "framing": "full-body seated vertical framing, subject grounded in lower-centre",
+    "subject_placement": "dead-centre horizontally, seated on floor mat",
+    "tilt": "level",
+    "foreground": "diamond-plate mirror ledge, running shoes placed beside mat",
+    "background": "black functional training wall with yellow suspension trainers, open wood-look floor, glass studio doors",
+    "negative_space": "spacious open gym floor and ceiling in upper half",
+    "reflections": "full clean wall mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "seated cross-legged on floor mat, one hand resting on knee, other holding phone up",
+    "face_visibility": "fully visible with natural thoughtful expression",
+    "gaze": "at phone screen reflection in mirror",
+    "wardrobe_category": "black oversized graphic t-shirt, grey athletic shorts, white ankle socks, curly hair down",
+    "props": [
+      "phone in decorative phone case",
+      "smartwatch on wrist",
+      "foam exercise mat",
+      "sneakers on floor beside"
+    ]
+  },
+  "environment": "spacious modern commercial gym functional training studio with suspension straps, wood flooring, and full mirrors",
+  "effects_imperfections": [
+    "sneakers kicked off beside the mat adding candid realism",
+    "natural curl texture and volume in hair",
+    "authentic gym studio environment"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean bold sans-serif",
+    "weight": "bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre-left, ~50% down",
+    "shadow_or_stroke": "subtle drop shadow",
+    "lines": 2,
+    "emoji": []
+  },
+  "mood": "approachable, authentic, relaxed gym presence, trusted peer advice",
+  "reusable_prompt_fragment": "spacious commercial gym functional area with suspension straps and wood floor, full-body mirror selfie seated cross-legged on black workout mat, black oversized t-shirt and grey shorts with white socks, curly hair down, shoes resting beside mat, diffuse overhead lighting, clean deep focus",
+  "avoid": [
+    "dramatic aggressive bodybuilder poses",
+    "harsh direct flash",
+    "dark moody gritty atmosphere",
+    "narrow cramped framing"
+  ],
+  "excerlock_fit": "hook / overview slide \u2014 approachable opening for 'gym essentials worth your money' or product recommendations"
+}

@@ -1,0 +1,102 @@
+{
+  "name": "Dance studio back stretch mirror reflection",
+  "slug": "bodybymij-0181-s2-studio-back-stretch",
+  "source": {
+    "url": "https://www.tiktok.com/@bodybymij/photo/7530050457604050181",
+    "creator_handle": "@bodybymij",
+    "platform": "tiktok",
+    "slide_index": 2,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "438.9K",
+      "likes": "65.3K",
+      "saves": "13,526",
+      "shares": "768",
+      "comments": "141"
+    }
+  },
+  "summary": "Rear three-quarter view stretching in a studio or empty training room mirror: hardwood floor, soft warm downlights, athletic back definition highlighted by overhead directional lighting.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#35241C",
+      "#A78F7E",
+      "#93816F",
+      "#796A5E",
+      "#5B514E",
+      "#AD9C8A"
+    ],
+    "white_balance": "warm neutral interior tungsten-balanced",
+    "contrast": "medium \u2014 soft shadows emphasizing muscle contours",
+    "saturation": "muted natural earthy tones",
+    "notable_casts": [
+      "warm golden brown from hardwood flooring and wall bounce"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "recessed warm ceiling downlights",
+      "indirect wall wash"
+    ],
+    "direction": "top-back overhead lighting",
+    "hardness": "semi-diffuse with defined contour shadows on back and shoulders",
+    "time_of_day": "indoor evening",
+    "artifacts": [
+      "subtle lens bloom around overhead fixtures reflected in mirror"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class",
+    "focal_length_equiv": "26mm main (1x)",
+    "angle": "standing eye level angled towards full wall mirror",
+    "distance": "2.0\u20132.5 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "moderate \u2014 subject sharp with subtle soft falloff in distant studio background"
+  },
+  "composition": {
+    "framing": "three-quarter body from knees to head viewed from behind into mirror",
+    "subject_placement": "centre to slightly right",
+    "tilt": "level",
+    "foreground": "hardwood studio floor reflection",
+    "background": "empty studio room with clean baseboards and wall mirror panels",
+    "negative_space": "open space around upper torso and floor",
+    "reflections": "prominent mirror reflection capturing front/side contour while facing away"
+  },
+  "subject_treatment": {
+    "pose_type": "standing rear stretch pose, arms raised adjusting hair or stretching shoulders",
+    "face_visibility": "turned away from camera, side profile partially visible in mirror glass",
+    "gaze": "downward or into mirror reflection",
+    "wardrobe_category": "open-back athletic sports bra and high-waist biker shorts",
+    "props": [
+      "hair claw clip or tie",
+      "over-ear headphones resting on neck"
+    ]
+  },
+  "environment": "clean empty dance or pilates studio with polished wood floors and full-height wall mirrors",
+  "effects_imperfections": [
+    "natural skin texture with subtle shine from exertion",
+    "slight compression artifacts in darker wood shadow areas",
+    "minor mirror seam line faint in background"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "white sans-serif caption with drop shadow",
+    "weight": "semi-bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "centred horizontally, upper third ~30% from top",
+    "shadow_or_stroke": "diffuse dark drop shadow",
+    "lines": 1,
+    "emoji": []
+  },
+  "mood": "disciplined, focused, understated physical progress",
+  "reusable_prompt_fragment": "clean hardwood dance studio with full-height wall mirror, rear three-quarter view stretching pose showing back definition, warm top-down ceiling downlights, soft warm tones, reflections in clean mirror glass, authentic workout progress atmosphere",
+  "avoid": [
+    "flash photography look",
+    "overly staged glam bodybuilder poses",
+    "cluttered equipment chaos",
+    "harsh high-key fluorescent lighting"
+  ],
+  "excerlock_fit": "progress proof / transformation slide \u2014 displays physical fitness results authentically without vanity"
+}

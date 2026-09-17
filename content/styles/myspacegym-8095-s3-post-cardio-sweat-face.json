@@ -1,0 +1,103 @@
+{
+  "name": "Post-cardio sweaty face low-angle close-up",
+  "slug": "myspacegym-8095-s3-post-cardio-sweat-face",
+  "source": {
+    "url": "https://www.tiktok.com/@myspacegym/photo/7662601047931768095",
+    "creator_handle": "@myspacegym",
+    "platform": "tiktok",
+    "slide_index": 3,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "27.3K",
+      "likes": "3.6K",
+      "saves": "271",
+      "shares": "43",
+      "comments": "11"
+    }
+  },
+  "summary": "Tight low-to-high selfie of lower face, neck, and collarbone drenched in glistening sweat immediately after intense cardio, dark gym ceiling and overhead fluorescent glints.",
+  "polish_level": "jagged",
+  "colors": {
+    "palette": [
+      "#715a51",
+      "#3d2d2a",
+      "#1e1819",
+      "#141012",
+      "#090809"
+    ],
+    "white_balance": "overhead gym fluorescent mixed with warm flushed skin tones",
+    "contrast": "high \u2014 stark specular sweat highlights against dark gym ceiling shadows",
+    "saturation": "desaturated dark gym tones with rich flushed skin undertones",
+    "notable_casts": [
+      "warm reddish flush in skin",
+      "cool fluorescent cast in highlights"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "high overhead gym fluorescent tubes",
+      "faint console glow"
+    ],
+    "direction": "steep top-down overhead",
+    "hardness": "hard \u2014 defined specular highlights on every perspiration bead",
+    "time_of_day": "indoor night workout",
+    "artifacts": [
+      "glinting highlights on sweat drops",
+      "deep shadows under jawline"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone front selfie camera",
+    "focal_length_equiv": "23mm front wide",
+    "angle": "steep low-angle pointing up at chin, neck, and collarbone",
+    "distance": "0.3\u20130.4 m to subject",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "shallow \u2014 sweat drops on collarbone in focus, dark ceiling blurred"
+  },
+  "composition": {
+    "framing": "extreme close-up framing chin, neck, and collarbone/shirt neckline",
+    "subject_placement": "centred tight in frame",
+    "tilt": "slight handheld tilt",
+    "foreground": "glistening skin and sweat-soaked t-shirt collar",
+    "background": "dark out-of-focus commercial gym ceiling",
+    "negative_space": "minimal \u2014 tightly packed frame",
+    "reflections": "specular glints in individual sweat drops"
+  },
+  "subject_treatment": {
+    "pose_type": "post-exercise heavy breathing head tilt",
+    "face_visibility": "lower face, jawline, and lips visible; eyes cropped out",
+    "gaze": "off-camera / down",
+    "wardrobe_category": "athletic crew-neck t-shirt with damp neckline",
+    "props": [
+      "none"
+    ]
+  },
+  "environment": "commercial gym floor near cardio stairmaster machines, dark industrial ceiling overhead",
+  "effects_imperfections": [
+    "front-camera low-light sensor noise and luminance grain",
+    "slight motion softness from rapid post-cardio breathing",
+    "raw flushed skin and heavy uneven sweat distribution"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean sans-serif (TikTok native caption)",
+    "weight": "bold",
+    "relative_size": "~3% of frame height",
+    "color": "#FFFFFF",
+    "position": "lower third across shirt",
+    "shadow_or_stroke": "subtle dark background box",
+    "lines": 2,
+    "emoji": []
+  },
+  "mood": "raw, exhausted, defiant effort, pure discipline proof",
+  "reusable_prompt_fragment": "tight low-angle iPhone front selfie of lower face and collarbone drenched in glistening sweat beads, damp athletic t-shirt collar, dark dim commercial gym ceiling overhead, overhead fluorescent specular highlights on skin, raw unedited post-cardio exhaustion, front camera sensor grain, vertical 9:16",
+  "avoid": [
+    "clean dry studio portrait",
+    "glamour retouching",
+    "bright daylight",
+    "posed smile",
+    "dehydrated matte skin"
+  ],
+  "excerlock_fit": "climax/proof slide \u2014 visceral evidence of physical exertion and accountability after unlocking screen time"
+}

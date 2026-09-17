@@ -1,0 +1,102 @@
+{
+  "name": "Gym mirror standing by tripod and stability balls",
+  "slug": "gabylrei-1069-s2-tripod-stability-balls-mirror",
+  "source": {
+    "url": "https://www.tiktok.com/@gabylrei/photo/7663840390155341069",
+    "creator_handle": "@gabylrei",
+    "platform": "tiktok",
+    "slide_index": 2,
+    "captured_at": "2026-09-16",
+    "observed_metrics": {
+      "plays": "233.6K",
+      "likes": "32.5K",
+      "saves": "4,750",
+      "shares": "411",
+      "comments": "74"
+    }
+  },
+  "summary": "Full-body mirror selfie standing next to a recording tripod in a gym stretching studio: dark seamless compression top and navy shorts showing quad definition, rack of red stability balls at frame right.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": [
+      "#695B5A",
+      "#302E32",
+      "#AD9E91",
+      "#8C7B75",
+      "#C2B5A7",
+      "#6F413C"
+    ],
+    "white_balance": "neutral commercial gym interior with warm red accent pop",
+    "contrast": "medium-high \u2014 dark outfit and bright red exercise balls against matte grey and wood flooring",
+    "saturation": "natural skin tones, punchy red ball accents, deep navy and black activewear",
+    "notable_casts": [
+      "slight warm bounce from wood floor and red stability balls"
+    ]
+  },
+  "lighting": {
+    "sources": [
+      "overhead square LED ceiling fixtures"
+    ],
+    "direction": "top-down overhead lighting highlighting quad and shoulder contours",
+    "hardness": "medium directional",
+    "time_of_day": "indoor daytime",
+    "artifacts": [
+      "specular highlights on gloss stability balls and tripod legs"
+    ]
+  },
+  "camera": {
+    "implied_device": "iPhone Pro class mounted on tripod / handheld in mirror",
+    "focal_length_equiv": "24mm main lens (1x)",
+    "angle": "standing eye-level straight-on mirror perspective",
+    "distance": "2.2\u20132.6 m",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep \u2014 full figure, phone mount, and equipment rack sharp"
+  },
+  "composition": {
+    "framing": "full-body vertical framing, head to sneakers",
+    "subject_placement": "centre frame, tripod stand in foreground left, rack of stability balls at right",
+    "tilt": "level",
+    "foreground": "tripod legs and phone mount, wood laminate floor",
+    "background": "dark wall with diamond-plate trim, storage rack of red and grey Swiss exercise balls",
+    "negative_space": "wall space behind shoulders and head",
+    "reflections": "full mirror reflection"
+  },
+  "subject_treatment": {
+    "pose_type": "standing athletic posture check, hands adjusting shorts hem, highlighting leg development",
+    "face_visibility": "fully visible looking down thoughtfully",
+    "gaze": "downward toward floor or phone mount",
+    "wardrobe_category": "sleeveless black high-neck athletic compression top, navy blue fitted biker shorts, white crew socks, chunky running shoes",
+    "props": [
+      "tall black camera tripod with phone clamp",
+      "rack of red and grey exercise balls",
+      "in-ear wireless earbuds"
+    ]
+  },
+  "environment": "gym studio stretching and functional training area with rack of stability balls and wall mirrors",
+  "effects_imperfections": [
+    "tripod stand visible in foreground frame adding content creator authenticity",
+    "natural quad muscle definition and vascularity",
+    "unfiltered gym studio environment"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text_style": "clean bold sans-serif",
+    "weight": "bold",
+    "relative_size": "~3.0% of frame height",
+    "color": "#FFFFFF",
+    "position": "centre-left, ~50% down",
+    "shadow_or_stroke": "subtle drop shadow",
+    "lines": 2,
+    "emoji": []
+  },
+  "mood": "disciplined, athletic, confident, credible creator sharing genuine experience",
+  "reusable_prompt_fragment": "gym stretching studio with full wall mirror and rack of red stability balls at right, full-body mirror selfie standing beside black tripod phone mount, wearing black compression top and navy athletic shorts with chunky runners, overhead gym lighting highlighting quad definition, clean sharp focus",
+  "avoid": [
+    "commercial staged catalog lighting",
+    "heavy smoothing filters",
+    "dark moody shadows hiding physique",
+    "distorted wide-angle warp"
+  ],
+  "excerlock_fit": "credibility / authority slide \u2014 establishes high fitness standard ('and I KNOW what I'm talking about')"
+}
