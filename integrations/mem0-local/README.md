@@ -28,7 +28,7 @@ Relevant memories are recalled automatically. New memories are stored only after
 
 ## Components
 
-- `.pi/extensions/local-memory.ts`
+- Memory tool is provided by the shared Pi launcher
 - `worker.py`
 - `pi_luna.py`
 - `luna-bridge.mjs`
