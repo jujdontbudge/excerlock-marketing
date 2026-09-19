@@ -96,7 +96,7 @@ free steps!!!
 
 **Our variation**
 - Style: digest @fitnessa5 slide 2 with `skills/style-clone.md` (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
-- Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's bare hand resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, her phone in a leopard-print case propped in the console tray with a video playing, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's bare hand resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: line 1 centred about 20% down over the TV wall, 2 lines; "free steps!!!" smaller below it (the one aside line across the four decks).
 
 ---

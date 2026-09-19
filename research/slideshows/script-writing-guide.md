@@ -105,6 +105,8 @@ Every line carries its reason. Positive checks for reviewing a finished script o
 - Don't write parentheticals in on-screen text; the only brackets are the captain's own CTA wording as he gave it ("(works on the treadmill!!)", "(infinite steps hack)", "(i use this and its a life hack, legit cant scroll unless im moving)") and his title "(it's not your legs)"; a needed aside is its own short line with !! ("free steps!!!"), in one deck only, because agent brackets read as AI.
 - Don't write number-progress talk ("takes me from 9k to 15k"), because nobody talks like that; it sounds like a metric, not a person.
 - Don't close on a staged or app-made picture: last slides must look organic, because the last picture is the one that sits under the comments and the share.
+- Don't put our girl's phone or the leopard case into a non-face prompt: the case belongs only to face/body shots where she is visibly holding the phone; a non-face slide copies the reference's device and props 1:1 (iPad stays iPad, TV stays TV, no phone added where the reference has none), because the generator forces the case into scene after scene and paints the pattern onto screens and bezels, and a repeated prop is a templated-ad tell.
+- Don't review a generated image on its own: the reviewer sees the organic reference next to our image and fails any device swap, added phone or case, pattern rendered on a screen or bezel, or prop drift, because a slide that passes without its reference beside it is exactly how the walking-pad iPad became a leopard phone.
 
 ## Self-check before a script goes to the captain
 

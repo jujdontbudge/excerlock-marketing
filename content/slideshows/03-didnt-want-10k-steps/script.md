@@ -62,7 +62,7 @@ walking for 30 mins at speed 3 on 12 incline at the end of your session
 
 **Our variation**
 - Style: digest @dan1elleb slide 2 with `skills/style-clone.md` (proposed slug `dan1elleb-2896-s2-treadmill-console-closeup`), polish: raw. No face.
-- Prompt: close phone photo of a treadmill console at the end of a session in a commercial gym, red and blue LED readouts showing 30:00, speed 3.0 and incline 12, the red safety clip and a worn warning sticker, our girl's phone in a leopard-print case lying in the console tray with a video paused, a sweat towel bunched beside it, cardio bay blurred behind, flat overhead LED light, smudges and glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
+- Prompt: close phone photo of a treadmill console at the end of a session in a commercial gym, red and blue LED readouts showing 30:00, speed 3.0 and incline 12, the red safety clip and a worn warning sticker, cardio bay blurred behind, flat overhead LED light, smudges and glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
 - Text placement: centred about 15% down, 3 lines, above the readouts.
 
 ---
@@ -113,5 +113,5 @@ walk while watching shows. short sessions add up fast
 
 **Our variation**
 - Style: digest @sandy_fit7 slide 1 with `skills/style-clone.md` (proposed slug `sandyfit7-7038-s1-walking-pad-mount-home`), polish: raw. No face.
-- Prompt: first-person phone photo from standing height looking down a black walking pad on a light wood floor in a living room, our girl's white trainers and black leggings on the belt, her phone in a leopard-print case clipped to a handlebar mount with a show playing, a TV glowing out of focus ahead, a beige sofa arm and a blanket at the edge, soft evening lamp light, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
+- Prompt: first-person phone photo from standing height looking down a black walking pad on a light wood floor in a living room, our girl's white trainers and black leggings on the belt, a tablet clipped to the handlebar mount with a show playing, a sofa edge and a blanket beside the pad, soft evening lamp light, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
 - Text placement: centred, top 12%, 2 lines, above the phone mount.

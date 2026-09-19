@@ -23,3 +23,5 @@ Positive checks, run before anything goes to the captain. Each line is a pass co
 4. Photo matches the tip: the picture is the tip's context (a walk under a walking tip, a console under a treadmill tip, a car park under a parking tip), not a random aesthetic.
 5. Faces and screens: at most 2 faces per deck, each a digest-then-place of its single reference; screens are real screenshots from the account phone, not generated.
 6. Text fit: overlay sits where the script says, readable on a phone, native TikTok look, nothing covering the subject's face or the proof numbers.
+7. Reference beside the image: the reviewer views the organic reference next to our image; any device swap, any added phone or case the reference does not have, any pattern rendered on a screen or bezel, and any prop drift is a FAIL, logged with the reason.
+8. No leopard case outside face/body shots: the phone case appears only where our girl is visibly holding the phone; non-face slides carry the reference's own device and props 1:1.
