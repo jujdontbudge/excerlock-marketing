@@ -1,16 +1,16 @@
-# Slideshow 02 - how i get my steps in as a phone addict, 7 slides
+# Slideshow 02 - how i get my steps in as a phone addict, 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 2 (slides 1 and 4), each with an exact organic reference. Screens are real screenshots. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough, plus his image and reference preferences from the 2026-09-19 review of this deck). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go.
 
 **Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png` (slideshow 01, approved): dark blonde hair, slim build, tanned skin with real texture, Apple Watch, leopard-print phone case, silver over-ear headphones. Every generated slide places her, never the creator in the reference, into the reference's scene (style, never identity).
 
-**In hand.** Steps screenshot `data/slide5-steps/steps-edit-01.png` (Apple Health, Steps, W view, AVERAGE 15,860 steps, Sep 11-17 2026, dark mode); month view `data/slide5-steps/steps-month-01.png` (15,510 average). ExcerLock lock screen: real screenshot from the app (TikTok blocked until walking), to be captured.
+**In hand.** Steps screenshot `data/slide5-steps/steps-edit-01.png` (Apple Health, Steps, W view, AVERAGE 15,860 steps, Sep 11-17 2026, dark mode). All `data/` paths are the firstmate data folder, as in slideshow 01.
 
 Overlay defaults: native TikTok text look, clean sans, white, soft drop shadow, 9:16, top third unless noted.
 
 ---
 
-## Slide 1 (hook, face photo 1 of 2)
+## Slide 1 (hook, face photo 1 of 1)
 
 **On-screen text**
 ```
@@ -18,13 +18,12 @@ how i get my steps in as a phone addict
 ```
 
 **Organic reference**
-- @a1msst, https://www.tiktok.com/@a1msst/photo/7432794173251833121 (2.9M plays, 614K likes, 32.7K saves, 1 slide, posted 2024-11-02). Text "how my phone talks to me when I decide to study". Picture: a girl lying on her side in bed at night under a white duvet, phone held up close to her face, face lit only by the screen, a warm bedside lamp bleeding in at the edge, everything else dark. Front camera, arm's length.
-- Same move, second proof it works: @kacchanscutewifey, https://www.tiktok.com/@kacchanscutewifey/photo/7679623612227276045 (3.2M plays, 719K likes), "the position you'll catch us in when we're doom scrolling", two girls flat on a bedroom carpet under a bookshelf, phones up.
+- @estefanytrevino "Cardio is so important!!", https://www.tiktok.com/@estefanytrevino/photo/7584332790783560990 (811.6K plays, 96.3K likes, 6.1K saves, 4K shares, 2 slides, posted 2025-12-16), slide 2 "weights with cardio": full-body gym mirror selfie in a black-walled gym with hexagon ceiling lights, phone held at chest height with both hands, dark seamless shorts set, hair down, turned slightly to show the side, a red tumbler on the floor and a cable machine behind. The good-looking gym mirror pic the hook needs.
 
 **Our variation**
-- Style: digest @a1msst with `skills/style-clone.md` first (proposed slug `a1msst-3121-s1-bed-phone-glow`), polish: raw.
-- Prompt: front-camera phone photo at arm's length of our girl lying on her side in bed at night, white duvet pulled up to her chin, dark blonde hair loose on the pillow, holding her phone in a leopard-print case a hand's width from her face, her face lit only by the cold blue-white glow of the screen, a warm bedside lamp just catching the edge of the pillow, the rest of the room black, sleepy unbothered expression, shot on iPhone front camera 23mm, Smart HDR, heavy shadow noise, blown glow on the cheek nearest the phone, mixed cold and warm white balance, slightly tilted, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: centred, top third, over the dark wall above the pillow, 2 lines.
+- Style: digest slide 2 with `skills/style-clone.md` (proposed slug `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`), polish: plandid.
+- Prompt: full-body mirror selfie of our girl in a dark commercial gym with black walls and hexagon LED ceiling lights, phone in a leopard-print case held at chest height with both hands, dark seamless shorts set, dark blonde hair down, silver over-ear headphones around her neck, Apple Watch, turned slightly to the side, a tumbler on the black rubber floor and a cable machine behind her, cool white light with warm spill from the ceiling shapes, mirror smudges, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, top 12%, over the dark wall above her head, 2 lines.
 
 ---
 
@@ -36,12 +35,10 @@ heres proof
 ```
 
 **Organic reference**
-- Screen time half: Pinterest pin https://www.pinterest.com/pin/1078260335825827206/ (iOS Screen Time, week view: Last Week's Average 14h 50m, Social 82h 5m, Total Screen Time 103h 50m, Most Used TikTok 65h 31m, Instagram 26h 34m; dark mode). Backup pins: https://www.pinterest.com/pin/353673377011351975/ (Daily Average 11h 42m, Instagram 50h 40m, total 70h 15m) and https://www.pinterest.com/pin/318700111152391243/ (Last Week's Average 15h 8m, total 106h 1m).
-- Same screenshot as a TikTok slide: @caprilola67 "am i cooked", https://www.tiktok.com/@caprilola67/photo/7430596096843320608 (3.6M plays, 656K likes, 52.1K saves, 3 slides): slide 2 is the Screen Time page, Total 109h 57m, TikTok 70h 23m. And @azz.k19, https://www.tiktok.com/@azz.k19/photo/7629295760592407830 (696K plays, 127K likes): "when someone mentions being a phone addict like idk ball" then the Screen Time page (58h 14m, TikTok 43h 41m) with "trust me i know ball.." typed over it.
-- Steps half and the two-screenshot proof move: @vs.secretx, https://www.tiktok.com/@vs.secretx/photo/7546985090132348182 (2.1M plays, 142K likes, 6 slides): "but TRUST me.." then Apple Health Steps screenshots (60,238 steps) with "i KNOW ball." typed over the chart.
+- @caprilola67 "am i cooked", https://www.tiktok.com/@caprilola67/photo/7430596096843320608 (3.6M plays, 656K likes, 52.1K saves, 3 slides), slide 3: the iOS Screen Time page in dark mode, Social 84h 36m, Entertainment 10h 23m, Total Screen Time 109h 57m, Most Used TikTok 70h 23m, Discord 13h 1m.
 
 **Our variation**
-- No generation. Two real screenshots side by side on a black background, both dark mode, same phone: left our steps `data/slide5-steps/steps-edit-01.png` (15,860 average), right a real iOS Screen Time week view captured on the account phone (target look: daily average 9h+, TikTok as Most Used). Crop both to the same height like the Pinterest pins, no phone frame.
+- No generation. Two real screenshots side by side on a black background, both dark mode, same phone: left our steps `data/slide5-steps/steps-edit-01.png` (15,860 average), right a real iOS Screen Time page captured on the account phone framed like the reference (Total Screen Time and Most Used with TikTok on top). Crop both to the same height, no phone frame.
 - Text placement: "heres proof" centred, top 12%, one line, large.
 
 ---
@@ -57,39 +54,34 @@ i cannot stress enough how effective a short walk after eating is. even 10 minut
 (thats like 1,200 steps x 3 meals and i scroll the whole time)
 ```
 
-**Organic reference (copy source)**
-- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12). Slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 above are that text with the clinical clause cut; the bracket is ours (1,200 steps per 10 minutes is the @autumn.wlf cheat-sheet rate, 3,000 to 4,000 per 30 minutes).
-- Same tip elsewhere: @koren.roanna (83.6K) "5-10 min walk after meals (helps control blood sugar)"; @may778830 (207K) "taking a short walk after my biggest meal"; @rio.maramba (209K) "Walk after meals".
-- Picture in the reference: a lo-fi pond photo with lily pads and a small stone statue; the tip is the slide, the photo is only calm.
+**Copy source**
+- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12), slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 are that text with the clinical clause cut; the bracket is ours.
+
+**Organic reference**
+- @savwright "Simple hacks that are slept on" / "Hacks in a body recomp *as a girl who lost 14 pounds of fat", https://www.tiktok.com/@savwright/photo/7658869024830328094 (59K plays, 1.4K likes, 291 saves, 6 slides, posted 2026-07-04), slide 3 "Morning walks! I increased my steps, slept on fat loss tool": phone photo from behind of her walking a quiet coastal road, red sports bra and shorts, low bun, wired earbuds, a small dog on a lead at her side, palm trees and the sea ahead, soft early light, no face. A real walk photo on a tip that says walk.
 
 **Our variation**
-- Style: `walk-pov-overhead-hard-sun` fragment for the light, POV variant, polish: raw. No face.
-- Prompt: close first-person phone photo looking down while walking on a suburban pavement after dinner, our girl's hand holding her phone in a leopard-print case with a TikTok feed mid-scroll on the screen, white trainers and black bike shorts at the bottom of the frame mid-stride, low golden-hour sun throwing her long shadow across the concrete, a driveway and a parked car blurred at the edge, glare on the glass, thumb over the screen edge, shot on iPhone main 24mm, Smart HDR, blown highlights on the pavement, tilted, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 large centred about 15% down; paragraph centred about 30% down over the pavement, 4 lines; bracket smaller under it.
+- Style: digest @savwright slide 3 with `skills/style-clone.md` (proposed slug `savwright-8094-s3-coastal-road-walk-behind`), polish: raw. No face.
+- Prompt: phone photo from behind of our girl walking away down a quiet residential road after dinner, oversized black zip-up, bike shorts, white trainers, dark blonde bun, silver over-ear headphones, phone in a leopard-print case in one hand at her side, low evening sun on the tarmac, trees and parked cars ahead, soft haze, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines; bracket smaller under it, all above her shoulders.
 
 ---
 
-## Slide 4 (CTA, face photo 2 of 2)
+## Slide 4 (CTA)
 
 **On-screen text**
 ```
 use excerlock to make your phone block apps if your not moving. i legit cant scroll unless im walking around (works on the treadmill!!)
 ```
 
-**Organic reference**
-- Scene: @bodybymij, https://www.tiktok.com/@bodybymij/photo/7530050457604050181 (438.9K plays, 65.3K likes, 13.5K saves, 9 slides), slide 3: high-angle downward POV selfie while walking on a treadmill in a dark cardio bay, console and moving belt visible, headphones on, looking down. Saved style block `content/styles/bodybymij-0181-s3-treadmill-high-angle-pov.json`.
-- The phone-on-the-treadmill habit as a real post: @sandy_fit7, https://www.tiktok.com/@sandy_fit7/photo/7681145441257377038 (295.6K plays), "handlebars also have a phone mount", phone clipped to a pink walking pad.
-- Screen: real ExcerLock lock screen screenshot (TikTok blocked until walking).
+**Image**
+- captain supplies Instagram screenshot
 
-**Our variation**
-- Style: `bodybymij-0181-s3-treadmill-high-angle-pov`, polish: raw.
-- Prompt: high-angle downward front-camera selfie of our girl walking on a treadmill in a dim commercial gym cardio bay, silver over-ear headphones on, dark blonde ponytail, black tank, she is looking down at the phone so only her forehead, lashes and nose are in frame, the treadmill console with red LED readouts and the moving grey belt below her, other treadmills and a wall TV blurred behind, mixed warm and cool gym light, motion softness on her arm, shadow noise, tilted, shot on iPhone front camera 23mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- After generation: no screen visible in this shot; the lock screen goes on slide 7. Keep her eyes on the phone so the caption reads as "scrolling while walking".
-- Text placement: centred, top third above her head, 4 lines.
+- Text placement: centred, top third, 4 lines.
 
 ---
 
-## Slide 5 (value 2: treadmill before and after lifts)
+## Slide 5 (value 2: treadmill before and after lifts, approved)
 
 **On-screen text**
 ```
@@ -98,10 +90,11 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 (warm up + cool down = 2,500 steps you already drove to the gym for)
 ```
 
-**Organic reference (copy source)**
-- @rrachfitness "my top tips for hitting 10k+ steps a day (as a gym girlie that works a 9-5)", https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 (12K plays, 2 slides): "1. warm up and cool down for your workouts on the treadmill (I usually do 10 mins before and 20 mins after".
-- Same tip on bigger posts: @wellnesswithisabel "my full 7-day workout split", https://www.tiktok.com/@wellnesswithisabel/photo/7544541400897965367 (253.8K plays, 9.9K saves, 9 slides): "10 min incline walk to warm up" on every lifting day, "+10-15k steps!" on every slide. @gymmyworm (68.6K): "After a workout (or on rest days) walk a mile on the treadmill. Low impact setting: Distance: 1 mile, Speed: 3.0-3.3, Incline: 5-8". @fitnessa5 (835.4K, 37.8K saves): "Walking for 30 mins at speed 3 on 12 incline at the end of your session".
-- Picture: @fitnessa5, https://www.tiktok.com/@fitnessa5/photo/7540071199108386103, slide 2: first-person view over a treadmill console, her hand on the handle, a pink tumbler in the cup holder, wall TV showing football, other treadmills and gym floor beyond. That is the shot.
+**Copy source**
+- @rrachfitness "my top tips for hitting 10k+ steps a day (as a gym girlie that works a 9-5)", https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 (12K plays, 2 slides, posted 2024-06-08), slide 2 tip 1: "warm up and cool down for your workouts on the treadmill (I usually do 10 mins before and 20 mins after". The line above is the captain's phrasing of it.
+
+**Organic reference**
+- @fitnessa5 "Before or after matters", https://www.tiktok.com/@fitnessa5/photo/7540071199108386103 (835.4K plays, 88.4K likes, 37.8K saves, 2 slides, posted 2025-08-18), slide 2: first-person view over a treadmill console, her hand on the handle, a pink tumbler in the cup holder, wall TV showing football, other treadmills and the gym floor beyond. No face.
 
 **Our variation**
 - Style: digest @fitnessa5 slide 2 with `skills/style-clone.md` (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
@@ -110,40 +103,20 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 
 ---
 
-## Slide 6 (value 3: the morning 10 minutes)
+## Slide 6 (value 3 and last slide: the morning 10 minutes)
 
 **On-screen text**
 ```
 get up 10 minutes earlier and walk for 10 minutes. this helps make you feel energized for the day
 ```
 
-**Organic reference (copy source)**
-- @gymmyworm "How to get in 10k steps (easy tips)", https://www.tiktok.com/@gymmyworm/photo/7240912744063454507 (68.6K plays, 7 slides; hook slide is an Apple Health month view averaging 10,049 steps). Slide 2 verbatim: "Morning. After waking up, go for a 10 minute walk. This helps make you feel energized for the day". Line above is the captain's phrasing of the same tip with the creator's second sentence kept whole.
-- Same tip elsewhere: @chelsmaninang (38.1K) "one big walk in the morning is the best way to kick 10k steps off"; @rio.maramba (209K) "Morning tip: A 40-minute walk in the morning = big chunk of steps done early"; @autumn.wlf (835.9K) "30 minute morning walk = 3,000 to 4,000 steps".
-- Picture in the reference: an empty concrete sidewalk between two strips of grass, early light, no people, shot from standing height.
+**Copy source**
+- @gymmyworm "How to get in 10k steps (easy tips)", https://www.tiktok.com/@gymmyworm/photo/7240912744063454507 (68.6K plays, 7 slides, posted 2023-06-04), slide 2 verbatim: "Morning. After waking up, go for a 10 minute walk. This helps make you feel energized for the day". The line above is the captain's phrasing with the creator's second sentence kept whole.
+
+**Organic reference**
+- @eliepeony "start your day right" / "the POWER of MORNING WALKS", https://www.tiktok.com/@eliepeony/photo/7434799539892112641 (75.3K plays, 1.3K likes, 336 saves, 6 slides, posted 2024-11-08), slide 5 "connect with nature": standing-height phone photo down an empty tree-lined suburban road at sunrise, the low sun flaring through the trees at the end of the road, long shadows across the tarmac, wet-looking road surface, nobody in frame.
 
 **Our variation**
-- Style: `walk-pov-overhead-hard-sun` (saved, from @graceelizabethlifts) for the light and asphalt; framed as a feet-down POV so there is no face. Polish: raw.
-- Prompt: first-person phone photo looking straight down at our girl's white trainers and white socks mid-stride on a cracked concrete sidewalk early in the morning, black leggings, the sleeve of an oversized grey hoodie and an iced coffee in her other hand at the frame edge, long soft shadow ahead of her, dewy grass verge either side, low sun flare in the corner, shot on iPhone ultra-wide 13mm, edge stretch, Smart HDR, tilted, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: centred, top third over the sidewalk, 3 lines.
-
----
-
-## Slide 7 (last slide, the rule)
-
-**On-screen text**
-```
-if you have time to be on your phone you have time to walk
-
-thats the rule now
-```
-
-**Organic reference (copy source)**
-- @gymmyworm, same deck as slide 6, slide 7 verbatim: "There is always time to get in some form of cardio. If you're using your phone, you probably have time to exercise."
-- Closing-line shape: @c_ransleyy "you will be unrecognisable in a years time" (1.5M plays, 30.6K saves) and @myspacegym "ignore your feelings and just get it done" (480K).
-- Screen: real ExcerLock lock screen screenshot (TikTok blocked until walking).
-
-**Our variation**
-- Same shot as slideshow 01 slide 7 (approved). Reuse its base image if the untexted version is kept under `data/slideshow-01-final/images/`; otherwise regenerate with that slide's prompt: close POV of a hand holding an iPhone in portrait while walking on a sidewalk, the screen showing the lock screen, sidewalk and white trainers blurred at the bottom, hard afternoon sun on the back of the hand, glare and a fingerprint smudge on the glass, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no invented app branding. Phone case: leopard print. No face.
-- After generation: drop in the real ExcerLock lock screen screenshot.
-- Text placement: line 1 centred, top 15% above the phone, 2 lines; "thats the rule now" smaller under it.
+- Style: digest @eliepeony slide 5 with `skills/style-clone.md` (proposed slug `eliepeony-2641-s5-sunrise-tree-road`), polish: raw. No face, no person.
+- Prompt: standing-height phone photo down an empty tree-lined suburban road at sunrise, the low sun flaring through the trees at the far end, long shadows and dappled light across the tarmac, parked cars and hedges in shadow at the sides, a dewy grass verge, soft haze and blown highlights around the sun, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Text placement: centred, top third over the sky and tree canopy, 3 lines.
