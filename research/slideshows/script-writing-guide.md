@@ -81,6 +81,19 @@ These come from the AI-copy study and only apply where they do not conflict with
 - **Under 12 words a slide, casual, like a real person talking** (Rick's hard cap). The captain's tip slides may run longer when the tip is copied whole; the short slides around them keep the average down.
 - **Human review of the whole sequence before anything is posted.** Check promise against payoff, duplicate beats, continuity, where the product arrives, claims, and whether it sounds like the account. (Tjay, Vincent, babe, PostDovo, Geethika, Rick.)
 
+## Image / reference preferences (captain, 2026-09-19 review of deck 02)
+
+- Slide 1 is almost always an aesthetic gym or walking mirror pic holding the phone; never phone-in-bed imagery.
+- Proof = real proof only; the screen-time proof reference is @caprilola67 https://www.tiktok.com/@caprilola67/photo/7430596096843320608 slide 3.
+- A value slide's photo must match the tip's message (e.g. @savwright https://www.tiktok.com/@savwright/photo/7658869024830328094); no random aesthetic.
+- CTA slide image = an Instagram photo screenshot the captain supplies; the script leaves it blank ("captain supplies Instagram screenshot").
+- After the 2 faces are spent, the treadmill pic is the default gym value image.
+- Max 2 screenshots per deck (the CTA screenshot does not count).
+- Morning-walk slide = aesthetic morning-walk photo, no face.
+- Kill filler last slides; end on the last value slide when the closer adds nothing.
+- Do not reuse the same reference photo across slides or decks; the only allowed repeats are the screen-time screenshot and the CTA.
+- Exactly one organic reference per slide, no alternates or backups; pick the best and delete the rest.
+
 ## Self-check before a script goes to the captain
 
 1. Read the title, then read only the value slides. Does each one literally deliver what the title promised, in the title's frame?
@@ -89,5 +102,5 @@ These come from the AI-copy study and only apply where they do not conflict with
 4. Is the CTA one aside in "use excerlock to..." / "use an app like excerlock..." / "excerlock blocks..." form, with a parenthesis or exclamation mark, and never "i use excerlock" as the frame?
 5. Do the slide lengths vary on purpose (a two-word slide next to a full tip)?
 6. Could a 13-year-old retell the deck slide by slide?
-7. Two face photos at most, each with an exact organic reference and a digest-then-place variation? Screens as real screenshots?
+7. Two face photos at most, each with an exact organic reference and a digest-then-place variation? Screens as real screenshots, at most two per deck? One reference per slide, none repeated, CTA image left blank?
 8. No statistic on a value slide; no em dashes; lowercase and casual grammar where the account voice is lowercase.
