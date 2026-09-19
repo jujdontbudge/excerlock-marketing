@@ -10,6 +10,7 @@ Judge work by source quality, truthful representation, creative usefulness, plat
 - A failed or blocked scraper is not complete coverage.
 - Separate observed metrics from conclusions. Views and ad longevity do not prove conversion.
 - Do not publish, launch campaigns, change budgets, or submit paid generation without approval.
+- Slideshow scripts: follow `research/slideshows/script-writing-guide.md` (captain's walkthrough with reasons); scripts live in `content/slideshows/`, each slide with on-screen text, organic reference and our variation.
 
 ## Tools
 - Web pages/JS/PDF/video/gallery: `agent-web read|render|pdf|video|gallery URL --out DIR`.
