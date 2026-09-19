@@ -50,12 +50,10 @@ heres proof
 walk after every meal
 
 i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar. go for a 10 minute walk after lunch or dinner
-
-(i scroll the whole time)
 ```
 
 **Copy source**
-- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12), slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 are that text with the clinical clause cut; the bracket is ours. One piece of the day, not the day.
+- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12), slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 are that text with the clinical clause cut. One piece of the day, not the day.
 
 **Organic reference**
 - @savwright "Simple hacks that are slept on" / "Hacks in a body recomp *as a girl who lost 14 pounds of fat", https://www.tiktok.com/@savwright/photo/7658869024830328094 (59K plays, 1.4K likes, 291 saves, 6 slides, posted 2026-07-04), slide 3 "Morning walks! I increased my steps, slept on fat loss tool": phone photo from behind of her walking a quiet coastal road, red sports bra and shorts, low bun, wired earbuds, a small dog on a lead at her side, palm trees and the sea ahead, soft early light, no face. A real walk photo on a tip that says walk.
@@ -63,7 +61,7 @@ i cannot stress enough how effective a short walk after eating is. even 10 minut
 **Our variation**
 - Style: digest @savwright slide 3 with `skills/style-clone.md` (proposed slug `savwright-8094-s3-coastal-road-walk-behind`), polish: raw. No face.
 - Prompt: phone photo from behind of our girl walking away down a quiet residential road after dinner, oversized black zip-up, bike shorts, white trainers, dark blonde bun, silver over-ear headphones, phone in a leopard-print case in one hand at her side, low evening sun on the tarmac, trees and parked cars ahead, soft haze, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines; bracket smaller under it, all above her shoulders. Reference checked at full size: wired earbuds, bare wrists, no watch.
+- Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines, all above her shoulders. Reference checked at full size: wired earbuds, bare wrists, no watch.
 
 ---
 
@@ -87,7 +85,7 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 ```
 10 minutes on the treadmill before and after every lift
 
-(free steps, your already there)
+free steps!!!
 ```
 
 **Copy source**
@@ -99,7 +97,7 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 **Our variation**
 - Style: digest @fitnessa5 slide 2 with `skills/style-clone.md` (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
 - Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's bare hand resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, her phone in a leopard-print case propped in the console tray with a video playing, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 centred about 20% down over the TV wall, 2 lines; bracket smaller below it.
+- Text placement: line 1 centred about 20% down over the TV wall, 2 lines; "free steps!!!" smaller below it (the one aside line across the four decks).
 
 ---
 

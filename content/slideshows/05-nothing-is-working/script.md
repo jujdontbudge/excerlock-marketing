@@ -55,8 +55,6 @@ what actually worked >>>
 **On-screen text**
 ```
 i got 10k steps a day. every single day, even rest days
-
-(mostly just walking after dinner)
 ```
 
 **Copy source**
@@ -67,7 +65,7 @@ i got 10k steps a day. every single day, even rest days
 
 **Our variation**
 - No generation. Full-bleed real screenshot `data/slide5-steps/steps-month-01.png` (month view, 15,510 average), so the receipt reads as a habit, not one good week.
-- Text placement: line 1 centred over the empty upper chart area, about 25% down, 2 lines; bracket smaller under it.
+- Text placement: centred over the empty upper chart area, about 25% down, 2 lines.
 
 ---
 
@@ -76,14 +74,12 @@ i got 10k steps a day. every single day, even rest days
 **On-screen text**
 ```
 excerlock blocks my tiktok unless im walking so i legit had no choice
-
-(legit no choice)
 ```
 
 **Image**
 - captain supplies Instagram screenshot
 
-- Text placement: line 1 large, top 12%, 3 lines; bracket smaller under it.
+- Text placement: large, top 12%, 3 lines.
 
 ---
 
@@ -93,7 +89,7 @@ excerlock blocks my tiktok unless im walking so i legit had no choice
 ```
 i ate in a deficit and hit 1g of protein per lb of bodyweight
 
-you cant lose fat unless your in a caloric deficit, no matter how many steps you walk (protein keeps you full)
+you cant lose fat unless your in a caloric deficit, no matter how many steps you walk
 ```
 
 **Copy source**
@@ -113,8 +109,6 @@ you cant lose fat unless your in a caloric deficit, no matter how many steps you
 **On-screen text**
 ```
 i lift first and do cardio AFTER. use your energy for your lifting and muscle gains first, then 20 mins incline walk
-
-(most of my steps tbh)
 ```
 
 **Copy source**
@@ -126,4 +120,4 @@ i lift first and do cardio AFTER. use your energy for your lifting and muscle ga
 **Our variation**
 - Style: digest @lift.with.em slide 1 with `skills/style-clone.md` (proposed slug `liftwithem-0630-s1-treadmill-from-behind`), polish: raw. No face.
 - Prompt: phone photo from behind of our girl walking on a treadmill in a commercial gym, oversized black tee, black bike shorts, white socks and trainers on the moving belt, dark blonde ponytail, silver over-ear headphones on, bare arms holding the handrails, the console readouts and a dark gym wall ahead, a rack of dumbbells at the edge, flat overhead gym light, motion softness on her legs, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
-- Text placement: line 1 large, top 12%, 4 lines over the wall above her head; bracket smaller under it.
+- Text placement: large, top 12%, 4 lines over the wall above her head.

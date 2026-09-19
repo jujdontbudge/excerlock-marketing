@@ -87,7 +87,7 @@ ur not using excerlock to block scrolling unless your moving
 ```
 your skipping the treadmill after you lift.
 
-treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead (free steps, your already there)
+treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead
 ```
 
 **Copy source**
@@ -109,7 +109,7 @@ treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead (free s
 ```
 your parking as close as you can.
 
-park as far as you can, make it a game in trying to reach ur step goals!! (stairs too)
+park as far as you can, make it a game in trying to reach ur step goals!!
 ```
 
 **Copy source and organic reference (same slide)**

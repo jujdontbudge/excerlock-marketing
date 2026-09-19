@@ -52,8 +52,6 @@ this how i hit 15k steps every day now >>>
 **On-screen text**
 ```
 walking for 30 mins at speed 3 on 12 incline at the end of your session
-
-(just scroll the whole time)
 ```
 
 **Copy source**
@@ -65,7 +63,7 @@ walking for 30 mins at speed 3 on 12 incline at the end of your session
 **Our variation**
 - Style: digest @dan1elleb slide 2 with `skills/style-clone.md` (proposed slug `dan1elleb-2896-s2-treadmill-console-closeup`), polish: raw. No face.
 - Prompt: close phone photo of a treadmill console at the end of a session in a commercial gym, red and blue LED readouts showing 30:00, speed 3.0 and incline 12, the red safety clip and a worn warning sticker, our girl's phone in a leopard-print case lying in the console tray with a video paused, a sweat towel bunched beside it, cardio bay blurred behind, flat overhead LED light, smudges and glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
-- Text placement: line 1 centred about 15% down, 3 lines; bracket smaller below, all above the readouts.
+- Text placement: centred about 15% down, 3 lines, above the readouts.
 
 ---
 
@@ -88,8 +86,6 @@ started using excerlock to block my screentime until im on the treadmill or walk
 **On-screen text**
 ```
 30-40min walk after dinner
-
-(best one imo)
 ```
 
 **Copy source and organic reference (same slide)**
@@ -98,7 +94,7 @@ started using excerlock to block my screentime until im on the treadmill or walk
 **Our variation**
 - Style: digest @chikussa.c slide 5 with `skills/style-clone.md` (proposed slug `chikussa-3679-s5-sunset-road`), polish: raw. No face.
 - Prompt: phone photo from standing height of an empty suburban road at sunset, pink and orange sky, a footpath with a low kerb running into the distance, a street sign and a lamp post catching the last light, our girl's long shadow and the toes of her white trainers at the bottom edge, a parked car far off, blown sky highlights, noise in the tarmac shadows, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 large centred about 15% down in the sky; bracket smaller under it.
+- Text placement: large, centred about 15% down in the sky.
 
 ---
 
@@ -107,8 +103,6 @@ started using excerlock to block my screentime until im on the treadmill or walk
 **On-screen text**
 ```
 walk while watching shows. short sessions add up fast
-
-(free steps)
 ```
 
 **Copy source**
@@ -120,4 +114,4 @@ walk while watching shows. short sessions add up fast
 **Our variation**
 - Style: digest @sandy_fit7 slide 1 with `skills/style-clone.md` (proposed slug `sandyfit7-7038-s1-walking-pad-mount-home`), polish: raw. No face.
 - Prompt: first-person phone photo from standing height looking down a black walking pad on a light wood floor in a living room, our girl's white trainers and black leggings on the belt, her phone in a leopard-print case clipped to a handlebar mount with a show playing, a TV glowing out of focus ahead, a beige sofa arm and a blanket at the edge, soft evening lamp light, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
-- Text placement: line 1 centred, top 12%, 2 lines; bracket smaller under it, all above the phone mount.
+- Text placement: centred, top 12%, 2 lines, above the phone mount.
