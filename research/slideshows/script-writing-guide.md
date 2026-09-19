@@ -83,28 +83,28 @@ These come from the AI-copy study and only apply where they do not conflict with
 
 ## Image / reference preferences (captain, 2026-09-19 reviews)
 
-- Slide 1 is almost always an aesthetic gym or walking mirror pic holding the phone; never phone-in-bed imagery.
-- Proof = real proof only; the screen-time proof reference is @caprilola67 https://www.tiktok.com/@caprilola67/photo/7430596096843320608 slide 3.
-- A value slide's photo must match the tip's message (e.g. @savwright https://www.tiktok.com/@savwright/photo/7658869024830328094); no random aesthetic.
-- CTA slide image = an Instagram photo screenshot the captain supplies; the script leaves it blank ("captain supplies Instagram screenshot").
-- After the 2 faces are spent, the treadmill pic is the default gym value image.
-- Max 2 screenshots per deck (the CTA screenshot does not count).
-- Morning-walk slide = aesthetic morning-walk photo, no face.
-- Kill filler last slides; end on the last value slide when the closer adds nothing.
-- Do not reuse the same reference photo across slides or decks; the only allowed repeats are the screen-time screenshot and the CTA.
-- Exactly one organic reference per slide, no alternates or backups; pick the best and delete the rest.
-- 5 to 7 slides per deck, never 8; the CTA is always slide 4.
-- No Apple Watch anywhere: not in a reference photo, not in a prompt, not on our girl.
-- Never a full-screenshot "how to walk" guide slide (a Notes cheat sheet that explains everything or says "guaranteed"); the app is the solution, tips stay pieces, never a whole plan.
-- Banned copy source, never again: @rrachfitness https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 slide 2.
-- Never copy a hook slide's text into a value slot; value text must make sense on its own and come from a value slide.
-- Last slides must look organic (a real-looking scene, not a staged or app-made picture).
-- Cheat sheets banned: never a cheat sheet, list or screenshot that lays out the whole process of hitting 10k steps; a slide may give ONE valuable piece that solves part of it (a 20 min walk, 3k steps after dinner), never the whole day. Why: our app is the cheat that solves the problem; if a slide solves the whole day, the viewer has no reason to download.
-- No iPhone Notes screenshots anywhere, ever. Why: a Notes page is the cheat-sheet format; it reads as "here is the whole plan", which is the app's job.
-- Slides within a deck must be genuinely different; if two slides both just say "walk, in a different place", cut one and shorten the deck (5 to 7 is fine, fewer beats repeats). Why: a repeat is a slide the viewer has already read, and it costs the swipe that should go to the next new thing.
-- No agent-written parentheticals in on-screen text at all. The only brackets allowed are the captain's own CTA wording exactly as he gave it ("(works on the treadmill!!)", "(infinite steps hack)", "(i use this and its a life hack, legit cant scroll unless im moving)") and his hook title "(it's not your legs)". If an aside is genuinely needed it is its own short line with !! ("free steps!!!"), used in ONE deck only, never repeated across decks. Why: the agent's brackets were the worst part of every draft, they read as filler and the same ones crept into several decks; an aside that earns its place stands on its own line once.
-- No number-progress phrasing ("takes me from 9k to 15k" and the like). Why: nobody talks like that; it sounds like a metric, not a person.
-- Apple Watch banned, checked again on every reference photo and every prompt; if a watch is visible in a reference, find another reference. Why: the reference is what the generator copies, so a watch in the reference ends up on our girl even when the prompt says no watch; it was missed once.
+Every line carries its reason. Positive checks for reviewing a finished script or image set live in `research/slideshows/reviewer-checks.md`.
+
+- Don't open on phone-in-bed or any non-gym imagery: slide 1 is an aesthetic gym or walking mirror pic holding the phone, because the hook picture is what stops the scroll and a good-looking gym pic is what this audience stops for.
+- Don't use anything but real proof on the proof slide (the screen-time reference is @caprilola67 https://www.tiktok.com/@caprilola67/photo/7430596096843320608 slide 3), because a fake or decorative proof slide breaks the trust the rest of the deck spends.
+- Don't put a random aesthetic photo under a tip: the picture must match the tip's message (e.g. @savwright https://www.tiktok.com/@savwright/photo/7658869024830328094 slide 3 under a walking tip), because the picture is the context a 13-year-old reads before the words; a mismatch makes the slide make no sense.
+- Don't write an image for the CTA slide: it is an Instagram photo screenshot the captain supplies, so the script says only "captain supplies Instagram screenshot", because he picks that picture himself.
+- Don't spend a third face: after the 2 faces are used, the treadmill pic is the default gym value image, because more faces read as a staged shoot and the treadmill is the one gym scene that is always organic and always on-message for steps.
+- Don't run more than 2 screenshots per deck (the CTA screenshot does not count), because a deck of screenshots stops looking like a person's photos.
+- Don't put a face on the morning-walk slide: aesthetic morning-walk photo, no face, because the walk is the point and a face there is a third face.
+- Don't keep a filler last slide (a rule, a mood line, a summary): end on the last value slide when the closer adds nothing, because a slide that adds nothing is the slide where the viewer leaves.
+- Don't reuse a reference photo across slides or decks (only the screen-time screenshot and the CTA may repeat), because repeats look templated and a templated deck reads as an ad.
+- Don't give alternates or backups: exactly one organic reference per slide, pick the best and delete the rest, because the captain won't choose between options; that is the agent's job.
+- Don't go past 7 slides (5 to 7, never 8) and don't move the CTA off slide 4, because 8 is too long and the CTA at 4 lands before drop-off.
+- Don't put an Apple Watch anywhere, not in a reference photo, not in a prompt, not on our girl; if a reference shows one, find another reference, because that is the captain's call, and the reference is what the generator copies, so a watch in the reference ends up in the image even when the prompt says no watch.
+- Don't make a cheat sheet, a list, a Notes screenshot or any slide that lays out the whole process of hitting 10k steps; a slide gives ONE valuable piece that solves part of it (a 20 min walk, 3k steps after dinner), never the whole day, because our app is the cheat: a slide that solves the whole day kills the download.
+- Don't use iPhone Notes screenshots at all, because a Notes page is the cheat-sheet format and reads as "here is the whole plan".
+- Don't copy from @rrachfitness https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 slide 2, ever, because the captain banned it.
+- Don't copy a hook slide's text into a value slot: value text comes from a value slide and must make sense on its own, because a hook line standing alone in the middle of a deck makes no sense.
+- Don't put two slides in one deck that say the same thing ("walk, in a different place"); cut one and shorten the deck, because redundancy is the number one AI tell.
+- Don't write parentheticals in on-screen text; the only brackets are the captain's own CTA wording as he gave it ("(works on the treadmill!!)", "(infinite steps hack)", "(i use this and its a life hack, legit cant scroll unless im moving)") and his title "(it's not your legs)"; a needed aside is its own short line with !! ("free steps!!!"), in one deck only, because agent brackets read as AI.
+- Don't write number-progress talk ("takes me from 9k to 15k"), because nobody talks like that; it sounds like a metric, not a person.
+- Don't close on a staged or app-made picture: last slides must look organic, because the last picture is the one that sits under the comments and the share.
 
 ## Self-check before a script goes to the captain
 
