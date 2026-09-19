@@ -79,7 +79,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | 4 | use excerlock to make your phone block apps if your not moving. i legit cant scroll unless im walking around (works on the treadmill!!) | Captain's exact text, "use excerlock to" frame, parenthesis and exclamation marks. Face 2, treadmill high-angle selfie, ref bodybymij style (438.9K). |
 | 5 | 10 minutes on the treadmill before and after every lift | Captain's own tip, sourced to @rrachfitness. Medium length. Console POV, no face. |
 | 6 | get up 10 minutes earlier and walk for 10 minutes ... | A way. Copied from @gymmyworm. |
-| 7 | if you have time to be on your phone you have time to walk / thats the rule now | Rule as the last slide, copied from @gymmyworm slide 7. Real lock-screen photo, reused from slideshow 01 slide 7. |
+| 7 | if you have time to be on your phone you have time to walk / thats the rule now | Rule as the last slide, copied from @gymmyworm slide 7. Lock-screen walking POV reused from slideshow 01 slide 7, real ExcerLock screenshot dropped in. |
 
 13-year-old retell: "she's always on her phone but still walks a lot, here's her proof, she walks after meals, her phone won't open unless she walks, she walks on the treadmill before and after the gym and in the morning, if you can scroll you can walk." Faces: 2. Statistics on value slides: none (the bracketed step counts are sizing the tip, not the tip). Em dashes: 0.
 
