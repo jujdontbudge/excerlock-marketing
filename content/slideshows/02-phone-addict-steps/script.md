@@ -1,8 +1,8 @@
 # Slideshow 02 - how i get my steps in as a phone addict, 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough, plus his image and reference preferences from the 2026-09-19 review of this deck). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough, plus his image and reference preferences from the 2026-09-19 reviews). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go.
 
-**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png` (slideshow 01, approved): dark blonde hair, slim build, tanned skin with real texture, Apple Watch, leopard-print phone case, silver over-ear headphones. Every generated slide places her, never the creator in the reference, into the reference's scene (style, never identity).
+**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png` (slideshow 01, approved): dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the captain's rule: no Apple Watch anywhere; the reference picture shows one on her left wrist, so any reuse of it needs the watch edited out first). Every generated slide places her, never the creator in the reference, into the reference's scene (style, never identity).
 
 **In hand.** Steps screenshot `data/slide5-steps/steps-edit-01.png` (Apple Health, Steps, W view, AVERAGE 15,860 steps, Sep 11-17 2026, dark mode). All `data/` paths are the firstmate data folder, as in slideshow 01.
 
@@ -22,7 +22,7 @@ how i get my steps in as a phone addict
 
 **Our variation**
 - Style: digest slide 2 with `skills/style-clone.md` (proposed slug `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`), polish: plandid.
-- Prompt: full-body mirror selfie of our girl in a dark commercial gym with black walls and hexagon LED ceiling lights, phone in a leopard-print case held at chest height with both hands, dark seamless shorts set, dark blonde hair down, silver over-ear headphones around her neck, Apple Watch, turned slightly to the side, a tumbler on the black rubber floor and a cable machine behind her, cool white light with warm spill from the ceiling shapes, mirror smudges, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Prompt: full-body mirror selfie of our girl in a dark commercial gym with black walls and hexagon LED ceiling lights, phone in a leopard-print case held at chest height with both hands, dark seamless shorts set, dark blonde hair down, silver over-ear headphones around her neck, bare wrists, turned slightly to the side, a tumbler on the black rubber floor and a cable machine behind her, cool white light with warm spill from the ceiling shapes, mirror smudges, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: centred, top 12%, over the dark wall above her head, 2 lines.
 
 ---
@@ -91,14 +91,14 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 ```
 
 **Copy source**
-- @rrachfitness "my top tips for hitting 10k+ steps a day (as a gym girlie that works a 9-5)", https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 (12K plays, 2 slides, posted 2024-06-08), slide 2 tip 1: "warm up and cool down for your workouts on the treadmill (I usually do 10 mins before and 20 mins after". The line above is the captain's phrasing of it.
+- @wellnesswithisabel "my full 7-day workout split!!", https://www.tiktok.com/@wellnesswithisabel/photo/7544541400897965367 (253.8K plays, 12.9K likes, 10K saves, 9 slides, posted 2025-08-30), slides 2 to 8: every lifting day opens "10 min incline walk to warm up" and closes "+10-15k steps!". The line above is the captain's own tip (the 10 minutes after the lift is his addition).
 
 **Organic reference**
 - @fitnessa5 "Before or after matters", https://www.tiktok.com/@fitnessa5/photo/7540071199108386103 (835.4K plays, 88.4K likes, 37.8K saves, 2 slides, posted 2025-08-18), slide 2: first-person view over a treadmill console, her hand on the handle, a pink tumbler in the cup holder, wall TV showing football, other treadmills and the gym floor beyond. No face.
 
 **Our variation**
 - Style: digest @fitnessa5 slide 2 with `skills/style-clone.md` (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
-- Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's hand with an Apple Watch resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, her phone in a leopard-print case propped in the console tray with a video playing, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
+- Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's bare hand resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, her phone in a leopard-print case propped in the console tray with a video playing, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: line 1 centred about 20% down over the TV wall, 2 lines; bracket smaller below it.
 
 ---

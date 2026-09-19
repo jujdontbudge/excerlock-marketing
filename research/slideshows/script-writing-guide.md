@@ -81,7 +81,7 @@ These come from the AI-copy study and only apply where they do not conflict with
 - **Under 12 words a slide, casual, like a real person talking** (Rick's hard cap). The captain's tip slides may run longer when the tip is copied whole; the short slides around them keep the average down.
 - **Human review of the whole sequence before anything is posted.** Check promise against payoff, duplicate beats, continuity, where the product arrives, claims, and whether it sounds like the account. (Tjay, Vincent, babe, PostDovo, Geethika, Rick.)
 
-## Image / reference preferences (captain, 2026-09-19 review of deck 02)
+## Image / reference preferences (captain, 2026-09-19 reviews)
 
 - Slide 1 is almost always an aesthetic gym or walking mirror pic holding the phone; never phone-in-bed imagery.
 - Proof = real proof only; the screen-time proof reference is @caprilola67 https://www.tiktok.com/@caprilola67/photo/7430596096843320608 slide 3.
@@ -93,6 +93,12 @@ These come from the AI-copy study and only apply where they do not conflict with
 - Kill filler last slides; end on the last value slide when the closer adds nothing.
 - Do not reuse the same reference photo across slides or decks; the only allowed repeats are the screen-time screenshot and the CTA.
 - Exactly one organic reference per slide, no alternates or backups; pick the best and delete the rest.
+- 5 to 7 slides per deck, never 8; the CTA is always slide 4.
+- No Apple Watch anywhere: not in a reference photo, not in a prompt, not on our girl.
+- Never a full-screenshot "how to walk" guide slide (a Notes cheat sheet that explains everything or says "guaranteed"); the app is the solution, tips stay pieces, never a whole plan.
+- Banned copy source, never again: @rrachfitness https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 slide 2.
+- Never copy a hook slide's text into a value slot; value text must make sense on its own and come from a value slide.
+- Last slides must look organic (a real-looking scene, not a staged or app-made picture).
 
 ## Self-check before a script goes to the captain
 
