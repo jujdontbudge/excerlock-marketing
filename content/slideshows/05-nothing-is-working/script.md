@@ -1,10 +1,10 @@
 # Slideshow 05 - want to lose fat but nothing is working? this is what i did, 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: "want X but", so slide 2 is the before picture and every value slide is "this is what i did", in the order value, CTA, value, value. Face photos: 2 (slides 1 and 2), both already in hand, so this deck needs no new face generation. Screenshots: 1 slide (slide 3), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any prompt or reference. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: "want X but", so slide 2 is the before picture and every value slide is "this is what i did", in the order value, CTA, value, value. Face photos: 2 (slide 1 new, slide 2 the in-hand before picture). Screenshots: 1 slide (slide 3), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any reference photo or prompt (every reference re-checked at full size). No Notes screenshots or cheat sheets; the three value slides are three different pieces (steps, food, gym order). Images here are references and prompts only; nothing is generated until the captain says go.
 
 **Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the reference picture shows one on her left wrist; do not carry it into any prompt). Before version (heavier build, white crop top, black leggings): `data/slideshow-01-final/images/round10-before/before-final.png`.
 
-**In hand.** The two pictures above. Steps month view `data/slide5-steps/steps-month-01.png` (Apple Health, Steps, M view, 15,510 average, dark mode). Approved slideshow 01 slide 4 meal-prep photo (stacked black containers of ground turkey, green beans and sweet potato rounds on a granite kitchen counter, flash, nobody in frame) under `data/slideshow-01-final/build/slide-04.jpg` (texted) and its untexted base `data/slideshow-01-final/images/reimagine/gabylrei-1069-s4-gpt2-low-0N.png`. All `data/` paths are the firstmate data folder, as in slideshow 01.
+**In hand.** The before picture above (the slideshow 01 gym mirror picture of our girl shows an Apple Watch, so slide 1 is generated fresh instead). Steps month view `data/slide5-steps/steps-month-01.png` (Apple Health, Steps, M view, 15,510 average, dark mode). Approved slideshow 01 slide 4 meal-prep photo (stacked black containers of ground turkey, green beans and sweet potato rounds on a granite kitchen counter, flash, nobody in frame) under `data/slideshow-01-final/build/slide-04.jpg` (texted) and its untexted base `data/slideshow-01-final/images/reimagine/gabylrei-1069-s4-gpt2-low-0N.png`. All `data/` paths are the firstmate data folder, as in slideshow 01.
 
 Overlay defaults: native TikTok text look, clean sans, white, soft drop shadow, 9:16, top third unless noted.
 
@@ -20,10 +20,12 @@ this is what i did
 ```
 
 **Organic reference**
-- @graceelizabethlifts, https://www.tiktok.com/@graceelizabethlifts/photo/7662822176965266701 (773.8K plays, 104.7K likes, 9.8K saves, captured 2026-09-16), slide 1: full-body mirror selfie in a bright upscale commercial gym, cream machines, wood-look floor, phone over the lower face. Saved as `content/styles/gym-mirror-selfie-bright-commercial.json`; it is the reference behind our approved slideshow 01 slide 1 picture.
+- @gabrielaaadcg "Mirror pics >>>", https://www.tiktok.com/@gabrielaaadcg/photo/7640338557193719060 (218.8K plays, 26.3K likes, 2.6K saves, 8 slides, posted 2026-05-15), slide 2: full-body side-profile mirror selfie in a gym locker room, white numbered lockers, wood-look floor, navy tank and black flared leggings, white trainers, hair in a low bun, phone held at chest height. Bare wrists, no watch. (Deck 04's hook uses slide 1 of this post, a different photo. The slideshow 01 reference @graceelizabethlifts was dropped: its picture, and our in-hand copy of it, show an Apple Watch.)
 
 **Our variation**
-- No generation. Reuse `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png` untexted (our girl now, bright gym mirror selfie, phone in the leopard case). This is the "after" the deck pays off, shown first. The picture shows an Apple Watch on her left wrist: before use it needs a `codex_image --edit` pass to remove the watch (captain's rule, no Apple Watch anywhere; the edit needs his go like any generation).
+- Style: digest @gabrielaaadcg slide 2 with `skills/style-clone.md` (proposed slug `gabrielaaadcg-9060-s2-locker-room-side-mirror`), polish: plandid.
+- Prompt: full-body side-profile mirror selfie of our girl in a gym locker room, white numbered lockers behind her, wood-look floor, navy tank and black flared leggings, white trainers, dark blonde low bun, silver over-ear headphones around her neck, phone in a leopard-print case held at chest height, bare wrists, flat cool locker-room light, mirror smudges, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
+- This is the "after" the deck pays off, shown first.
 - Text placement: line 1 across the top 12%, 2 lines; "this is what i did" smaller right under it, everything above her head.
 
 ---
@@ -54,11 +56,11 @@ what actually worked >>>
 ```
 i got 10k steps a day. every single day, even rest days
 
-(a walk after dinner + the treadmill after lifting and its done)
+(mostly just walking after dinner)
 ```
 
 **Copy source**
-- @garely.lifts "top 5 ways to loss weight", https://www.tiktok.com/@garely.lifts/photo/7534922789371825438 (883.6K plays, 109.3K likes, 8.9K saves, 6 slides, posted 2025-08-04), slide 5 (a value slide, not the hook) verbatim: "4. get 10k steps a day". The rest is her saying how, in plain words; the bracket points at slides 6 and deck 03's after-dinner walk.
+- @garely.lifts "top 5 ways to loss weight", https://www.tiktok.com/@garely.lifts/photo/7534922789371825438 (883.6K plays, 109.3K likes, 8.9K saves, 6 slides, posted 2025-08-04), slide 5 (a value slide, not the hook) verbatim: "4. get 10k steps a day". The rest is her saying it plainly; one piece, not a plan.
 
 **Organic reference**
 - @lucieengland0 "15,000 steps a day until I'm 70kg UPDATEEESSSS..." / "Mid week updated on the steppies", https://www.tiktok.com/@lucieengland0/photo/7608330902782938390 (96.5K plays, 2.2K likes, 7 slides, posted 2026-02-18), slide 2: full-bleed Apple Health Steps screenshot, W view, AVERAGE 15,118 steps, 15-21 Feb 2026, with "We're going strong this week / Start of the year: 78.8kg / Now: 76.6kg" typed over the chart. A steps screenshot used as fat-loss proof.
@@ -75,7 +77,7 @@ i got 10k steps a day. every single day, even rest days
 ```
 excerlock blocks my tiktok unless im walking so i legit had no choice
 
-(this is the only reason the 10k actually happened)
+(legit no choice)
 ```
 
 **Image**
@@ -91,7 +93,7 @@ excerlock blocks my tiktok unless im walking so i legit had no choice
 ```
 i ate in a deficit and hit 1g of protein per lb of bodyweight
 
-you cant lose fat unless your in a caloric deficit, no matter how many steps you walk (protein keeps you full so the deficit doesnt suck)
+you cant lose fat unless your in a caloric deficit, no matter how many steps you walk (protein keeps you full)
 ```
 
 **Copy source**
@@ -112,7 +114,7 @@ you cant lose fat unless your in a caloric deficit, no matter how many steps you
 ```
 i lift first and do cardio AFTER. use your energy for your lifting and muscle gains first, then 20 mins incline walk
 
-(this is where a big chunk of the steps come from btw)
+(most of my steps tbh)
 ```
 
 **Copy source**

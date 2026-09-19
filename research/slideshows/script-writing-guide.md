@@ -99,6 +99,12 @@ These come from the AI-copy study and only apply where they do not conflict with
 - Banned copy source, never again: @rrachfitness https://www.tiktok.com/@rrachfitness/photo/7378132607768349985 slide 2.
 - Never copy a hook slide's text into a value slot; value text must make sense on its own and come from a value slide.
 - Last slides must look organic (a real-looking scene, not a staged or app-made picture).
+- Cheat sheets banned: never a cheat sheet, list or screenshot that lays out the whole process of hitting 10k steps; a slide may give ONE valuable piece that solves part of it (a 20 min walk, 3k steps after dinner), never the whole day. Why: our app is the cheat that solves the problem; if a slide solves the whole day, the viewer has no reason to download.
+- No iPhone Notes screenshots anywhere, ever. Why: a Notes page is the cheat-sheet format; it reads as "here is the whole plan", which is the app's job.
+- Slides within a deck must be genuinely different; if two slides both just say "walk, in a different place", cut one and shorten the deck (5 to 7 is fine, fewer beats repeats). Why: a repeat is a slide the viewer has already read, and it costs the swipe that should go to the next new thing.
+- Parentheses very short only ("(just scroll the whole time)" is fine, a full sentence in brackets is not). Why: a short aside sounds like a friend talking; a bracketed sentence reads as written copy.
+- No number-progress phrasing ("takes me from 9k to 15k" and the like). Why: nobody talks like that; it sounds like a metric, not a person.
+- Apple Watch banned, checked again on every reference photo and every prompt; if a watch is visible in a reference, find another reference. Why: the reference is what the generator copies, so a watch in the reference ends up on our girl even when the prompt says no watch; it was missed once.
 
 ## Self-check before a script goes to the captain
 

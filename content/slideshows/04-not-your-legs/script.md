@@ -1,6 +1,6 @@
 # Slideshow 04 - why you're not hitting your steps (it's not your legs), 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: "why you're not", so every value slide is "your doing this. do this instead." Credibility on slide 2, CTA on slide 4 in the same "ur not..." pattern, two more value slides after it. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any prompt or reference. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: "why you're not", so every value slide is "your doing this. do this instead." Credibility on slide 2, CTA on slide 4 in the same "ur not..." pattern, two more value slides after it. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any reference photo or prompt (every reference re-checked at full size). No Notes screenshots or cheat sheets; the three value slides are three different pieces (lunch, gym treadmill, car park). Images here are references and prompts only; nothing is generated until the captain says go.
 
 **Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the reference picture shows one on her left wrist; do not carry it into any prompt).
 
@@ -87,19 +87,19 @@ ur not using excerlock to block scrolling unless your moving
 ```
 your skipping the treadmill after you lift.
 
-treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead (you already drove to the gym, thats 2,500 free steps)
+treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead (free steps, your already there)
 ```
 
 **Copy source**
-- @leslie.bfit "don't skip cardio", https://www.tiktok.com/@leslie.bfit/photo/7423439629317147947 (195.7K plays, 5.2K likes, 2.8K saves, 2 slides, posted 2024-10-08), slide 2 verbatim "treadmill on incline 12 speed 3 for 20 min AFTER lifting weights will burn fat and give you that "toned" look". We copy the setting and cut the fat claim. The 2,500 figure is roughly a mile at speed 3.
+- @leslie.bfit "don't skip cardio", https://www.tiktok.com/@leslie.bfit/photo/7423439629317147947 (195.7K plays, 5.2K likes, 2.8K saves, 2 slides, posted 2024-10-08), slide 2 verbatim "treadmill on incline 12 speed 3 for 20 min AFTER lifting weights will burn fat and give you that "toned" look". We copy the setting and cut the fat claim. One piece of the day, not a plan.
 
 **Organic reference**
-- @chikussa.c, https://www.tiktok.com/@chikussa.c/photo/7627223439228603679 (19.8K plays, 5 slides), slide 3 "Steps in the morning post lift / Usually 60min incline walk": high-angle first-person photo down her own body on a treadmill, purple sports bra and grey leggings, white trainers on the moving belt, the console and the black belt edge in frame, bright gym. No face, no watch.
+- @lift.with.em "How I've lost 5kg in the last 1&1/2 months", https://www.tiktok.com/@lift.with.em/photo/7637215971492580630 (327.3K plays, 10.6K likes, 9.3K saves, 2 slides, posted 2026-05-07), slide 2: first-person phone photo straight down over a treadmill console onto the moving belt, the console's black housing and red stop key at the top, one white trainer stepping into the bottom of the frame, dark belt, flat gym light. No face, no watch. (Her slide 1 is deck 05's closer; different photo. @chikussa.c slide 3 was dropped: it shows a watch on her wrist.)
 
 **Our variation**
-- Style: digest @chikussa.c slide 3 with `skills/style-clone.md` (proposed slug `chikussa-3679-s3-treadmill-high-angle-body`), polish: raw. No face.
-- Prompt: high-angle first-person phone photo down our girl's own body while walking on a treadmill, black sports bra and grey leggings, bare wrist on the arm holding the phone, white trainers on the moving grey belt, the console showing incline 12 and speed 3.0 in red LEDs at the top of the frame, bright commercial gym floor beyond, motion softness on the belt, flat overhead light, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
-- Text placement: "your skipping..." line large, top 12%; the "instead" block smaller under it, over the console area.
+- Style: digest @lift.with.em slide 2 with `skills/style-clone.md` (proposed slug `liftwithem-0630-s2-console-down-belt-shoe`), polish: raw. No face.
+- Prompt: first-person phone photo straight down over a treadmill console onto the moving belt, the console's black housing with red LED readouts for incline 12 and speed 3.0 and a red stop key at the top of the frame, our girl's white trainer and black legging hem stepping into the bottom of the frame, dark grey belt with motion softness, flat overhead gym light, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no watch
+- Text placement: "your skipping..." line large, top 12%; the "instead" block smaller under it, over the console housing.
 
 ---
 
@@ -109,7 +109,7 @@ treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead (you al
 ```
 your parking as close as you can.
 
-park as far as you can, make it a game in trying to reach ur step goals!! (furthest entrance, furthest bathroom, stairs every time)
+park as far as you can, make it a game in trying to reach ur step goals!! (stairs too)
 ```
 
 **Copy source and organic reference (same slide)**

@@ -1,6 +1,6 @@
 # Slideshow 02 - how i get my steps in as a phone addict, 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough, plus his image and reference preferences from the 2026-09-19 reviews). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough, plus his image and reference preferences from the 2026-09-19 reviews). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. No Apple Watch in any reference photo or prompt; no Notes screenshots or cheat sheets; the three value slides are three different pieces (after meals, gym treadmill, first thing in the morning). One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go.
 
 **Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png` (slideshow 01, approved): dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the captain's rule: no Apple Watch anywhere; the reference picture shows one on her left wrist, so any reuse of it needs the watch edited out first). Every generated slide places her, never the creator in the reference, into the reference's scene (style, never identity).
 
@@ -51,11 +51,11 @@ walk after every meal
 
 i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar. go for a 10 minute walk after lunch or dinner
 
-(thats like 1,200 steps x 3 meals and i scroll the whole time)
+(i scroll the whole time)
 ```
 
 **Copy source**
-- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12), slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 are that text with the clinical clause cut; the bracket is ours.
+- @ahealthbook "5 healthy habits backed by science", https://www.tiktok.com/@ahealthbook/photo/7627966921790459158 (558.7K plays, 107.4K likes, 35.7K saves, 6 slides, posted 2026-04-12), slide 2 verbatim: "walk after meals. i cannot stress enough how effective a short walk after eating is. even 10 minutes of walking helps lower blood sugar levels and improves insulin sensitivity, reducing energy crashes and long-term metabolic risk. Go for a 10 minute walk after lunch or dinner". Lines 1 to 3 are that text with the clinical clause cut; the bracket is ours. One piece of the day, not the day.
 
 **Organic reference**
 - @savwright "Simple hacks that are slept on" / "Hacks in a body recomp *as a girl who lost 14 pounds of fat", https://www.tiktok.com/@savwright/photo/7658869024830328094 (59K plays, 1.4K likes, 291 saves, 6 slides, posted 2026-07-04), slide 3 "Morning walks! I increased my steps, slept on fat loss tool": phone photo from behind of her walking a quiet coastal road, red sports bra and shorts, low bun, wired earbuds, a small dog on a lead at her side, palm trees and the sea ahead, soft early light, no face. A real walk photo on a tip that says walk.
@@ -63,7 +63,7 @@ i cannot stress enough how effective a short walk after eating is. even 10 minut
 **Our variation**
 - Style: digest @savwright slide 3 with `skills/style-clone.md` (proposed slug `savwright-8094-s3-coastal-road-walk-behind`), polish: raw. No face.
 - Prompt: phone photo from behind of our girl walking away down a quiet residential road after dinner, oversized black zip-up, bike shorts, white trainers, dark blonde bun, silver over-ear headphones, phone in a leopard-print case in one hand at her side, low evening sun on the tarmac, trees and parked cars ahead, soft haze, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines; bracket smaller under it, all above her shoulders.
+- Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines; bracket smaller under it, all above her shoulders. Reference checked at full size: wired earbuds, bare wrists, no watch.
 
 ---
 
@@ -87,7 +87,7 @@ use excerlock to make your phone block apps if your not moving. i legit cant scr
 ```
 10 minutes on the treadmill before and after every lift
 
-(warm up + cool down = 2,500 steps you already drove to the gym for)
+(free steps, your already there)
 ```
 
 **Copy source**
