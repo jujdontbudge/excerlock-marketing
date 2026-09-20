@@ -100,11 +100,11 @@ Walk in the mornings and after meals. A few 5-10 minute walks through the day ad
 
 **On-screen text**
 ```
-Use ExcerLock to block social media unless you're moving. I literally can't scroll unless I'm moving. This makes it so ez.
+I can't scroll unless moving
 ```
 
 **Image**
 - Style: inline, polish: raw
-- Prompt: close POV of a hand holding an iPhone in portrait while walking on a sidewalk, the screen showing a plain lock screen with a short blocked-app notice and a walking condition line, sidewalk, moving legs and white trainers blurred at the bottom of the frame, hard afternoon sun on the back of the hand, glare and a fingerprint smudge on the glass, slight motion blur on the background, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no invented app branding
+- Prompt: candid low-quality iPhone snapshot of an iPhone in a leopard-print case with a dark red rim lying face down on the console of a StairMaster in a commercial gym, no person in frame, style injected from the digest of the TikTok stairmaster frame (content/styles/stairmaster-phone-down.json), keep brands on the machine, 9:16, no captions
 - Text placement: centred, top 20% above the phone, 3 lines
-- After generation: replace the screen with a real ExcerLock lock screen screenshot showing TikTok blocked until walking
+- After generation: none (phone is face down; no screen to replace)
