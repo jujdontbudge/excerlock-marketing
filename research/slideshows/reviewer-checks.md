@@ -13,7 +13,7 @@ Positive checks, run before anything goes to the captain. Each line is a pass co
 7. Shape: 5 to 7 slides, CTA on slide 4 in one of the captain's forms ("use excerlock to...", "use an app like excerlock...", "excerlock blocks...", or his exact text), never "i use excerlock" as the frame; the last slide is a value slide or a proof, not filler.
 8. References: exactly one organic reference per slide with URL, account, slide number, what it shows and the observed numbers; no alternates; no reference photo repeated across slides or decks except the screen-time screenshot and the CTA.
 9. Banned sources: no copy from @rrachfitness 7378132607768349985 slide 2; no iPhone Notes screenshots; no Apple Watch in any reference.
-10. Steps and before: the only steps screenshot is `data/slide5-steps/steps-final-jan2025.png`; 'how i was / before' copy never sits on a chart.
+10. Steps and before: the only steps screenshot is `data/slide5-steps/steps-final-16349.png`; 'how i was / before' copy never sits on a chart.
 11. Housekeeping: captain's title and CTA text verbatim; lowercase and casual voice; no em dashes; max 2 faces and max 2 screenshots (CTA excluded); the CTA image line reads "captain supplies Instagram screenshot".
 
 ## Image reviewer (runs after generation, before overlay) - strengthened 2026-09-19
@@ -43,7 +43,7 @@ Any impossibility in any crop → FAIL. Uncertain → FAIL (regenerating is chea
 - One of everything on her: 1 head, 2 arms, 2 hands, 10 fingers, 2 legs, 2 feet, 1 phone, 1 headphone set. Count them out loud in the report.
 
 ### Step 4 - physique (every body-visible shot)
-- Not fat, not wiry: thick toned legs, big breasts, slimmer toned arms, tight waist, real skin texture. Compare to `out/character/physique-anchor.png`; a visibly slimmer/heavier/flatter body → FAIL.
+- Not fat, not wiry: thick toned legs, big breasts, slim soft arms, no muscle definition, tight waist, real skin texture. Compare to `out/character/physique-anchor.png`; a visibly slimmer/heavier/flatter body → FAIL.
 
 ### Step 5 - reference side-by-side
 - Same camera feel as the reference: phone-camera look, lighting direction, grain, colour, framing.
@@ -54,7 +54,7 @@ Any impossibility in any crop → FAIL. Uncertain → FAIL (regenerating is chea
 
 ### Step 6 - story fit
 - Contradictions with the on-screen text: "mirror pic" with no mirror; text says treadmill, photo shows street; "how i was"/before copy on anything but a before photo of her.
-- Steps/stats slides use `data/slide5-steps/steps-final-jan2025.png` only.
+- Steps/stats slides use `data/slide5-steps/steps-final-16349.png` only.
 - Redundancy across the deck: two photos that read as the same scene → FAIL one.
 - Photo fits the slide's single tip.
 
@@ -71,3 +71,13 @@ VERDICT: PASS | FAIL -> regenerate with: <one-line fix instruction for the promp
 ```
 - PASS only when every line is OK. The worker copies the FAIL fix line into the next prompt and resubmits to the SAME reviewer procedure; a slide is done only after a written PASS record exists in review.json.
 - The worker never edits a verdict, never marks PASS itself, and never ships a slide without its PASS record. If the reviewer dies or hits a limit, the worker starts a new reviewer session and waits.
+
+## HARD RULE - her body in every picture, before pictures included (captain 2026-09-20, third time raised)
+
+- Don't ever render her soft, flat, shapeless, or like a beginner gym girl - not in a hook, not in a value slide, and NOT in a "before" slide. Why: the captain has rejected this three times; it makes her look worse than the viewer and the account is selling her body.
+- Every picture that shows her body copies the body in `data/slideshow-02-05-plan/body-benchmark-02-s1.png` (deck 02 slide 1): thick toned legs, big chest, tight waist, slim soft arms, no muscle definition, visibly fit. Why: one benchmark image removes interpretation; the reviewer compares to a picture, not to words.
+- A "before" slide is told by the setting, outfit, and caption, never by a worse body. Why: the story works fine with the same body; a worse body breaks the rule above and there is no exception. Scope (captain correction 2026-09-20): the benchmark rule applies to CURRENT pictures; before slides are exempt and may look softer/heavier, that is the story (deck 03 slide 2 is exempt; deck 05 slides 1 and 2 both count as current on the captain's call).
+
+- (creation) Attach physique-anchor + benchmark as references and state the body explicitly in every body-visible prompt. For 05 s2 the baggy tee must still show the body (tee tucked/cropped or fitted, shorts showing thick legs) - 'baggy' is not allowed to hide it.
+- (review) The reviewer puts the benchmark beside every body shot; softer/flatter/slimmer/boxier = FAIL on any current picture; before slides exempt.
+- (captain addition 2026-09-20) Her arms must NOT be muscular at all - no visible biceps, triceps, or shoulder definition. Arms are slim and soft, feminine. Reviewer: any muscular arm = FAIL. Benchmark comparison: legs/chest/waist from the benchmark; arms slimmer and softer than the benchmark if it shows definition.

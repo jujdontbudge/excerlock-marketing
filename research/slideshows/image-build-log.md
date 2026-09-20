@@ -20,7 +20,7 @@ gpt-image-2 low: ~840-1060 text input tokens + 158 image output tokens per call;
 | Slide | Model / settings | Calls (kept + discarded) | Est. cost | Outcome |
 |---|---|---|---|---|
 | 02 s1 | gemini-2.5-flash-image, 9:16, Batch, refs attached | 3 | 0.12 | round 1 PASS but superseded by the physique redo; round 2 (text PHYS only) slim; round 3 with the anchor PASS |
-| 02 s2 | none: steps-final-jan2025.png + Screen Time placeholder | 0 | 0 | the captain's Screen Time capture does not exist yet; placeholder on the right half |
+| 02 s2 | none: steps-final-16349.png + Screen Time placeholder | 0 | 0 | the captain's Screen Time capture does not exist yet; placeholder on the right half |
 | 02 s3 | gemini-2.5-flash-image, batch | 4 | 0.16 | v1 coastal like the reference but text on her head, v2 residential dusk street PASS; round 2 (physique redo) head turned with partial face; round 3 with the anchor, back of the head only, PASS |
 | 02 s4 | none (CTA placeholder) | 0 | 0 | captain supplies Instagram screenshot |
 | 02 s5 | gpt-image-2 low 1024x1536 | 3 | 0.033 | v1 fail (37:56 readout, person), v2 carried the leopard phone (captain's rejection), v3 PASS |
@@ -32,14 +32,14 @@ gpt-image-2 low: ~840-1060 text input tokens + 158 image output tokens per call;
 | 03 s5 | gpt-image-2 low | 2 | 0.022 | v1 near copy of the reference, v2 PASS |
 | 03 s6 | gpt-image-2 low | 3 | 0.033 | v1 iPad turned into a leopard phone (rejection), v3 tablet but black pad, v4 pink YAGUD pad PASS |
 | 04 s1 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS, superseded; round 2 slim; round 3 with the anchor PASS (note: small swoosh on the socks) |
-| 04 s2 | none: steps-final-jan2025.png full-bleed | 0 | 0 | the one steps receipt |
+| 04 s2 | none: steps-final-16349.png full-bleed | 0 | 0 | the one steps receipt |
 | 04 s3 | gpt-image-2 low | 1 | 0.011 | PASS |
 | 04 s4 | none (CTA placeholder) | 0 | 0 | |
 | 04 s5 | gpt-image-2 low | 2 | 0.022 | v1 added a Life Fitness logo the reference lacks, v2 unbranded PASS |
 | 04 s6 | gpt-image-2 low | 2 | 0.022 | v1 side mirror at the rear window, v2 PASS |
 | 05 s1 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS by the reviewer, FAILED by the captain (fat/wiry); round 2 slim; round 3 with the anchor PASS, physique clearly on target |
 | 05 s2 | gemini-2.5-flash-image, batch | 1 | 0.04 | before picture regenerated in the physique redo so the face matches the new hooks (baggy black tee, softer body): PASS; the slideshow 01 before-final.png reuse is dropped |
-| 05 s3 | none: steps-final-jan2025.png full-bleed | 0 | 0 | the one steps receipt |
+| 05 s3 | none: steps-final-16349.png full-bleed | 0 | 0 | the one steps receipt |
 | 05 s4 | none (CTA placeholder) | 0 | 0 | |
 | 05 s5 | none: reuse slideshow 01 slide 4 base | 0 | 0 | the base is `images/reimagine/yermospam-1793-s5-gpt2-low-01.png` (matched against `build/slide-04.jpg`); the script's @gabylrei s4 citation is the barbell style source of a different take, not this image |
 | 05 s6 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS, superseded; round 2 blue shorts (the digest's "blue shorts pop" line leaked, now stripped); round 3 black shorts with the anchor PASS |
@@ -49,17 +49,19 @@ gpt-image-2 low: ~840-1060 text input tokens + 158 image output tokens per call;
 
 Rounds 3-6 (captain's third review, inbox 005-007): 02 s1 had a twisted back leg and an owl-neck that the team-lead's own interim review passed; the phone/case was being forced into every face picture (the launch brief listed the case as a character attribute, carried into the CHAR prompt block and every attached reference). Fixes: pose pinned and 02 s1 regenerated; case made a mirror-selfie-only prop (CHAR block, guide, reviewer-checks, script character lines); 03 s2 rebuilt as a photo from across the table with no phone; the Image reviewer section replaced by the captain's Step 0-6 procedure with mandatory zoom crops and a required verdict record; brand rule 1:1 with the reference. reviewer-2 (fresh separate session) ran rounds 3-6; every FAIL was fixed with the reviewer's own fix line (Nano Banana 2 edit passes where the anatomy was right, a regeneration where it was not) and resubmitted until all eight face/body slides held a written PASS record (stored in `review.json`, rendered on `review.html`). Calls in these rounds: 5 Nano Banana 2.5 generations (02 s1, 03 s2 x3, 02 s3) and 17 Nano Banana 2 edits (02 s1 x1, 03 s1 x3, 04 s1 x2, 02 s3 x3, 05 s6 x3, 03 s2 x4, 05 s2 x1), about USD 1.39.
 
-gpt-image-2 total: 21 calls, about USD 0.23. Nano Banana 2.5: 31 calls (8 round-1 slides, 8 round-2 slides, 6 round-3 slides, 5 rounds 3-6 regenerations, 2 anchor candidates, 1 watch-removal edit, 1 headphone edit), about USD 1.24. Nano Banana 2 (3.1) edits: 21 (4 before the third review, 17 in rounds 3-6), about USD 1.47. Build total about USD 2.94 (estimates from the token counts). Gemini credits ran out once mid-build (402) and were topped up by the captain.
+Rounds 7-9 (captain's fourth review, inbox 008-012): deck 05 s1/s2 rejected a third time on the body. HARD body rule (benchmark image `data/slideshow-02-05-plan/body-benchmark-02-s1.png` = the passed 02 s1, copied to `out/character/body-benchmark.png`; legs/chest/waist from it, arms slim and soft with no muscle definition; current pictures only, before slides exempt, 05 s1 and 05 s2 counted as current) added verbatim to the guide, reviewer-checks, the four script character blocks and the PHYS prompt block; anchor + benchmark attached to every body-visible generation. 05 s1 + 05 s2 remade in one Batch call; 05 s2 passed after a sock edit; 05 s1 took the cap of two regenerations to reach the benchmark body, then one edit pass (soft arms, blank locker plates in the mirror) for its PASS record. Other current body slides re-checked against the benchmark: all pass. Steps receipt replaced with `steps-final-16349.png` on 02 s2, 04 s2, 05 s3. Calls: 3 Nano Banana 2.5 generations, 2 Nano Banana 2 edits, about USD 0.26.
+
+gpt-image-2 total: 21 calls, about USD 0.23. Nano Banana 2.5: 34 calls (8 round-1 slides, 8 round-2 slides, 6 round-3 slides, 5 rounds 3-6 regenerations, 3 rounds 7-9 regenerations, 2 anchor candidates, 1 watch-removal edit, 1 headphone edit), about USD 1.36. Nano Banana 2 (3.1) edits: 23 (4 before the third review, 17 in rounds 3-6, 2 in rounds 7-9), about USD 1.61. Build total about USD 3.20 (estimates from the token counts). Gemini credits ran out once mid-build (402) and were topped up by the captain.
 
 Batch note: `batchGenerateContent` on `gemini-2.5-flash-image` with inline requests succeeded on the paid tier (both jobs finished in under two minutes), so the runner's sequential fallback was not needed. The watch on `grace-final-leopard-case.png` was removed with a 2.5 edit pass first (`out/character/grace-ref.png`) so no reference carried a watch.
 
 ## Result
 
-16 generated images (8 gpt-image-2, 8 Nano Banana), 3 real-screenshot slides (all `steps-final-jan2025.png`; 02 s2 with a Screen Time placeholder), 1 reused approved image (05 s5), 4 CTA placeholders: 24 slides. Every Nano Banana face/body slide was rebuilt in the physique redo (rounds 2 and 3) and then taken through the Step 0-6 procedure (rounds 3-6) until it held a written PASS record from a separate reviewer session; the non-face gpt-image-2 slides keep their earlier reference-side-by-side PASS verdicts.
+16 generated images (8 gpt-image-2, 8 Nano Banana), 3 real-screenshot slides (all `steps-final-16349.png`; 02 s2 with a Screen Time placeholder), 1 reused approved image (05 s5), 4 CTA placeholders: 24 slides. Every Nano Banana face/body slide was rebuilt in the physique redo (rounds 2 and 3) and then taken through the Step 0-6 procedure (rounds 3-6) until it held a written PASS record from a separate reviewer session; the non-face gpt-image-2 slides keep their earlier reference-side-by-side PASS verdicts.
 
 ## Deviations from the brief
 
 - 02 s3 and 05 s6 are "most of body" shots of our girl, so they go to Nano Banana with the character references (captain's rule) rather than gpt-image-2 as the firstmate inventory listed.
 - 05 s5 is a reused image per the script ("No generation"); 05 s2 was regenerated in the physique redo so the before picture carries the same face as the new hooks.
-- Deck 03 slide 2 is now a generated before picture (face 2 of 2 in that deck), not the steps receipt; the script's "15k" pointer line was dropped because the one receipt shows 11,647.
+- Deck 03 slide 2 is now a generated before picture (face 2 of 2 in that deck), not the steps receipt; the script's "15k" pointer line was dropped because a chart is not a before picture.
 - Gemini Batch API and the "lowest output size" flag: gemini-2.5-flash-image takes no `imageSize`; the runner tries `batchGenerateContent` first and falls back to concurrent calls (the free-tier Batch refusal is on record in `data/learnings.md`).

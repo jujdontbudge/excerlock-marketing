@@ -11,7 +11,7 @@ All `data/` paths in the scripts are the firstmate data folder (same convention 
 | 02 | how i get my steps in as a phone addict | 6 | slide 4 | 1 (S1 gym mirror, new) | 1 (S2 steps + screen time) | `02-phone-addict-steps/script.md` |
 | 03 | i didn't want to get 10k steps today but... | 6 | slide 4 | 2 (S1 gym bathroom mirror, new; S2 before picture on the couch, new) | 0 | `03-didnt-want-10k-steps/script.md` |
 | 04 | why you're not hitting your steps (it's not your legs) | 6 | slide 4 | 1 (S1 studio mirror, new) | 1 (S2 steps) | `04-not-your-legs/script.md` |
-| 05 | want to lose fat but nothing is working? this is what i did | 6 | slide 4 | 2 (S1 locker-room mirror, new; S2 before picture, new) | 1 (S3 steps, `steps-final-jan2025.png`) | `05-nothing-is-working/script.md` |
+| 05 | want to lose fat but nothing is working? this is what i did | 6 | slide 4 | 2 (S1 locker-room mirror, new; S2 before picture, new) | 1 (S3 steps, `steps-final-16349.png`) | `05-nothing-is-working/script.md` |
 
 New face generations needed: one per deck, all gym, studio or locker-room mirror selfies holding the phone, no watch. Every other slide is faceless or a real screenshot. The slideshow 01 gym mirror picture of our girl is no longer used anywhere: it and its reference show an Apple Watch.
 
@@ -19,7 +19,7 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 
 **02, how i get my steps in as a phone addict.** A girl in a gym mirror says she is on her phone all day and still gets her steps, and proves it on slide 2 with her steps and her screen time side by side. Then she gives the three ways she does it: a walk after every meal, ten minutes on the treadmill before and after every lift, and getting up ten minutes earlier to walk. In the middle she mentions the trick that makes it work for a phone addict: ExcerLock blocks her apps unless she is moving, so she scrolls on the treadmill. The deck ends on the morning-walk tip; the old rule slide was cut as filler.
 
-**03, i didn't want to get 10k steps today but...** In the gym bathroom mirror she admits she did not want to walk, then remembers how she used to be, and slide 2 is the before picture: her lazy on the couch under a blanket scrolling her phone with snacks (the "15k" pointer line was dropped, the one steps receipt shows 11,647). Then three separate pieces, never the whole day: a 30 minute incline walk at the end of every gym session, ExcerLock blocking her screen time until she is on the treadmill or walking, a 30 to 40 minute walk after dinner, and a walking pad while watching shows. Six slides; the "accumulation" slide was cut as a fourth walk slide.
+**03, i didn't want to get 10k steps today but...** In the gym bathroom mirror she admits she did not want to walk, then remembers how she used to be, and slide 2 is the before picture: her lazy on the couch under a blanket scrolling her phone with snacks (the "15k" pointer line was dropped, the chart is not a before picture). Then three separate pieces, never the whole day: a 30 minute incline walk at the end of every gym session, ExcerLock blocking her screen time until she is on the treadmill or walking, a 30 to 40 minute walk after dinner, and a walking pad while watching shows. Six slides; the "accumulation" slide was cut as a fourth walk slide.
 
 **04, why you're not hitting your steps (it's not your legs).** She says it is not your legs, and shows her steps screenshot to prove she knows. Slide 3: walk after lunch every day, use the free time you have. Slide 4, in the same "ur not" voice: you are not using ExcerLock to block scrolling unless you move. Then two more "your doing this, do this instead" slides: skipping the treadmill after lifting (incline 12, speed 3, 20 minutes) and parking as close as you can (park as far as you can). Six slides, no closer.
 
@@ -49,7 +49,7 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 | 04 S6 | @imdaisypal 7426835869820292398 s3 | 40.9K | office car park in the morning, no face |
 | 05 S1 | @gabrielaaadcg 7640338557193719060 s2 | 218.8K | locker-room side mirror selfie (face 1) |
 | 05 S2 | @gelou.fitness 7620413720165928212 s1 | 781.2K | before picture move (our generated before, baggy tee, face 2) |
-| 05 S3 | @lucieengland0 7608330902782938390 s2 | 96.5K | steps screenshot as fat-loss proof (`steps-final-jan2025.png`, the one receipt) |
+| 05 S3 | @lucieengland0 7608330902782938390 s2 | 96.5K | steps screenshot as fat-loss proof (`steps-final-16349.png`, the one receipt) |
 | 05 S4 | CTA | | captain supplies Instagram screenshot |
 | 05 S5 | @gabylrei 7663840390155341069 s4 | 233.6K | style source of our approved slideshow 01 meal-prep photo |
 | 05 S6 | @lift.with.em 7637215971492580630 s1 | 327.3K | treadmill walk from behind, organic, no face |
@@ -119,7 +119,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | Slide | Text (short) | Check |
 |---|---|---|
 | 1 | i didn't want to get 10k steps today but... | Captain's title unchanged. Face 1: gym bathroom mirror selfie, @haifa.munster (197.7K), bare wrist. |
-| 2 | but then i remembered how i was | Captain's line over a BEFORE picture of her on the couch (@iliana.rdz96 s3, 2.4M), face 2. The "15k" pointer line was dropped: the receipt shows 11,647 and no chart sits on this slide. |
+| 2 | but then i remembered how i was | Captain's line over a BEFORE picture of her on the couch (@iliana.rdz96 s3, 2.4M), face 2. The "15k" pointer line was dropped: no chart sits on this slide. |
 | 3 | walking for 30 mins at speed 3 on 12 incline at the end of your session | Help 1, one piece. Copied from @fitnessa5 (835.4K), fat claim cut. Treadmill console close-up (@dan1elleb s2, 287.3K), no person, no watch. |
 | 4 | started using excerlock to block my screentime until im on the treadmill or walking. (infinite steps hack) | Captain's exact text on slide 4. Image: captain supplies Instagram screenshot. |
 | 5 | 30-40min walk after dinner | Help 2, one piece. Copied from @chikussa.c s5, its own sunset-road photo, no face. "9k to 15k" line cut. |

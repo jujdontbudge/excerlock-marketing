@@ -2,9 +2,9 @@
 
 Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: "why you're not", so every value slide is "your doing this. do this instead." Credibility on slide 2, CTA on slide 4 in the same "ur not..." pattern, two more value slides after it. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any reference photo or prompt (every reference re-checked at full size). No Notes screenshots or cheat sheets; the three value slides are three different pieces (lunch, gym treadmill, car park). Images here are references and prompts only; nothing is generated until the captain says go.
 
-**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, silver over-ear headphones; her phone has a leopard-print case, which shows only in mirror selfies (a prop, never forced into other scenes), no watch (the reference picture shows one on her left wrist; do not carry it into any prompt). Physique (captain, 2026-09-19): in every picture showing her body she looks very good: not fat at all, thick toned legs, big breasts, slimmer but toned arms, tight waist, real skin; never soft, wiry or flat.
+**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, silver over-ear headphones; her phone has a leopard-print case, which shows only in mirror selfies (a prop, never forced into other scenes), no watch (the reference picture shows one on her left wrist; do not carry it into any prompt). Physique (captain, 2026-09-19): in every picture showing her body she looks very good: not fat at all, thick toned legs, big breasts, slim soft arms, no muscle definition, tight waist, real skin; never soft, wiry or flat. Body rule (captain 2026-09-20, HARD, current pictures; before slides exempt): every current picture that shows her body copies the body in `data/slideshow-02-05-plan/body-benchmark-02-s1.png` (deck 02 slide 1): thick toned legs, big chest, tight waist, slim soft arms, no muscle definition, visibly fit; a before slide is exempt and may look softer (deck 05 slide 2 counts as current on the captain's call); physique-anchor + benchmark attached to every body-visible generation and the body stated in the prompt.
 
-**In hand.** Steps screenshot `data/slide5-steps/steps-final-jan2025.png` (Step Count, M view, DAILY AVERAGE 11,647, JAN 2025, dark mode; the one steps receipt for every slideshow). All `data/` paths are the firstmate data folder, as in slideshow 01.
+**In hand.** Steps screenshot `data/slide5-steps/steps-final-16349.png` (Apple Health Steps, M view, AVERAGE 16,349 steps, Jul 30-Aug 29 2026, dark; the captain's own screenshot, the one steps receipt for every slideshow). All `data/` paths are the firstmate data folder, as in slideshow 01.
 
 Overlay defaults: native TikTok text look, clean sans, white, soft drop shadow, 9:16, top third unless noted. The "your doing this" line is bigger than the "do this instead" block on every value slide.
 
@@ -40,7 +40,7 @@ and i KNOW what im talking about
 - @vs.secretx, https://www.tiktok.com/@vs.secretx/photo/7546985090132348182 (2.1M plays, 142.2K likes, 7.6K saves, 6 slides, posted 2025-09-06), slide 3: "i KNOW ball." typed over an Apple Health day view, TOTAL 60,238 steps, "You walked an average of 19,168 steps a day over the last 7 days". Real proof, one line over it.
 
 **Our variation**
-- No generation. Full-bleed real screenshot `data/slide5-steps/steps-final-jan2025.png` (DAILY AVERAGE 11,647, JAN 2025), same phone and dark mode as the rest of the account.
+- No generation. Full-bleed real screenshot `data/slide5-steps/steps-final-16349.png` (AVERAGE 16,349, Jul 30-Aug 29 2026), same phone and dark mode as the rest of the account.
 - Text placement: centred over the empty top area of the chart, about 30% down, 2 lines, "KNOW" in caps as written.
 
 ---
