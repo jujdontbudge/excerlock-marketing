@@ -107,6 +107,9 @@ Every line carries its reason. Positive checks for reviewing a finished script o
 - Don't close on a staged or app-made picture: last slides must look organic, because the last picture is the one that sits under the comments and the share.
 - Don't put our girl's phone or the leopard case into a non-face prompt: the case belongs only to face/body shots where she is visibly holding the phone; a non-face slide copies the reference's device and props 1:1 (iPad stays iPad, TV stays TV, no phone added where the reference has none), because the generator forces the case into scene after scene and paints the pattern onto screens and bezels, and a repeated prop is a templated-ad tell.
 - Don't review a generated image on its own: the reviewer sees the organic reference next to our image and fails any device swap, added phone or case, pattern rendered on a screen or bezel, or prop drift, because a slide that passes without its reference beside it is exactly how the walking-pad iPad became a leopard phone.
+- Don't render our girl looking fat, soft, or wiry/flat. Why: the account sells a body result; a girl who looks worse than the viewer makes the slideshow a lie and she scrolls. In every picture showing her body she looks very good: not fat, thick toned legs, big breasts, slimmer but toned arms, tight waist, real skin (captain, 2026-09-19: "she need to look much better... not fat at all. but thick legs big breast skinner but toned arms").
+- Don't use different steps screenshots per slideshow. Why: one real receipt across all slideshows keeps the account consistent and believable. The receipt is `data/slide5-steps/steps-final-jan2025.png` (Step Count, M view, DAILY AVERAGE 11,647, JAN 2025, dark).
+- Don't pair 'how i was / before' copy with a steps or stats screenshot. Why: 'how i was' reads as a BEFORE picture of her; a chart there breaks the story.
 
 ## Self-check before a script goes to the captain
 

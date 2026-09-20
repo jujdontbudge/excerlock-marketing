@@ -9,9 +9,9 @@ All `data/` paths in the scripts are the firstmate data folder (same convention 
 | Deck | Hook (slide 1, as the captain wrote it) | Slides | CTA on | Face photos | Screenshots (CTA excluded) | Script |
 |---|---|---|---|---|---|---|
 | 02 | how i get my steps in as a phone addict | 6 | slide 4 | 1 (S1 gym mirror, new) | 1 (S2 steps + screen time) | `02-phone-addict-steps/script.md` |
-| 03 | i didn't want to get 10k steps today but... | 6 | slide 4 | 1 (S1 gym bathroom mirror, new) | 1 (S2 steps receipt) | `03-didnt-want-10k-steps/script.md` |
+| 03 | i didn't want to get 10k steps today but... | 6 | slide 4 | 2 (S1 gym bathroom mirror, new; S2 before picture on the couch, new) | 0 | `03-didnt-want-10k-steps/script.md` |
 | 04 | why you're not hitting your steps (it's not your legs) | 6 | slide 4 | 1 (S1 studio mirror, new) | 1 (S2 steps) | `04-not-your-legs/script.md` |
-| 05 | want to lose fat but nothing is working? this is what i did | 6 | slide 4 | 2 (S1 locker-room mirror, new; S2 before picture in hand) | 1 (S3 steps month) | `05-nothing-is-working/script.md` |
+| 05 | want to lose fat but nothing is working? this is what i did | 6 | slide 4 | 2 (S1 locker-room mirror, new; S2 before picture, new) | 1 (S3 steps, `steps-final-jan2025.png`) | `05-nothing-is-working/script.md` |
 
 New face generations needed: one per deck, all gym, studio or locker-room mirror selfies holding the phone, no watch. Every other slide is faceless or a real screenshot. The slideshow 01 gym mirror picture of our girl is no longer used anywhere: it and its reference show an Apple Watch.
 
@@ -19,7 +19,7 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 
 **02, how i get my steps in as a phone addict.** A girl in a gym mirror says she is on her phone all day and still gets her steps, and proves it on slide 2 with her steps and her screen time side by side. Then she gives the three ways she does it: a walk after every meal, ten minutes on the treadmill before and after every lift, and getting up ten minutes earlier to walk. In the middle she mentions the trick that makes it work for a phone addict: ExcerLock blocks her apps unless she is moving, so she scrolls on the treadmill. The deck ends on the morning-walk tip; the old rule slide was cut as filler.
 
-**03, i didn't want to get 10k steps today but...** In the gym bathroom mirror she admits she did not want to walk, then remembers how she used to be, and slide 2 is her 15,860 steps receipt with "this how i hit 15k steps every day now". Then three separate pieces, never the whole day: a 30 minute incline walk at the end of every gym session, ExcerLock blocking her screen time until she is on the treadmill or walking, a 30 to 40 minute walk after dinner, and a walking pad while watching shows. Six slides; the "accumulation" slide was cut as a fourth walk slide.
+**03, i didn't want to get 10k steps today but...** In the gym bathroom mirror she admits she did not want to walk, then remembers how she used to be, and slide 2 is the before picture: her lazy on the couch under a blanket scrolling her phone with snacks (the "15k" pointer line was dropped, the one steps receipt shows 11,647). Then three separate pieces, never the whole day: a 30 minute incline walk at the end of every gym session, ExcerLock blocking her screen time until she is on the treadmill or walking, a 30 to 40 minute walk after dinner, and a walking pad while watching shows. Six slides; the "accumulation" slide was cut as a fourth walk slide.
 
 **04, why you're not hitting your steps (it's not your legs).** She says it is not your legs, and shows her steps screenshot to prove she knows. Slide 3: walk after lunch every day, use the free time you have. Slide 4, in the same "ur not" voice: you are not using ExcerLock to block scrolling unless you move. Then two more "your doing this, do this instead" slides: skipping the treadmill after lifting (incline 12, speed 3, 20 minutes) and parking as close as you can (park as far as you can). Six slides, no closer.
 
@@ -36,7 +36,7 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 | 02 S5 | @fitnessa5 7540071199108386103 s2 | 835.4K | treadmill console POV (approved) |
 | 02 S6 | @eliepeony 7434799539892112641 s5 | 75.3K | sunrise tree-lined road, nobody in frame |
 | 03 S1 | @haifa.munster 7469573268274416939 s1 | 197.7K | gym bathroom mirror selfie, pink set (face 1) |
-| 03 S2 | slideshow 01 steps slide, `data/slide5-steps/steps-edit-01.png` | | the same 15,860 receipt (captain's call) |
+| 03 S2 | @iliana.rdz96 7654815554305363218 s3 | 2.4M | before picture: lazy on the couch, blanket, snacks, phone (our girl, face 2) |
 | 03 S3 | @dan1elleb 7347370624723012896 s2 | 287.3K | treadmill console close-up, no person |
 | 03 S4 | CTA | | captain supplies Instagram screenshot |
 | 03 S5 | @chikussa.c 7627223439228603679 s5 | 19.8K | sunset road with bike-path sign, no face |
@@ -48,8 +48,8 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 | 04 S5 | @lift.with.em 7637215971492580630 s2 | 327.3K | console-down treadmill belt with one shoe, no face |
 | 04 S6 | @imdaisypal 7426835869820292398 s3 | 40.9K | office car park in the morning, no face |
 | 05 S1 | @gabrielaaadcg 7640338557193719060 s2 | 218.8K | locker-room side mirror selfie (face 1) |
-| 05 S2 | @gelou.fitness 7620413720165928212 s1 | 781.2K | before picture move (our in-hand before, face 2) |
-| 05 S3 | @lucieengland0 7608330902782938390 s2 | 96.5K | steps screenshot as fat-loss proof (our real month view) |
+| 05 S2 | @gelou.fitness 7620413720165928212 s1 | 781.2K | before picture move (our generated before, baggy tee, face 2) |
+| 05 S3 | @lucieengland0 7608330902782938390 s2 | 96.5K | steps screenshot as fat-loss proof (`steps-final-jan2025.png`, the one receipt) |
 | 05 S4 | CTA | | captain supplies Instagram screenshot |
 | 05 S5 | @gabylrei 7663840390155341069 s4 | 233.6K | style source of our approved slideshow 01 meal-prep photo |
 | 05 S6 | @lift.with.em 7637215971492580630 s1 | 327.3K | treadmill walk from behind, organic, no face |
@@ -114,18 +114,18 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 
 13-year-old retell: "she's always on her phone but still walks a lot, here's her proof, she walks after meals, her phone won't open unless she walks, she walks on the treadmill before and after the gym, and she gets up early to walk." Faces: 1. Screenshots: 1. Em dashes: 0. Three value slides, three different pieces (after meals, gym treadmill, morning), none the whole day.
 
-### 03, i didn't want to get 10k steps today but... (6 slides, story then "this how i hit 15k")
+### 03, i didn't want to get 10k steps today but... (6 slides, story then three ways)
 
 | Slide | Text (short) | Check |
 |---|---|---|
 | 1 | i didn't want to get 10k steps today but... | Captain's title unchanged. Face 1: gym bathroom mirror selfie, @haifa.munster (197.7K), bare wrist. |
-| 2 | but then i remembered how i was / this how i hit 15k steps every day now >>> | Captain's exact lines over the slideshow 01 steps screenshot (15,860 average), his call. A receipt, not a guide. The one screenshot slide. |
+| 2 | but then i remembered how i was | Captain's line over a BEFORE picture of her on the couch (@iliana.rdz96 s3, 2.4M), face 2. The "15k" pointer line was dropped: the receipt shows 11,647 and no chart sits on this slide. |
 | 3 | walking for 30 mins at speed 3 on 12 incline at the end of your session | Help 1, one piece. Copied from @fitnessa5 (835.4K), fat claim cut. Treadmill console close-up (@dan1elleb s2, 287.3K), no person, no watch. |
 | 4 | started using excerlock to block my screentime until im on the treadmill or walking. (infinite steps hack) | Captain's exact text on slide 4. Image: captain supplies Instagram screenshot. |
 | 5 | 30-40min walk after dinner | Help 2, one piece. Copied from @chikussa.c s5, its own sunset-road photo, no face. "9k to 15k" line cut. |
 | 6 | walk while watching shows. short sessions add up fast | Help 3, one piece. Copied from @rio.maramba s3 (one line, not the list). Walking pad at home (@sandy_fit7 s1, 295.6K), no face. Last slide is a help slide and an organic home photo. |
 
-13-year-old retell: "she didn't feel like walking, then remembered how she was, here's her 15k proof, she walks on the treadmill after the gym, her phone is blocked till she walks, she walks after dinner, and she walks on a pad watching TV." Faces: 1. Screenshots: 1. Em dashes: 0. Three pieces (gym, after dinner, at home), no whole-day list; the "accumulation" slide was cut so no two slides say the same walk.
+13-year-old retell: "she didn't feel like walking, then remembered how she was lazy on the couch, she walks on the treadmill after the gym, her phone is blocked till she walks, she walks after dinner, and she walks on a pad watching TV." Faces: 2. Screenshots: 0. Em dashes: 0. Three pieces (gym, after dinner, at home), no whole-day list; the "accumulation" slide was cut so no two slides say the same walk.
 
 ### 04, why you're not hitting your steps (it's not your legs) (6 slides, "your doing X, do Y instead")
 
@@ -145,7 +145,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | Slide | Text (short) | Check |
 |---|---|---|
 | 1 | want to lose fat but nothing is working? / this is what i did | Captain's title. Face 1: locker-room mirror selfie, @gabrielaaadcg s2 (218.8K), bare wrists; generated fresh because the slideshow 01 picture and its reference show a watch. |
-| 2 | this was me. gym 5x a week and NOTHING was moving / what actually worked >>> | Captain's slide 2 (the before picture, face 2, in hand, no watch). Ref @gelou.fitness s1 (781.2K). |
+| 2 | this was me. gym 5x a week and NOTHING was moving / what actually worked >>> | Captain's slide 2 (the before picture, face 2, generated: baggy black tee, softer body, no watch). Ref @gelou.fitness s1 (781.2K). |
 | 3 | i got 10k steps a day. every single day, even rest days | "this is what i did" frame, plain and followable, one piece. Copied from @garely.lifts s5 (883.6K), a value slide, not a hook. Real month steps screenshot, ref @lucieengland0 s2. The one screenshot slide. No bracket. |
 | 4 | excerlock blocks my tiktok unless im walking so i legit had no choice | "excerlock blocks" frame on slide 4, lowercase, no bracket. Image: captain supplies Instagram screenshot. |
 | 5 | i ate in a deficit and hit 1g of protein per lb of bodyweight / you cant lose fat unless your in a caloric deficit ... | "what i did" frame, one piece. Copied from @paaofit (1.0M, 34.2K saves). Approved slideshow 01 meal-prep photo, ref @gabylrei s4, no person. No bracket. |
@@ -157,11 +157,11 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 
 - The bracketed step counts ("thats like 1,200 steps x 3 meals", "thats 2,500 free steps") are sizing lines under a tip, not statistics standing as a value slide; easy to cut if they read as stats.
 - Deck 04 is 6 slides after the captain's trim (desk slide and "thumbs" closer cut); the car-park tip is the last slide.
-- The slideshow 01 gym mirror picture of our girl (`grace-final-leopard-case.png`) is not used in these decks: it shows an Apple Watch. `before-final.png` (05 S2) does not. The character line in every script now reads "no watch".
+- The slideshow 01 gym mirror picture of our girl (`grace-final-leopard-case.png`) is not used in these decks: it shows an Apple Watch. `before-final.png` is no longer used either (05 S2 is now generated). The character line in every script now reads "no watch".
 - The only brackets left in on-screen text are the captain's own CTA wording and the deck 04 title. The single !! aside line is "free steps!!!" on 02 S5; no other deck carries one.
 - New style digests proposed (not yet made): `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`, `savwright-8094-s3-coastal-road-walk-behind`, `fitnessa5-8103-s2-treadmill-console-pov`, `eliepeony-2641-s5-sunrise-tree-road`, `haifamunster-6939-s1-gym-bathroom-mirror-pink`, `dan1elleb-2896-s2-treadmill-console-closeup`, `chikussa-3679-s5-sunset-road`, `sandyfit7-7038-s1-walking-pad-mount-home`, `gabrielaaadcg-9060-s1-studio-mirror-selfie`, `gabrielaaadcg-9060-s2-locker-room-side-mirror`, `chikussa-3679-s4-lunch-bowl-hand-pov`, `liftwithem-0630-s2-console-down-belt-shoe`, `imdaisypal-2398-s3-office-car-park-morning`, `liftwithem-0630-s1-treadmill-from-behind`. No saved style is reused (the two gym-mirror styles on file both carry a watch).
 - All people in prompts are our invented character; the references are for style only ("style, never identity" per `skills/organic-iphone-photo.md`).
 
 ## Built images (2026-09-19)
 
-The generated slides, prompts, digests, reference copies and the reviewer's verdicts live outside the repo in the firstmate data folder: `data/slideshows-02-05-images/` (`out/<deck>/<slide>.png` with `<slide>.prompt.txt`, `<slide>.digest.json` and `<slide>.usage.json` beside each; `out/refs/` the organic reference slides; `out/digests/` the 14 style digests; `review.html` the side-by-side review page; `review.md` the verdict log). Generation settings and cost per image: `research/slideshows/image-build-log.md`. No image is committed.
+The generated slides, prompts, digests, reference copies and the reviewer's verdicts live outside the repo in the firstmate data folder: `data/slideshows-02-05-images/` (`out/<deck>/<slide>.png` with `<slide>.prompt.txt`, `<slide>.digest.json` and `<slide>.usage.json` beside each; `out/refs/` the organic reference slides; `out/digests/` the 16 style digests; `out/character/physique-anchor.png` the body reference used on every face/body prompt (captain's physique rule); `review.html` the side-by-side review page; `review.md` the verdict log). Generation settings and cost per image: `research/slideshows/image-build-log.md`. No image is committed.

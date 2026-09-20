@@ -1,10 +1,10 @@
 # Slideshow 03 - i didn't want to get 10k steps today but..., 6 slides
 
-Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: story open, then "this how i hit 15k steps every day now", so every value slide is one WAY she gets steps, each a different piece (gym, after dinner, at home), never the whole day. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2, the steps receipt), plus the captain's CTA screenshot. One organic reference per slide, none repeated in any deck. No Apple Watch in any reference photo or prompt. No Notes screenshots, no cheat sheets. Images here are references and prompts only; nothing is generated until the captain says go.
+Written to `research/slideshows/script-writing-guide.md` (the captain's walkthrough plus his image and reference preferences). Format: story open (hook, then the before picture), then every value slide is one WAY she gets steps, each a different piece (gym, after dinner, at home), never the whole day. CTA on slide 4. Face photos: 2 (slide 1 and the slide 2 before picture). Screenshots: none except the captain's CTA screenshot (the steps receipt `data/slide5-steps/steps-final-jan2025.png` is not used in this deck). One organic reference per slide, none repeated in any deck. No Apple Watch in any reference photo or prompt. No Notes screenshots, no cheat sheets. Images here are references and prompts only; nothing is generated until the captain says go.
 
-**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the reference picture shows one on her left wrist; do not carry it into any prompt).
+**Our girl.** Character reference `data/slideshow-01-final/images/round8-grace/grace-final-leopard-case.png`: dark blonde hair, slim build, tanned skin with real texture, leopard-print phone case, silver over-ear headphones, no watch (the reference picture shows one on her left wrist; do not carry it into any prompt). Physique (captain, 2026-09-19): in every picture showing her body she looks very good: not fat at all, thick toned legs, big breasts, slimmer but toned arms, tight waist, real skin; never soft, wiry or flat.
 
-**In hand.** Steps screenshot `data/slide5-steps/steps-edit-01.png` (Apple Health, Steps, W view, AVERAGE 15,860 steps, Sep 11-17 2026, dark mode), the slideshow 01 steps slide. All `data/` paths are the firstmate data folder, as in slideshow 01.
+**In hand.** Steps screenshot `data/slide5-steps/steps-final-jan2025.png` (Step Count, M view, DAILY AVERAGE 11,647, JAN 2025, dark mode; the one steps receipt for every slideshow), the slideshow 01 steps slide. All `data/` paths are the firstmate data folder, as in slideshow 01.
 
 Overlay defaults: native TikTok text look, clean sans, white, soft drop shadow, 9:16, top third unless noted.
 
@@ -27,23 +27,21 @@ i didn't want to get 10k steps today but...
 
 ---
 
-## Slide 2 (second curiosity pull, the receipt, screenshot 1 of 1)
+## Slide 2 (second curiosity pull, the before picture, face photo 2 of 2)
 
 **On-screen text**
 ```
 but then i remembered how i was
 ```
-Bottom line, smaller, last 10% of the frame:
-```
-this how i hit 15k steps every day now >>>
-```
+The earlier bottom line "this how i hit 15k steps every day now >>>" is dropped from this slide (captain review 2026-09-19): the steps receipt no longer sits here, and the one receipt for every deck shows a daily average of 11,647, so a 15k claim would contradict it. The pointer into the value slides is now slide 3's own title.
 
 **Organic reference**
-- Slideshow 01's steps slide, the same screenshot: `data/slide5-steps/steps-edit-01.png` (Apple Health, Steps, W view, AVERAGE 15,860 steps, Sep 11-17 2026, dark mode), captain's call: this slide is essentially that slide again. A receipt, not a guide: it shows a number, it explains nothing.
+- @iliana.rdz96, https://www.tiktok.com/@iliana.rdz96/photo/7654815554305363218 (2.4M plays, 5.1K saves, captured 2026-09-19), slide 3: a girl lying on a couch under a blanket in a hoodie, scrolling her phone, snacks on the cushion, a dim lamp-lit evening room, phone photo taken from the side at couch height, no styling. The lazy "how i was" picture, not a chart.
 
 **Our variation**
-- No generation. Full-bleed `data/slide5-steps/steps-edit-01.png`, same phone and dark mode as the rest of the account.
-- Text placement: line 1 centred over the empty upper chart area, about 25% down, 2 lines; pointer line small, centred, bottom 8%.
+- Style: digest slide 3 with `skills/style-clone.md` (slug `ilianardz96-3218-s3-couch-hoodie-lazy-evening`), polish: raw. Face 2 of 2 in this deck. A BEFORE picture: 'how i was' copy sits on a before picture of her, never on a steps or stats screenshot (guide rule).
+- Prompt: phone photo of our girl lying on a couch in the evening, oversized grey hoodie, under a fleece blanket, scrolling her phone in the leopard-print case held above her face, an open bag of crisps and a chocolate wrapper on the cushion next to her, a dim warm lamp the only light, TV glow on the wall, hair in a messy bun, silver over-ear headphones on the armrest, bare wrists, taken from the side at couch height, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos. Before-picture body: not fat, but softer and untoned than the rest of the deck.
+- Text placement: line 1 centred, top 12%, over the dark wall above the couch, 2 lines.
 
 ---
 
