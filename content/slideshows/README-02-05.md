@@ -8,7 +8,7 @@ All `data/` paths in the scripts are the firstmate data folder (same convention 
 
 | Deck | Hook (slide 1, as the captain wrote it) | Slides | CTA on | Face photos | Screenshots (CTA excluded) | Script |
 |---|---|---|---|---|---|---|
-| 02 | how i get my steps in as a phone addict | 6 | slide 4 | 1 (S1 gym mirror, new) | 1 (S2 steps + screen time) | `02-phone-addict-steps/script.md` |
+| 02 | how i get my steps in as a phone addict | 6 | slide 4 | 1 (S1 gym mirror, new) | 1 (S2 steps + screen time, both real receipts) | `02-phone-addict-steps/script.md` |
 | 03 | i didn't want to get 10k steps today but... | 6 | slide 4 | 2 (S1 gym bathroom mirror, new; S2 before picture on the couch, new) | 0 | `03-didnt-want-10k-steps/script.md` |
 | 04 | why you're not hitting your steps (it's not your legs) | 6 | slide 4 | 1 (S1 studio mirror, new) | 1 (S2 steps) | `04-not-your-legs/script.md` |
 | 05 | want to lose fat but nothing is working? this is what i did | 6 | slide 4 | 2 (S1 locker-room mirror, new; S2 before picture, new) | 1 (S3 steps, `steps-final-16349.png`) | `05-nothing-is-working/script.md` |

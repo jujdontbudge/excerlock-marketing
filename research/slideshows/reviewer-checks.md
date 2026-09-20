@@ -13,7 +13,7 @@ Positive checks, run before anything goes to the captain. Each line is a pass co
 7. Shape: 5 to 7 slides, CTA on slide 4 in one of the captain's forms ("use excerlock to...", "use an app like excerlock...", "excerlock blocks...", or his exact text), never "i use excerlock" as the frame; the last slide is a value slide or a proof, not filler.
 8. References: exactly one organic reference per slide with URL, account, slide number, what it shows and the observed numbers; no alternates; no reference photo repeated across slides or decks except the screen-time screenshot and the CTA.
 9. Banned sources: no copy from @rrachfitness 7378132607768349985 slide 2; no iPhone Notes screenshots; no Apple Watch in any reference.
-10. Steps and before: the only steps screenshot is `data/slide5-steps/steps-final-16349.png`; 'how i was / before' copy never sits on a chart.
+10. Steps and before: the only steps screenshot is `data/slide5-steps/steps-final-16349.png` and the only screen-time screenshot is `data/slide5-steps/screentime-final.png`; 'how i was / before' copy never sits on a chart.
 11. Housekeeping: captain's title and CTA text verbatim; lowercase and casual voice; no em dashes; max 2 faces and max 2 screenshots (CTA excluded); the CTA image line reads "captain supplies Instagram screenshot".
 
 ## Image reviewer (runs after generation, before overlay) - strengthened 2026-09-19
@@ -54,7 +54,7 @@ Any impossibility in any crop → FAIL. Uncertain → FAIL (regenerating is chea
 
 ### Step 6 - story fit
 - Contradictions with the on-screen text: "mirror pic" with no mirror; text says treadmill, photo shows street; "how i was"/before copy on anything but a before photo of her.
-- Steps/stats slides use `data/slide5-steps/steps-final-16349.png` only.
+- Steps/stats slides use `data/slide5-steps/steps-final-16349.png` only; screen-time slides use `data/slide5-steps/screentime-final.png` only, unedited, no generation, no crop beyond the layout.
 - Redundancy across the deck: two photos that read as the same scene → FAIL one.
 - Photo fits the slide's single tip.
 

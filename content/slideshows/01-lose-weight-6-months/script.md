@@ -1,6 +1,6 @@
 # Slideshow 01 - lose fat, 7 slides
 
-On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 5, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only.
+On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only. Slide 5 is the real steps receipt itself, no generation.
 
 Overlay defaults for every slide: clean geometric sans, medium weight, white #FFFFFF, soft drop shadow, left-aligned or centred as noted, 9:16.
 
@@ -75,10 +75,8 @@ You need to be walking. This is the only way us girlies can eat enough and still
 ```
 
 **Image**
-- Style: inline, polish: raw
-- Prompt: close POV of a hand holding an iPhone outdoors on a sidewalk, the screen showing the Apple Health steps page with a daily bar chart and a total in the fifteen thousands, cracked concrete and the toes of white trainers at the bottom of the frame, harsh midday sun with a hard shadow of the hand across the screen, glare on the glass, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
-- Text placement: line 1 large centred about 10% down, paragraph centred about 25% down over the concrete, 5 to 6 lines
-- After generation: drop in a real Apple Health steps screenshot
+- No generation (captain, 2026-09-20). The receipt IS the slide: `data/slide5-steps/steps-final-16349.png` (Apple Health Steps, M view, AVERAGE 16,349 steps, Jul 30-Aug 29 2026, dark; the captain's own screenshot) full frame, fitted by height on black, nothing cropped; same treatment as slideshow 04 s2 / 05 s3. Built as `data/slideshow-01-final/build/slide-05.jpg` (the earlier generated phone-in-hand slide is kept beside it as `slide-05-old-generated.jpg`).
+- Text placement: line 1 large centred about 10% down over the status bar area, paragraph centred about 25% down, 5 to 6 lines; keep the AVERAGE figure readable.
 
 ---
 

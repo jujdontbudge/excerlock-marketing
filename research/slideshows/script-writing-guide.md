@@ -122,6 +122,7 @@ Every line carries its reason. Positive checks for reviewing a finished script o
 
 - Don't render our girl looking fat, soft, or wiry/flat. Why: the account sells a body result; a girl who looks worse than the viewer makes the slideshow a lie and she scrolls. In every picture showing her body she looks very good: not fat, thick toned legs, big breasts, slim soft arms, no muscle definition, tight waist, real skin (captain, 2026-09-19: "she need to look much better... not fat at all. but thick legs big breast skinner but toned arms").
 - Don't use different steps screenshots per slideshow. Why: one real receipt across all slideshows keeps the account consistent and believable. The receipt is `data/slide5-steps/steps-final-16349.png` (Apple Health Steps, M view, AVERAGE 16,349 steps, Jul 30-Aug 29 2026, dark).
+- Don't generate or edit a screen-time screenshot. Why: one real receipt across all slideshows keeps the account believable. The only screen-time source is `data/slide5-steps/screentime-final.png` (Week view, Aug 30-Sep 6 average 8h 28m, Social 20h 48m), used unedited with no crop beyond what the layout needs.
 - Don't pair 'how i was / before' copy with a steps or stats screenshot. Why: 'how i was' reads as a BEFORE picture of her; a chart there breaks the story.
 
 ## Self-check before a script goes to the captain
