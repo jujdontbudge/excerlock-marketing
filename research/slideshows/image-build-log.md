@@ -22,25 +22,25 @@ gpt-image-2 low: ~840-1060 text input tokens + 158 image output tokens per call;
 | 02 s1 | gemini-2.5-flash-image, 9:16, Batch, refs attached | 3 | 0.12 | round 1 PASS but superseded by the physique redo; round 2 (text PHYS only) slim; round 3 with the anchor PASS |
 | 02 s2 | none: steps-final-16349.png + screentime-final.png side by side, unedited, uncropped | 0 | 0 | the captain's two receipts (inbox 013); placeholder replaced |
 | 02 s3 | gemini-2.5-flash-image, batch | 4 | 0.16 | v1 coastal like the reference but text on her head, v2 residential dusk street PASS; round 2 (physique redo) head turned with partial face; round 3 with the anchor, back of the head only, PASS |
-| 02 s4 | none (CTA placeholder) | 0 | 0 | captain supplies Instagram screenshot |
+| 02 s4 | none: `data/cta-shield/shield-1080x2340.png` unedited (inbox 015) | 0 | 0 | the blocker screen is the CTA image on every slideshow |
 | 02 s5 | gpt-image-2 low 1024x1536 | 3 | 0.033 | v1 fail (37:56 readout, person), v2 carried the leopard phone (captain's rejection), v3 PASS |
 | 02 s6 | gpt-image-2 low | 1 | 0.011 | PASS |
 | 03 s1 | gemini-2.5-flash-image, batch; then edit passes | 4 + 3 edits | 0.34 | v1 and v2 both rendered two pairs of headphones; a 2.5 edit removed both; a 3.1 edit on v2 removed only the on-ear pair: PASS, superseded; round 2 slim; round 3 with the anchor rendered two pairs again plus a HYDRATE word on the tumbler, one 3.1 edit fixed both: PASS |
 | 03 s2 | gemini-2.5-flash-image, batch; one 3.1 edit | 1 + 1 edit | 0.11 | captain's second review: a BEFORE picture (couch, blanket, snacks, phone, dim light) replaces the steps chart; new reference @iliana.rdz96 7654815554305363218 s3 (2.4M plays) found by a scanner sub-agent over the hunts; render PASS except invented readable packet names, one 3.1 edit made the packets plain: PASS. The old steps screenshot is archived as `out/03/s2-old-steps.png` |
 | 03 s3 | gpt-image-2 low | 4 | 0.044 | v1 text-fit, v2 phone+towel (rejection), v3 wrong brand (Life Fitness vs Primal), v4 PASS |
-| 03 s4 | none (CTA placeholder) | 0 | 0 | |
+| 03 s4 | none: `data/cta-shield/shield-1080x2340.png` unedited | 0 | 0 | |
 | 03 s5 | gpt-image-2 low | 2 | 0.022 | v1 near copy of the reference, v2 PASS |
 | 03 s6 | gpt-image-2 low | 3 | 0.033 | v1 iPad turned into a leopard phone (rejection), v3 tablet but black pad, v4 pink YAGUD pad PASS |
 | 04 s1 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS, superseded; round 2 slim; round 3 with the anchor PASS (note: small swoosh on the socks) |
 | 04 s2 | none: steps-final-16349.png full-bleed | 0 | 0 | the one steps receipt |
 | 04 s3 | gpt-image-2 low | 1 | 0.011 | PASS |
-| 04 s4 | none (CTA placeholder) | 0 | 0 | |
+| 04 s4 | none: `data/cta-shield/shield-1080x2340.png` unedited | 0 | 0 | |
 | 04 s5 | gpt-image-2 low | 2 | 0.022 | v1 added a Life Fitness logo the reference lacks, v2 unbranded PASS |
 | 04 s6 | gpt-image-2 low | 2 | 0.022 | v1 side mirror at the rear window, v2 PASS |
 | 05 s1 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS by the reviewer, FAILED by the captain (fat/wiry); round 2 slim; round 3 with the anchor PASS, physique clearly on target |
 | 05 s2 | gemini-2.5-flash-image, batch | 1 | 0.04 | before picture regenerated in the physique redo so the face matches the new hooks (baggy black tee, softer body): PASS; the slideshow 01 before-final.png reuse is dropped |
 | 05 s3 | none: steps-final-16349.png full-bleed | 0 | 0 | the one steps receipt |
-| 05 s4 | none (CTA placeholder) | 0 | 0 | |
+| 05 s4 | none: `data/cta-shield/shield-1080x2340.png` unedited | 0 | 0 | |
 | 05 s5 | none: reuse slideshow 01 slide 4 base | 0 | 0 | the base is `images/reimagine/yermospam-1793-s5-gpt2-low-01.png` (matched against `build/slide-04.jpg`); the script's @gabylrei s4 citation is the barbell style source of a different take, not this image |
 | 05 s6 | gemini-2.5-flash-image, batch | 3 | 0.12 | round 1 PASS, superseded; round 2 blue shorts (the digest's "blue shorts pop" line leaked, now stripped); round 3 black shorts with the anchor PASS |
 | (discarded) | gpt-image-2 low | 3 | 0.033 | one run fired before a prompt patch had applied; outputs deleted |
@@ -59,7 +59,7 @@ Batch note: `batchGenerateContent` on `gemini-2.5-flash-image` with inline reque
 
 ## Result
 
-16 generated images (8 gpt-image-2, 8 Nano Banana), 3 real-screenshot slides (steps `steps-final-16349.png`; 02 s2 also carries the screen-time receipt `screentime-final.png`, both unedited), 1 reused approved image (05 s5), 4 CTA placeholders: 24 slides. Every Nano Banana face/body slide was rebuilt in the physique redo (rounds 2 and 3) and then taken through the Step 0-6 procedure (rounds 3-6) until it held a written PASS record from a separate reviewer session; the non-face gpt-image-2 slides keep their earlier reference-side-by-side PASS verdicts.
+16 generated images (8 gpt-image-2, 8 Nano Banana), 3 real-screenshot slides (steps `steps-final-16349.png`; 02 s2 also carries the screen-time receipt `screentime-final.png`, both unedited), 1 reused approved image (05 s5), 4 CTA slides carrying the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png` unedited (inbox 015; also slideshow 01 slide 7, built as `slide-07.jpg`, old generated slide kept beside it): 24 slides. Every Nano Banana face/body slide was rebuilt in the physique redo (rounds 2 and 3) and then taken through the Step 0-6 procedure (rounds 3-6) until it held a written PASS record from a separate reviewer session; the non-face gpt-image-2 slides keep their earlier reference-side-by-side PASS verdicts.
 
 ## Deviations from the brief
 

@@ -1,6 +1,6 @@
 # Slideshows 02 to 05: index, stories, candidates, self-check
 
-Scripts written on 2026-09-19 to `research/slideshows/script-writing-guide.md` (the captain's walkthrough with the research reasons under each rule, plus his image and reference preferences from his four reviews the same day: 5 to 7 slides, CTA always slide 4, no Apple Watch in any reference or prompt, no cheat sheets or Notes screenshots, banned @rrachfitness source, value text from value slides only, genuinely different slides, no agent-written parentheticals, no number-progress phrasing, organic last slides). Each script gives, for every slide, the on-screen text, exactly one organic reference for the picture (URL, account, slide number, what it shows, numbers as observed on the day of capture), the copy source where a tip was copied, and our variation (a house-style prompt placing our girl in that scene, or the real screenshot to drop in). CTA slides carry no image note except "captain supplies Instagram screenshot". Nothing is generated; prompts and references only. Metrics are what TikTok showed at capture and say nothing about conversion.
+Scripts written on 2026-09-19 to `research/slideshows/script-writing-guide.md` (the captain's walkthrough with the research reasons under each rule, plus his image and reference preferences from his four reviews the same day: 5 to 7 slides, CTA always slide 4, no Apple Watch in any reference or prompt, no cheat sheets or Notes screenshots, banned @rrachfitness source, value text from value slides only, genuinely different slides, no agent-written parentheticals, no number-progress phrasing, organic last slides). Each script gives, for every slide, the on-screen text, exactly one organic reference for the picture (URL, account, slide number, what it shows, numbers as observed on the day of capture), the copy source where a tip was copied, and our variation (a house-style prompt placing our girl in that scene, or the real screenshot to drop in). CTA slides carry no image note except "the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited". Nothing is generated; prompts and references only. Metrics are what TikTok showed at capture and say nothing about conversion.
 
 All `data/` paths in the scripts are the firstmate data folder (same convention as slideshow 01).
 
@@ -32,25 +32,25 @@ New face generations needed: one per deck, all gym, studio or locker-room mirror
 | 02 S1 | @estefanytrevino 7584332790783560990 s2 | 811.6K | black gym mirror selfie, hex lights (face 1) |
 | 02 S2 | @caprilola67 7430596096843320608 s3 | 3.6M | Screen Time page, 109h 57m, TikTok 70h 23m (real proof) |
 | 02 S3 | @savwright 7658869024830328094 s3 | 59K | walk from behind on a coastal road, no face |
-| 02 S4 | CTA | | captain supplies Instagram screenshot |
+| 02 S4 | CTA | | the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited |
 | 02 S5 | @fitnessa5 7540071199108386103 s2 | 835.4K | treadmill console POV (approved) |
 | 02 S6 | @eliepeony 7434799539892112641 s5 | 75.3K | sunrise tree-lined road, nobody in frame |
 | 03 S1 | @haifa.munster 7469573268274416939 s1 | 197.7K | gym bathroom mirror selfie, pink set (face 1) |
 | 03 S2 | @iliana.rdz96 7654815554305363218 s3 | 2.4M | before picture: lazy on the couch, blanket, snacks, phone (our girl, face 2) |
 | 03 S3 | @dan1elleb 7347370624723012896 s2 | 287.3K | treadmill console close-up, no person |
-| 03 S4 | CTA | | captain supplies Instagram screenshot |
+| 03 S4 | CTA | | the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited |
 | 03 S5 | @chikussa.c 7627223439228603679 s5 | 19.8K | sunset road with bike-path sign, no face |
 | 03 S6 | @sandy_fit7 7681145441257377038 s1 | 295.6K | walking pad at home with phone mount, no face |
 | 04 S1 | @gabrielaaadcg 7640338557193719060 s1 | 218.8K | fitness-studio mirror selfie (face 1) |
 | 04 S2 | @vs.secretx 7546985090132348182 s3 | 2.1M | "i KNOW ball." over a steps screenshot (our real steps) |
 | 04 S3 | @chikussa.c 7627223439228603679 s4 | 19.8K | lunch bowl in hand POV, no face |
-| 04 S4 | CTA | | captain supplies Instagram screenshot |
+| 04 S4 | CTA | | the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited |
 | 04 S5 | @lift.with.em 7637215971492580630 s2 | 327.3K | console-down treadmill belt with one shoe, no face |
 | 04 S6 | @imdaisypal 7426835869820292398 s3 | 40.9K | office car park in the morning, no face |
 | 05 S1 | @gabrielaaadcg 7640338557193719060 s2 | 218.8K | locker-room side mirror selfie (face 1) |
 | 05 S2 | @gelou.fitness 7620413720165928212 s1 | 781.2K | before picture move (our generated before, baggy tee, face 2) |
 | 05 S3 | @lucieengland0 7608330902782938390 s2 | 96.5K | steps screenshot as fat-loss proof (`steps-final-16349.png`, the one receipt) |
-| 05 S4 | CTA | | captain supplies Instagram screenshot |
+| 05 S4 | CTA | | the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited |
 | 05 S5 | @gabylrei 7663840390155341069 s4 | 233.6K | style source of our approved slideshow 01 meal-prep photo |
 | 05 S6 | @lift.with.em 7637215971492580630 s1 | 327.3K | treadmill walk from behind, organic, no face |
 
@@ -108,7 +108,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | 1 | how i get my steps in as a phone addict | Captain's title. Face 1: black gym mirror selfie holding the phone, ref @estefanytrevino s2 (811.6K), digest then place. |
 | 2 | heres proof | Two words. Real steps screenshot next to a real Screen Time page framed like @caprilola67 s3 (3.6M). The one screenshot slide. |
 | 3 | walk after every meal ... | A way she gets steps, one piece. Copied from @ahealthbook (558.7K). Photo is a real walk (@savwright s3), on-message, no face, no watch. No bracket. |
-| 4 | use excerlock to make your phone block apps if your not moving. i legit cant scroll unless im walking around (works on the treadmill!!) | Captain's exact text, "use excerlock to" frame, parenthesis and exclamation marks. Image: captain supplies Instagram screenshot. |
+| 4 | use excerlock to make your phone block apps if your not moving. i legit cant scroll unless im walking around (works on the treadmill!!) | Captain's exact text, "use excerlock to" frame, parenthesis and exclamation marks. Image: the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited. |
 | 5 | 10 minutes on the treadmill before and after every lift / free steps!!! | Approved as is; treadmill console POV, @fitnessa5 s2, no watch. Copy source now @wellnesswithisabel (the banned @rrachfitness slide removed). The one !! aside line across the four decks. |
 | 6 | get up 10 minutes earlier and walk for 10 minutes ... | A way, copied from @gymmyworm. Aesthetic sunrise road, nobody in frame (@eliepeony s5). Last slide is a value slide. |
 
@@ -121,7 +121,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | 1 | i didn't want to get 10k steps today but... | Captain's title unchanged. Face 1: gym bathroom mirror selfie, @haifa.munster (197.7K), bare wrist. |
 | 2 | but then i remembered how i was | Captain's line over a BEFORE picture of her on the couch (@iliana.rdz96 s3, 2.4M), face 2. The "15k" pointer line was dropped: no chart sits on this slide. |
 | 3 | walking for 30 mins at speed 3 on 12 incline at the end of your session | Help 1, one piece. Copied from @fitnessa5 (835.4K), fat claim cut. Treadmill console close-up (@dan1elleb s2, 287.3K), no person, no watch. |
-| 4 | started using excerlock to block my screentime until im on the treadmill or walking. (infinite steps hack) | Captain's exact text on slide 4. Image: captain supplies Instagram screenshot. |
+| 4 | started using excerlock to block my screentime until im on the treadmill or walking. (infinite steps hack) | Captain's exact text on slide 4. Image: the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited. |
 | 5 | 30-40min walk after dinner | Help 2, one piece. Copied from @chikussa.c s5, its own sunset-road photo, no face. "9k to 15k" line cut. |
 | 6 | walk while watching shows. short sessions add up fast | Help 3, one piece. Copied from @rio.maramba s3 (one line, not the list). Walking pad at home (@sandy_fit7 s1, 295.6K), no face. Last slide is a help slide and an organic home photo. |
 
@@ -134,7 +134,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | 1 | why you're not hitting your steps (it's not your legs) | Captain's title. Face 1: fitness-studio mirror selfie holding the phone, @gabrielaaadcg s1 (218.8K), no watch. |
 | 2 | and i KNOW what im talking about | Captain's exact line over the real steps screenshot; ref @vs.secretx s3 (2.1M). The one screenshot slide. |
 | 3 | walk after lunch everyday. use the free time you have | Captain's exact text. Lunch bowl POV (@chikussa.c s4), on-message, no face. |
-| 4 | ur not using excerlock to block scrolling unless your moving (i use this and its a life hack, legit cant scroll unless im moving) | Captain's exact text on slide 4; the frame is "ur not using excerlock". Image: captain supplies Instagram screenshot. |
+| 4 | ur not using excerlock to block scrolling unless your moving (i use this and its a life hack, legit cant scroll unless im moving) | Captain's exact text on slide 4; the frame is "ur not using excerlock". Image: the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited. |
 | 5 | your skipping the treadmill after you lift. / treadmill on incline 12 speed 3 for 20 min AFTER lifting weights instead | Frame kept. Copied from @leslie.bfit (195.7K), fat claim cut. Treadmill pic (@lift.with.em s2, 327.3K), no face, no watch (@chikussa.c s3 dropped, it shows a watch). No bracket. |
 | 6 | your parking as close as you can. / park as far as you can, make it a game in trying to reach ur step goals!! | Frame kept. Copied from @imdaisypal s3, its own car-park photo, no face. Last slide is a value slide and an organic photo. No bracket. |
 
@@ -147,7 +147,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 | 1 | want to lose fat but nothing is working? / this is what i did | Captain's title. Face 1: locker-room mirror selfie, @gabrielaaadcg s2 (218.8K), bare wrists; generated fresh because the slideshow 01 picture and its reference show a watch. |
 | 2 | this was me. gym 5x a week and NOTHING was moving / what actually worked >>> | Captain's slide 2 (the before picture, face 2, generated: baggy black tee, softer body, no watch). Ref @gelou.fitness s1 (781.2K). |
 | 3 | i got 10k steps a day. every single day, even rest days | "this is what i did" frame, plain and followable, one piece. Copied from @garely.lifts s5 (883.6K), a value slide, not a hook. Real month steps screenshot, ref @lucieengland0 s2. The one screenshot slide. No bracket. |
-| 4 | excerlock blocks my tiktok unless im walking so i legit had no choice | "excerlock blocks" frame on slide 4, lowercase, no bracket. Image: captain supplies Instagram screenshot. |
+| 4 | excerlock blocks my tiktok unless im walking so i legit had no choice | "excerlock blocks" frame on slide 4, lowercase, no bracket. Image: the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png`, unedited. |
 | 5 | i ate in a deficit and hit 1g of protein per lb of bodyweight / you cant lose fat unless your in a caloric deficit ... | "what i did" frame, one piece. Copied from @paaofit (1.0M, 34.2K saves). Approved slideshow 01 meal-prep photo, ref @gabylrei s4, no person. No bracket. |
 | 6 | i lift first and do cardio AFTER ... then 20 mins incline walk | "what i did" frame, one piece. Copied from @trainwtaylorx (964.7K). Treadmill walk from behind (@lift.with.em s1, 327.3K, 9.3K saves), organic, no face, no watch. Last slide is a value slide. No bracket. |
 

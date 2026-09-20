@@ -1,6 +1,6 @@
 # Slideshow 01 - lose fat, 7 slides
 
-On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4, 7) get a real screenshot dropped in after generation; the generated screen is a placeholder only. Slide 5 is the real steps receipt itself, no generation.
+On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4) get a real screenshot dropped in after generation; the generated screen is a placeholder only. Slide 5 is the real steps receipt and slide 7 the real ExcerLock blocker screen, no generation.
 
 Overlay defaults for every slide: clean geometric sans, medium weight, white #FFFFFF, soft drop shadow, left-aligned or centred as noted, 9:16.
 
@@ -102,7 +102,5 @@ Use ExcerLock to block social media unless you're moving. I literally can't scro
 ```
 
 **Image**
-- Style: inline, polish: raw
-- Prompt: close POV of a hand holding an iPhone in portrait while walking on a sidewalk, the screen showing a plain lock screen with a short blocked-app notice and a walking condition line, sidewalk, moving legs and white trainers blurred at the bottom of the frame, hard afternoon sun on the back of the hand, glare and a fingerprint smudge on the glass, slight motion blur on the background, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos, no invented app branding
-- Text placement: centred, top 20% above the phone, 3 lines
-- After generation: replace the screen with a real ExcerLock lock screen screenshot showing TikTok blocked until walking
+- No generation (captain, 2026-09-20). the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png` (rendered from the captain's HTML, source `data/cta-shield/shield.html`), unedited, full frame; the one CTA image for every slideshow. Built as `data/slideshow-01-final/build/slide-07.jpg` fitted by height on black (the file is 1080x2340, the slide 1080x1920; nothing cropped); the earlier generated lock-screen slide is kept beside it as `slide-07-old-generated.jpg`.
+- Text placement: centred, top 20%, 3 lines, clear of the shield graphic.

@@ -73,7 +73,7 @@ started using excerlock to block my screentime until im on the treadmill or walk
 ```
 
 **Image**
-- captain supplies Instagram screenshot
+- No generation. the ExcerLock blocker screen `data/cta-shield/shield-1080x2340.png` (rendered from the captain's HTML, source `data/cta-shield/shield.html`), unedited, full frame; the one CTA image for every slideshow.
 
 - Text placement: centred, top third, 3 lines.
 
