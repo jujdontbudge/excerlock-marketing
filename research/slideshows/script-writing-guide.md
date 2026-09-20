@@ -118,6 +118,10 @@ Every line carries its reason. Positive checks for reviewing a finished script o
 
 - (creation) Attach physique-anchor + benchmark as references and state the body explicitly in every body-visible prompt. For 05 s2 the baggy tee must still show the body (tee tucked/cropped or fitted, shorts showing thick legs) - 'baggy' is not allowed to hide it.
 - (arms, captain addition 2026-09-20) Her arms must NOT be muscular at all - no visible biceps, triceps, or shoulder definition. Arms are slim and soft, feminine; any muscular arm is a FAIL. Benchmark comparison: legs/chest/waist from the benchmark; arms slimmer and softer than the benchmark if it shows definition.
+- (body vs reference, captain 2026-09-20, fourth rejection of 05 s1) 1. The organic reference decides camera, lighting, place, framing, outfit ONLY - never her body. Her body always comes from the benchmark and the prompt must say it in plain words: hourglass, curvy, round full glutes, thick toned thighs, big chest, small waist, slim soft arms, flattering pose.
+- 2. For body shots do NOT attach the organic reference as an image input. Pass its style as text (digest) and attach only character sheet + physique anchor + benchmark (02 s1). An attached flat body outweighs any words.
+- 3. Pose/angle may change from the reference when it hides the body: use a three-quarter back angle, slight hip pop, chest visible. Flat side profile = FAIL.
+- 4. Reviewer judges the body only against the benchmark; 'matches the reference' is not a defence.
 - (review) The reviewer puts the benchmark beside every body shot; softer/flatter/slimmer/boxier = FAIL on any current picture; before slides exempt.
 
 - Don't render our girl looking fat, soft, or wiry/flat. Why: the account sells a body result; a girl who looks worse than the viewer makes the slideshow a lie and she scrolls. In every picture showing her body she looks very good: not fat, thick toned legs, big breasts, slim soft arms, no muscle definition, tight waist, real skin (captain, 2026-09-19: "she need to look much better... not fat at all. but thick legs big breast skinner but toned arms").
