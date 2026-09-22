@@ -83,7 +83,7 @@ These come from the AI-copy study and only apply where they do not conflict with
 
 ## Image / reference preferences (captain, 2026-09-19 reviews)
 
-Every line carries its reason. Positive checks for reviewing a finished script or image set live in `research/slideshows/reviewer-checks.md`.
+Every line carries its reason. Positive checks for reviewing a finished script or image set live in `research/slideshows/reviewer-checks.md`. Every image prompt is written as JSON with `skills/organic-json-image-prompting.md`, which carries these preferences as rules and checks.
 
 - Don't open on phone-in-bed or any non-gym imagery: slide 1 is an aesthetic gym or walking mirror pic holding the phone, because the hook picture is what stops the scroll and a good-looking gym pic is what this audience stops for.
 - Don't use anything but real proof on the proof slide (the screen-time reference is @caprilola67 https://www.tiktok.com/@caprilola67/photo/7430596096843320608 slide 3), because a fake or decorative proof slide breaks the trust the rest of the deck spends.
@@ -119,7 +119,7 @@ Every line carries its reason. Positive checks for reviewing a finished script o
 - (creation) Attach physique-anchor + benchmark as references and state the body explicitly in every body-visible prompt. For 05 s2 the baggy tee must still show the body (tee tucked/cropped or fitted, shorts showing thick legs) - 'baggy' is not allowed to hide it.
 - (arms, captain addition 2026-09-20) Her arms must NOT be muscular at all - no visible biceps, triceps, or shoulder definition. Arms are slim and soft, feminine; any muscular arm is a FAIL. Benchmark comparison: legs/chest/waist from the benchmark; arms slimmer and softer than the benchmark if it shows definition.
 - (body vs reference, captain 2026-09-20, fourth rejection of 05 s1) 1. The organic reference decides camera, lighting, place, framing, outfit ONLY - never her body. Her body always comes from the benchmark and the prompt must say it in plain words: hourglass, curvy, round full glutes, thick toned thighs, big chest, small waist, slim soft arms, flattering pose.
-- 2. For body shots do NOT attach the organic reference as an image input. Pass its style as text (digest) and attach only character sheet + physique anchor + benchmark (02 s1). An attached flat body outweighs any words.
+- 2. For body shots do NOT attach the organic reference as an image input. Pass its style as text (digest) and attach only character sheet + physique anchor + benchmark (02 s1). An attached flat body outweighs any words. Exception (captain, 2026-09-22): in the `character_replaces_person` workflow of `skills/organic-json-image-prompting.md`, the organic photo is attached with its face and body listed under `must_not_transfer`, and the anchor and benchmark are still attached. If the body leaks, redo the slide without the photo attached.
 - 3. Pose/angle may change from the reference when it hides the body: use a three-quarter back angle, slight hip pop, chest visible. Flat side profile = FAIL.
 - 4. Reviewer judges the body only against the benchmark; 'matches the reference' is not a defence.
 - (review) The reviewer puts the benchmark beside every body shot; softer/flatter/slimmer/boxier = FAIL on any current picture; before slides exempt.

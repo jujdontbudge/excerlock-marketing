@@ -1,0 +1,194 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "first_principles",
+  "intent": {
+    "purpose": "slideshow frame: casual post-workout stretch photo taken by a friend",
+    "scene_concept": "woman sitting on a mat on a commercial gym floor doing a quad stretch, photographed by a friend standing in front of her",
+    "place_type": "commercial gym with large windows (not a home gym, not a yoga studio)",
+    "must_stay_true": [
+      "it is a working commercial gym with dumbbell racks and a cable machine",
+      "she is seated on a mat mid-stretch, holding one foot",
+      "daylight from big windows mixed with ceiling LEDs"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "plandid",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman cooling down after training",
+    "action": "holding her left shoe behind her in a seated quad stretch while her right hand rests on the mat",
+    "pose": "seated on the mat, right leg folded in front, left knee bent with the foot pulled back by the left hand, torso upright with a slight lean",
+    "gaze": "toward the camera",
+    "expression": "calm, slightly out of breath, closed-mouth half-smile",
+    "face_visibility": "full face, small in frame"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, mid-20s",
+    "presentation": "woman",
+    "skin": "light warm skin, flushed cheeks, light sweat on the forehead and upper chest",
+    "hair": "chin-to-shoulder length blonde hair, tucked behind one ear, damp at the hairline",
+    "face": "minimal makeup, natural brows, ordinary believable features",
+    "distinguishing_marks": "none",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {
+    "build": "fit and athletic but not a fitness model",
+    "proportions": "realistic adult proportions, natural waist, strong legs",
+    "detail": "soft natural stomach when seated, no exaggerated muscle definition"
+  },
+  "wardrobe": {
+    "items": [
+      "pale pink short-sleeve fitted training top",
+      "hot-pink high-waisted bike shorts",
+      "white crew socks",
+      "white and pale-pink chunky running shoes",
+      "beige over-ear wireless headphones worn on the head"
+    ],
+    "fit_and_condition": "top creased at the waist, sweat darkening the collar slightly, shoes lightly scuffed"
+  },
+  "environment": {
+    "setting": "bright commercial gym floor, mid-morning",
+    "foreground": [
+      "light wood stretching platform edge at the bottom of the frame",
+      "a half-empty water bottle and a small towel on the platform"
+    ],
+    "background": [
+      "black rubber floor with visible tile seams and chalk marks",
+      "long black dumbbell rack at the left",
+      "black cable machine at the right",
+      "floor-to-ceiling windows showing apartment buildings",
+      "exposed dark ceiling with ducts and linear LED fixtures",
+      "one other member training far in the background"
+    ],
+    "clutter": "normal gym clutter: a stray plate against the rack, a bench slightly out of line",
+    "time_of_day": "mid-morning"
+  },
+  "camera": {
+    "device": "iPhone 13 held by a friend",
+    "capture": "rear_camera_by_friend",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "standing about two metres in front, phone at chest height pointing slightly down",
+    "distance": "about 2 m",
+    "orientation": "vertical",
+    "focus": "on her face and torso",
+    "depth_of_field": "deep; the whole gym is readable"
+  },
+  "composition": {
+    "framing": "full body with the platform, a lot of gym around her",
+    "subject_placement": "slightly below centre and a little right",
+    "crop": "one shoe near the bottom edge",
+    "tilt": "about 2 degrees; the window mullions lean slightly",
+    "headroom": "plenty; ceiling ducts visible"
+  },
+  "lighting": {
+    "sources": [
+      "daylight through large windows at left and behind",
+      "cool-white linear LED ceiling fixtures"
+    ],
+    "direction": "mostly from the left and behind",
+    "quality": "bright, diffused, with soft contact shadows under her legs",
+    "exposure": "windows slightly overexposed, subject a little dim on the camera side"
+  },
+  "color": {
+    "white_balance": "neutral, slightly cool from the LEDs",
+    "palette": [
+      "#F4C9D2",
+      "#E8457A",
+      "#1E1E1F",
+      "#D9C7A6",
+      "#C6CBD1",
+      "#FFFFFF"
+    ],
+    "saturation": "saturated pinks against a neutral gym",
+    "contrast": "medium",
+    "casts": [
+      "cool LED cast on the black floor",
+      "faint pink bounce on the platform"
+    ]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app, 1x, default",
+    "hdr": "Smart HDR keeping the windows from clipping completely",
+    "sharpening": "default phone sharpening",
+    "noise_reduction": "light",
+    "compression": "mild social-media compression",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "windows partly blown out",
+    "slight tilt",
+    "a stray plate and an unaligned bench in the background",
+    "sweat marks on the top",
+    "chalk dust and scuffs on the floor"
+  ],
+  "texture": {
+    "skin": "real skin with slight sweat sheen, knees a little red from the mat",
+    "hair": "damp strands at the hairline, flyaways",
+    "fabric": "technical fabric with seam lines and stretch creases, ribbed socks",
+    "surfaces": "rubber floor texture, wood grain on the platform, matte black steel"
+  },
+  "motion": {
+    "subject": "holding the stretch, still",
+    "camera": "handheld by a friend",
+    "blur": "none on the subject; the background member slightly motion-blurred"
+  },
+  "geometry": {
+    "anatomy": [
+      "two arms, two legs, correct knee and ankle bends",
+      "the left hand actually grips the left shoe behind her",
+      "five fingers on each visible hand"
+    ],
+    "physics": [
+      "her weight sits on the mat with contact shadows",
+      "dumbbells sit in their rack slots in size order",
+      "cable machine cables run straight to their pulleys"
+    ],
+    "reflections": "window glass shows faint reflections of the ceiling lights only",
+    "perspective": "natural 1x phone perspective; window verticals nearly straight"
+  },
+  "phone": {
+    "visible": false,
+    "case": null,
+    "hold": "the friend's phone is the camera and is not visible",
+    "screen": null
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "small equipment decals too far away to read"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding: real-looking manufacturer decals on the machines and a small logo on the shoes and headphones are fine; do not invent readable text",
+    "brands": [
+      "small manufacturer decal on the cable machine",
+      "small logo on the running shoes"
+    ],
+    "props": [
+      "water bottle",
+      "small gym towel",
+      "headphones"
+    ]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no fitness-model pose or exaggerated muscles",
+    "no studio lighting or dramatic spotlight",
+    "no teal-orange grade or cinematic look",
+    "no portrait-mode blur",
+    "no plastic or airbrushed skin",
+    "no text overlays or watermarks"
+  ],
+  "references": {
+    "manifest": [],
+    "priority": [
+      "prompt_json"
+    ]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

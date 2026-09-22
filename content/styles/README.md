@@ -1,10 +1,11 @@
 # Saved photo styles
 
-Reusable style blocks for the organic iPhone photo prompt template
-(`skills/organic-iphone-photo.md`), extracted with the workflow in
-`skills/style-clone.md`. Inject a block into the template's
-`<visual_analysis_reference>` slot, or append its `reusable_prompt_fragment`
-to a scene description.
+Reusable style digests, extracted with the workflow in `skills/style-clone.md`.
+They are inputs to the JSON prompt workflow in
+`skills/organic-json-image-prompting.md`: their contents are written into the
+prompt JSON as text and listed in its reference manifest as `style_digest`.
+They are never attached to a generation or appended as prose. Older digests say
+"no brand names"; the current rule is to keep natural branding.
 
 Observed metrics on each block are public counters as displayed at the
 captured date — observed, not conclusions about performance.

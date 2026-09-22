@@ -4,6 +4,8 @@ Turn one liked slide into a new slide image that shares its **style and concept*
 **not the same picture**: same kind of place, same kind of subject, same shooting habits
 and imperfections, different room, layout, and individual objects.
 
+**Legacy.** The runner below sends a prose prompt inside the API body, which the current rule forbids. New work uses workflow W1 (`style_clone_new_scene`) in `skills/organic-json-image-prompting.md`, which keeps this skill's concept rules: the digest is text only, the place type is locked, brands are kept, and the scene is physically logical. Migrating the runner to `scripts/image-prompt.py wrap` is open follow-up work.
+
 Runner: `scripts/image-reimagine.py <digest-slug> [take]` (reads `OPENAI_API_KEY` from
 `~/excerlockmarketing/.env`). Approved 2026-09-17 on slideshow 01 slides 3 and 4.
 

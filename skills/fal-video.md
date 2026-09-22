@@ -14,4 +14,4 @@ Supported video families include Seedance 2.0/2.5, Kling 2.6/V3, Kling LipSync, 
    `.venv/bin/python scripts/fal-video.py submit --endpoint ENDPOINT --input raw/INPUT.json --approve-spend`
 6. Poll with `status`, retrieve with `result`, and inspect dimensions, duration, continuity, hands, product fidelity, audio, and claims.
 
-Use `codex-image` for stills. Add further fal video endpoints only after confirming their official schema and that they generate video.
+Stills, including first frames, follow `skills/organic-json-image-prompting.md` (`video_first_frame` mode). Add further fal video endpoints only after confirming their official schema and that they generate video.

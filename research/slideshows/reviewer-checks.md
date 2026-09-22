@@ -21,7 +21,8 @@ Positive checks, run before anything goes to the captain. Each line is a pass co
 The reviewer is a SEPARATE session that never generated the image. It assumes every image is broken until proven otherwise: the job is to find the fault, not to confirm the pass. Write the verdict only after every step below is done, and quote the evidence for each step. A verdict with a skipped step is invalid.
 
 ### Step 0 - inputs
-- The generated image at full resolution, its organic reference, the slide's on-screen text, the slide's prompt, and the character sheet. Missing any of these → do not review, send it back.
+- The generated image at full resolution, its organic reference, the slide's on-screen text, the slide's prompt JSON (`skills/organic-json-image-prompting.md`, passing `scripts/image-prompt.py check`) with its reference manifest, and the character sheet. Missing any of these → do not review, send it back.
+- Check the image against the manifest: nothing listed in any entry's `must_not_transfer` appears in the image.
 
 ### Step 1 - zoom crops (mandatory, one per region, at >=2x)
 Crop and look at each region separately; report what you saw per crop:
@@ -31,7 +32,7 @@ Crop and look at each region separately; report what you saw per crop:
 - Torso: one waist, chest and hips face the same way the shoulders do unless the pose clearly twists at the waist; no doubled straps or clothing seams that don't continue.
 - Each leg: hip → knee → ankle → foot. Knee bends backward only, shin ≈ thigh length, foot points the same way as the shin, sole on the floor or clearly lifted.
 - Feet/shoes: two shoes, same pair, laces/soles consistent, no third shoe or floating shoe.
-- Any object she holds/wears: headphones (one pair, on neck OR head, not both), phone (one, in one hand, case only where allowed), cup/bottle (one, with a readable but unbranded surface).
+- Any object she holds/wears: headphones (one pair, on neck OR head, not both), phone (one, in one hand, case only where allowed), cup/bottle (one, with natural real-looking branding or plain; no invented, garbled or misspelled words).
 Any impossibility in any crop → FAIL. Uncertain → FAIL (regenerating is cheap; a broken slide going out is not).
 
 ### Step 2 - mirror and reflection logic (for any mirror selfie)

@@ -1,0 +1,182 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "first_principles",
+  "intent": {
+    "purpose": "slideshow frame: close selfie leaning toward the phone in a bright kitchen",
+    "scene_concept": "woman leaning forward into a front-camera selfie in an ordinary daylight kitchen, one hand at her neckline",
+    "place_type": "ordinary home kitchen (not a showroom kitchen)",
+    "must_stay_true": [
+      "she leans in toward the camera so her face is close and large",
+      "soft window daylight",
+      "a real, used kitchen behind her"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "plandid",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman in a casual dress about to head out",
+    "action": "leaning toward the phone held at arm's length, left hand lightly adjusting the dress neckline",
+    "pose": "torso tipped forward, shoulders rolled slightly in, head tilted",
+    "gaze": "direct into the lens",
+    "expression": "calm, mouth closed, slight lift at one corner",
+    "face_visibility": "full face, large in frame"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, mid-20s",
+    "presentation": "woman",
+    "skin": "light-medium warm skin, light freckles on the nose, a small beauty mark on the jaw, visible pores",
+    "hair": "beige-blonde hair with darker roots in a loose low bun, two long face-framing strands",
+    "face": "light everyday makeup, natural brows, lips with a little balm; natural asymmetry",
+    "distinguishing_marks": "none",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {
+    "build": "slim",
+    "proportions": "realistic adult proportions",
+    "detail": "head, shoulders and upper chest visible"
+  },
+  "wardrobe": {
+    "items": [
+      "deep red cotton slip dress with thin straps and a simple lace-trim neckline",
+      "chunky gold sculptural earrings"
+    ],
+    "fit_and_condition": "one strap slightly twisted, fabric creased at the waist"
+  },
+  "environment": {
+    "setting": "small home kitchen in the morning",
+    "foreground": [],
+    "background": [
+      "white cabinets with one door not fully closed",
+      "counter with a kettle, a fruit bowl with bananas, a cutting board and a jar of utensils",
+      "window with sheer curtain at frame left",
+      "a fridge with a few magnets and a paper note"
+    ],
+    "clutter": "normal: mug in the sink, tea towel over the oven handle",
+    "time_of_day": "morning"
+  },
+  "camera": {
+    "device": "iPhone 14 held in hand",
+    "capture": "front_camera_selfie",
+    "lens": "front selfie camera",
+    "focal_length_equiv_mm": 23,
+    "position": "arm's length, at eye level, the arm reaching toward the camera from frame right",
+    "distance": "about 35 cm",
+    "orientation": "vertical",
+    "focus": "eyes sharp",
+    "depth_of_field": "deep; the kitchen is recognisable, only slightly soft"
+  },
+  "composition": {
+    "framing": "tight head and upper chest",
+    "subject_placement": "face centred, slightly low",
+    "crop": "top of the bun cut off; one shoulder cut at the frame edge",
+    "tilt": "about 4 degrees",
+    "headroom": "none"
+  },
+  "lighting": {
+    "sources": [
+      "window daylight from the front-left through a sheer curtain",
+      "warm under-cabinet light on at the back"
+    ],
+    "direction": "front-left",
+    "quality": "soft, slightly uneven; one side of the face brighter",
+    "exposure": "face well exposed, window area slightly clipped"
+  },
+  "color": {
+    "white_balance": "neutral daylight",
+    "palette": [
+      "#8E1B22",
+      "#E8D6BF",
+      "#F6F3EE",
+      "#C9A36A",
+      "#6F6A62"
+    ],
+    "saturation": "natural; the red dress reads strongly",
+    "contrast": "medium-low",
+    "casts": [
+      "slight warm cast near the under-cabinet light"
+    ]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app",
+    "hdr": "Smart HDR",
+    "sharpening": "default phone sharpening on lashes and earrings",
+    "noise_reduction": "light",
+    "compression": "mild social-media compression",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "slight wide-angle enlargement of the nose and forehead from the close distance",
+    "window highlight clipped",
+    "cabinet door ajar",
+    "stray strands across the forehead",
+    "a faint lens smudge haze near the window"
+  ],
+  "texture": {
+    "skin": "pores, freckles, fine peach fuzz, slight shine on the nose",
+    "hair": "loose strands and flyaways, darker roots",
+    "fabric": "matte cotton with creases and a lace trim that shows its thread",
+    "surfaces": "painted cabinets, stainless kettle with a window reflection"
+  },
+  "motion": {
+    "subject": "still",
+    "camera": "handheld",
+    "blur": "none"
+  },
+  "geometry": {
+    "anatomy": [
+      "the selfie arm extends toward the lens from frame right and leaves the frame",
+      "the left hand has five fingers and lightly pinches the neckline",
+      "neck and shoulders consistent with the forward lean"
+    ],
+    "physics": [
+      "earrings hang forward slightly with the lean",
+      "straps follow the shoulders under tension"
+    ],
+    "reflections": "the kettle reflects the window as a soft bright shape; no readable reflections",
+    "perspective": "close front-camera perspective, face slightly enlarged relative to shoulders, no fisheye"
+  },
+  "phone": {
+    "visible": false,
+    "case": null,
+    "hold": "the phone is the camera and is not visible",
+    "screen": null
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "the paper note on the fridge is too small and soft to read"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding: a real-looking kettle maker's logo is fine; do not invent new readable text",
+    "brands": [
+      "small logo on the kettle"
+    ],
+    "props": [
+      "kettle",
+      "fruit bowl",
+      "mug",
+      "tea towel"
+    ]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no luxury or showroom kitchen",
+    "no fashion-editorial pose or studio light",
+    "no beauty filter or poreless skin",
+    "no portrait-mode blur",
+    "no text overlays or watermarks"
+  ],
+  "references": {
+    "manifest": [],
+    "priority": [
+      "prompt_json"
+    ]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

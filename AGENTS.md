@@ -21,8 +21,7 @@ Judge work by source quality, truthful representation, creative usefulness, plat
 - Meta ads: official library first; `.venv/bin/meta-ads-collector` for bounded structured collection.
 - TikTok ads: official Creative Center or Commercial Content Library through the browser.
 - Transcription: `whisper-cli -m models/ggml-tiny.en.bin -f AUDIO -oj -of OUTPUT`; edit/verify with ffmpeg and ffprobe.
-- Images: use the `codex_image` tool for generation and editing; it wraps the local subscription-backed Codex bridge and preserves the user's final prompt.
-- Image prompting: organic iPhone photo template `skills/organic-iphone-photo.md`, style cloning `skills/style-clone.md`, saved styles `content/styles/`.
+- Image prompting and generation: every image prompt is JSON, following `skills/organic-json-image-prompting.md` (workflows, schema, reference manifest, vendor wrapping). Validate and wrap with `python3 scripts/image-prompt.py check|wrap FILE`. Style digests come from `skills/style-clone.md` and live in `content/styles/`. Generate through the API keys at the lowest quality, one image at a time; use the `codex_image` bridge only when asked.
 - Video: `.venv/bin/python scripts/fal-video.py schema|pricing|submit|status|result --endpoint ENDPOINT`. It allows verified Seedance, Kling, OmniHuman, and WAN video endpoints; check schema and price before submission.
 - Memory: relevant Mem0 memories are recalled automatically. `local_memory` supports project/session/global search and full CRUD; mutations require explicit approval. Commands: `/mem0-remember`, `/mem0-forget`, `/mem0-search`, `/mem0-tour`, `/mem0-scope`, `/mem0-status`, and `/memory-review`.
 

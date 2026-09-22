@@ -1,0 +1,105 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "insertion",
+  "intent": {
+    "purpose": "place a specific protein-shaker product into an approved kitchen-counter POV slide",
+    "scene_concept": "high-angle POV of a meal-prep counter in a home kitchen, as generated in E1, now with the shaker from P1 standing beside the containers",
+    "place_type": "ordinary home kitchen",
+    "must_stay_true": [
+      "everything in E1: containers, food, counter, light, noise, angle and framing",
+      "the shaker is the exact product in P1: shape, colour, lid and printed branding"
+    ],
+    "change_only": [
+      "add the P1 shaker standing upright on the counter at frame right, behind the second container, half full of a beige protein shake with foam at the top"
+    ],
+    "person_replacement": null
+  },
+  "polish_level": "raw",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 0,
+    "description": "meal-prep containers and a protein shaker on a kitchen counter",
+    "action": "none; still life seen from above",
+    "pose": "not applicable",
+    "gaze": null,
+    "expression": null,
+    "face_visibility": null
+  },
+  "identity": {"fictional": true, "age": null, "presentation": null, "skin": null, "hair": null, "face": null, "distinguishing_marks": null, "character_sheet": null},
+  "other_people": [],
+  "physique": {"build": null, "proportions": null, "detail": null},
+  "wardrobe": {"items": [], "fit_and_condition": null},
+  "environment": {
+    "setting": "home kitchen counter in the evening, as in E1",
+    "foreground": ["four glass meal-prep containers with rice, chicken and broccoli", "the inserted shaker at frame right"],
+    "background": ["speckled laminate counter", "a rice cooker", "a roll of kitchen paper", "a used spatula on a plate"],
+    "clutter": "as in E1",
+    "time_of_day": "evening"
+  },
+  "camera": {
+    "device": "iPhone rear main camera, as in E1",
+    "capture": "rear_camera_pov",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "held above the counter pointing down at about 60 degrees, as in E1",
+    "distance": "about 60 cm",
+    "orientation": "vertical",
+    "focus": "containers",
+    "depth_of_field": "deep"
+  },
+  "composition": {"framing": "as in E1", "subject_placement": "as in E1", "crop": "as in E1", "tilt": "as in E1", "headroom": "not applicable"},
+  "lighting": {"sources": ["warm ceiling light", "under-cabinet LED strip"], "direction": "overhead and slightly behind", "quality": "as in E1", "exposure": "as in E1"},
+  "color": {"white_balance": "warm, as in E1", "palette": ["#E9E3D6", "#6B8E3D", "#C9A66B", "#2E2E2E"], "saturation": "as in E1", "contrast": "as in E1", "casts": ["warm cast from the ceiling light"]},
+  "processing": {"pipeline": "as in E1", "hdr": "as in E1", "sharpening": "as in E1", "noise_reduction": "as in E1", "compression": "as in E1", "beauty_filter": "none", "grading": "none"},
+  "imperfections": ["condensation on container lids", "slight handheld softness", "the shaker picks up the same noise and softness as the rest of the frame"],
+  "texture": {"skin": null, "hair": null, "fabric": null, "surfaces": "glass with condensation, matte plastic shaker with a printed label, speckled laminate"},
+  "motion": {"subject": "none", "camera": "handheld", "blur": "slight softness as in E1"},
+  "geometry": {
+    "anatomy": [],
+    "physics": [
+      "the shaker stands on the counter with a contact shadow matching the ceiling light",
+      "the shaker is scaled correctly next to the containers (about 20 cm tall)",
+      "the shake level is flat and the foam sits on top"
+    ],
+    "reflections": "the shaker's plastic picks up the ceiling light as a soft highlight",
+    "perspective": "the shaker follows the same high-angle perspective as the containers"
+  },
+  "phone": {"visible": false, "case": null, "hold": "the phone is the camera", "screen": null},
+  "typography": {"overlay_text": null, "scene_text": "the shaker's printed branding exactly as in P1; no other new text"},
+  "brands_and_props": {
+    "branding_policy": "keep P1's real printed branding exactly; keep E1's existing branding unchanged",
+    "brands": ["the shaker brand printed on P1", "rice-cooker maker logo from E1"],
+    "props": ["protein shaker", "meal-prep containers", "rice cooker", "kitchen paper"]
+  },
+  "exclusions": [
+    "no people, hands or body parts",
+    "no misspelled or garbled label text",
+    "no studio product-shot lighting or clean seamless background",
+    "no change to anything outside the inserted shaker"
+  ],
+  "references": {
+    "manifest": [
+      {
+        "reference_id": "E1",
+        "role": "edit_target",
+        "source": "raw/generated/05-s5-meal-prep.png",
+        "sent_to_generator": true,
+        "may_copy": ["the whole scene"],
+        "must_preserve": ["every existing object, the light, the noise and the framing"],
+        "must_not_transfer": ["nothing is removed from E1"]
+      },
+      {
+        "reference_id": "P1",
+        "role": "product_reference",
+        "source": "raw/products/shaker-front.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["the shaker's shape, colour, lid and printed branding"],
+        "must_preserve": ["exact label spelling and logo"],
+        "must_not_transfer": ["P1's white product-shot background, studio lighting and shadow"]
+      }
+    ],
+    "priority": ["prompt_json", "P1", "E1"]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

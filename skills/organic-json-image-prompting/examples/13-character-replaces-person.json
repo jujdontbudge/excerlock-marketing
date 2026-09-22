@@ -1,0 +1,204 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "character_replaces_person",
+  "intent": {
+    "purpose": "slideshow hook frame: our character placed into a proven organic gym-mirror photo",
+    "scene_concept": "full-body mirror selfie in a no-frills 24-hour gym at night, same spot, camera and light as the organic photo O1, with the fictional character instead of the original woman",
+    "place_type": "budget 24-hour franchise commercial gym",
+    "must_stay_true": [
+      "the scene, camera position, framing, tilt and lighting of O1",
+      "the leg-press machine at frame right and the mirror frame edge at frame left",
+      "the person is the character from the character sheet, not the woman in O1"
+    ],
+    "change_only": [],
+    "person_replacement": {
+      "source_person": "the woman taking the mirror selfie in O1",
+      "replace_with": "the character in character-sheet-example.json, shown in C1-C3",
+      "keep_from_source": ["pose: standing, one hand on hip, phone raised to the mirror", "position in the frame", "distance to the mirror", "how the light falls on the body"],
+      "never_from_source": ["her face", "her body shape", "her skin tone and marks", "her hair", "her tattoos and jewellery", "her outfit", "her phone case pattern"]
+    }
+  },
+  "polish_level": "jagged",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "the character taking a full-body mirror selfie at night",
+    "action": "holding her phone up to the mirror with her right hand, left hand on her hip",
+    "pose": "standing, weight on the right leg, left hand on hip",
+    "gaze": "at the phone screen",
+    "expression": "hidden by the phone",
+    "face_visibility": "the phone covers most of the face; hairline and chin visible"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, 24",
+    "presentation": "woman",
+    "skin": "warm golden tan with faint sports-bra tan lines, light freckles, visible pores",
+    "hair": "shoulder-length dark-blonde hair with darker natural roots, loose and slightly frizzy",
+    "face": "mostly hidden by the phone; soft oval jaw and slightly uneven lips visible",
+    "distinguishing_marks": "no tattoos",
+    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+  },
+  "other_people": [],
+  "physique": {
+    "build": "fit, curvy hourglass",
+    "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
+    "detail": "slim soft arms with no visible muscle definition"
+  },
+  "wardrobe": {
+    "items": [
+      "black sports bra",
+      "olive bike shorts",
+      "white crew socks",
+      "worn white trainers",
+      "thin gold chain necklace"
+    ],
+    "fit_and_condition": "shorts creased at the hips, trainers scuffed"
+  },
+  "environment": {
+    "setting": "budget 24-hour gym at night, as in O1",
+    "foreground": ["purple leg-press machine with stacked plates at frame right"],
+    "background": [
+      "grey textured tile wall with a cream upper band",
+      "dumbbell rack",
+      "front desk far behind",
+      "dark exposed ceiling with ducting and bare fluorescent tubes"
+    ],
+    "clutter": "as in O1: busy training floor",
+    "time_of_day": "night"
+  },
+  "camera": {
+    "device": "iPhone, rear main camera pointed at the mirror",
+    "capture": "mirror_selfie",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "phone at face height toward the mirror, as in O1",
+    "distance": "about 2 m from the mirror",
+    "orientation": "vertical",
+    "focus": "her reflection",
+    "depth_of_field": "deep"
+  },
+  "composition": {
+    "framing": "full body inside the mirror, as in O1",
+    "subject_placement": "centre-left within the mirror, as in O1",
+    "crop": "as in O1",
+    "tilt": "as in O1: mirror edge and floor line on a diagonal",
+    "headroom": "dark ceiling band with tubes"
+  },
+  "lighting": {
+    "sources": ["bare fluorescent tubes", "point lights over the equipment bays"],
+    "direction": "overhead, patchy",
+    "quality": "hard and uneven",
+    "exposure": "hot speculars on chrome, noisy shadows"
+  },
+  "color": {
+    "white_balance": "mixed fluorescent, greenish",
+    "palette": ["#7A2E86", "#E8C22E", "#17171A", "#9C9C9C", "#EFEAE0"],
+    "saturation": "punchy equipment colours, natural skin",
+    "contrast": "high",
+    "casts": ["green fluorescent cast", "magenta bounce from the equipment"]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app, night indoor",
+    "hdr": "Smart HDR",
+    "sharpening": "crunchy default",
+    "noise_reduction": "heavy in the dark floor",
+    "compression": "social-media compression",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "noise across the floor",
+    "tube streaks on the mirror",
+    "blown chrome speculars",
+    "tilted framing",
+    "mirror frame edge intruding"
+  ],
+  "texture": {
+    "skin": "pores, freckles, a light sweat sheen",
+    "hair": "frizzy flyaways",
+    "fabric": "matte jersey with creases",
+    "surfaces": "glitter-flecked rubber floor, smudged mirror"
+  },
+  "motion": {
+    "subject": "still",
+    "camera": "handheld",
+    "blur": "slight softness"
+  },
+  "geometry": {
+    "anatomy": [
+      "the phone hand is the right hand in the reflection, the left hand rests on the hip with five fingers",
+      "two legs, feet on the floor"
+    ],
+    "physics": ["plates on the leg press sit on their pegs", "the body stands where the original stood, with matching floor contact shadows"],
+    "reflections": "the mirror reflection is consistent with her pose; equipment text reads mirrored",
+    "perspective": "as in O1"
+  },
+  "phone": {
+    "visible": true,
+    "case": "matte sage-green silicone phone case with a scuffed corner",
+    "hold": "right hand, case facing the mirror",
+    "screen": "facing her, not visible"
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "equipment decals mirror-reversed, as in O1"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep O1's natural branding exactly where it is (equipment and gym decor); do not invent new readable words",
+    "brands": ["equipment and gym branding visible in O1, mirror-reversed"],
+    "props": ["phone", "leg-press machine", "dumbbell rack"]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no trace of the original woman's face, body, tattoos or jewellery",
+    "no patterned phone case from O1",
+    "no second person in the mirror",
+    "no muscular arms",
+    "no beauty filter or clean studio light",
+    "no text overlays or watermarks"
+  ],
+  "references": {
+    "manifest": [
+      {
+        "reference_id": "O1",
+        "role": "organic_scene_source",
+        "source": "raw/refs/liftwithhannahh-7668802012561034526-s1.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["room, equipment and their positions", "camera position, framing and tilt", "lighting and colour", "pose and body position", "branding on equipment"],
+        "must_preserve": ["the place type and layout", "the imperfection character of the photo"],
+        "must_not_transfer": ["the original woman's face and identity", "her body shape and proportions", "her skin tone, tattoos, jewellery and hair", "her outfit and phone case", "any other identifying marker"]
+      },
+      {
+        "reference_id": "S1",
+        "role": "style_digest",
+        "source": "content/styles/gym-mirror-selfie-budget-night.json",
+        "sent_to_generator": false,
+        "may_copy": ["palette, lighting, camera and imperfection vocabulary (already written into this JSON)"],
+        "must_preserve": ["jagged polish level"],
+        "must_not_transfer": ["any identifying description of the original person"]
+      },
+      {
+        "reference_id": "C1",
+        "role": "character_reference",
+        "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["face, hair colour and roots, freckles"],
+        "must_preserve": ["her recognisable identity"],
+        "must_not_transfer": ["background, lighting, outfit"]
+      },
+      {
+        "reference_id": "C3",
+        "role": "physique_anchor",
+        "source": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["body shape and proportions"],
+        "must_preserve": ["tight waist, full hips, toned thighs, slim soft arms"],
+        "must_not_transfer": ["outfit, location, pose"]
+      }
+    ],
+    "priority": ["prompt_json", "C1", "C3", "O1", "S1"]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

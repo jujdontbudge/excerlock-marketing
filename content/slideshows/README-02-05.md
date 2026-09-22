@@ -160,7 +160,7 @@ Checklist from the guide: (1) value slides deliver the title literally in the ti
 - The slideshow 01 gym mirror picture of our girl (`grace-final-leopard-case.png`) is not used in these decks: it shows an Apple Watch. `before-final.png` is no longer used either (05 S2 is now generated). The character line in every script now reads "no watch".
 - The only brackets left in on-screen text are the captain's own CTA wording and the deck 04 title. The single !! aside line is "free steps!!!" on 02 S5; no other deck carries one.
 - New style digests proposed (not yet made): `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`, `savwright-8094-s3-coastal-road-walk-behind`, `fitnessa5-8103-s2-treadmill-console-pov`, `eliepeony-2641-s5-sunrise-tree-road`, `haifamunster-6939-s1-gym-bathroom-mirror-pink`, `dan1elleb-2896-s2-treadmill-console-closeup`, `chikussa-3679-s5-sunset-road`, `sandyfit7-7038-s1-walking-pad-mount-home`, `gabrielaaadcg-9060-s1-studio-mirror-selfie`, `gabrielaaadcg-9060-s2-locker-room-side-mirror`, `chikussa-3679-s4-lunch-bowl-hand-pov`, `liftwithem-0630-s2-console-down-belt-shoe`, `imdaisypal-2398-s3-office-car-park-morning`, `liftwithem-0630-s1-treadmill-from-behind`. No saved style is reused (the two gym-mirror styles on file both carry a watch).
-- All people in prompts are our invented character; the references are for style only ("style, never identity" per `skills/organic-iphone-photo.md`).
+- All people in prompts are our invented character; the references are for style only ("style, never identity"; now enforced by the reference manifest in `skills/organic-json-image-prompting.md`).
 
 ## Built images (2026-09-19)
 

@@ -1,0 +1,182 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "first_principles",
+  "intent": {
+    "purpose": "slideshow frame: playful high-angle selfie in a small bathroom",
+    "scene_concept": "front-camera selfie held high above her head in a compact bathroom, one arm raised behind her head",
+    "place_type": "small home bathroom (not a hotel or spa)",
+    "must_stay_true": [
+      "steep high angle looking down at her",
+      "compact bathroom with tiles and a towel rail",
+      "ordinary overhead bathroom light"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "raw",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman in loungewear taking a quick bathroom selfie",
+    "action": "holding the phone high with her right hand, left arm bent behind her head",
+    "pose": "standing, head tilted back and to one side, shoulders turned slightly",
+    "gaze": "up at the lens over her glasses",
+    "expression": "playful, eyebrows slightly raised, lips closed",
+    "face_visibility": "full face, glasses low on the nose"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, early 20s",
+    "presentation": "woman",
+    "skin": "warm light-tan skin, visible pores, faint redness on the nose, a small healing blemish on the forehead",
+    "hair": "dark-brown hair loosely clipped up with a claw clip, loose strands around the face",
+    "face": "no makeup except brows; oversized black-framed glasses",
+    "distinguishing_marks": "none",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {
+    "build": "slim-average",
+    "proportions": "realistic adult proportions; the high angle makes the head larger and the legs shorter",
+    "detail": "visible from head to upper thighs"
+  },
+  "wardrobe": {
+    "items": [
+      "soft dusty-pink ribbed tank top with small buttons",
+      "charcoal cotton lounge shorts",
+      "thin silver chain with a small pendant",
+      "oversized black glasses"
+    ],
+    "fit_and_condition": "ribbing stretched and slightly faded, shorts wrinkled"
+  },
+  "environment": {
+    "setting": "compact home bathroom in the evening",
+    "foreground": [],
+    "background": [
+      "white square wall tiles with greyed grout",
+      "grey tiled floor with a bath mat half folded over",
+      "towel rail with a hanging towel",
+      "edge of the sink with a toothbrush cup and a pump bottle"
+    ],
+    "clutter": "everyday: towel slung unevenly, a hair tie on the sink edge",
+    "time_of_day": "evening"
+  },
+  "camera": {
+    "device": "iPhone 11 held in hand",
+    "capture": "front_camera_selfie",
+    "lens": "front selfie camera",
+    "focal_length_equiv_mm": 23,
+    "position": "held high above her head, pointing steeply down",
+    "distance": "about 60 cm from the face",
+    "orientation": "vertical",
+    "focus": "on the face and glasses",
+    "depth_of_field": "deep"
+  },
+  "composition": {
+    "framing": "high-angle selfie from head to upper thighs, floor visible",
+    "subject_placement": "face in the upper third, body tapering toward the bottom",
+    "crop": "raised elbow cut by the top frame edge",
+    "tilt": "about 6 degrees",
+    "headroom": "none"
+  },
+  "lighting": {
+    "sources": [
+      "single overhead bathroom ceiling light, cool-white LED"
+    ],
+    "direction": "from above",
+    "quality": "flat-ish with shadows under the brows and glasses",
+    "exposure": "slightly dim, the white tiles near the light slightly hot"
+  },
+  "color": {
+    "white_balance": "cool-white with a faint green tint from the LED",
+    "palette": [
+      "#F1F1EE",
+      "#8C8F91",
+      "#D8A6A6",
+      "#3B3B3D",
+      "#C8B39E"
+    ],
+    "saturation": "muted",
+    "contrast": "medium-low",
+    "casts": [
+      "faint green-cyan cast on the tiles"
+    ]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app",
+    "hdr": "Smart HDR",
+    "sharpening": "default",
+    "noise_reduction": "moderate indoor noise reduction",
+    "compression": "social-media compression",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "slight indoor noise",
+    "hot highlight on tiles under the light",
+    "glasses show a small reflection of the ceiling light",
+    "head enlarged by the steep angle",
+    "tilted frame"
+  ],
+  "texture": {
+    "skin": "pores, faint redness, a small blemish",
+    "hair": "loose clipped hair with many flyaways",
+    "fabric": "fine ribbing with stretch and pilling",
+    "surfaces": "glossy tiles, matte grout, terry towel"
+  },
+  "motion": {
+    "subject": "still",
+    "camera": "handheld at full stretch",
+    "blur": "very slight softness"
+  },
+  "geometry": {
+    "anatomy": [
+      "exactly two arms: one reaching up to the phone out of frame, one bent behind the head",
+      "the raised hand behind the head has five fingers where visible"
+    ],
+    "physics": [
+      "tile grout lines stay straight and converge with the high-angle perspective",
+      "the towel hangs under gravity"
+    ],
+    "reflections": "no mirror in frame; the glasses reflect the ceiling light as a small bright spot",
+    "perspective": "steep top-down wide selfie perspective, no fisheye"
+  },
+  "phone": {
+    "visible": false,
+    "case": null,
+    "hold": "the phone is the camera and is not visible",
+    "screen": null
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "the pump bottle label is small and turned partly away"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding: a real-looking hand-soap label is fine; do not invent new readable text",
+    "brands": [
+      "drugstore hand-soap pump bottle"
+    ],
+    "props": [
+      "toothbrush cup",
+      "pump bottle",
+      "towel",
+      "claw clip"
+    ]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no spa or hotel bathroom",
+    "no ring-light or beauty lighting",
+    "no smooth airbrushed skin",
+    "no bent tile lines or warped doors",
+    "no text overlays, UI or watermarks"
+  ],
+  "references": {
+    "manifest": [],
+    "priority": [
+      "prompt_json"
+    ]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

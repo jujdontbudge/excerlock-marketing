@@ -1,0 +1,108 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "video_first_frame",
+  "intent": {
+    "purpose": "first frame for a talking-to-camera walking clip that a video model will animate",
+    "scene_concept": "front-camera selfie video paused on its first frame: a woman walking on a suburban footpath in the early evening, about to speak",
+    "place_type": "residential suburban street footpath",
+    "must_stay_true": [
+      "it looks like a paused phone video, not a photo shoot",
+      "neutral start: mouth closed, eyes on the lens, hands out of frame",
+      "room in the frame for natural walking bob and head movement"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "raw",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman on an evening walk, filming herself",
+    "action": "walking toward the camera while holding the phone at arm's length",
+    "pose": "mid-stride, shoulders slightly rotated with the walking arm swing",
+    "gaze": "into the lens",
+    "expression": "relaxed, lips closed, about to talk",
+    "face_visibility": "full face"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, late 20s",
+    "presentation": "woman",
+    "skin": "medium brown skin, even but real texture, slight shine on the forehead",
+    "hair": "black box braids tied back with a scrunchie, a few loose baby hairs",
+    "face": "bare face, natural brows, small gold stud earrings",
+    "distinguishing_marks": "none",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {"build": "average", "proportions": "realistic adult proportions", "detail": "head and shoulders in frame"},
+  "wardrobe": {"items": ["faded navy zip hoodie, half zipped", "white wired earphones"], "fit_and_condition": "hood bunched at the back of the neck"},
+  "environment": {
+    "setting": "suburban street at dusk",
+    "foreground": [],
+    "background": ["concrete footpath with cracks", "low hedges and parked cars", "street lights just switching on", "overhead power lines"],
+    "clutter": "wheelie bins out for collection at the kerb",
+    "time_of_day": "dusk, just after sunset"
+  },
+  "camera": {
+    "device": "iPhone 12 front camera in video mode",
+    "capture": "video_frame",
+    "lens": "front selfie camera",
+    "focal_length_equiv_mm": 23,
+    "position": "arm's length, slightly above eye level",
+    "distance": "about 50 cm",
+    "orientation": "vertical",
+    "focus": "face",
+    "depth_of_field": "deep"
+  },
+  "composition": {
+    "framing": "head and shoulders with the street receding behind",
+    "subject_placement": "face centred, slightly low, leaving space above for head bob",
+    "crop": "shoulders cut by the frame",
+    "tilt": "about 3 degrees",
+    "headroom": "a little sky and power lines"
+  },
+  "lighting": {"sources": ["fading blue dusk sky", "warm street lights coming on"], "direction": "soft skylight from the front, warm points behind", "quality": "soft, low light", "exposure": "slightly underexposed; video-mode noise"},
+  "color": {"white_balance": "auto, slightly cool", "palette": ["#4A5A78", "#E0A060", "#3B2E2A", "#8C8C84"], "saturation": "muted", "contrast": "low", "casts": ["blue dusk cast on the hoodie", "warm glints from street lights"]},
+  "processing": {
+    "pipeline": "iPhone video frame, 30 fps, compressed",
+    "hdr": "video HDR off",
+    "sharpening": "soft video sharpening",
+    "noise_reduction": "video noise reduction with slight smearing",
+    "compression": "visible video compression blocks in the sky gradient",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": ["video noise in the shadows", "compression blocking in the sky", "slight motion softness from walking", "tilted horizon"],
+  "texture": {"skin": "real texture and forehead shine", "hair": "braids with frizz and baby hairs", "fabric": "washed cotton hoodie", "surfaces": "cracked concrete, hedge leaves"},
+  "motion": {"subject": "walking forward at an easy pace", "camera": "handheld, moving with her steps", "blur": "slight softness only; the face stays readable for the video model"},
+  "geometry": {
+    "anatomy": ["one head, two shoulders; the selfie arm leaves the frame at lower right; the other arm is out of frame"],
+    "physics": ["earphone cable hangs and swings slightly", "street recedes in consistent perspective"],
+    "reflections": "car windows reflect street lights only",
+    "perspective": "front-camera wide perspective, no fisheye"
+  },
+  "phone": {"visible": false, "case": null, "hold": "the phone is the camera", "screen": null},
+  "typography": {"overlay_text": null, "scene_text": "none"},
+  "brands_and_props": {"branding_policy": "keep natural branding (car badges, bins); do not invent readable text", "brands": ["car badges on parked cars"], "props": ["wired earphones", "wheelie bins"]},
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no open mouth or mid-word expression in the first frame",
+    "no hands in frame",
+    "no cinematic grade or shallow depth of field",
+    "no text overlays, captions or UI"
+  ],
+  "references": {"manifest": [], "priority": ["prompt_json"]},
+  "continuity": null,
+  "video_handoff": {
+    "target_model": "Seedance or Kling image-to-video via scripts/fal-video.py (check schema and price first)",
+    "planned_motion": "she keeps walking toward the camera, starts talking after half a second, small natural head movements, handheld walking bob; one continuous take, no cuts, no zoom",
+    "first_frame_rules": [
+      "neutral start pose with mouth closed",
+      "face large, sharp enough and fully lit enough for lip sync",
+      "no motion blur that the video model would have to invent detail through",
+      "space around the head for movement",
+      "no text or UI to keep stable across frames"
+    ]
+  }
+}

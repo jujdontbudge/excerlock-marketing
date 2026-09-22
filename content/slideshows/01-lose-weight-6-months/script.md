@@ -1,6 +1,6 @@
 # Slideshow 01 - lose fat, 7 slides
 
-On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt is a ready-to-run generation string built with skills/organic-iphone-photo.md; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4) get a real screenshot dropped in after generation; the generated screen is a placeholder only. Slide 5 is the real steps receipt and slide 7 the real ExcerLock blocker screen, no generation.
+On-screen text is the account owner's copy with spelling and grammar corrected on request. Do not edit the text further. Each image prompt below is a legacy prose record of the generation; any new generation or regeneration is written as JSON with skills/organic-json-image-prompting.md, which keeps natural brands instead of the old "no readable brand logos" clause; the style slug names the saved block in content/styles/. All people are generic invented bodies. Screens that show real app UI (slides 3, 4) get a real screenshot dropped in after generation; the generated screen is a placeholder only. Slide 5 is the real steps receipt and slide 7 the real ExcerLock blocker screen, no generation.
 
 Overlay defaults for every slide: clean geometric sans, medium weight, white #FFFFFF, soft drop shadow, left-aligned or centred as noted, 9:16.
 

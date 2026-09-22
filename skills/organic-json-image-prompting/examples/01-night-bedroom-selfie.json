@@ -1,0 +1,185 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "first_principles",
+  "intent": {
+    "purpose": "TikTok slideshow hook frame: a real-looking late-night selfie before bed",
+    "scene_concept": "warm, dim bedroom at night, front-camera selfie lit by the phone screen and one bedside lamp",
+    "place_type": "lived-in home bedroom (not a hotel, not a studio set)",
+    "must_stay_true": [
+      "it is night and the room is mostly dark",
+      "the only light is a bedside lamp plus the phone screen glow on the face",
+      "the room looks lived in, not staged"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "raw",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman taking a casual selfie in her bedroom before sleeping",
+    "action": "holding the phone at arm's length with her right hand and taking a front-camera selfie",
+    "pose": "sitting up against the headboard, shoulders relaxed and slightly uneven, torso angled a little to frame left, head tilted a few degrees",
+    "gaze": "at the phone screen, which reads as looking just off the lens",
+    "expression": "tired, soft half-smile, lips closed",
+    "face_visibility": "full face visible, slightly off-centre"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, mid-20s",
+    "presentation": "woman",
+    "skin": "light-medium warm skin with uneven tone: faint redness around the nose, a couple of small blemishes on the chin, visible pores on nose and cheeks",
+    "hair": "long dark-blonde hair with darker roots, loose waves flattened on one side from the pillow, a few flyaways catching the lamp",
+    "face": "ordinary believable face with natural asymmetry, no makeup except leftover mascara, slightly puffy under-eyes",
+    "distinguishing_marks": "none",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {
+    "build": "average, slim-to-medium",
+    "proportions": "realistic adult proportions, natural shoulders and neck",
+    "detail": "only head, shoulders and upper chest are in frame"
+  },
+  "wardrobe": {
+    "items": [
+      "faded grey oversized crew-neck sleep t-shirt with a small bleach spot",
+      "thin gold chain necklace"
+    ],
+    "fit_and_condition": "t-shirt worn and stretched at the collar, creased from lying down"
+  },
+  "environment": {
+    "setting": "small bedroom at night",
+    "foreground": [
+      "corner of a rumpled white duvet at the bottom edge"
+    ],
+    "background": [
+      "bedside table at frame left with a fabric-shade lamp, a half-full water glass, a phone charger cable and a hair tie",
+      "plain beige wall with a small crooked framed print",
+      "dark doorway at frame right falling into shadow"
+    ],
+    "clutter": "light everyday clutter: charger cable, hair tie, water glass, a paperback face-down",
+    "time_of_day": "late night, around midnight"
+  },
+  "camera": {
+    "device": "iPhone 13 held in hand",
+    "capture": "front_camera_selfie",
+    "lens": "front selfie camera",
+    "focal_length_equiv_mm": 23,
+    "position": "arm's length, slightly above eye level, angled a little downward",
+    "distance": "about 45 cm from the face",
+    "orientation": "vertical",
+    "focus": "face in focus but soft overall from low light",
+    "depth_of_field": "deep phone depth of field; the room behind is dim and noisy rather than creamy-blurred"
+  },
+  "composition": {
+    "framing": "head and shoulders, cropped mid-chest",
+    "subject_placement": "face slightly right of centre, lamp glow at upper left",
+    "crop": "top of the hair just touches the frame edge; one shoulder partly cut off",
+    "tilt": "about 3 degrees counter-clockwise, handheld",
+    "headroom": "almost none"
+  },
+  "lighting": {
+    "sources": [
+      "bedside lamp with a warm fabric shade at frame left, around 2700K",
+      "cool blue-white glow from the phone screen on the face"
+    ],
+    "direction": "lamp from the left side, screen glow from the front",
+    "quality": "soft but uneven; one side of the face warmer and brighter",
+    "exposure": "underexposed room, face adequately exposed by auto-exposure; the lamp shade clips to white"
+  },
+  "color": {
+    "white_balance": "auto white balance leaning warm-orange, fighting the cool screen light",
+    "palette": [
+      "#2B211B",
+      "#C98E5A",
+      "#E9D9C3",
+      "#8A8F96",
+      "#F4E6CF"
+    ],
+    "saturation": "muted, slightly orange skin",
+    "contrast": "low-to-medium, lifted blacks from night mode",
+    "casts": [
+      "orange cast on the left cheek and hair",
+      "faint blue cast on the nose and forehead from the screen"
+    ]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app, Night mode auto, saved as HEIC then re-compressed by the app upload",
+    "hdr": "Smart HDR flattening the lamp highlight",
+    "sharpening": "slightly crunchy phone sharpening on hair edges",
+    "noise_reduction": "heavy phone noise reduction smearing fine detail in the dark background",
+    "compression": "visible social-media JPEG compression in the dark gradients",
+    "beauty_filter": "none; no skin smoothing, no face reshaping",
+    "grading": "none; straight out of the camera"
+  },
+  "imperfections": [
+    "chroma and luminance noise in the shadows",
+    "blotchy noise-reduction smears on the wall",
+    "banding in the dark gradient behind her",
+    "slight motion softness from a long handheld exposure",
+    "clipped lamp shade",
+    "a stray hair across the cheek"
+  ],
+  "texture": {
+    "skin": "real pores, fine peach fuzz on the cheek catching the lamp, slight shine on the nose",
+    "hair": "individual strands and frizz visible at the edges, clumped where it was slept on",
+    "fabric": "soft pilled jersey with creases",
+    "surfaces": "matte painted wall, glossy water glass with one small reflection"
+  },
+  "motion": {
+    "subject": "still",
+    "camera": "handheld with slight shake",
+    "blur": "very slight overall softness, no directional streaks"
+  },
+  "geometry": {
+    "anatomy": [
+      "one head, two shoulders, correct neck length",
+      "the selfie arm extends toward the camera and leaves the frame at the lower right",
+      "the other hand is out of frame"
+    ],
+    "physics": [
+      "lamp light falls off naturally with distance",
+      "the necklace rests on the collarbone under gravity",
+      "the duvet folds where she sits"
+    ],
+    "reflections": "no mirrors in frame; the water glass shows a tiny warm reflection of the lamp only",
+    "perspective": "front-camera wide perspective: the face is slightly larger than the shoulders, with no fisheye"
+  },
+  "phone": {
+    "visible": false,
+    "case": null,
+    "hold": "the phone is the camera and is not visible",
+    "screen": null
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "none legible; the paperback spine is too dark to read"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding where it would really appear; do not invent logos or readable text that the scene would not have",
+    "brands": [],
+    "props": [
+      "water glass",
+      "phone charger cable",
+      "hair tie",
+      "paperback book"
+    ]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no studio lighting, ring light or catchlight rings",
+    "no cinematic colour grade, film grain, halation or vignette",
+    "no portrait-mode background blur",
+    "no smooth, poreless or airbrushed skin",
+    "no glamour makeup or posed model expression",
+    "no text, captions, UI, timestamps or watermarks"
+  ],
+  "references": {
+    "manifest": [],
+    "priority": [
+      "prompt_json"
+    ]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

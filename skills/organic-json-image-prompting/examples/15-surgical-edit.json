@@ -1,0 +1,119 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "surgical_edit",
+  "intent": {
+    "purpose": "fix two reviewer FAIL findings on an already generated treadmill-console slide without regenerating it",
+    "scene_concept": "point-down POV of a treadmill console mid-walk in a commercial gym, as already generated in E1",
+    "place_type": "commercial gym cardio area",
+    "must_stay_true": [
+      "everything in E1 except the two listed changes: framing, angle, belt, handrails, lighting, noise, colour and softness",
+      "the water bottle and towel exactly where they are",
+      "the console layout and its maker logo"
+    ],
+    "change_only": [
+      "the console time readout '37:56' becomes '24:10' in the same font, size and glow",
+      "remove the leopard-print phone lying on the console tray; the empty tray shows its scuffed plastic"
+    ],
+    "person_replacement": null
+  },
+  "polish_level": "raw",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 0,
+    "description": "treadmill console and moving belt seen from the walker's eye line",
+    "action": "the belt is moving; no person visible except the tips of two white trainers at the bottom edge",
+    "pose": "not applicable",
+    "gaze": null,
+    "expression": null,
+    "face_visibility": null
+  },
+  "identity": {
+    "fictional": true,
+    "age": null,
+    "presentation": null,
+    "skin": null,
+    "hair": null,
+    "face": null,
+    "distinguishing_marks": null,
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {"build": null, "proportions": null, "detail": null},
+  "wardrobe": {"items": ["tips of worn white trainers at the bottom edge"], "fit_and_condition": "scuffed toe caps"},
+  "environment": {
+    "setting": "commercial gym treadmill row, evening",
+    "foreground": ["console with a lit display and the empty phone tray", "half-full water bottle in the cup holder", "grey towel over the right handrail"],
+    "background": ["moving black belt", "carpet beside the treadmill", "the next treadmill's side rail"],
+    "clutter": "as in E1",
+    "time_of_day": "evening"
+  },
+  "camera": {
+    "device": "iPhone rear main camera, as in E1",
+    "capture": "rear_camera_pov",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "held at chest height, pointing down at the console, as in E1",
+    "distance": "about 50 cm from the console",
+    "orientation": "vertical",
+    "focus": "console display",
+    "depth_of_field": "deep"
+  },
+  "composition": {
+    "framing": "as in E1",
+    "subject_placement": "as in E1",
+    "crop": "as in E1",
+    "tilt": "as in E1",
+    "headroom": "not applicable"
+  },
+  "lighting": {"sources": ["ceiling LEDs", "console display glow"], "direction": "overhead", "quality": "as in E1", "exposure": "as in E1"},
+  "color": {"white_balance": "as in E1", "palette": ["#1C1C1E", "#3D6FB6", "#8A8A8A", "#F2F2F2"], "saturation": "as in E1", "contrast": "as in E1", "casts": ["blue display glow on the tray"]},
+  "processing": {
+    "pipeline": "as in E1",
+    "hdr": "as in E1",
+    "sharpening": "as in E1",
+    "noise_reduction": "as in E1",
+    "compression": "as in E1",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": ["the existing smudges and glare on the console glass", "belt motion blur", "handheld softness"],
+  "texture": {"skin": null, "hair": null, "fabric": "towel terry, as in E1", "surfaces": "matte plastic console with fingerprints, rubber belt"},
+  "motion": {"subject": "belt moving", "camera": "handheld while walking", "blur": "belt motion blur as in E1"},
+  "geometry": {
+    "anatomy": ["only the two trainer toes, pointing forward on the belt"],
+    "physics": ["the tray is empty and flat", "the bottle sits upright in the cup holder"],
+    "reflections": "console glass reflects the ceiling lights as in E1",
+    "perspective": "as in E1"
+  },
+  "phone": {"visible": false, "case": null, "hold": "the phone is the camera", "screen": null},
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "console readout exactly '24:10' in the console's own segmented font; every other console label unchanged"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep the console maker's logo from E1 unchanged; do not invent new readable words",
+    "brands": ["treadmill maker logo on the console, unchanged"],
+    "props": ["water bottle", "towel"]
+  },
+  "exclusions": [
+    "no phone or phone case anywhere in the frame",
+    "no new text, numbers or icons beyond the one readout change",
+    "no change to framing, colour, sharpness or noise"
+  ],
+  "references": {
+    "manifest": [
+      {
+        "reference_id": "E1",
+        "role": "edit_target",
+        "source": "raw/generated/03-s3-v3.png",
+        "sent_to_generator": true,
+        "may_copy": ["everything not listed in intent.change_only"],
+        "must_preserve": ["framing, angle, lighting, noise, colour, softness, props and their positions, console logo"],
+        "must_not_transfer": ["the '37:56' readout", "the leopard-print phone"]
+      }
+    ],
+    "priority": ["prompt_json", "E1"]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "character_new_image",
+  "intent": {
+    "purpose": "slideshow value frame: the established character after a treadmill walk",
+    "scene_concept": "the character takes a quick mirror selfie next to the treadmills after an evening walk, in a commercial gym",
+    "place_type": "mid-range commercial gym cardio area",
+    "must_stay_true": [
+      "the person is the character in the character sheet, recognisably the same as C1-C3",
+      "commercial gym cardio area with a row of treadmills",
+      "mirror selfie with her own phone, which has her sage-green case"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "plandid",
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "the character, slightly sweaty after a 30-minute incline walk",
+    "action": "taking a mirror selfie with her right hand, left hand holding a water bottle at her side",
+    "pose": "three-quarter turn toward the mirror, weight on the back leg, relaxed shoulders",
+    "gaze": "at the phone screen",
+    "expression": "small tired smile",
+    "face_visibility": "face visible beside the phone, the phone covers her chin only"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, 24",
+    "presentation": "woman",
+    "skin": "warm golden tan with faint sports-bra tan lines, light freckles across the nose, visible pores, a small mole under the left eye",
+    "hair": "shoulder-length dark-blonde hair with darker natural roots, slightly frizzy, pulled into a claw clip with strands falling out",
+    "face": "soft oval face, grey-green eyes, straight brows a shade darker than her hair, small upturned nose, slightly uneven smile",
+    "distinguishing_marks": "the mole under the left eye; no tattoos",
+    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+  },
+  "other_people": [],
+  "physique": {
+    "build": "fit, curvy hourglass",
+    "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
+    "detail": "slim soft arms with no visible muscle definition"
+  },
+  "wardrobe": {
+    "items": [
+      "dusty-blue fitted gym set: crop top and high-waisted leggings",
+      "white crew socks",
+      "worn white trainers",
+      "thin gold chain necklace"
+    ],
+    "fit_and_condition": "sweat darkening the waistband and the centre of the top, leggings creased at the knees"
+  },
+  "environment": {
+    "setting": "cardio area of a commercial gym in the evening",
+    "foreground": [
+      "a smudge on the mirror at chest height"
+    ],
+    "background": [
+      "a row of black treadmills with lit consoles, one with a towel over the handrail",
+      "grey carpet tiles with a worn path",
+      "a wall-mounted TV showing a blurred news channel",
+      "two other members walking far behind, small and soft"
+    ],
+    "clutter": "a spray bottle and paper-towel roll on a ledge, a forgotten water bottle on a console",
+    "time_of_day": "evening, dark windows at the back"
+  },
+  "camera": {
+    "device": "iPhone 13, rear main camera pointed at the mirror",
+    "capture": "mirror_selfie",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "phone at chest-to-chin height, toward the mirror",
+    "distance": "about 1.5 m from the mirror",
+    "orientation": "vertical",
+    "focus": "her reflection",
+    "depth_of_field": "deep"
+  },
+  "composition": {
+    "framing": "knees-up in the mirror",
+    "subject_placement": "slightly right of centre",
+    "crop": "lower legs cut at the knee",
+    "tilt": "about 2 degrees",
+    "headroom": "some ceiling and a light fixture visible"
+  },
+  "lighting": {
+    "sources": ["recessed ceiling LED panels", "treadmill console glow", "TV glow"],
+    "direction": "overhead",
+    "quality": "even but flat, with small shadows under the chin",
+    "exposure": "slightly bright on the ceiling panels"
+  },
+  "color": {
+    "white_balance": "neutral-cool LED",
+    "palette": ["#6F87A3", "#2B2B2E", "#7E7A75", "#D9B38C", "#F2F2F0"],
+    "saturation": "natural",
+    "contrast": "medium",
+    "casts": ["faint blue from the consoles on the treadmills"]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app",
+    "hdr": "Smart HDR",
+    "sharpening": "default",
+    "noise_reduction": "light indoor noise reduction",
+    "compression": "social-media compression",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "mirror smudge at chest height",
+    "clipped ceiling panels",
+    "light indoor noise in the carpet",
+    "flyaways escaping the claw clip",
+    "slight tilt"
+  ],
+  "texture": {
+    "skin": "sweat sheen on the chest and forehead, freckles, pores, the mole under the left eye",
+    "hair": "frizzy strands and flyaways",
+    "fabric": "matte technical fabric with sweat marks",
+    "surfaces": "carpet tiles, matte black treadmill plastic, smudged mirror"
+  },
+  "motion": {
+    "subject": "still",
+    "camera": "handheld",
+    "blur": "background members slightly blurred by their movement"
+  },
+  "geometry": {
+    "anatomy": [
+      "the phone hand is her right hand in the reflection",
+      "the left hand holds the bottle with five fingers",
+      "one head, two arms, two legs"
+    ],
+    "physics": [
+      "treadmills stand on the floor in a straight row",
+      "the towel drapes over the handrail under gravity"
+    ],
+    "reflections": "the mirror shows her and the room reversed; the phone back with its case faces the mirror; screen text reads mirrored",
+    "perspective": "mirror selfie perspective from chest height"
+  },
+  "phone": {
+    "visible": true,
+    "case": "matte sage-green silicone phone case with a scuffed corner",
+    "hold": "right hand, case facing the mirror",
+    "screen": "facing her, not visible"
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "treadmill console numbers too small and soft to read; TV text blurred"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding: real-looking treadmill maker logos and a water-bottle brand are fine; do not invent new readable words",
+    "brands": ["treadmill manufacturer logo on the consoles", "logo on the water bottle"],
+    "props": ["water bottle", "phone"]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no second phone and no case other than the sage-green one",
+    "no muscular arms or visible biceps",
+    "no studio or fashion lighting",
+    "no beauty filter or poreless skin",
+    "no correctly readable text in the mirror",
+    "no text overlays or watermarks"
+  ],
+  "references": {
+    "manifest": [
+      {
+        "reference_id": "C1",
+        "role": "character_reference",
+        "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["face shape and features", "eye colour", "freckles and the mole", "hair colour and roots"],
+        "must_preserve": ["her recognisable identity"],
+        "must_not_transfer": ["the reference background, lighting and outfit", "the reference framing"]
+      },
+      {
+        "reference_id": "C2",
+        "role": "character_reference",
+        "source": "~/excerlock-private/characters/example-mara/C2-three-quarter-smile.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["three-quarter face shape", "smile shape"],
+        "must_preserve": ["her recognisable identity"],
+        "must_not_transfer": ["the reference background, lighting and outfit"]
+      },
+      {
+        "reference_id": "C3",
+        "role": "physique_anchor",
+        "source": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg",
+        "sent_to_generator": true,
+        "may_copy": ["body shape and proportions"],
+        "must_preserve": ["tight waist, full hips, toned thighs, slim soft arms"],
+        "must_not_transfer": ["the reference outfit, location, pose and phone position"]
+      }
+    ],
+    "priority": ["prompt_json", "C1", "C2", "C3"]
+  },
+  "continuity": null,
+  "video_handoff": null
+}

@@ -1,7 +1,9 @@
 # Style clone — standing workflow
 
 The standing procedure whenever someone asks to "copy the style of this
-image". Three steps, then injection. Method adapted from
+image". Three steps produce a style digest; generation then follows
+`skills/organic-json-image-prompting.md`, where the digest is text inside the
+JSON prompt and the inspiration image is never sent to the generator. Method adapted from
 https://x.com/EXM7777/status/2094848009477685681 (2026-09-01): extract the
 style as structured data, save it, inject it whenever the look is needed again.
 
@@ -19,7 +21,8 @@ repository.
 
 ## Step 2 — Extract
 
-Give the image to a vision-capable model with this prompt (adapted from the
+Give the image to a vision-capable model (the Gemini CLI subscription or the
+worker's own model; never Grok and never an image generator) with this prompt (adapted from the
 source post's wording: "extract this visual style as JSON structured data:
 colors, typography, composition, effects…"):
 
@@ -40,10 +43,11 @@ composition, effects, typography overlay — photography style only.
   line count, emoji.
 - People stay generic: pose type, wardrobe category, face visibility. Never
   record anything identifying — facial features, body marks, tattoos,
-  jewellery, brand names or logos on props or equipment. Describe branded
-  objects generically ("cream strength machines", never a brand).
-- End with mood, a one-line reusable_prompt_fragment (comma-separated, ready
-  to append to a scene description), an avoid list (what would break the
+  jewellery. Props and equipment keep their natural branding: note the kind of
+  branding a real scene shows ("plate-loaded machines with the maker's logo",
+  "supermarket protein tub") so the new scene keeps brands.
+- End with mood, a one-line reusable_prompt_fragment (a comma-separated
+  summary of the look, used as raw material for the JSON prompt), an avoid list (what would break the
   look), and excerlock_fit (which slideshow slot this frame serves).
 - Output exactly the schema below and nothing else.
 
@@ -96,24 +100,19 @@ slide, captured date).
   or performance and must not be cited as such, matching the repo method rule
   that separates observed metrics from conclusions.
 
-## Step 4 — Inject
+## Step 4 — Use it in a JSON prompt
 
-Two ways to use a saved block:
+The digest is never pasted, appended or attached as-is. Follow
+`skills/organic-json-image-prompting.md`:
 
-1. **Full prompt build** — paste the whole style JSON into the
-   `<visual_analysis_reference>` slot of `skills/organic-iphone-photo.md`,
-   set `polish_level`, and have the model produce the generation JSON.
-2. **Quick append** — append the style's `reusable_prompt_fragment` to the
-   scene description and let `codex_image` pass the combined string verbatim:
-
-```
-<scene description>. <reusable_prompt_fragment>, vertical 9:16 photo,
-no film grain, no DSLR look, no readable brand logos
-```
-
-(The trailing "no …" clauses come from the style's `avoid` list plus the
-standard iPhone-look exclusions; GPT-image-class models take no separate
-negative prompt, so they ride inside the prompt string.)
+- **W1 style clone, new scene** (`style_clone_new_scene`) or **W3 character
+  replaces a person** (`character_replaces_person`): copy the digest's palette,
+  lighting, camera, composition habits and imperfections into the matching
+  fields of the prompt JSON, rewritten for the new scene. List the digest in
+  `references.manifest` as a `style_digest` with `sent_to_generator: false`.
+- The digest's `reusable_prompt_fragment` and `avoid` list are raw material for
+  those fields and for `exclusions`; they are no longer appended as prose.
+- Validate and wrap with `python3 scripts/image-prompt.py check|wrap`.
 
 ## Current saved styles
 
