@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "raw",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "very pretty behind oversized glasses: big eyes, full lips, clear skin",
+    "physique": "slim and curvy; the high angle is flattering, not distorting",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
@@ -28,7 +35,7 @@
     "fictional": true,
     "age": "adult, early 20s",
     "presentation": "woman",
-    "skin": "warm light-tan skin, visible pores, faint redness on the nose, a small healing blemish on the forehead",
+    "skin": "warm light-tan skin, clear skin with fine visible pores and a faint natural flush on the nose",
     "hair": "dark-brown hair loosely clipped up with a claw clip, loose strands around the face",
     "face": "no makeup except brows; oversized black-framed glasses",
     "distinguishing_marks": "none",
@@ -36,7 +43,7 @@
   },
   "other_people": [],
   "physique": {
-    "build": "slim-average",
+    "build": "slim and curvy",
     "proportions": "realistic adult proportions; the high angle makes the head larger and the legs shorter",
     "detail": "visible from head to upper thighs"
   },
@@ -119,7 +126,7 @@
     "tilted frame"
   ],
   "texture": {
-    "skin": "pores, faint redness, a small blemish",
+    "skin": "fine pores and a faint natural flush",
     "hair": "loose clipped hair with many flyaways",
     "fabric": "fine ribbing with stretch and pilling",
     "surfaces": "glossy tiles, matte grout, terry towel"

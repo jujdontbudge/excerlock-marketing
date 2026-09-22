@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "plandid",
+  "appeal": {
+    "level": "aspirational",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "pretty, well-defined features, flushed and glowing from training",
+    "physique": "fit athletic hourglass: toned legs, tight waist, slim soft arms",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
@@ -30,15 +37,15 @@
     "presentation": "woman",
     "skin": "light warm skin, flushed cheeks, light sweat on the forehead and upper chest",
     "hair": "chin-to-shoulder length blonde hair, tucked behind one ear, damp at the hairline",
-    "face": "minimal makeup, natural brows, ordinary believable features",
+    "face": "minimal makeup, natural brows, pretty well-defined features with natural asymmetry",
     "distinguishing_marks": "none",
     "character_sheet": null
   },
   "other_people": [],
   "physique": {
-    "build": "fit and athletic but not a fitness model",
+    "build": "fit athletic hourglass",
     "proportions": "realistic adult proportions, natural waist, strong legs",
-    "detail": "soft natural stomach when seated, no exaggerated muscle definition"
+    "detail": "toned stomach with a natural soft fold when seated, no exaggerated muscle definition"
   },
   "wardrobe": {
     "items": [

@@ -11,6 +11,13 @@
     "face": "soft oval face, grey-green eyes, straight brows a shade darker than her hair, small upturned nose, slightly uneven smile",
     "distinguishing_marks": "the mole under the left eye; no tattoos, no piercings beyond one earring hole each side"
   },
+  "appeal": {
+    "level": "exceptional",
+    "face": "strikingly pretty: clear grey-green eyes, a small upturned nose, full natural lips and a warm, slightly uneven smile that reads as charming",
+    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slim soft arms",
+    "independent_of_polish": true,
+    "relative_to_inspiration": "at least as attractive as any organic inspiration or benchmark used with her; never plainer"
+  },
   "physique": {
     "build": "fit, curvy hourglass",
     "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
@@ -44,7 +51,7 @@
     }
   ],
   "rules": [
-    "every prompt with this character copies identity and physique from this file word for word",
+    "every prompt with this character copies identity, appeal and physique from this file word for word",
     "references reinforce identity; the prompt still describes the whole image",
     "the phone case appears only when her phone is visible in frame"
   ]

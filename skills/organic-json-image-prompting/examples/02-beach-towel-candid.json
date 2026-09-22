@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "raw",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "sun-kissed and naturally beautiful: freckles, bright eyes, full lips",
+    "physique": "slim-athletic with toned shoulders and a smooth, tanned back",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,

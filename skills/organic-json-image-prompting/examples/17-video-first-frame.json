@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "raw",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "beautiful, bright-eyed and relaxed, with striking cheekbones",
+    "physique": "slim and fit; head and shoulders in frame",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
@@ -35,7 +42,7 @@
     "character_sheet": null
   },
   "other_people": [],
-  "physique": {"build": "average", "proportions": "realistic adult proportions", "detail": "head and shoulders in frame"},
+  "physique": {"build": "slim, fit", "proportions": "realistic adult proportions", "detail": "head and shoulders in frame"},
   "wardrobe": {"items": ["faded navy zip hoodie, half zipped", "white wired earphones"], "fit_and_condition": "hood bunched at the back of the neck"},
   "environment": {
     "setting": "suburban street at dusk",

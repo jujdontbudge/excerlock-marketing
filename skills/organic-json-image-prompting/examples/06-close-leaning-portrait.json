@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "plandid",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "strikingly pretty close up: clear eyes, freckles, full lips, a flattering lean toward the lens",
+    "physique": "slim with graceful shoulders and neckline",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,

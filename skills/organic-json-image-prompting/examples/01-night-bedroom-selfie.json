@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "raw",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
+    "face": "striking, well-proportioned face with full lips and bright eyes, relaxed and pretty at night without makeup",
+    "physique": "slim with a soft hourglass shape; only shoulders and upper chest in frame",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
@@ -28,15 +35,15 @@
     "fictional": true,
     "age": "adult, mid-20s",
     "presentation": "woman",
-    "skin": "light-medium warm skin with uneven tone: faint redness around the nose, a couple of small blemishes on the chin, visible pores on nose and cheeks",
+    "skin": "light-medium warm skin, clear and healthy, a faint natural flush around the nose, fine visible pores on nose and cheeks",
     "hair": "long dark-blonde hair with darker roots, loose waves flattened on one side from the pillow, a few flyaways catching the lamp",
-    "face": "ordinary believable face with natural asymmetry, no makeup except leftover mascara, slightly puffy under-eyes",
+    "face": "striking, well-proportioned face with natural asymmetry, no makeup except leftover mascara, a little sleepy-eyed at night",
     "distinguishing_marks": "none",
     "character_sheet": null
   },
   "other_people": [],
   "physique": {
-    "build": "average, slim-to-medium",
+    "build": "slim with a soft hourglass shape",
     "proportions": "realistic adult proportions, natural shoulders and neck",
     "detail": "only head, shoulders and upper chest are in frame"
   },
@@ -171,7 +178,7 @@
     "no cinematic colour grade, film grain, halation or vignette",
     "no portrait-mode background blur",
     "no smooth, poreless or airbrushed skin",
-    "no glamour makeup or posed model expression",
+    "no glamour makeup or posed studio expression",
     "no text, captions, UI, timestamps or watermarks"
   ],
   "references": {

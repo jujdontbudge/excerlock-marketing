@@ -35,6 +35,11 @@ Crop and look at each region separately; report what you saw per crop:
 - Any object she holds/wears: headphones (one pair, on neck OR head, not both), phone (one, in one hand, case only where allowed), cup/bottle (one, with natural real-looking branding or plain; no invented, garbled or misspelled words).
 Any impossibility in any crop → FAIL. Uncertain → FAIL (regenerating is cheap; a broken slide going out is not).
 
+### Step 1b - appeal (positive check, every image with a person)
+- PASS only if she is as attractive as or more attractive than the organic inspiration (and, for our character, her sheet and casting image): attractive face, aspirational physique per the benchmark on current pictures.
+- Organic is judged on the photo only (camera, light, place, texture, framing, processing, clutter, imperfections). A plainer, ordinary-looking, boxier, heavier or less aspirational person is a FAIL even when the photo looks perfectly organic; "it looks real" is not a defence. Before slides keep the captain's softer-body exemption.
+- Also FAIL the reverse: a retouched, beauty-filtered or studio-lit photo is not how to make her attractive.
+
 ### Step 2 - mirror and reflection logic (for any mirror selfie)
 - The phone is visible in the reflection, held in the hand that would hold it.
 - Reflection matches the body: same clothing, same pose, no second person, no extra limb in the mirror frame.

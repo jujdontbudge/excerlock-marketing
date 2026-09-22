@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "jagged",
+  "appeal": {
+    "level": "aspirational",
+    "relative_to_inspiration": "at least as attractive as the person in the style source; the digest carries the photo's treatment, never her looks",
+    "face": "pretty lower face with full natural lips (the rest is hidden by the phone)",
+    "physique": "fit, curvy and toned: tight waist, toned legs, flat stomach with natural softness",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
@@ -36,9 +43,9 @@
   },
   "other_people": [],
   "physique": {
-    "build": "fit, average height",
+    "build": "fit, curvy, medium height",
     "proportions": "realistic adult proportions",
-    "detail": "full body in the mirror; soft natural stomach, no stage-lean definition"
+    "detail": "full body in the mirror; toned stomach with natural softness, no stage-lean definition"
   },
   "wardrobe": {
     "items": [

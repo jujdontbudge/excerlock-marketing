@@ -32,6 +32,8 @@ PREAMBLE = {
                "as `image.intent.person_replacement` specifies. Nothing about the original person's face, body, skin, "
                "hair, tattoos or other identifying marks may carry over. `image.exclusions` lists what must not appear.",
 }
+APPEAL_NOTE = ("The organic, unpolished look applies to the photograph only; cast every person as attractive as "
+               "`image.appeal` describes, never plainer, heavier or less aspirational.")
 REFERENCES_NOTE = ("`attached_images` maps each attached image, in order, to its `image.references.manifest` entry. "
                    "Use each one only for its may_copy and must_preserve lists and never for its must_not_transfer "
                    "list; resolve conflicts with `image.references.priority`.")
@@ -97,6 +99,19 @@ def validate(value, schema, path, errors):
                 validate(sub, schema["items"], f"{path}[{i}]", errors)
 
 
+# Organic describes the photograph, never the person: wording that casts a person as plainer,
+# heavier or less attractive fails outside exclusions and the manifest.
+APPEAL_LOWERING = [
+    r"\b(ordinary|plain|average|normal|unremarkable)[- ]looking\b",
+    r"\b(ordinary|plain|average|unremarkable)( believable)? (face|features|looks?|build|body|physique|woman|girl|man)\b",
+    r'"build": "average',
+    r"\bun(attractive|flattering)\b", r"\b(boxy|frumpy|dowdy|homely|stocky|pudgy)\b",
+    r"\bnot an? (fitness )?model\b", r"\bless (attractive|aspirational|fit)\b",
+    r"\b(puffy|double chin|bad skin|acne|pimples?)\b",
+]
+BEFORE_ONLY = [r"\b(heavier|softer body|out of shape)\b"]  # captain: before slides may be softer
+
+
 def house_rules(p, errors):
     """The captain's standing rules and the workflow contracts a schema alone cannot express."""
     mode, refs = p["mode"], p["references"]["manifest"]
@@ -118,6 +133,14 @@ def house_rules(p, errors):
         errors.append("Apple Watch mentioned outside exclusions (captain: never)")
     if people and "apple watch" not in excl:
         errors.append("exclusions: must exclude an Apple Watch when a person is in frame")
+    if people != (p["appeal"] is not None):
+        errors.append("appeal: required when a person is in frame, null when none is")
+    before = (p["continuity"] or {}).get("state") == "before"
+    for rx in APPEAL_LOWERING + ([] if before else BEFORE_ONLY):
+        m = re.search(rx, body)
+        if m:
+            errors.append(f"appeal-lowering wording {m.group(0)!r}: organic is the photo's treatment, "
+                          "never plainer, heavier or less attractive casting")
     for item in p["exclusions"]:
         low = item.lower()
         if re.search(r"\b(brand|logo)", low) and not re.search(
@@ -203,12 +226,20 @@ def check(path):
 
 def check_character(c, errors):
     """Canonical character sheet (organic-character/1): the source every character prompt copies from."""
-    for key in ("character_id", "status", "fictional", "identity", "physique", "signature_props",
+    for key in ("character_id", "status", "fictional", "identity", "appeal", "physique", "signature_props",
                 "wardrobe_defaults", "reference_pack", "rules"):
         if key not in c:
             errors.append(f"$.{key}: missing required key")
     if c.get("fictional") is not True:
         errors.append("$.fictional: must be true")
+    appeal = c.get("appeal") or {}
+    if appeal.get("level") not in ("exceptional", "aspirational") or appeal.get("independent_of_polish") is not True:
+        errors.append("$.appeal: level exceptional|aspirational with independent_of_polish true")
+    sheet = json.dumps({k: v for k, v in c.items() if k != "rules"}).lower()
+    for rx in APPEAL_LOWERING + BEFORE_ONLY:
+        m = re.search(rx, sheet)
+        if m:
+            errors.append(f"appeal-lowering wording {m.group(0)!r} in the character sheet")
     for key in ("age", "presentation", "skin", "hair", "face", "distinguishing_marks"):
         if not (c.get("identity") or {}).get(key):
             errors.append(f"$.identity.{key}: required")
@@ -230,6 +261,8 @@ def prompt_text(p):
         "attached_images": [f"image {n} = {r['reference_id']} ({r['role']})" for n, r in enumerate(sent, 1)],
         "image": p,
     }
+    if p["appeal"] is not None:
+        envelope["instruction"] += " " + APPEAL_NOTE
     if sent:
         envelope["instruction"] += " " + REFERENCES_NOTE
     return json.dumps(envelope, indent=2, ensure_ascii=False)

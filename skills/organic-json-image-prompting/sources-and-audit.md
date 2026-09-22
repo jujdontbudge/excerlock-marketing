@@ -130,3 +130,4 @@ Gaps found and closed by this change:
 | `content/styles/README.md` | Digests feed the JSON prompt as text and are never attached. |
 | `AGENTS.md`, `README.md`, `skills/fal-video.md` | Point to the book and `scripts/image-prompt.py`. |
 | `research/slideshows/script-writing-guide.md`, `reviewer-checks.md`, `content/slideshows/README-02-05.md` | Point to the book; natural branding replaces "unbranded"; the reviewer receives the prompt JSON and manifest; W3 is the only workflow that attaches an organic photo for a body shot, fenced by `must_not_transfer`. |
+| Captain correction, 2026-09-22 | "Organic" is the photo's treatment only, never plainer casting. Added the `appeal` axis (schema, character sheet, examples), appeal-lowering wording checks, a wrap note, a failure-mode row, and a positive reviewer check (`reviewer-checks.md` Step 1b). |

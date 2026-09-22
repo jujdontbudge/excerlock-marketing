@@ -10,6 +10,7 @@
     "mode",
     "intent",
     "polish_level",
+    "appeal",
     "aspect_ratio",
     "subject",
     "identity",
@@ -136,6 +137,48 @@
         "raw",
         "jagged"
       ]
+    },
+    "appeal": {
+      "description": "Casting appeal of every person in frame. Independent of polish_level: organic describes the photograph (camera, light, place, texture, processing, clutter, imperfections), never the person's looks. null only when no person is in frame.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "relative_to_inspiration",
+        "face",
+        "physique",
+        "independent_of_polish"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "exceptional",
+            "aspirational"
+          ],
+          "description": "exceptional = strikingly attractive; aspirational = clearly very attractive and desirable. There is no plain or ordinary level."
+        },
+        "relative_to_inspiration": {
+          "type": "string",
+          "minLength": 1,
+          "description": "At least as attractive as the organic inspiration or benchmark, never less; say so."
+        },
+        "face": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What makes the face attractive, in positive terms."
+        },
+        "physique": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What makes the body attractive, in positive terms (or 'not in frame')."
+        },
+        "independent_of_polish": {
+          "const": true
+        }
+      }
     },
     "aspect_ratio": {
       "enum": [

@@ -41,6 +41,8 @@ composition, effects, typography overlay — photography style only.
 - Describe any burned-in caption separately under typography_overlay: exact
   text, font look, weight, relative size, colour, position, shadow/stroke,
   line count, emoji.
+- Style is the photo's treatment only; it never records or caps how attractive
+  anyone is (casting is set in the prompt's `appeal`, at or above the source).
 - People stay generic: pose type, wardrobe category, face visibility. Never
   record anything identifying — facial features, body marks, tattoos,
   jewellery. Props and equipment keep their natural branding: note the kind of

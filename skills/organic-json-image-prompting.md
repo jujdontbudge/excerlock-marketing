@@ -20,18 +20,19 @@ Files:
 These hold in every workflow. `scripts/image-prompt.py check` enforces the ones marked ✓.
 
 1. **The prompt sent to the model is JSON.** ✓ `wrap` sends one JSON document: `{instruction, attached_images, image}`. The only prose is the one-sentence `instruction` inside it.
-2. **Organic realism beats everything else**: ordinary phone optics and processing, imperfect framing, mixed light, noise, compression, real skin, flyaways, clutter, plausible anatomy and geometry. Never optimise for clean, cinematic or beautiful.
-3. **Lowest quality setting, one image at a time.** OpenAI `quality: "low"`, `n: 1`, and the smallest valid size that keeps the ratio (`wrap` computes `720x1280` for 9:16). Nano Banana 2 (`gemini-3.1-flash-image`) at `image_size: "512"` with the default `minimal` thinking. No batch unless the captain asks for one, and state the per-image cost first. Low quality is the goal, not a compromise: high quality reads as professional or AI and was rejected.
-4. **Keep natural brands.** ✓ Where a real scene would show a brand (plates, shoes, supplements, packaging, machines, cars), keep real-looking branding. Never add blanket "no logos" exclusions. Still exclude invented words, garbled labels, captions and watermarks.
-5. **No Apple Watch**, anywhere. ✓ A person in frame requires an Apple Watch exclusion; mentioning one anywhere else fails the check.
-6. **A visible phone always has a case.** ✓ Do not add a phone where none belongs: a front-camera selfie shows no phone, a mirror selfie shows the case facing the mirror, and a scrolling scene shows the phone edge-on.
-7. **Keep the place type and the scene concept.** A commercial gym stays a commercial gym; a home kitchen stays a home kitchen. State this in `intent.place_type` and `intent.must_stay_true`.
-8. **Physically logical scenes**: loaded bars are loaded equally, one pair of headphones, cables run to pulleys, and reflections obey the mirror.
-9. **Adults only, fictional only.** ✓ Every person is a stated adult (`identity.fictional` is always `true`). Never reproduce a real person's face, body, tattoos or identifying marks.
-10. **Inspiration images go to a vision model, not to the generator.** Only the non-identifying style JSON reaches generation. An original image goes to the generator only when a workflow below says so (surgical edit, insertion, person replacement), and each attached image carries a manifest entry. ✓
-11. **Reference images stay out of the repository**: they live in the gitignored `raw/` or outside the repo. ✓
-12. **Generation is approval-gated** and runs through the API keys (OpenAI Image API, Gemini API), not through subscription tools, unless the captain says otherwise. Vision and style-digest work uses the Gemini CLI subscription or the worker's own model, never Grok and never the Gemini API key.
-13. **A separate reviewer judges every image** with its reference beside it: `research/slideshows/reviewer-checks.md`.
+2. **Organic realism beats everything else**: ordinary phone optics and processing, imperfect framing, mixed light, noise, compression, real skin texture, flyaways, clutter, plausible anatomy and geometry. Never optimise for a clean, cinematic or retouched *photograph*.
+3. **Organic describes the photo, never the person.** ✓ Organic is camera behaviour, lighting, environment, texture, framing, processing, compression, clutter and imperfections. It never means ordinary-looking, plain, unattractive, boxy, heavier, less aspirational or unflatteringly cast. Every person is cast exceptionally attractive or aspirational, as attractive as or more attractive than the organic inspiration, and still looks organic. Attractiveness (`appeal`) and photographic rawness (`polish_level`) are independent axes: a `jagged` photo of a stunning woman is correct; a polished photo of a plain one is two mistakes. Anti-polish wording targets the photo (retouching, grading, bokeh, studio light), never her face or body. The captain's before-slide exemption (a softer body on a before slide) is a story choice, not organic treatment.
+4. **Lowest quality setting, one image at a time.** OpenAI `quality: "low"`, `n: 1`, and the smallest valid size that keeps the ratio (`wrap` computes `720x1280` for 9:16). Nano Banana 2 (`gemini-3.1-flash-image`) at `image_size: "512"` with the default `minimal` thinking. No batch unless the captain asks for one, and state the per-image cost first. Low quality is the goal, not a compromise: high quality reads as professional or AI and was rejected.
+5. **Keep natural brands.** ✓ Where a real scene would show a brand (plates, shoes, supplements, packaging, machines, cars), keep real-looking branding. Never add blanket "no logos" exclusions. Still exclude invented words, garbled labels, captions and watermarks.
+6. **No Apple Watch**, anywhere. ✓ A person in frame requires an Apple Watch exclusion; mentioning one anywhere else fails the check.
+7. **A visible phone always has a case.** ✓ Do not add a phone where none belongs: a front-camera selfie shows no phone, a mirror selfie shows the case facing the mirror, and a scrolling scene shows the phone edge-on.
+8. **Keep the place type and the scene concept.** A commercial gym stays a commercial gym; a home kitchen stays a home kitchen. State this in `intent.place_type` and `intent.must_stay_true`.
+9. **Physically logical scenes**: loaded bars are loaded equally, one pair of headphones, cables run to pulleys, and reflections obey the mirror.
+10. **Adults only, fictional only.** ✓ Every person is a stated adult (`identity.fictional` is always `true`). Never reproduce a real person's face, body, tattoos or identifying marks.
+11. **Inspiration images go to a vision model, not to the generator.** Only the non-identifying style JSON reaches generation. An original image goes to the generator only when a workflow below says so (surgical edit, insertion, person replacement), and each attached image carries a manifest entry. ✓
+12. **Reference images stay out of the repository**: they live in the gitignored `raw/` or outside the repo. ✓
+13. **Generation is approval-gated** and runs through the API keys (OpenAI Image API, Gemini API), not through subscription tools, unless the captain says otherwise. Vision and style-digest work uses the Gemini CLI subscription or the worker's own model, never Grok and never the Gemini API key.
+14. **A separate reviewer judges every image** with its reference beside it: `research/slideshows/reviewer-checks.md`.
 
 ## 2. The pipeline
 
@@ -85,7 +86,7 @@ Example: `examples/10-style-clone-new-scene.json`.
 
 1. Load the character's canonical sheet (`organic-character/1`, see `examples/character-sheet-example.json`). Production sheets live in `content/characters/<id>.json`; their reference images live outside the repo.
 2. Brainstorm the new scene. If it is based on an organic photo's style, style-clone it first (W1 steps 1–2); the organic photo itself is **not** attached in W2.
-3. Copy `identity` and `physique` from the sheet word for word into the JSON, and set `identity.character_sheet`. Describe the whole image fully.
+3. Copy `identity`, `appeal` and `physique` from the sheet word for word into the JSON, and set `identity.character_sheet`. Describe the whole image fully.
 4. Attach the approved `character_reference` images. For body-visible shots, also attach the `physique_anchor` / `body_benchmark` and state the body in words. An attached organic photo's body would outweigh the words, which is why it is never attached here.
 5. Phone case from `signature_props`, only when her phone is visible.
 
@@ -122,7 +123,7 @@ Examples: `examples/01`–`07`, `examples/20-no-person-object-scene.json`.
 
 ### 4.5 Create a character and her reference pack (`character_creation`)
 
-1. Write the identity and physique in full in a casting prompt (`examples/14-character-creation.json`): a clear front-camera daylight selfie that is still an organic phone photo.
+1. Write the identity, appeal and physique in full in a casting prompt (`examples/14-character-creation.json`): a clear front-camera daylight selfie that is still an organic phone photo. Cast her exceptionally attractive; the casting image sets the ceiling every later image must match.
 2. Generate one image at a time and review it. The captain approves the casting.
 3. Build the pack from the approved casting with W2 prompts: a three-quarter face, a full-body mirror selfie (physique anchor), and one different lighting condition. Each is approved before joining the pack.
 4. Write `content/characters/<id>.json` (`organic-character/1`) and run `image-prompt.py check` on it. Images are stored outside the repo.
@@ -197,6 +198,7 @@ structure; the sentences give the description.
 |---|---|
 | `mode`, `intent` | Workflow; purpose; `scene_concept`; locked `place_type`; `must_stay_true`; `change_only` (edits); `person_replacement` (W3 only). |
 | `polish_level`, `aspect_ratio` | See section 6; the ratio is repeated in the API call. |
+| `appeal` | The casting axis, independent of `polish_level`: `level` (`exceptional` or `aspirational`; there is no plain level), `relative_to_inspiration` (at least as attractive as the inspiration or benchmark), positive `face` and `physique`, and `independent_of_polish: true`. `null` only when no person is in frame. Character workflows copy it from the sheet. |
 | `subject` | Count, description, action, pose, gaze, expression, face visibility. |
 | `identity`, `other_people` | Fictional adult identity: age, presentation, skin, hair, face, marks, `character_sheet`. |
 | `physique` | Build, proportions and detail, stated in plain words. |
@@ -241,8 +243,12 @@ smears shadows, social-media compression, no beauty filter and no grade.
 
 **Imperfection menu.** Pick at least three per image: luminance/chroma noise, clipped highlights,
 mixed white balance, lens smudge haze, mirror fingerprints, tilt, cropped limb or head, motion
-softness, flyaways, sweat, pores/freckles/blemishes, creased or pilled fabric, and background people
+softness, flyaways, sweat, fine pores/freckles/a small mole, creased or pilled fabric, and background people
 mid-motion.
+
+**Imperfections go on the photo, not on her looks.** Skin texture means fine pores, a natural
+flush, freckles, sweat and shine, not acne, puffiness or a worse face. Clutter, noise, tilt and
+mixed light make the image organic; plain casting does not, and it lowers the slide's appeal.
 
 ## 7. Failure modes and their JSON fixes
 
@@ -263,6 +269,7 @@ mid-motion.
 | Wrong place type (gym turns into a home gym) | loose concept | `intent.place_type` and `must_stay_true` |
 | Source person's identity or body leaks | lazy replacement or attaching the organic photo in W2 | W3 manifest `must_not_transfer`; W2 never attaches it |
 | Body drifts softer or wiry | text-only physique | attach the physique anchor or benchmark and state the body in words |
+| Person comes out plainer, heavier, boxier or less attractive than the inspiration | "organic", "raw", "real", "normal" read as casting words; face or body described by flaws; appeal left implicit | fill `appeal` with positive face and physique wording at or above the inspiration; keep anti-polish words on the photo (processing, light, texture); ✓ `check` rejects plain/average/unflattering wording |
 
 Keep `exclusions` short and targeted. Google recommends describing what you want rather than listing
 negatives, so fix most problems with a positive field and keep "no …" for the known failure modes
@@ -300,7 +307,7 @@ thinking level. `wrap` produces both.
 
 - **OpenAI GPT Image** (`--target openai`): Image API `POST /v1/images/generations`, or `/v1/images/edits` when images are attached. Body: `model` (default `gpt-image-2`, the captain-approved model; `--model gpt-image-2.5-flare` or `gpt-image-2.5-sunburst` when asked), `prompt` = the JSON document, `size` = the smallest valid exact-ratio size, `quality: "low"`, `n: 1`. Use the Image API, not the Responses tool: in Responses the mainline model rewrites the prompt (`revised_prompt`), which would discard the JSON contract.
 - **Nano Banana** (`--target gemini`): Interactions API `POST https://generativelanguage.googleapis.com/v1beta/interactions`, `model: "gemini-3.1-flash-image"` (regular Nano Banana 2; never the legacy 2.5, Lite or Pro unless the captain names it), `input: [{type: "text", text: <JSON>}, {type: "image", …}…]`, `response_format: {type: "image", aspect_ratio, image_size: "512"}`; thinking stays at the default `minimal`. Official examples only show `"1K"` literally; confirm `"512"` in the API reference on first use.
-- **codex-image bridge** (`--target codex`): prints the JSON prompt for `codex-image`/`codex_image`. The bridge has no quality or size control, so it is not the default for generation (rule 12).
+- **codex-image bridge** (`--target codex`): prints the JSON prompt for `codex-image`/`codex_image`. The bridge has no quality or size control, so it is not the default for generation (rule 13).
 
 ## 10. Checklists
 
@@ -311,13 +318,14 @@ thinking level. `wrap` produces both.
 
 **Before submitting**
 - [ ] Every field is filled with concrete, mundane, physically possible specifics; place type locked.
-- [ ] Identity and physique copied word for word from the sheet (character workflows).
+- [ ] `appeal` casts every person exceptional or aspirational, at least as attractive as the inspiration; no face or body wording lowers it.
+- [ ] Identity, appeal and physique copied word for word from the sheet (character workflows).
 - [ ] Manifest complete, with `must_not_transfer` on every scene or style source.
 - [ ] `python3 scripts/image-prompt.py check <file>` passes; `wrap` output inspected.
 - [ ] Approval obtained and the per-image cost stated. One image, lowest setting.
 
 **After generation**
-- [ ] Separate reviewer runs `research/slideshows/reviewer-checks.md` with the reference and the prompt JSON beside the image.
+- [ ] Separate reviewer runs `research/slideshows/reviewer-checks.md` with the reference and the prompt JSON beside the image, including the positive appeal check: she is as attractive as or more attractive than the inspiration, and the image still reads as an organic phone photo.
 - [ ] A FAIL becomes a `surgical_edit` JSON or a corrected prompt; never a prose patch.
 - [ ] Prompt JSON saved next to the output (outside the repo), with its usage and cost.
 

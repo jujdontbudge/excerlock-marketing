@@ -14,6 +14,13 @@
     "person_replacement": null
   },
   "polish_level": "plandid",
+  "appeal": {
+    "level": "exceptional",
+    "relative_to_inspiration": "at least as attractive as any organic inspiration or benchmark used with her; never plainer",
+    "face": "strikingly pretty: clear grey-green eyes, a small upturned nose, full natural lips and a warm, slightly uneven smile that reads as charming",
+    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slim soft arms",
+    "independent_of_polish": true
+  },
   "aspect_ratio": "9:16",
   "subject": {
     "count": 1,
