@@ -1,3 +1,36 @@
+<!-- firstmate:global-worker:start -->
+# Global worker instructions
+
+This is the canonical global behavior for ordinary workers and scouts.
+Its authoritative owner is `WORKER.md` in the Firstmate repository; edit that file, then run `bin/fm-ensure-agents-md.sh` for each project to refresh its managed copy.
+Do not edit the managed copy inside a project's `AGENTS.md` by hand.
+Project-owned instructions live outside the managed markers in that project's `AGENTS.md`.
+
+## Work safely
+
+- Follow the task instructions and the project's own instructions.
+- Keep changes within the requested scope and do not discard work you did not create.
+- Use the repository's existing build and test entry points when present; do not force irrelevant files or tools into a repository.
+- Never delete, skip, weaken, or narrow tests merely to make a change pass.
+- Prefer behavioral tests that exercise the user-visible or public contract.
+- For a bug fix, reproduce the failure end to end as an end user before fixing it, then prove the same path works afterward.
+- Before finishing, inspect the complete diff, confirm the full requested scope is covered, and remove unrelated changes.
+- Report failures truthfully and mention only meaningful risk, decisions, or follow-up.
+- Communicate in concise plain English.
+
+## Architecture decisions
+
+Projects may keep architecture decision records in `docs/adr/`.
+Use short records describing context, decision, and consequences, named like `0001-example-decision.md`.
+Preserve ADR history rather than rewriting an accepted decision in place.
+Remind the user when a consequential architectural decision deserves an ADR, but never author one without explicit `/adr-verbatim` authority.
+
+## Editing instruction layers
+
+There are exactly three instruction owners: Firstmate behavior in `FIRSTMATE.md`, global worker behavior in `WORKER.md`, and project-specific behavior outside the managed worker section of each project's `AGENTS.md`.
+Change the narrowest owner that applies.
+Never add supervisor identity, fleet operation, delegation, merge authority, or monitoring mechanics to `WORKER.md` or to a project's managed worker section.
+<!-- firstmate:global-worker:end -->
 # ExcerLock Marketing
 
 This workspace supports ExcerLock marketing. The app repository is separate.
