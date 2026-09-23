@@ -1,0 +1,99 @@
+{
+  "name": "Hallway propped-phone body check",
+  "slug": "jessicaalugoo-6478-f40-hallway-propped-body-check",
+  "source": {
+    "url": "https://www.tiktok.com/@jessicaalugoo/video/7525097279968136478",
+    "share_url": "https://www.tiktok.com/t/ZP8TfEWa3/",
+    "creator_handle": "@jessicaalugoo",
+    "platform": "TikTok video (6.1 s, 1080x1920 HEVC, 29.97 fps, 183 frames)",
+    "slide_index": null,
+    "frame_index": 40,
+    "frame_time_s": 1.301,
+    "captured_at": "2026-09-22",
+    "observed_metrics": {
+      "plays": "122,000",
+      "likes": "14,200",
+      "saves": "1,225",
+      "shares": "172",
+      "comments": "72"
+    }
+  },
+  "summary": "Decoded video frame 40: a phone propped low on a kitchen counter films a woman standing about two metres away in a narrow apartment hallway in front of a plain white closet door; the upward angle gives a big band of ceiling with an unlit recessed puck light, cuts her off at the upper thigh, and bends the door verticals; soft off-camera window daylight, flat phone-video HDR, blurred hands mid-swing and a four-line lowercase white caption in the upper third.",
+  "polish_level": "plandid",
+  "colors": {
+    "palette": ["#D4D3CC", "#D7D5D6", "#9F9A90", "#91897D", "#716455", "#C3B6AE", "#CECBC2", "#B2745E", "#685652", "#1A151C"],
+    "white_balance": "neutral-to-warm daylight read; white walls and door render as warm off-white and greige, never blue",
+    "contrast": "low to medium; soft shadows, no pure black except the dark leggings, highlights on the door stay just under clipping",
+    "saturation": "muted and slightly desaturated overall; skin is the warmest, most saturated area; the rest of the frame is whites, greige and taupe",
+    "notable_casts": ["warm yellow-beige cast on the shadowed walls and ceiling", "brownish falloff on the wall at frame right", "slight magenta-warm tint in skin shadows from phone-video processing"]
+  },
+  "lighting": {
+    "sources": ["large window off-camera at front-left behind the phone, overcast or indirect daylight", "no artificial light on; the recessed ceiling light is off"],
+    "direction": "front and slightly left of the subject, falling off toward the ceiling and the right-hand wall",
+    "hardness": "soft and wrapping; faint shadow under the chest band and beside the waist, no hard cast shadows",
+    "time_of_day": "daytime, likely morning or midday",
+    "artifacts": ["ceiling and upper corner fall into warm grey shadow", "door panels lit brighter than the surrounding wall", "gentle gradient from lit door to darker right wall"]
+  },
+  "camera": {
+    "implied_device": "iPhone rear main camera recording 1080p video, phone propped upright on a kitchen counter or island, re-encoded by TikTok",
+    "focal_length_equiv": "about 26 mm equivalent (rear main); the front camera at about 23 mm is also plausible",
+    "angle": "low angle from roughly hip height, lens tilted upward about 10 degrees",
+    "distance": "about 1.8 to 2.2 m from the subject",
+    "orientation": "vertical",
+    "aspect_ratio": "9:16",
+    "depth_of_field": "deep; door, switch plate and subject all acceptably sharp, detail limited by video compression rather than blur"
+  },
+  "composition": {
+    "framing": "three-quarter body: top of head to upper thigh, cropped through the legs at the bottom edge",
+    "subject_placement": "centred horizontally, head at about 42 percent of the frame height, torso filling the middle third",
+    "tilt": "upward keystone: the door frame and wall corners lean inward toward the top; horizon itself close to level, about 1 degree clockwise",
+    "foreground": "the white edge of a countertop cuts into the bottom-right corner, slightly out of focus",
+    "background": "white two-panel interior door with brushed-nickel hinges in a white casing, off-white drywall, a white rocker light switch at left, a black plug-in device in a low outlet at lower left, a bulkhead soffit and a sliver of the next room with a yellow object at the right edge",
+    "negative_space": "large: the top 35 to 40 percent of the frame is plain ceiling and soffit, where the caption sits",
+    "reflections": "none"
+  },
+  "subject_treatment": {
+    "pose_type": "standing square to the camera mid-step or mid-gesture, arms loose at the sides and swinging, talking to camera",
+    "face_visibility": "full face visible, looking straight into the lens",
+    "gaze": "direct to camera",
+    "wardrobe_category": "two-tone layered scoop-neck sports bra and dark low-rise leggings; midriff visible",
+    "props": ["a small blurred item in one hand (hair tie or earbud case)", "no phone in frame; the phone is the camera"]
+  },
+  "environment": "Rental-style apartment interior: narrow hallway between kitchen and bedroom with a white paneled closet door, flat off-white walls, flat ceiling with a recessed can light, builder-grade switch plates and outlets; the camera sits on the kitchen counter looking into the hallway. Tidy but lived-in, nothing styled.",
+  "effects_imperfections": [
+    "motion blur on both hands and forearms from arms swinging during the clip",
+    "video-frame softness: fine detail smeared by 1080p recording and TikTok HEVC re-encode",
+    "macroblocking and banding in the flat ceiling gradient",
+    "low-light luminance noise in the upper ceiling corner",
+    "upward keystone distortion leaning the door frame and wall corners",
+    "out-of-focus counter edge intruding at bottom right",
+    "legs cropped at the upper thigh by the low propped angle",
+    "flat, slightly washed phone-video HDR tone curve",
+    "stray background details left in: switch plate, plugged-in device at a low outlet, a yellow object in the next room"
+  ],
+  "typography_overlay": {
+    "present": true,
+    "text": "literally have never been in better shape since i started incorporating minimum 4 mile walks everyday into my workout routine",
+    "text_style": "TikTok in-app Classic font (clean geometric sans), all lowercase, centre-aligned",
+    "weight": "regular",
+    "relative_size": "small: each line about 2.5 percent of the frame height; block about 60 percent of the frame width",
+    "color": "#FFFFFF",
+    "position": "upper third, horizontally centred, roughly 19 to 26 percent from the top, over the plain ceiling and soffit",
+    "shadow_or_stroke": "faint soft drop shadow, no stroke, no background box",
+    "lines": 4,
+    "emoji": []
+  },
+  "mood": "casual, confident, unposed talk-to-camera update from someone's own hallway; proof-of-routine rather than a photo shoot",
+  "reusable_prompt_fragment": "phone propped low on a kitchen counter filming vertical 1080p video, low upward angle from hip height, woman standing about two metres away in a narrow apartment hallway in front of a plain white paneled door, head-to-upper-thigh framing, big band of plain ceiling with an unlit recessed light, soft off-camera window daylight, warm off-white and greige walls, muted colour, flat phone-video HDR, hands blurred mid-swing, counter edge in the bottom corner, compression softness and ceiling banding",
+  "avoid": [
+    "a mirror or a hand-held selfie arm (the phone is propped and unseen)",
+    "tripod-perfect eye-level framing or centred symmetry with straight verticals",
+    "ring light, studio softbox or golden-hour glow",
+    "styled or decorated interiors, plants and art arranged for the camera",
+    "portrait-mode background blur",
+    "crisp still-photo detail instead of video-frame softness",
+    "saturated or graded colour, teal-orange looks",
+    "frozen hands in a posed position"
+  ],
+  "excerlock_fit": "Hook or proof slide for a walking-changed-my-body slideshow: the propped talk-to-camera body check carries the claim; the upper-third ceiling space holds the hook caption added in the editor. Pairs with a steps receipt as the proof slide."
+}

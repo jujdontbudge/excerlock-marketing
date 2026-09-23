@@ -1,0 +1,229 @@
+{
+  "schema_version": "organic-image-prompt/1",
+  "mode": "style_clone_new_scene",
+  "intent": {
+    "purpose": "character concept Mei (31): hook or proof slide in the saved hallway propped-phone style, for a walking-changed-my-body slideshow",
+    "scene_concept": "after her early walk and before work, she films a talk-to-camera update from the short hall between the kitchen and bedroom; a different spot, outfit and moment from the source frame",
+    "place_type": "lived-in rental apartment interior (never a gym, studio, hotel or styled show flat)",
+    "must_stay_true": [
+      "same photographic style as digest S1: a still pulled from a vertical phone video, plandid, soft off-camera window daylight, muted warm off-white palette, video-frame softness",
+      "the phone is propped low at about hip height and films her from about two metres away, tilted slightly upward, so the frame shows a big band of ceiling and cuts her off at the upper thigh",
+      "it is an apartment interior in daytime with nothing styled for the camera",
+      "she is mid-sentence talking to the camera with her hands caught mid-swing"
+    ],
+    "change_only": [],
+    "person_replacement": null
+  },
+  "polish_level": "plandid",
+  "appeal": {
+    "level": "aspirational",
+    "relative_to_inspiration": "at least as attractive as the woman in the style source; the digest carries only the photo's treatment, never her looks",
+    "face": "elegant, very pretty face: almond-shaped dark eyes, soft straight brows, a small straight nose, a defined cupid's bow and a delicate jaw",
+    "physique": "petite and sculpted: toned arms, a flat defined stomach, a small waist and toned legs",
+    "independent_of_polish": true
+  },
+  "aspect_ratio": "9:16",
+  "subject": {
+    "count": 1,
+    "description": "one woman recording a quick morning update from her apartment hall",
+    "action": "talking to the camera, right hand swinging with an earbud case loosely in her fingers, left hand relaxed",
+    "pose": "standing square to the camera, feet together, slight lean forward as she makes a point",
+    "gaze": "straight into the lens of the propped phone",
+    "expression": "mid-sentence, a small knowing half-smile",
+    "face_visibility": "full face visible and in focus, lit softly from the front-left"
+  },
+  "identity": {
+    "fictional": true,
+    "age": "adult, 31",
+    "presentation": "woman",
+    "skin": "light warm ivory skin with a natural pink flush on the cheeks",
+    "hair": "glossy straight black hair in a sleek high ponytail with wispy curtain bangs",
+    "face": "oval face, almond-shaped dark eyes, soft straight brows, small straight nose, defined lips, no visible makeup",
+    "distinguishing_marks": "none; no tattoos, no jewellery",
+    "character_sheet": null
+  },
+  "other_people": [],
+  "physique": {
+    "build": "petite, slim and toned",
+    "proportions": "short torso, small waist, toned legs, slender defined arms",
+    "detail": "a strip of midriff visible; a flat stomach with faint definition"
+  },
+  "wardrobe": {
+    "items": [
+      "cream ribbed square-neck sports bra",
+      "matching cream ribbed high-rise leggings"
+    ],
+    "fit_and_condition": "leggings slightly bunched at the knees below frame, a faint sweat mark at the bra band, fabric a little bobbled at the hips"
+  },
+  "environment": {
+    "setting": "short hall between the kitchen and the bedroom of a one-bedroom apartment",
+    "foreground": [
+      "the out-of-focus rim of a fruit bowl with a banana on the kitchen island intrudes at the bottom-left corner"
+    ],
+    "background": [
+      "a white bedroom door half open behind her, showing a slice of a made bed with a rumpled grey duvet",
+      "a white bifold linen closet door at right",
+      "a small hallway window at far left with white blinds half open",
+      "a laundry hamper against the wall at right, lid open",
+      "flat off-white walls and an unlit recessed light in the ceiling"
+    ],
+    "clutter": "a folded work cardigan draped over the hamper, a tote bag leaning against the wall, a charging cable dangling from an outlet",
+    "time_of_day": "early morning, soft daylight"
+  },
+  "camera": {
+    "device": "iPhone 13, rear main camera recording 1080p vertical video, propped upright against something on a counter",
+    "capture": "video_frame",
+    "lens": "rear main camera",
+    "focal_length_equiv_mm": 26,
+    "position": "propped against the fruit bowl on the kitchen island at about hip height, tilted up about 10 degrees",
+    "distance": "about 2 m from her",
+    "orientation": "vertical",
+    "focus": "her torso and face",
+    "depth_of_field": "deep; the door, walls and background objects are as sharp as the video allows, with no background blur"
+  },
+  "composition": {
+    "framing": "top of her head to her upper thighs; legs cut off by the bottom edge",
+    "subject_placement": "centred horizontally, head at about 40 percent of the frame height, torso across the middle third",
+    "crop": "bottom edge cuts through her upper thighs; a hand is partly cut by the side edge as it swings",
+    "tilt": "upward keystone from the low camera: door frames and wall corners lean inward toward the top; about 1 degree of roll",
+    "headroom": "large: the top third of the frame is plain ceiling with an unlit recessed light, left empty for a caption added later in the editor"
+  },
+  "lighting": {
+    "sources": [
+      "soft early-morning daylight through the half-open blinds of the hall window at left",
+      "fainter daylight from the kitchen behind the phone"
+    ],
+    "direction": "from the left, falling off toward the right-hand wall and the ceiling",
+    "quality": "soft, wrapping daylight with gentle shadows under the chest band and beside the waist; no hard cast shadows",
+    "exposure": "exposed for her skin; the ceiling and far corner fall into warm grey shadow, the lit door stays just under clipping"
+  },
+  "color": {
+    "white_balance": "neutral-to-warm daylight; white walls and doors render as warm off-white and greige, never blue",
+    "palette": [
+      "#D4D3CC",
+      "#A8A39A",
+      "#8A8174",
+      "#EDE3D2",
+      "#E6C4AE",
+      "#141216",
+      "#8C8F94"
+    ],
+    "saturation": "muted overall; her skin is the warmest, most saturated area",
+    "contrast": "low to medium, with no crushed blacks except the darkest fabric",
+    "casts": [
+      "warm yellow-beige cast on the shadowed ceiling and walls",
+      "brownish falloff on the wall farthest from the window"
+    ]
+  },
+  "processing": {
+    "pipeline": "stock iPhone camera app video re-encoded by TikTok; the image looks like one frame grabbed from that clip",
+    "hdr": "flat, slightly washed phone-video HDR tone curve",
+    "sharpening": "light video sharpening; fine detail limited by the video codec",
+    "noise_reduction": "temporal noise reduction smearing fine texture in the shadows",
+    "compression": "HEVC re-encode: macroblocking and banding in the flat ceiling gradient, soft edges",
+    "beauty_filter": "none",
+    "grading": "none"
+  },
+  "imperfections": [
+    "motion blur on her right hand and the earbud case",
+    "video-frame softness with blocky compression in the ceiling",
+    "slightly clipped highlight on the window blinds",
+    "upward keystone lean on the bedroom door frame",
+    "out-of-focus fruit bowl rim at the bottom edge"
+  ],
+  "texture": {
+    "skin": "fine pores and a light morning flush; a faint sheen on the forehead from the walk",
+    "hair": "sleek ponytail with a few flyaways at the crown and bangs separating",
+    "fabric": "ribbed cream knit with light bobbling and creases",
+    "surfaces": "painted doors, flat drywall, white vinyl blinds"
+  },
+  "motion": {
+    "subject": "arms swinging loosely as she talks and shifts her weight; body otherwise near-still",
+    "camera": "static, propped",
+    "blur": "motion blur on her hands and forearms only; face and torso sharp"
+  },
+  "geometry": {
+    "anatomy": [
+      "two arms and two hands; each hand has five fingers, and blurred hands keep a plausible hand shape",
+      "two legs, cut off at the upper thigh by the frame edge",
+      "shoulders, waist and hips in natural proportion for a camera below chest height"
+    ],
+    "physics": [
+      "the bedroom door hangs plumb and is half open on its hinges",
+      "the blinds hang level",
+      "the hamper lid rests open against the wall"
+    ],
+    "reflections": "no mirror in frame; no reflections beyond a soft sheen on door paint",
+    "perspective": "low camera tilted up: verticals converge toward the top, the ceiling plane is visible, her legs look long and her head is slightly smaller"
+  },
+  "phone": {
+    "visible": false,
+    "case": null,
+    "hold": "not held: the phone is propped on the counter out of frame and is the camera",
+    "screen": null
+  },
+  "typography": {
+    "overlay_text": null,
+    "scene_text": "no legible text; the earbud case has no readable writing"
+  },
+  "brands_and_props": {
+    "branding_policy": "keep natural branding where a real apartment would show it, small and incidental; do not invent new readable words",
+    "brands": [
+      "a white AirPods charging case in her hand, shape only",
+      "the banana's supermarket sticker, too small to read"
+    ],
+    "props": [
+      "earbud case",
+      "fruit bowl with bananas",
+      "laundry hamper",
+      "tote bag",
+      "charging cable"
+    ]
+  },
+  "exclusions": [
+    "no Apple Watch or any smartwatch",
+    "no mirror, no visible phone and no selfie arm",
+    "no ring light, softbox or golden-hour glow",
+    "no portrait-mode background blur",
+    "no cinematic grade, film grain or vignette",
+    "no airbrushed or poreless skin",
+    "no styled decor arranged for the camera",
+    "no text overlays, captions or watermarks",
+    "no invented or garbled text on products"
+  ],
+  "references": {
+    "manifest": [
+      {
+        "reference_id": "S1",
+        "role": "style_digest",
+        "source": "content/styles/jessicaalugoo-6478-f40-hallway-propped-body-check.json (organic video: https://www.tiktok.com/@jessicaalugoo/video/7525097279968136478, decoded frame 40)",
+        "sent_to_generator": false,
+        "may_copy": [
+          "palette and white balance",
+          "soft off-camera window daylight and its falloff",
+          "propped low camera height, upward tilt and distance",
+          "head-to-upper-thigh framing with the ceiling band",
+          "video-frame softness, compression and hand motion blur",
+          "apartment place type"
+        ],
+        "must_preserve": [
+          "plandid polish level",
+          "lived-in apartment interior in daytime",
+          "talk-to-camera body check from a propped phone"
+        ],
+        "must_not_transfer": [
+          "the source person's face, body, skin, hair and jewellery",
+          "the source outfit (two-tone sports bra, dark leggings)",
+          "the exact hallway, closet door, switch plate and outlet layout",
+          "the source caption text"
+        ]
+      }
+    ],
+    "priority": [
+      "prompt_json",
+      "S1"
+    ]
+  },
+  "continuity": null,
+  "video_handoff": null
+}
