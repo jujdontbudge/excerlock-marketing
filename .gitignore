@@ -19,5 +19,7 @@ storage/
 .pi/git/
 .pi/npm/
 .pi/sessions/
-assets/*
-!assets/README.md
+
+# real images stay on disk only; each folder's assets.md lists what should be there
+accounts/*/assets/
+sections/*/assets/
