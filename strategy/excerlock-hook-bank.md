@@ -1,6 +1,6 @@
 # ExcerLock hook bank (draft)
 
-A clean, deduplicated bank of the ExcerLock hook candidates from the worksheet in `research/slideshows/hooks.md` (§ "ExcerLock hook worksheet"), ingested from the Google Doc worksheet on 2026-09-16. This is a draft for review, not approved copy: the hook wording is the author's raw brainstorm with spelling normalised, and no hook here is cleared for publishing. Judge each hook against the product truth in `strategy/excerlock-slideshow-questions.md` before use; ExcerLock can prove consistency, attendance, steps, and screen-time/lock behaviour — not fat loss.
+The captain's ExcerLock hook ideas, grouped by hook type, ingested from his Google Doc worksheet on 2026-09-16 with spelling normalised. This file is now the only copy; the worksheet in `research/slideshows/hooks.md` was deleted.
 
 No two hook lines in the export are word-for-word identical, so nothing was merged.
 
@@ -160,7 +160,7 @@ Patterns from the worksheet still without a hook, one line each, to be filled la
 
 ## Sources
 
-- Worksheet: `research/slideshows/hooks.md`, § "ExcerLock hook worksheet" (answers ingested from the Google Doc worksheet on 2026-09-16).
+- Worksheet: the captain's Google Doc worksheet, ingested 2026-09-16 (the copy in `research/slideshows/hooks.md` was deleted; this file holds every answer).
 - Pounds, [Direct-response TikTok slideshow course](https://x.com/pounddz/status/2095531593003606066?s=20)
 - Sulfur, [Slideshow beginner playbook and production system](https://x.com/sulfurscales/status/2088703056536109114?s=20)
 - Pedro Pérez, [AI UGC slideshow workflow](https://x.com/PerezHatesAI/status/2098064168058241089?s=20)
