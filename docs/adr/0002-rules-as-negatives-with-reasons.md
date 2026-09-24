@@ -1,0 +1,3 @@
+# Corrections are written as negatives with reasons, in one home
+
+When the captain corrects output and says "make universal", the correction goes into the one file that caused the behaviour: skills that produce things get a "Don't X. Why: Y." line, review skills get a pass/fail check with the reason, and account-specific corrections go into that account's files. This replaces the old "two-write rule", which copied each correction into five to eight files that then drifted apart (the same body rule existed in four versions). Image prompts stay mostly positive JSON; the negatives live in the documents the agent reads before writing the JSON.

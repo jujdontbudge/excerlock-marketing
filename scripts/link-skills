@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""Register every skill with Claude Code and Pi. Run after adding, renaming or removing a skill.
+
+Skills live in core/skills/, sections/*/skills/ and accounts/*/skills/. This script
+links each one into .claude/skills/<name> and lists every skills folder in
+.pi/settings.json. `--check` changes nothing and exits 1 if either is out of date.
+"""
+import glob, json, os, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(ROOT)
+check = "--check" in sys.argv
+problems = []
+
+skills = sorted(os.path.dirname(p) for pattern in
+                ("core/skills/*/SKILL.md", "sections/*/skills/*/SKILL.md", "accounts/*/skills/*/SKILL.md")
+                for p in glob.glob(pattern))
+want = {os.path.basename(s): os.path.join("..", "..", s) for s in skills}
+
+link_dir = os.path.join(".claude", "skills")
+have = {}
+if os.path.isdir(link_dir):
+    for name in os.listdir(link_dir):
+        path = os.path.join(link_dir, name)
+        if os.path.islink(path):
+            have[name] = os.readlink(path)
+for name in sorted(set(have) - set(want)):
+    problems.append(f"stale skill link .claude/skills/{name}")
+    if not check:
+        os.unlink(os.path.join(link_dir, name))
+for name, target in want.items():
+    if have.get(name) != target:
+        problems.append(f"missing or wrong skill link .claude/skills/{name}")
+        if not check:
+            os.makedirs(link_dir, exist_ok=True)
+            path = os.path.join(link_dir, name)
+            if os.path.lexists(path):
+                os.unlink(path)
+            os.symlink(target, path)
+
+roots = sorted({os.path.join("..", os.path.dirname(s)) for s in skills})
+settings_path = os.path.join(".pi", "settings.json")
+settings = json.load(open(settings_path))
+if settings.get("skills") != roots:
+    problems.append(".pi/settings.json skills list is out of date")
+    if not check:
+        settings["skills"] = roots
+        with open(settings_path, "w") as fh:
+            json.dump(settings, fh, indent=2)
+            fh.write("\n")
+
+if check:
+    if problems:
+        print("\n".join(problems) + "\nrun scripts/link-skills")
+        sys.exit(1)
+else:
+    print(f"{len(want)} skills linked; Pi reads {', '.join(roots)}")

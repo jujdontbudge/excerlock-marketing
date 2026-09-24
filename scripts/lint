@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""Check the repo's module rules. Run from anywhere: scripts/lint
+
+1. Universal files (core/, library/, and each section's rules, skills, workflows and
+   hook bank) never mention an account's names or signature props (read from the
+   `<!-- lint-names: ... -->` line in accounts/*/account.md) or a specific deck.
+2. References only point down: core/, library/ and accounts/ never name a section;
+   a section never names another section.
+3. Every backticked repo path in Markdown exists (placeholders, archive `data/`,
+   raw/ and gitignored assets are skipped).
+4. Every SKILL.md has frontmatter whose name matches its folder, names are unique,
+   and scripts/link-skills is up to date.
+"""
+import os, re, subprocess, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(ROOT)
+errors = []
+
+
+def tracked():
+    out = subprocess.run(["git", "ls-files", "--cached", "--others", "--exclude-standard"],
+                         capture_output=True, text=True, check=True).stdout.split("\n")
+    return [f for f in out if f and os.path.isfile(f)]
+
+
+def text(path):
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return fh.read()
+    except (UnicodeDecodeError, OSError):
+        return None
+
+
+def report(path, lineno, msg):
+    errors.append(f"{path}:{lineno}: {msg}")
+
+
+files = tracked()
+sections = sorted(d for d in os.listdir("sections") if os.path.isdir(os.path.join("sections", d)))
+accounts = sorted(d for d in os.listdir("accounts") if os.path.isdir(os.path.join("accounts", d)))
+
+# 1. account names and deck references in universal files
+names = set()
+for acct in accounts:
+    body = text(f"accounts/{acct}/account.md") or ""
+    m = re.search(r"<!--\s*lint-names:\s*(.*?)-->", body)
+    if not m:
+        report(f"accounts/{acct}/account.md", 1, "missing <!-- lint-names: ... --> line")
+        continue
+    names.update(n.strip() for n in m.group(1).split(",") if n.strip())
+    names.add(acct)
+name_rx = re.compile(r"\b(" + "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True)) + r")\b",
+                     re.I) if names else None
+deck_rx = re.compile(r"\b(deck|slideshow)s? 0\d\b|\b0\d s\d\b", re.I)
+
+
+def universal(path):
+    if path.startswith(("core/", "library/")):
+        return True
+    parts = path.split("/")
+    return (len(parts) >= 3 and parts[0] == "sections"
+            and (parts[2] in ("rules.md", "hook-bank.md", "image-rules.json")
+                 or parts[2] in ("skills", "workflows")))
+
+
+for f in files:
+    if not universal(f) or not f.endswith((".md", ".json", ".py")):
+        continue
+    body = text(f)
+    if body is None:
+        continue
+    for i, line in enumerate(body.split("\n"), 1):
+        if name_rx and (m := name_rx.search(line)):
+            report(f, i, f"universal file names an account or its prop: {m.group(0)!r}")
+        if m := deck_rx.search(line):
+            report(f, i, f"universal file names a specific deck: {m.group(0)!r}")
+
+# 2. references only point down
+sec_rx = re.compile(r"sections/(" + "|".join(map(re.escape, sections)) + r")\b") if sections else None
+for f in files:
+    if not f.endswith((".md", ".json", ".py")) or sec_rx is None:
+        continue
+    top = f.split("/")[0]
+    if top not in ("core", "library", "accounts", "sections"):
+        continue
+    own = f.split("/")[1] if top == "sections" else None
+    body = text(f) or ""
+    for i, line in enumerate(body.split("\n"), 1):
+        for m in sec_rx.finditer(line):
+            if top != "sections":
+                report(f, i, f"{top}/ must not name a section: {m.group(0)}")
+            elif m.group(1) != own:
+                report(f, i, f"section {own} must not name another section: {m.group(0)}")
+
+# 3. backticked repo paths exist
+TOPS = ("core/", "sections/", "accounts/", "library/", "research/", "scripts/", "integrations/",
+        "tools/", "docs/", ".pi/", ".claude/")
+ROOTFILES = {"AGENTS.md", "CONTEXT.md", "README.md", "BROWSER.md", "CLAUDE.md", ".env.example"}
+path_rx = re.compile(r"`([^`\s]+)`")
+for f in files:
+    if not f.endswith(".md") or (f.startswith("research/") and f != "research/README.md"):
+        continue
+    body = text(f) or ""
+    for i, line in enumerate(body.split("\n"), 1):
+        for m in path_rx.finditer(line):
+            p = m.group(1).rstrip(".,:;)")
+            if p not in ROOTFILES and not p.startswith(TOPS):
+                continue
+            if any(c in p for c in "<>*{}$|") or "NN" in p or "/assets/" in p or p.endswith("/assets"):
+                continue
+            p = p.split("#")[0].split("§")[0]
+            if not os.path.exists(p):
+                report(f, i, f"path does not exist: {p}")
+        if "/firstmates/" in line:
+            report(f, i, "dead path: the Firstmate home no longer exists; use data/... (the archive)")
+
+# 4. skills
+seen = {}
+for f in files:
+    if not f.endswith("/SKILL.md"):
+        continue
+    folder = f.split("/")[-2]
+    body = text(f) or ""
+    m = re.match(r"---\n(.*?)\n---\n", body, re.S)
+    if not m:
+        report(f, 1, "SKILL.md needs YAML frontmatter with name and description")
+        continue
+    meta = dict(re.findall(r"^(\w+):\s*(.+)$", m.group(1), re.M))
+    if meta.get("name") != folder:
+        report(f, 1, f"frontmatter name {meta.get('name')!r} must equal the folder name {folder!r}")
+    if not meta.get("description"):
+        report(f, 1, "frontmatter needs a description")
+    if folder in seen:
+        report(f, 1, f"skill name {folder!r} already used by {seen[folder]}")
+    seen[folder] = f
+check = subprocess.run([os.path.join(ROOT, "scripts", "link-skills"), "--check"], capture_output=True, text=True)
+if check.returncode:
+    errors.append(check.stdout.strip() or check.stderr.strip())
+
+if errors:
+    print("\n".join(errors))
+    print(f"\n{len(errors)} problem(s)")
+    sys.exit(1)
+print("lint: ok")

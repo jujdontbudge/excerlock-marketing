@@ -22,7 +22,7 @@ export default function (pi: ExtensionAPI) {
     description: "ExcerLock marketing workspace and credential presence (never key values)",
     handler: async (_args, ctx) => {
       const keys = [...allowed].filter(k => /KEY|TOKEN|CLIENT_ID|CLIENT_SECRET/.test(k));
-      ctx.ui.notify(`${root}/README.md\n${keys.map(k => `${k}: ${process.env[k] ? "set (not verified)" : "missing"}`).join("\n")}\nImage gen = Codex plugin only; fal = Seedance video only.`, "info");
+      ctx.ui.notify(`${root}/README.md\n${keys.map(k => `${k}: ${process.env[k] ? "set (not verified)" : "missing"}`).join("\n")}\nImages: OpenAI or Gemini API at lowest quality (core/skills/image-prompt); codex-image only when asked. Video: core/skills/fal-video.`, "info");
     },
   };
   pi.registerCommand("marketing-status", statusCommand);
