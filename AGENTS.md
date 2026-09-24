@@ -15,7 +15,7 @@ Words used here are defined in `CONTEXT.md`. Why the repo is shaped this way: `d
 | Existing research | `research/README.md` |
 | Add an account or a new kind of marketing work | `core/workflows/new-account.md`, `core/workflows/new-section.md` |
 
-Every skill is a folder with a `SKILL.md`; `.claude/skills/` links them all.
+Every skill is a folder with a `SKILL.md`. `scripts/link-skills` links them all into `.claude/skills/` (Claude Code) and `.agents/skills/` (Pi and Hermes; both need the repo trusted).
 
 ## Rules
 - **Modules.** `sections/<name>/` is one kind of work and can be deleted on its own. A section may use `core/`, `accounts/`, `library/` and `research/`; `core/` and `library/` never name a section or an account; sections never name each other. Account-specific material lives only in `accounts/<name>/` and `sections/<section>/accounts/<name>/`.

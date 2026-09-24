@@ -1,8 +1,4 @@
 {
-  "skills": [
-    "../core/skills",
-    "../sections/slideshows/skills"
-  ],
   "pi-browser-use": {
     "headless": true,
     "sessionMode": "persistent",

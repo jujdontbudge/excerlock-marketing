@@ -7,5 +7,5 @@ A section is one kind of marketing work (slideshows today; AI UGC, real UGC, cli
 3. **Skills.** `sections/<name>/skills/<skill>/SKILL.md` for work only this section does. If a skill is useful to every section, put it in `core/skills/` instead and keep it free of section and account details.
 4. **Workflows.** `sections/<name>/workflows/<workflow>.md`: the ordered steps, naming the skill for each step.
 5. **Accounts.** `sections/<name>/accounts/<account>/README.md` for each account that posts here: overrides of this section's rules and the list of its work. Who the account is stays in `accounts/<account>/account.md`.
-6. **Register the skills.** Run `scripts/link-skills` so Claude Code and Pi load them.
+6. **Register the skills.** Run `scripts/link-skills` so Claude Code, Pi and Hermes load them.
 7. **Run `scripts/lint`.** The section may use `core/`, `accounts/`, `library/` and `research/`, but must never name another section, and `core/` must never name it.
