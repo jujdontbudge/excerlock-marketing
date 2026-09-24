@@ -1,0 +1,32 @@
+{
+  "about": "Slideshow image rules for core/skills/image-prompt/check.py --rules. Each rule restates a house rule from sections/slideshows/rules.md by its ID; rules.md is the home of the rule and its full reason.",
+  "rules": [
+    {
+      "id": "H-no-watch",
+      "type": "forbid_phrase_outside_exclusions",
+      "phrases": ["apple watch", "smartwatch"],
+      "why": "no Apple Watch or smartwatch anywhere; a watch named in the scene ends up in the image"
+    },
+    {
+      "id": "H-no-watch",
+      "type": "require_exclusion_when_person",
+      "pattern": "apple watch|smartwatch",
+      "why": "generators add a watch to wrists by default, so every prompt with a person excludes it"
+    },
+    {
+      "id": "H-phone-case",
+      "type": "require_field_regex_when",
+      "when": {"field": "phone.visible", "equals": true},
+      "field": "phone.case",
+      "pattern": "\\bcase\\b",
+      "why": "a visible phone always has a case; a bare phone reads as a render"
+    },
+    {
+      "id": "H-keep-brands",
+      "type": "forbid_exclusion_regex_unless",
+      "pattern": "\\b(brand|logo)",
+      "unless": "invent|fake|made.up|misspell|garbled|extra|mirror|new|added|overlay|watermark",
+      "why": "keep natural real branding; blanket no-logo scenes look staged. Only invented, garbled or added text may be excluded"
+    }
+  ]
+}
