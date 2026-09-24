@@ -14,14 +14,14 @@
   "appeal": {
     "level": "exceptional",
     "face": "strikingly pretty: clear grey-green eyes, a small upturned nose, full natural lips and a warm, slightly uneven smile that reads as charming",
-    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slim soft arms",
+    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slender arms",
     "independent_of_polish": true,
     "relative_to_inspiration": "at least as attractive as any organic inspiration or benchmark used with her; never plainer"
   },
   "physique": {
     "build": "fit, curvy hourglass",
     "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
-    "detail": "slim soft arms with no visible muscle definition; natural soft stomach when seated"
+    "detail": "slender, lightly toned arms; natural soft stomach when seated"
   },
   "signature_props": {
     "phone_case": "matte sage-green silicone phone case with a scuffed corner",
@@ -33,19 +33,19 @@
   "reference_pack": [
     {
       "reference_id": "C1",
-      "path": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg",
+      "path": "accounts/example/assets/C1-front-face-daylight.jpg",
       "shows": "front face, neutral expression, daylight",
       "approved_on": null
     },
     {
       "reference_id": "C2",
-      "path": "~/excerlock-private/characters/example-mara/C2-three-quarter-smile.jpg",
+      "path": "accounts/example/assets/C2-three-quarter-smile.jpg",
       "shows": "three-quarter face, smiling, indoor light",
       "approved_on": null
     },
     {
       "reference_id": "C3",
-      "path": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg",
+      "path": "accounts/example/assets/C3-full-body-mirror.jpg",
       "shows": "full-body mirror selfie in a plain gym set (physique anchor)",
       "approved_on": null
     }

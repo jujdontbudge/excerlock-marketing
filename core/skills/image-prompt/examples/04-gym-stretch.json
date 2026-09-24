@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow frame: casual post-workout stretch photo taken by a friend",
+    "purpose": "photo-post frame: casual post-workout stretch photo taken by a friend",
     "scene_concept": "woman sitting on a mat on a commercial gym floor doing a quad stretch, photographed by a friend standing in front of her",
     "place_type": "commercial gym with large windows (not a home gym, not a yoga studio)",
     "must_stay_true": [
@@ -18,7 +18,7 @@
     "level": "aspirational",
     "relative_to_inspiration": "as attractive as or more attractive than the source posts this scene class came from; the rawness is in the photo, not in her looks",
     "face": "pretty, well-defined features, flushed and glowing from training",
-    "physique": "fit athletic hourglass: toned legs, tight waist, slim soft arms",
+    "physique": "fit athletic hourglass: toned legs, tight waist, slender arms",
     "independent_of_polish": true
   },
   "aspect_ratio": "9:16",

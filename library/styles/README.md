@@ -1,8 +1,8 @@
 # Saved photo styles
 
-Reusable style digests, extracted with the workflow in `skills/style-clone.md`.
+Reusable style digests, extracted with the workflow in `core/skills/style-clone/SKILL.md`.
 They are inputs to the JSON prompt workflow in
-`skills/organic-json-image-prompting.md`: their contents are written into the
+`core/skills/image-prompt/SKILL.md`: their contents are written into the
 prompt JSON as text and listed in its reference manifest as `style_digest`.
 They are never attached to a generation or appended as prose. Older digests say
 "no brand names"; the current rule is to keep natural branding.
@@ -44,10 +44,6 @@ captured date — observed, not conclusions about performance.
 | `myspacegym-8095-s3-post-cardio-sweat-face` | Tight low-to-high selfie of lower face, neck, and collarbone drenched in glistening sweat immediately after intense cardio, dark gym ceiling and overhead fluorescent glints. | jagged | [@myspacegym](https://www.tiktok.com/@myspacegym/photo/7662601047931768095) | 3 | 2026-09-16 |
 | `wwwreesey-0928-s1-pink-bedroom-outfit-check` | Full-body standing shot in a pink-walled bedroom: black short-sleeve button-front top and denim shorts, hands on hips, soft warm incandescent ceiling lighting and domestic bedroom background with posters and unmade bed. | raw | [@www.reesey](https://www.tiktok.com/@www.reesey/photo/7662638384740928781) | 1 | 2026-09-16 |
 | `wwwreesey-0928-s2-gym-weight-room-mirror` | Full-body three-quarter back angle mirror selfie in a commercial gym free-weight room: black long-sleeve athletic top, wide-leg track pants, blonde hair, cable crossover towers and barbell rack in background. | plandid | [@www.reesey](https://www.tiktok.com/@www.reesey/photo/7662638384740928781) | 2 | 2026-09-16 |
-| `yermospam-1793-s1-attic-bedroom-mirror` | Casual shirtless mirror selfie in a small sloped-ceiling attic bedroom: warm domestic lamp lighting, timber/wood details, messy bed in background, warm tones and shadow grain. | raw | [@yermospam](https://www.tiktok.com/@yermospam/photo/7581568072968981793) | 1 | 2026-09-16 |
-| `yermospam-1793-s2-puffer-beanie-mirror` | Winter streetwear outfit mirror selfie in an attic bedroom: dark puffer jacket, knit beanie, phone held in front of face, soft indirect room daylight and warm shadows. | raw | [@yermospam](https://www.tiktok.com/@yermospam/photo/7581568072968981793) | 2 | 2026-09-16 |
-| `yermospam-1793-s4-gym-mirror-arm-flex` | Full-body/three-quarter gym mirror selfie flexing arm in an athletic ribbed tank top: commercial gym weight room, overhead fluorescent/LED downlights, natural arm pump definition. | plandid | [@yermospam](https://www.tiktok.com/@yermospam/photo/7581568072968981793) | 4 | 2026-09-16 |
-| `yermospam-1793-s7-outdoor-bridge-seated` | Full-body outdoor photo of a young man seated on a historic brick bridge ledge over a canal: European town architecture, overcast sky, muted historic brickwork, relaxed casual posture. | plandid | [@yermospam](https://www.tiktok.com/@yermospam/photo/7581568072968981793) | 7 | 2026-09-16 |
 
 ## Corpus batch 2026-09-16
 

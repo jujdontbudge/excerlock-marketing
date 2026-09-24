@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "character_new_image",
   "intent": {
-    "purpose": "slideshow value frame: the established character after a treadmill walk",
+    "purpose": "photo-post value frame: the established character after a treadmill walk",
     "scene_concept": "the character takes a quick mirror selfie next to the treadmills after an evening walk, in a commercial gym",
     "place_type": "mid-range commercial gym cardio area",
     "must_stay_true": [
@@ -18,7 +18,7 @@
     "level": "exceptional",
     "relative_to_inspiration": "at least as attractive as any organic inspiration or benchmark used with her; never plainer",
     "face": "strikingly pretty: clear grey-green eyes, a small upturned nose, full natural lips and a warm, slightly uneven smile that reads as charming",
-    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slim soft arms",
+    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slender arms",
     "independent_of_polish": true
   },
   "aspect_ratio": "9:16",
@@ -39,13 +39,13 @@
     "hair": "shoulder-length dark-blonde hair with darker natural roots, slightly frizzy, pulled into a claw clip with strands falling out",
     "face": "soft oval face, grey-green eyes, straight brows a shade darker than her hair, small upturned nose, slightly uneven smile",
     "distinguishing_marks": "the mole under the left eye; no tattoos",
-    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+    "character_sheet": "accounts/example/account.md"
   },
   "other_people": [],
   "physique": {
     "build": "fit, curvy hourglass",
     "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
-    "detail": "slim soft arms with no visible muscle definition"
+    "detail": "slender, lightly toned arms"
   },
   "wardrobe": {
     "items": [
@@ -170,7 +170,7 @@
       {
         "reference_id": "C1",
         "role": "character_reference",
-        "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg",
+        "source": "accounts/example/assets/C1-front-face-daylight.jpg",
         "sent_to_generator": true,
         "may_copy": ["face shape and features", "eye colour", "freckles and the mole", "hair colour and roots"],
         "must_preserve": ["her recognisable identity"],
@@ -179,7 +179,7 @@
       {
         "reference_id": "C2",
         "role": "character_reference",
-        "source": "~/excerlock-private/characters/example-mara/C2-three-quarter-smile.jpg",
+        "source": "accounts/example/assets/C2-three-quarter-smile.jpg",
         "sent_to_generator": true,
         "may_copy": ["three-quarter face shape", "smile shape"],
         "must_preserve": ["her recognisable identity"],
@@ -188,10 +188,10 @@
       {
         "reference_id": "C3",
         "role": "physique_anchor",
-        "source": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg",
+        "source": "accounts/example/assets/C3-full-body-mirror.jpg",
         "sent_to_generator": true,
         "may_copy": ["body shape and proportions"],
-        "must_preserve": ["tight waist, full hips, toned thighs, slim soft arms"],
+        "must_preserve": ["tight waist, full hips, toned thighs, slender arms"],
         "must_not_transfer": ["the reference outfit, location, pose and phone position"]
       }
     ],

@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "surgical_edit",
   "intent": {
-    "purpose": "fix two reviewer FAIL findings on an already generated treadmill-console slide without regenerating it",
+    "purpose": "fix two reviewer FAIL findings on an already generated treadmill-console image without regenerating it",
     "scene_concept": "point-down POV of a treadmill console mid-walk in a commercial gym, as already generated in E1",
     "place_type": "commercial gym cardio area",
     "must_stay_true": [
@@ -11,8 +11,8 @@
       "the console layout and its maker logo"
     ],
     "change_only": [
-      "the console time readout '37:56' becomes '24:10' in the same font, size and glow",
-      "remove the leopard-print phone lying on the console tray; the empty tray shows its scuffed plastic"
+      "the console time readout '12:07' becomes '24:10' in the same font, size and glow",
+      "remove the stray phone lying on the console tray; the empty tray shows its scuffed plastic"
     ],
     "person_replacement": null
   },
@@ -106,11 +106,11 @@
       {
         "reference_id": "E1",
         "role": "edit_target",
-        "source": "raw/generated/03-s3-v3.png",
+        "source": "raw/generated/treadmill-console-v1.png",
         "sent_to_generator": true,
         "may_copy": ["everything not listed in intent.change_only"],
         "must_preserve": ["framing, angle, lighting, noise, colour, softness, props and their positions, console logo"],
-        "must_not_transfer": ["the '37:56' readout", "the leopard-print phone"]
+        "must_not_transfer": ["the '12:07' readout", "the stray phone on the tray"]
       }
     ],
     "priority": ["prompt_json", "E1"]

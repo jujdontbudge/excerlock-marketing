@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow frame: playful high-angle selfie in a small bathroom",
+    "purpose": "photo-post frame: playful high-angle selfie in a small bathroom",
     "scene_concept": "front-camera selfie held high above her head in a compact bathroom, one arm raised behind her head",
     "place_type": "small home bathroom (not a hotel or spa)",
     "must_stay_true": [

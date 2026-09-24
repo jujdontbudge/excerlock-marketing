@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow frame: close selfie leaning toward the phone in a bright kitchen",
+    "purpose": "photo-post frame: close selfie leaning toward the phone in a bright kitchen",
     "scene_concept": "woman leaning forward into a front-camera selfie in an ordinary daylight kitchen, one hand at her neckline",
     "place_type": "ordinary home kitchen (not a showroom kitchen)",
     "must_stay_true": [

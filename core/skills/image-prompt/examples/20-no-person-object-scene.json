@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow value frame with no person: Sunday meal prep",
+    "purpose": "photo-post value frame with no person: Sunday meal prep",
     "scene_concept": "high-angle phone photo of a cluttered home kitchen counter with meal-prep containers being filled",
     "place_type": "ordinary home kitchen",
     "must_stay_true": [

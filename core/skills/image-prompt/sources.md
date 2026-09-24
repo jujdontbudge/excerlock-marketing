@@ -1,6 +1,6 @@
-# Sources, coverage and prompt audit
+# Sources and coverage
 
-Research date: 2026-09-22. This file records the evidence behind `skills/organic-json-image-prompting.md`
+Research date: 2026-09-22. This file records the evidence behind `core/skills/image-prompt/SKILL.md`
 and states where that evidence stops. Raw captures are kept in the gitignored `raw/ojip/`, not in the repo.
 
 ## 1. Official vendor documentation
@@ -32,7 +32,7 @@ Neither vendor defines a JSON prompt schema. The JSON structure is our house for
 accept it as a string prompt, and OpenAI explicitly lists JSON-like structure as acceptable.
 
 Gap: the Gemini page's examples show only `"1K"` and `"2K"` literals. The 512 value is taken from
-the captain's standing Nano Banana setting and must be confirmed on first use.
+the standing Nano Banana setting and must be confirmed on first use.
 
 ## 2. The six linked posts
 
@@ -65,7 +65,7 @@ not show that a prompt converts.
 **Rejected:**
 - "Reproduce their appearance precisely" and "subtly alter facial identity". Both derive a person from a real person's likeness; our W3 replaces the person with a fictional character and fences off the source identity.
 - "4K", "ultra photorealistic" and maximum quality. Captain rule: lowest quality.
-- Blanket "no logos / no brand names" negatives. Captain rule: keep natural brands.
+- Blanket "no logos / no brand names" negatives. Natural real branding reads as more organic.
 - Beauty processing ("flawless", "glowing").
 - Recreating a reference "as closely as possible" as a whole, instead of describing a new scene.
 
@@ -94,40 +94,3 @@ Tip posts that shaped the doctrine:
 - @sixugc 2098448587533205861: more references give better consistency.
 - @sixugc 2100680487958098317 and 2098443407647498280: character consistency.
 - @jasonugc 2090447117668298922: the reference image drives the realism.
-
-## 4. Audit of image prompts already in this project
-
-Classification: **true JSON** (a structured prompt sent as JSON), **prose in a JSON envelope** (the
-API body is JSON but the prompt is a prose string; not acceptable), or an **ad-hoc edit instruction**
-(a one-off "change X" sentence).
-
-| Location | Classification | Notes |
-|---|---|---|
-| `content/slideshows/01-*.md` … `05-*.md` ("Prompt:" lines, 21 in total) | prose | Written per slide; no manifest. |
-| `skills/organic-iphone-photo.md` (before this change) | prose in a JSON envelope | JSON wrapper whose `full_prompt_string` was one prose string. Now superseded. |
-| `skills/style-clone.md` Step 4 "quick append" (before this change) | prose | Appended digest fragments to a prose prompt. Now replaced by the JSON workflow. |
-| `scripts/image-reimagine.py` | prose in a JSON envelope | Builds prose and posts it inside an OpenAI request body. Legacy; migrating it to `scripts/image-prompt.py wrap` is follow-up work. |
-| `research/slideshows/image-build-log.md` | prose + ad-hoc edits | Prompts were built as prose by an external `tools/build_prompts.py`; the 3.1 fixes were one-line edit instructions. |
-| `content/styles/*.json` | true JSON, but **inputs** | Style digests, not prompts. They feed W1/W3 as text. |
-| Firstmate data (outside the repo): `data/hayden-character-options/*.prompt.json` | true JSON, ad-hoc schema | `json.dumps` of an unversioned schema; no manifest or house-rule check. |
-| Firstmate data: Hayden Nano Banana anchor and strict-edit prompts | prose + ad-hoc edits | — |
-| Firstmate data: `slideshows-02-05-images` (44 `prompt.txt`) and `slideshow-01-final` (18) | prose | — |
-
-Gaps found and closed by this change:
-- **No reference-role manifest.** Attached images had no stated role or no-transfer list. Closed by `references.manifest`.
-- **No canonical character JSON in the repo.** Closed by `organic-character/1` and `content/characters/`.
-- **Blanket logo negatives**, for example "no readable brand logos" and the reviewer's "unbranded" cup. Replaced with natural branding.
-- **No validation.** Closed by `scripts/image-prompt.py check`.
-- **A reference image that shows an Apple Watch** (the leopard-case "our girl" reference in Firstmate data). The manifest checklist now forbids attaching such a reference.
-
-## 5. Reconciliation log
-
-| File | Change |
-|---|---|
-| `skills/organic-iphone-photo.md` | Retired to a pointer; its polish-level table moved to the book. |
-| `skills/style-clone.md` | Stays as the digest step. Digests record natural brands; vision runs via the Gemini CLI or the worker's own model (never Grok); Step 4 now hands off to the JSON workflow; "no readable brand logos" removed. |
-| `skills/image-reimagine.md` | Marked legacy (prose runner); new work uses W1 or W3. |
-| `content/styles/README.md` | Digests feed the JSON prompt as text and are never attached. |
-| `AGENTS.md`, `README.md`, `skills/fal-video.md` | Point to the book and `scripts/image-prompt.py`. |
-| `research/slideshows/script-writing-guide.md`, `reviewer-checks.md`, `content/slideshows/README-02-05.md` | Point to the book; natural branding replaces "unbranded"; the reviewer receives the prompt JSON and manifest; W3 is the only workflow that attaches an organic photo for a body shot, fenced by `must_not_transfer`. |
-| Captain correction, 2026-09-22 | "Organic" is the photo's treatment only, never plainer casting. Added the `appeal` axis (schema, character sheet, examples), appeal-lowering wording checks, a wrap note, a failure-mode row, and a positive reviewer check (`reviewer-checks.md` Step 1b). |

@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "character_replaces_person",
   "intent": {
-    "purpose": "slideshow hook frame: our character placed into a proven organic gym-mirror photo",
+    "purpose": "photo-post hook frame: the account's character placed into a proven organic gym-mirror photo",
     "scene_concept": "full-body mirror selfie in a no-frills 24-hour gym at night, same spot, camera and light as the organic photo O1, with the fictional character instead of the original woman",
     "place_type": "budget 24-hour franchise commercial gym",
     "must_stay_true": [
@@ -23,7 +23,7 @@
     "level": "exceptional",
     "relative_to_inspiration": "at least as attractive as any organic inspiration or benchmark used with her; never plainer",
     "face": "strikingly pretty: clear grey-green eyes, a small upturned nose, full natural lips and a warm, slightly uneven smile that reads as charming",
-    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slim soft arms",
+    "physique": "aspirational fit hourglass: tight waist, full hips and chest, toned thighs, slender arms",
     "independent_of_polish": true
   },
   "aspect_ratio": "9:16",
@@ -44,13 +44,13 @@
     "hair": "shoulder-length dark-blonde hair with darker natural roots, loose and slightly frizzy",
     "face": "mostly hidden by the phone; soft oval jaw and slightly uneven lips visible",
     "distinguishing_marks": "no tattoos",
-    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+    "character_sheet": "accounts/example/account.md"
   },
   "other_people": [],
   "physique": {
     "build": "fit, curvy hourglass",
     "proportions": "realistic adult proportions: tight waist, full hips, toned thighs",
-    "detail": "slim soft arms with no visible muscle definition"
+    "detail": "slender, lightly toned arms"
   },
   "wardrobe": {
     "items": [
@@ -179,7 +179,7 @@
       {
         "reference_id": "S1",
         "role": "style_digest",
-        "source": "content/styles/gym-mirror-selfie-budget-night.json",
+        "source": "library/styles/gym-mirror-selfie-budget-night.json",
         "sent_to_generator": false,
         "may_copy": ["palette, lighting, camera and imperfection vocabulary (already written into this JSON)"],
         "must_preserve": ["jagged polish level"],
@@ -188,7 +188,7 @@
       {
         "reference_id": "C1",
         "role": "character_reference",
-        "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg",
+        "source": "accounts/example/assets/C1-front-face-daylight.jpg",
         "sent_to_generator": true,
         "may_copy": ["face, hair colour and roots, freckles"],
         "must_preserve": ["her recognisable identity"],
@@ -197,10 +197,10 @@
       {
         "reference_id": "C3",
         "role": "physique_anchor",
-        "source": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg",
+        "source": "accounts/example/assets/C3-full-body-mirror.jpg",
         "sent_to_generator": true,
         "may_copy": ["body shape and proportions"],
-        "must_preserve": ["tight waist, full hips, toned thighs, slim soft arms"],
+        "must_preserve": ["tight waist, full hips, toned thighs, slender arms"],
         "must_not_transfer": ["outfit, location, pose"]
       }
     ],

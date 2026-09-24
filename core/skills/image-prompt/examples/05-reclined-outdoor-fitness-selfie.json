@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow frame: lying on a mat between sets at an outdoor turf area, selfie from above",
+    "purpose": "photo-post frame: lying on a mat between sets at an outdoor turf area, selfie from above",
     "scene_concept": "woman lying back on a workout mat on artificial turf, both arms up holding the phone above her face",
     "place_type": "outdoor artificial-turf training area of a gym (not a park lawn, not a beach)",
     "must_stay_true": [

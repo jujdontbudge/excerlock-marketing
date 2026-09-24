@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "TikTok slideshow hook frame: a real-looking late-night selfie before bed",
+    "purpose": "TikTok photo-post hook frame: a real-looking late-night selfie before bed",
     "scene_concept": "warm, dim bedroom at night, front-camera selfie lit by the phone screen and one bedside lamp",
     "place_type": "lived-in home bedroom (not a hotel, not a studio set)",
     "must_stay_true": [

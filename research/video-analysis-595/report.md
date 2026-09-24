@@ -21,7 +21,7 @@ Timestamp normalization: raw records mix `MM:SS`, `M:SS`, and range formats (`00
 
 ## 1. Methods (what was actually done)
 
-1. Read the complete validated corpus: `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/records.validated.jsonl` — 595/595 lines, 595 unique stable IDs, 0 schema errors, 0 `pending` validators.
+1. Read the complete validated corpus: `data/gemini-video-batch/records.validated.jsonl` — 595/595 lines, 595 unique stable IDs, 0 schema errors, 0 `pending` validators.
 2. Read the validation log (`validation.md`, PKG-C, 2026-09-15): schema checks, ffprobe audio audit (2 silent WalkingPad files corrected), TikTok `isAd`↔evidence-class agreement 55/55, duration agreement, cross-platform exact-duplicate check (md5 of 55 TikTok clips vs 2,330 Meta md5s → **0 overlaps**; near-duplicate templates kept as separate records), transcript spot-checks with word-overlap scores, and the multilingual wins (Spanish/Arabic rows where Gemini beat whisper tiny.en).
 3. Read `comments.jsonl` (55/55 valid; 47 `unavailable`, 8 `collected`-but-empty) and `usage.json` (spent USD 6.100442 / cap 10.00; model `models/gemini-3.8-flash`; all 595 standard-run complete).
 4. Ran local-only aggregation over the validated file (hook-category normalization, duration/shot/CTA/voice/pacing distributions, verbatim/OST repetition counts, run-day distributions) and deep-read ~30 representative records end to end across every advertiser cluster and both TikTok evidence classes.

@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "character_new_image",
   "intent": {
-    "purpose": "slideshow frame: two established characters after a workout together",
+    "purpose": "photo-post frame: two established characters after a workout together",
     "scene_concept": "two friends take a mirror selfie in a commercial gym changing-room mirror, the character holding the phone",
     "place_type": "commercial gym changing room",
     "must_stay_true": [
@@ -39,17 +39,17 @@
     "hair": "shoulder-length dark-blonde hair with darker natural roots, damp and pushed back",
     "face": "soft oval face, grey-green eyes, straight brows, small upturned nose, slightly uneven smile",
     "distinguishing_marks": "the mole under the left eye",
-    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+    "character_sheet": "accounts/example/account.md"
   },
   "other_people": [
     {
       "role": "person B, the friend (second established character)",
       "description": "adult woman, 26, deep brown skin with real texture, short natural coily hair, round face, gap-toothed laugh, oversized grey t-shirt and black leggings",
-      "character_sheet": "~/excerlock-private/characters/example-jess/character.json",
+      "character_sheet": "accounts/example-b/account.md",
       "position": "frame right, half behind person A's shoulder"
     }
   ],
-  "physique": {"build": "person A: fit, curvy hourglass", "proportions": "realistic adult proportions for both", "detail": "person A has slim soft arms; person B's build per her sheet"},
+  "physique": {"build": "person A: fit, curvy hourglass", "proportions": "realistic adult proportions for both", "detail": "person A has slender, lightly toned arms; person B's build per her sheet"},
   "wardrobe": {"items": ["person A: dusty-blue gym set, white socks", "person B: oversized grey t-shirt, black leggings"], "fit_and_condition": "both sweaty and creased after training"},
   "environment": {
     "setting": "gym changing room",
@@ -95,9 +95,9 @@
   ],
   "references": {
     "manifest": [
-      {"reference_id": "C1", "role": "character_reference", "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg", "sent_to_generator": true, "may_copy": ["person A's face and hair"], "must_preserve": ["person A's identity"], "must_not_transfer": ["anything onto person B", "background, lighting, outfit"]},
-      {"reference_id": "C3", "role": "physique_anchor", "source": "~/excerlock-private/characters/example-mara/C3-full-body-mirror.jpg", "sent_to_generator": true, "may_copy": ["person A's body shape"], "must_preserve": ["person A's proportions"], "must_not_transfer": ["anything onto person B", "outfit, location, pose"]},
-      {"reference_id": "J1", "role": "character_reference", "source": "~/excerlock-private/characters/example-jess/J1-front-face.jpg", "sent_to_generator": true, "may_copy": ["person B's face and hair"], "must_preserve": ["person B's identity"], "must_not_transfer": ["anything onto person A", "background, lighting, outfit"]}
+      {"reference_id": "C1", "role": "character_reference", "source": "accounts/example/assets/C1-front-face-daylight.jpg", "sent_to_generator": true, "may_copy": ["person A's face and hair"], "must_preserve": ["person A's identity"], "must_not_transfer": ["anything onto person B", "background, lighting, outfit"]},
+      {"reference_id": "C3", "role": "physique_anchor", "source": "accounts/example/assets/C3-full-body-mirror.jpg", "sent_to_generator": true, "may_copy": ["person A's body shape"], "must_preserve": ["person A's proportions"], "must_not_transfer": ["anything onto person B", "outfit, location, pose"]},
+      {"reference_id": "J1", "role": "character_reference", "source": "accounts/example-b/assets/J1-front-face.jpg", "sent_to_generator": true, "may_copy": ["person B's face and hair"], "must_preserve": ["person B's identity"], "must_not_transfer": ["anything onto person A", "background, lighting, outfit"]}
     ],
     "priority": ["prompt_json", "C1", "J1", "C3"]
   },

@@ -102,7 +102,7 @@
   "references": {"manifest": [], "priority": ["prompt_json"]},
   "continuity": null,
   "video_handoff": {
-    "target_model": "Seedance or Kling image-to-video via scripts/fal-video.py (check schema and price first)",
+    "target_model": "Seedance or Kling image-to-video via core/skills/fal-video/fal-video.py (check schema and price first)",
     "planned_motion": "she keeps walking toward the camera, starts talking after half a second, small natural head movements, handheld walking bob; one continuous take, no cuts, no zoom",
     "first_frame_rules": [
       "neutral start pose with mouth closed",

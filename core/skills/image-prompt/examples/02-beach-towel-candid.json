@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow lifestyle frame: an unplanned beach selfie on a towel",
+    "purpose": "photo-post lifestyle frame: an unplanned beach selfie on a towel",
     "scene_concept": "lying on her stomach on a towel on a public beach, propped on one elbow, arm's-length front-camera selfie in hard afternoon sun",
     "place_type": "busy public sand beach (not a resort pool, not a private cove)",
     "must_stay_true": [

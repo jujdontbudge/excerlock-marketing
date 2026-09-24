@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "character_new_image",
   "intent": {
-    "purpose": "slide 2 of a before/after slideshow: the 'how i was' picture",
+    "purpose": "slide 2 of a before/after photo post: the 'how i was' picture",
     "scene_concept": "the character on her couch on a weeknight, scrolling, snacks on the cushion, dim lamp light; the before is told by the setting and outfit, not by a worse body",
     "place_type": "ordinary apartment living room",
     "must_stay_true": [
@@ -39,7 +39,7 @@
     "hair": "shoulder-length dark-blonde hair with darker roots, in a messy low bun",
     "face": "soft oval face, grey-green eyes, straight brows, small upturned nose; no makeup",
     "distinguishing_marks": "the mole under the left eye",
-    "character_sheet": "skills/organic-json-image-prompting/examples/character-sheet-example.json"
+    "character_sheet": "accounts/example/account.md"
   },
   "other_people": [],
   "physique": {"build": "as in the character sheet", "proportions": "as in the character sheet", "detail": "mostly hidden by the hoodie and blanket; the body itself is not made worse"},
@@ -87,13 +87,13 @@
   ],
   "references": {
     "manifest": [
-      {"reference_id": "C1", "role": "character_reference", "source": "~/excerlock-private/characters/example-mara/C1-front-face-daylight.jpg", "sent_to_generator": true, "may_copy": ["face, hair colour, freckles and mole"], "must_preserve": ["identity"], "must_not_transfer": ["background, light, outfit"]},
-      {"reference_id": "F1", "role": "previous_frame", "source": "raw/generated/series-07-s1.png", "sent_to_generator": false, "may_copy": ["nothing visual; used by the reviewer to check the identity matches slide 1"], "must_preserve": ["the same person"], "must_not_transfer": ["slide 1's gym setting, outfit and light"]}
+      {"reference_id": "C1", "role": "character_reference", "source": "accounts/example/assets/C1-front-face-daylight.jpg", "sent_to_generator": true, "may_copy": ["face, hair colour, freckles and mole"], "must_preserve": ["identity"], "must_not_transfer": ["background, light, outfit"]},
+      {"reference_id": "F1", "role": "previous_frame", "source": "raw/generated/example-series-s1.png", "sent_to_generator": false, "may_copy": ["nothing visual; used by the reviewer to check the identity matches slide 1"], "must_preserve": ["the same person"], "must_not_transfer": ["slide 1's gym setting, outfit and light"]}
     ],
     "priority": ["prompt_json", "C1", "F1"]
   },
   "continuity": {
-    "series": "slideshow 07 (example)",
+    "series": "example before/after series",
     "position": "slide 2 of 6",
     "state": "before",
     "carry_over": ["same face, hair colour, freckles and mole as slide 1", "same phone and sage-green case"],

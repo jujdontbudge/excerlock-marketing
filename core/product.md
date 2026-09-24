@@ -1,9 +1,9 @@
-# ExcerLock slideshow strategy answers
+# ExcerLock product
 
-Current working answers based on the captain's product description and the three source articles.
-Anything marked **Needs confirmation** should not be treated as a product claim yet.
+What the app does, how to position it and how to show it on screen. Shared by every section.
+Answers come from the captain's product description. **Needs confirmation** marks behaviour that isn't decided or built yet.
 
-## Product truth
+## What the app does
 
 ### 1. What does ExcerLock block?
 
@@ -63,15 +63,14 @@ Treadmill walking is essential to the product.
 
 ### 10. How quickly does ExcerLock detect walking?
 
-**Needs confirmation.**
-The product should not publish an exact detection-time claim until the implemented behavior has been measured.
+**Needs confirmation:** the exact detection time has not been measured.
 
 ### 11. What counts as walking?
 
 Ordinary walking movement counts, including pacing back and forth inside a room.
 That indoor behavior is intentional: a user can walk rather than remain seated while using a scrolling app.
 
-The exact movement threshold still needs to be confirmed before making precise claims.
+**Needs confirmation:** the exact movement threshold.
 
 ### 12. When does access relock after movement stops?
 
@@ -109,7 +108,7 @@ Selected-app blocking means the user can leave essential apps unblocked.
 
 **Needs confirmation:** decide whether the MVP needs an emergency override, accessibility accommodations, a cooldown, or protection against accidentally locking access without a usable unlock route.
 
-### 17. What can be demonstrated truthfully today?
+### 17. What can be shown on screen today?
 
 Current demonstrable moments include:
 
@@ -119,19 +118,6 @@ Current demonstrable moments include:
 - The gym-arrival unlock being triggered while Apple Maps shows the phone inside the gym radius.
 - A gym widget.
 
-Every demonstration should use the actual app and current behavior rather than a mockup presented as working functionality.
-
-### 18. Which statements would overstate the current MVP?
-
-Avoid claiming that:
-
-- ExcerLock blocks the entire phone rather than selected apps.
-- Multiple unlock conditions can be combined in the MVP.
-- Walking detection or relocking happens within an exact time that has not been measured.
-- Propped-phone treadmill use works without the required camera scan.
-- Every kind of movement counts as walking.
-- ExcerLock guarantees weight loss, fitness, discipline, productivity, or reduced addiction.
-- Every permission failure has a safe recovery path before that behavior has been defined and tested.
 
 ## Main offer
 
@@ -169,7 +155,6 @@ The captain identified these existing desires:
 - Follow through on personal goals.
 - Develop greater personal agency.
 
-Marketing can speak to these desires, but outcome guarantees require evidence.
 
 ### 5. What is the primary outcome?
 
@@ -181,7 +166,6 @@ The immediate outcomes ExcerLock can measure more directly are:
 - More consistent treadmill or gym behavior.
 - Less seated use of selected scrolling apps.
 
-Weight loss should remain an aspiration rather than a guaranteed product result.
 
 ### 6. What transformation can be understood without technical explanation?
 
@@ -206,99 +190,24 @@ Useful trust details are:
 
 Details that probably distract from the first explanation are internal sensor architecture, implementation terminology, and every available mode at once.
 
-### 8. What should one slideshow ask the viewer to do?
+### 8. What should one post ask the viewer to do?
 
 ExcerLock has not been released yet.
-One slideshow should still have only one action:
+One post has only one action:
 
 - Continue swiping to complete the story.
 - Learn or remember the app name.
 - Visit or follow the profile for the future release.
 - Join a waitlist if one is created.
 
-Do not ask for several actions in the same slideshow and do not imply that the app is already available.
+- Don't ask for several actions in one post. Why: each extra ask splits attention from the one action that matters.
 
-### 9. What should not be combined in one slideshow?
+### 9. What should not be combined in one post?
 
-Do not combine two different unlock conditions in the same explanation.
-For example, a gym-arrival condition and an active-walking condition should be separate posts.
-Do not explain all MVP modes at once.
+- Don't combine two unlock conditions in one explanation (for example gym arrival and active walking). Why: the viewer has to understand the mechanism in one glance; two conditions blur it.
+- Don't explain every mode at once. Why: same reason.
 
-## First audience
-
-### 1. Who feels the problem most strongly?
-
-### 2. Who already tries to solve it?
-
-### 3. Which audience has the clearest reason to install immediately?
-
-### 4. Which group should come first?
-
-### 5. Which group can the MVP serve credibly?
-
-### 6. Which group is easiest to reach with existing slideshow formats?
-
-### 7. Which audience may watch but not install?
-
-### 8. Separate accounts, series, or batches?
-
-### 9. What language does the audience use?
-
-### 10. What framing should be avoided?
-
-## Existing content research
-
-### 1. Which TikTok searches correspond to the ExcerLock problem?
-
-### 2. Which relevant posts outperform their account baselines?
-
-### 3. Which formats have worked repeatedly?
-
-### 4. Which examples are recent enough?
-
-### 5. Which structures work across niches?
-
-### 6. What does a winning first slide show?
-
-### 7. What does a winning first slide say?
-
-### 8. What remains unanswered after each slide?
-
-### 9. When is the product introduced?
-
-### 10. What do highly liked comments reveal?
-
-### 11. What should ExcerLock look for in comments?
-
-### 12. Which posts show commercial intent?
-
-### 13. Which videos could become slideshows?
-
-### 14. Which references are safe to study but not reuse?
-
-## Format selection
-
-### 1. Which formats best match the first audience and feature?
-
-### 2. Have these formats worked more than once?
-
-### 3. Do the formats naturally demonstrate an app?
-
-### 4. Can the product appear later without confusing the story?
-
-### 5. Can every slide create a reason to continue?
-
-### 6. Does the format require a genuine user story?
-
-### 7. Should images be generated or real?
-
-### 8. Is the format useful enough to save?
-
-### 9. Does the opening communicate at thumbnail size?
-
-### 10. Can the mechanism support many variations without deception?
-
-## Screenshot-ready product moment
+## Showing the app on screen
 
 ### 1. Which screen communicates the product most quickly?
 
@@ -340,12 +249,11 @@ It should be visible through an active state, movement indicator, or unlock tran
 ### 7. Is the locked-to-available transition visible?
 
 The captain says Instagram being locked and then unlocked can be demonstrated.
-Capture the real transition rather than representing it only with generated imagery.
 
 ### 8. Is relocking after movement stops visible?
 
 It should be demonstrable if the provisional five-second behavior is implemented.
-Do not show or state the timing until it has been confirmed.
+**Needs confirmation:** the exact relock timing.
 
 ### 9. Can a notification communicate the product state?
 

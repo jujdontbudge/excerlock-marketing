@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "style_clone_new_scene",
   "intent": {
-    "purpose": "slideshow hook frame in the saved budget-gym-at-night style, but a new scene",
+    "purpose": "photo-post hook frame in the saved budget-gym-at-night style, but a new scene",
     "scene_concept": "full-body mirror selfie at the cable station of a no-frills 24-hour gym at night, a different spot and outfit from the source photo",
     "place_type": "budget 24-hour franchise commercial gym (never a home or garage gym)",
     "must_stay_true": [
@@ -173,7 +173,7 @@
       {
         "reference_id": "S1",
         "role": "style_digest",
-        "source": "content/styles/gym-mirror-selfie-budget-night.json (organic photo: https://www.tiktok.com/@liftwithhannahh/photo/7668802012561034526 slide 1)",
+        "source": "library/styles/gym-mirror-selfie-budget-night.json (organic photo: https://www.tiktok.com/@liftwithhannahh/photo/7668802012561034526 slide 1)",
         "sent_to_generator": false,
         "may_copy": ["palette", "lighting character", "camera distance and angle", "tilt and cramped framing", "imperfection catalogue", "place type"],
         "must_preserve": ["jagged polish level", "night-time budget gym place type"],

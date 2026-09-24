@@ -1,95 +1,30 @@
-# ExcerLock research index
+# Research
 
-Finished research organized under this tree. Every report here is a
-content-complete copy; bulk JSONL evidence stays in the firstmate `data/`
-tree (authoritative paths given per section) rather than being duplicated
-into git.
+Finished evidence only: reports with sources, capture dates and coverage limits. Nothing here is an instruction; the rules and procedures live in `core/skills/` and `sections/*/`.
+Bulk evidence (JSONL, images) stays in the archive; `data/...` paths mean `~/firstmate-decommission-backup-2026-09-23-v2/quarantine-firstmates/excerlock-marketing-firstmate/data/`.
 
-## How to read evidence ranks
+## Evidence ranks
 
-Findings across these reports carry three evidence labels. Never collapse or
-drop them:
+Findings carry one of three labels. Keep them when you quote a finding.
 
-- **Organic** — unpromoted TikTok posts; the genuine creative signal, highest
-  weight. View counts are single-capture snapshots (capture 2026-09-12).
-- **Promoted** — TikTok posts with `isAd=true`; paid-format patterns only.
-  View counts show distribution, not quality. Discount accordingly.
-- **Meta longevity** — long-running Meta Ad Library creatives. A reuse
-  signal only: an ad running 30+ days proves the advertiser kept paying,
-  **not** that it converts. Longevity ≠ performance.
+- **Organic**: unpromoted TikTok posts. The real creative signal, highest weight. View counts are single-capture snapshots.
+- **Promoted**: TikTok posts with `isAd=true`. Paid-format patterns only; views show distribution, not quality.
+- **Meta longevity**: long-running Meta Ad Library creatives. An ad running 30+ days proves the advertiser kept paying, not that it converts.
 
-Additional standing rules: no comment text is quoted anywhere (comment
-evidence is structural only); copy structures and principles, never footage,
-distinctive scripts, likenesses, or music; no claim travels without its
-evidence rank.
+## Reports
 
-## What's here
+| Path | What it is |
+|---|---|
+| `competitor-universe/report.md` | Names-first list of fitness competitors across movement-gated screen time, step rewards, walking, women's fitness, gym, physique and habit apps, with tiers and evidence labels. |
+| `creative-30d/report.md` | Competitor creatives over 30 days: coverage per competitor and platform, written records of high performers (F01-F16+). |
+| `ad-video-30d/report.md` | Competitor video ads over 30 days from the Meta Ad Library (US) and TikTok Commercial Content Library, one record per creative. Copied from `data/competitor-ad-video-30d-resume/report.md`. |
+| `video-analysis-595/` | 595 videos (540 long-running Meta creatives + 55 TikToks): findings by evidence rank, twelve repeated structures, hooks. Start at its `INDEX.md`; `README.md` gives the bulk evidence paths. |
+| `liked-slideshows/` | Voice taste board from 12 liked TikTok photo posts (54 slides, 2026-09-16): two independent caption analyses. |
+| `slideshow-articles.md` | Business and operations lessons from three X articles on TikTok slideshow marketing (the deck-writing lessons are in the hooks-and-formats skill). |
+| `data/tiktok-comments/report.md` (archive) | TikTok comment evidence; already folded into the 595-video report. |
 
-### `competitor-universe/report.md`
-The fitness competitor universe: names-first master list across
-movement-gated screen time, step rewards, walking social, women's fitness,
-gym/strength, physique, and habit categories, with competitive tiers,
-evidence labels (confirmed-active marketers vs store-active only), and a
-deduplicated evidence table.
+Not yet imported, still in the archive: the three TikTok photo-mode hunts `data/tt-hunt-gym-consistency/`, `data/tt-hunt-fat-loss/`, `data/tt-hunt-dream-body/` (report, `posts.json`, slide images).
 
-### `creative-30d/report.md`
-Competitor creative collection over a 30-day window (Phase 2 of the
-competitor map): per-competitor coverage matrix by platform, confirmed-active
-marketers, and written records of high-performing creatives (F01–F16+).
+## Adding research
 
-### `ad-video-30d/report.md`
-Competitor video ads, rolling 30 days, from the Meta Ad Library (US view)
-and TikTok Commercial Content Library (keyword discovery + advertiser-level
-enumeration): coverage matrix, totals, and one written record per accessible
-unique creative.
-
-**Relationship note:** this is the finished **resume** report, copied from
-`/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/competitor-ad-video-30d-resume/report.md`.
-The earlier non-resume run (`.../data/competitor-ad-video-30d/report.md`) is
-byte-identical to it (same 18,802-line report); the resume folder marks the
-run that actually completed. Cite this copy.
-
-### `video-analysis-595/` (see its README + INDEX)
-The 595-video creative analysis (540 long-running Meta creatives + 55
-TikToks): evidence ranks, organic/promoted/longevity findings, the twelve
-repeated structures, audience applications, and claim-safety bounds.
-
-- `report.md` — canonical final narrative
-- `README.md` — how to use the bulk evidence (records, manifest, comments,
-  validation, usage) at their authoritative firstmate `data/` paths, with
-  line counts; the $6.10 spend note; honesty rules
-- `INDEX.md` — one-page captain-facing summary: hooks, 12 structures, white
-  space, shoot-first list
-
-### `liked-slideshows/` (see its README)
-Voice taste board from 12 liked TikTok photo posts (54 slides, captured
-2026-09-16): two independent caption analyses plus a post index. Slide
-images and OCR stay private; only the written analyses are committed.
-
-### `tiktok-comments` (evidence only, no copy)
-The TikTok comment-evidence report (PKG-B) lives at
-`/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/tiktok-comments/report.md`
-(139 lines). Its findings are already folded into the 595-video report and
-its raw rows into `comments.jsonl` (path in
-`video-analysis-595/README.md`), so it is pointed at rather than copied.
-
-## Superseded material
-
-- `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/playbook.md`
-  — a pre-analysis **skeleton** ("PENDING synthesis", 33 lines). Superseded by
-  the 595-video report's §8–§10, which carry the transferable structures,
-  applications, and safety list inside the final report. Do not fill it in;
-  no separate playbook exists or should be created.
-- The pre-existing 71-line coordinator preflight report inside
-  `.../data/gemini-video-batch/` was superseded by the final 595-video
-  synthesis report (noted in that report's §12).
-
-## Adjacent work kept as-is
-
-`research/slideshows/` is untouched by this organization pass.
-
-## Provenance
-
-Copied from the firstmate evidence tree
-(`/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/`) on
-2026-09-16, local-only, no analysis re-run, no additional spend.
+Follow `core/workflows/research-competitors.md` or the matching `core/skills/*-research` skill. Every report keeps its source URLs, capture date, region and coverage limits; a blocked or failed scraper is not complete coverage.

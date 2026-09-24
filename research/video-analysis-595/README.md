@@ -24,12 +24,12 @@ paths rather than duplicating megabytes of JSONL:
 
 | File | Lines | Size | What it is |
 |---|---|---|---|
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/records.validated.jsonl` | 595 | ~2.9 MB | One signed per-video analysis record per video (stable IDs cited throughout `report.md`) |
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/manifest.jsonl` | 595 | ~367 KB | Input manifest: which videos were queued, sources, stable IDs |
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/comments.jsonl` | 55 | ~94 KB | TikTok comment-evidence rows (PKG-B); 47 unavailable / 8 empty-at-capture are accounted for in `tiktok-comments` research |
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/validation.md` | 74 | ~16 KB | PKG-C validation methods, corrections, spot-check scores |
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/usage.json` | 58 | ~2.4 KB | Spend/model accounting (see below) |
-| `/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/failures.jsonl` | — | — | Count discrepancy and missing-media accounting (referenced by report §12) |
+| `data/gemini-video-batch/records.validated.jsonl` | 595 | ~2.9 MB | One signed per-video analysis record per video (stable IDs cited throughout `report.md`) |
+| `data/gemini-video-batch/manifest.jsonl` | 595 | ~367 KB | Input manifest: which videos were queued, sources, stable IDs |
+| `data/gemini-video-batch/comments.jsonl` | 55 | ~94 KB | TikTok comment-evidence rows (PKG-B); 47 unavailable / 8 empty-at-capture are accounted for in `tiktok-comments` research |
+| `data/gemini-video-batch/validation.md` | 74 | ~16 KB | PKG-C validation methods, corrections, spot-check scores |
+| `data/gemini-video-batch/usage.json` | 58 | ~2.4 KB | Spend/model accounting (see below) |
+| `data/gemini-video-batch/failures.jsonl` | — | — | Count discrepancy and missing-media accounting (referenced by report §12) |
 
 Use `records.validated.jsonl` for everything per-video: hooks, structures,
 timestamps, captions, CTA placement, stable IDs. `comments.jsonl` maps comment
@@ -67,7 +67,7 @@ label with the claim:
 
 ## Superseded file
 
-`/Users/johansardar/firstmates/excerlock-marketing-firstmate/data/gemini-video-batch/playbook.md`
+`data/gemini-video-batch/playbook.md`
 is a **pre-analysis skeleton** (33 lines, "PENDING synthesis"). It is
 superseded by `report.md` §8–§10, which carry the transferable structures,
 audience applications, and safety list inside the final report. Do not fill it

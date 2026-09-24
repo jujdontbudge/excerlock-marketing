@@ -2,7 +2,7 @@
   "schema_version": "organic-image-prompt/1",
   "mode": "first_principles",
   "intent": {
-    "purpose": "slideshow frame: getting-ready selfie next to a window before going out",
+    "purpose": "photo-post frame: getting-ready selfie next to a window before going out",
     "scene_concept": "close front-camera selfie in a living room, face lit by daylight from a window in front of her while the room behind stays darker",
     "place_type": "ordinary apartment living room (not a luxury show home, not a studio)",
     "must_stay_true": [

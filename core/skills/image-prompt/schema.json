@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "organic-image-prompt/1",
   "title": "Organic image prompt v1",
-  "description": "The one canonical prompt representation for ExcerLock image generation. Every key is required; use null, false, 0 or [] where a field does not apply, never omit it. See skills/organic-json-image-prompting.md.",
+  "description": "The one canonical prompt representation for image generation. Every key is required; use null, false, 0 or [] where a field does not apply, never omit it. See core/skills/image-prompt/SKILL.md.",
   "type": "object",
   "additionalProperties": false,
   "required": [

@@ -2,19 +2,29 @@
 """image-prompt: check and wrap organic JSON image prompts (no network, no generation).
 
 Usage:
-  python3 scripts/image-prompt.py check FILE...
-  python3 scripts/image-prompt.py wrap FILE --target openai|gemini|codex [--model M] [--size WxH]
+  python3 core/skills/image-prompt/check.py check FILE... [--rules RULES.json]
+  python3 core/skills/image-prompt/check.py wrap FILE --target openai|gemini|codex [--model M] [--size WxH] [--rules RULES.json]
 
-check  validates FILE against skills/organic-json-image-prompting/schema.json plus the
-       captain's standing rules, and exits non-zero on any error.
+check  validates FILE against schema.json (next to this script) plus the universal contract
+       (adult age, subject count, appeal, reference manifest), and exits non-zero on any error.
+       --rules adds a section's image rules, for example sections/<section>/image-rules.json.
 wrap   prints what would be sent: the request body for the OpenAI Image API or the Gemini
-       Interactions API, or the exact prompt text for codex-image. It never calls an API;
-       submitting is a separate approval-gated step. See skills/organic-json-image-prompting.md.
+       Interactions API, or the exact prompt text for codex-image. It never calls an API.
+       See core/skills/image-prompt/SKILL.md.
+
+Rules file: {"rules": [{"id": "H-...", "type": ..., "why": "...", ...}]}. Types:
+  forbid_phrase_outside_exclusions  "phrases": [...]   none may appear outside exclusions and references
+  require_exclusion_when_person     "pattern": regex   some exclusion matches when a person is in frame
+  require_field_regex_when          "when": {"field": "a.b", "equals": v}, "field": "a.b", "pattern": regex
+  forbid_exclusion_regex_unless     "pattern": regex, "unless": regex   an exclusion matching pattern must also match unless
 """
 import json, os, re, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCHEMA = os.path.join(ROOT, "skills", "organic-json-image-prompting", "schema.json")
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
+SCHEMA = os.path.join(HERE, "schema.json")
+# Images sent to a generator live outside the repo, in gitignored raw/, or in a gitignored assets/ folder.
+LOCAL_IMAGE = re.compile(r"^(/|~|raw/|accounts/[^/]+/assets/|sections/[^/]+/assets/)")
 
 PREAMBLE = {
     "generate": "Create one real, unedited smartphone photograph that satisfies every field of the JSON "
@@ -108,18 +118,17 @@ APPEAL_LOWERING = [
     r"\bun(attractive|flattering)\b", r"\b(boxy|frumpy|dowdy|homely|stocky|pudgy)\b",
     r"\bnot an? (fitness )?model\b", r"\bless (attractive|aspirational|fit)\b",
     r"\b(puffy|double chin|bad skin|acne|pimples?)\b",
+    r"\b(heavier|softer body|out of shape)\b",
 ]
-BEFORE_ONLY = [r"\b(heavier|softer body|out of shape)\b"]  # captain: before slides may be softer
 
 
-def house_rules(p, errors):
-    """The captain's standing rules and the workflow contracts a schema alone cannot express."""
+def contract_rules(p, errors):
+    """The universal contract a schema alone cannot express. Section-specific rules come from --rules."""
     mode, refs = p["mode"], p["references"]["manifest"]
     sent = [r for r in refs if r["sent_to_generator"]]
     roles = {r["role"] for r in refs}
     sent_roles = [r["role"] for r in sent]
     people = p["subject"]["count"] > 0
-    excl = " | ".join(p["exclusions"]).lower()
     body = json.dumps({k: v for k, v in p.items() if k not in ("exclusions", "references")}).lower()
     ident = p["identity"]
 
@@ -127,25 +136,13 @@ def house_rules(p, errors):
         errors.append("identity.age: every person must be stated as an adult")
     if p["subject"]["count"] != (1 if people else 0) + len(p["other_people"]):
         errors.append("subject.count must equal 1 (identity) + len(other_people), or 0 with no people")
-    if p["phone"]["visible"] and not re.search(r"\bcase\b", p["phone"]["case"] or ""):
-        errors.append("phone.case: a visible phone always has a described case")
-    if "apple watch" in body:
-        errors.append("Apple Watch mentioned outside exclusions (captain: never)")
-    if people and "apple watch" not in excl:
-        errors.append("exclusions: must exclude an Apple Watch when a person is in frame")
     if people != (p["appeal"] is not None):
         errors.append("appeal: required when a person is in frame, null when none is")
-    before = (p["continuity"] or {}).get("state") == "before"
-    for rx in APPEAL_LOWERING + ([] if before else BEFORE_ONLY):
+    for rx in APPEAL_LOWERING:
         m = re.search(rx, body)
         if m:
             errors.append(f"appeal-lowering wording {m.group(0)!r}: organic is the photo's treatment, "
                           "never plainer, heavier or less attractive casting")
-    for item in p["exclusions"]:
-        low = item.lower()
-        if re.search(r"\b(brand|logo)", low) and not re.search(
-                r"invent|fake|made.up|misspell|garbled|extra|mirror|new|added|overlay|watermark", low):
-            errors.append(f"exclusions: blanket brand/logo removal {item!r} (captain: keep natural branding)")
 
     ids = [r["reference_id"] for r in refs]
     if len(set(ids)) != len(ids):
@@ -154,8 +151,9 @@ def house_rules(p, errors):
     if missing or "prompt_json" not in p["references"]["priority"]:
         errors.append("references.priority: list every reference_id and 'prompt_json'")
     for r in refs:
-        if r["sent_to_generator"] and not r["source"].startswith(("/", "~", "raw/")):
-            errors.append(f"{r['reference_id']}: images sent to a generator live outside the repo or in gitignored raw/")
+        if r["sent_to_generator"] and not LOCAL_IMAGE.match(r["source"]):
+            errors.append(f"{r['reference_id']}: images sent to a generator live outside the repo or in a gitignored "
+                          "folder (raw/, accounts/<name>/assets/, sections/<name>/assets/)")
         if r["sent_to_generator"] and r["role"] == "style_digest":
             errors.append(f"{r['reference_id']}: a style digest is text inside the JSON, never an attached image")
         if r["role"] in ("organic_scene_source", "style_digest", "previous_frame") and not r["must_not_transfer"]:
@@ -207,7 +205,58 @@ def house_rules(p, errors):
         errors.append("video_handoff: required for video_first_frame and null otherwise")
 
 
-def check(path):
+def field(p, dotted):
+    """Value at a dotted path such as "phone.case", or None when any step is missing."""
+    for key in dotted.split("."):
+        if not isinstance(p, dict):
+            return None
+        p = p.get(key)
+    return p
+
+
+def section_rules(p, rules, errors):
+    """Apply a section's data rules (--rules). Each error names the rule id and its reason."""
+    people = p["subject"]["count"] > 0
+    excl = [e.lower() for e in p["exclusions"]]
+    body = json.dumps({k: v for k, v in p.items() if k not in ("exclusions", "references")}).lower()
+    for r in rules:
+        kind = r["type"]
+        found = None
+        if kind == "forbid_phrase_outside_exclusions":
+            hits = [ph for ph in r["phrases"] if ph.lower() in body]
+            if hits:
+                found = f"{hits[0]!r} appears outside exclusions"
+        elif kind == "require_exclusion_when_person":
+            if people and not any(re.search(r["pattern"], e) for e in excl):
+                found = f"a person is in frame, so exclusions must match /{r['pattern']}/"
+        elif kind == "require_field_regex_when":
+            cond = r["when"]
+            if field(p, cond["field"]) == cond["equals"] and not re.search(r["pattern"], str(field(p, r["field"]) or ""), re.I):
+                found = f"{r['field']} must match /{r['pattern']}/ when {cond['field']} is {cond['equals']!r}"
+        elif kind == "forbid_exclusion_regex_unless":
+            for item in excl:
+                if re.search(r["pattern"], item) and not re.search(r["unless"], item):
+                    found = f"exclusion {item!r} is not allowed"
+                    break
+        else:
+            found = f"unknown rule type {kind!r} in the rules file"
+        if found:
+            errors.append(f"{r['id']}: {found}. Why: {r['why']}")
+
+
+def load_rules(path):
+    if not path:
+        return []
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    for r in data["rules"]:
+        missing = [k for k in ("id", "type", "why") if not r.get(k)]
+        if missing:
+            sys.exit(f"{path}: rule {r.get('id', '?')} lacks {', '.join(missing)}")
+    return data["rules"]
+
+
+def check(path, rules=()):
     errors = []
     try:
         with open(path, encoding="utf-8") as f:
@@ -220,12 +269,14 @@ def check(path):
     with open(SCHEMA, encoding="utf-8") as f:
         validate(prompt, json.load(f), "$", errors)
     if not errors:
-        house_rules(prompt, errors)
+        contract_rules(prompt, errors)
+        section_rules(prompt, rules, errors)
     return errors, prompt
 
 
 def check_character(c, errors):
-    """Canonical character sheet (organic-character/1): the source every character prompt copies from."""
+    """Optional structured character sheet (organic-character/1). The account's account.md Character section
+    stays the canonical description; a sheet only restates it in JSON."""
     for key in ("character_id", "status", "fictional", "identity", "appeal", "physique", "signature_props",
                 "wardrobe_defaults", "reference_pack", "rules"):
         if key not in c:
@@ -236,7 +287,7 @@ def check_character(c, errors):
     if appeal.get("level") not in ("exceptional", "aspirational") or appeal.get("independent_of_polish") is not True:
         errors.append("$.appeal: level exceptional|aspirational with independent_of_polish true")
     sheet = json.dumps({k: v for k, v in c.items() if k != "rules"}).lower()
-    for rx in APPEAL_LOWERING + BEFORE_ONLY:
+    for rx in APPEAL_LOWERING:
         m = re.search(rx, sheet)
         if m:
             errors.append(f"appeal-lowering wording {m.group(0)!r} in the character sheet")
@@ -245,11 +296,9 @@ def check_character(c, errors):
             errors.append(f"$.identity.{key}: required")
     if "adult" not in ((c.get("identity") or {}).get("age") or "").lower():
         errors.append("$.identity.age: must state adult")
-    if not re.search(r"\bcase\b", (c.get("signature_props") or {}).get("phone_case") or ""):
-        errors.append("$.signature_props.phone_case: describe the phone case")
     for ref in c.get("reference_pack") or []:
-        if not str(ref.get("path", "")).startswith(("/", "~", "raw/")):
-            errors.append(f"reference {ref.get('reference_id')}: images live outside the repo or in gitignored raw/")
+        if not LOCAL_IMAGE.match(str(ref.get("path", ""))):
+            errors.append(f"reference {ref.get('reference_id')}: images live outside the repo or in a gitignored folder")
 
 
 def prompt_text(p):
@@ -291,12 +340,20 @@ def wrap(p, target, model, size):
 
 
 def main(argv):
+    rules_path = None
+    if "--rules" in argv:
+        i = argv.index("--rules")
+        if i + 1 >= len(argv):
+            sys.exit("--rules needs a FILE")
+        rules_path = argv[i + 1]
+        argv = argv[:i] + argv[i + 2:]
     if len(argv) < 2 or argv[0] not in ("check", "wrap"):
         sys.exit(__doc__)
+    rules = load_rules(rules_path)
     if argv[0] == "check":
         bad = 0
         for path in argv[1:]:
-            errors, _ = check(path)
+            errors, _ = check(path, rules)
             print(("ok   " if not errors else "FAIL ") + path)
             for e in errors:
                 print("     - " + e)
@@ -305,7 +362,7 @@ def main(argv):
     opts = dict(zip(argv[2::2], argv[3::2]))
     if opts.get("--target") not in ("openai", "gemini", "codex"):
         sys.exit("wrap needs --target openai|gemini|codex")
-    errors, prompt = check(argv[1])
+    errors, prompt = check(argv[1], rules)
     if prompt is None and not errors:
         sys.exit("a character sheet is not an image prompt; wrap an organic-image-prompt/1 file")
     if errors:

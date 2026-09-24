@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""Restricted fal MCP client. Never exposes unrestricted image/model execution."""
+"""Restricted fal MCP client for allowlisted video endpoints. Never exposes unrestricted image/model execution.
+
+Usage (from the repo root):
+  .venv/bin/python core/skills/fal-video/fal-video.py schema  --endpoint ENDPOINT
+  .venv/bin/python core/skills/fal-video/fal-video.py pricing --endpoint ENDPOINT
+  .venv/bin/python core/skills/fal-video/fal-video.py submit  --endpoint ENDPOINT --input raw/INPUT.json --approve-spend
+  .venv/bin/python core/skills/fal-video/fal-video.py status|result|cancel --endpoint ENDPOINT --request-id ID
+
+FAL_KEY is read from the repo-root .env. See core/skills/fal-video/SKILL.md.
+"""
 import argparse
 import asyncio
 import json
@@ -10,7 +19,7 @@ from mcp import ClientSession
 from mcp.client.streamable_http import streamable_http_client
 from mcp.shared._httpx_utils import create_mcp_http_client
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]  # repo root: core/skills/fal-video/ is three levels down
 ENDPOINTS = {
     "bytedance/seedance-2.5/image-to-video",
     "bytedance/seedance-2.5/reference-to-video",
@@ -29,7 +38,7 @@ TOOLS = {"schema": "get_model_schema", "pricing": "get_pricing", "submit": "subm
 
 def validate(action, endpoint, approved=False):
     if endpoint not in ENDPOINTS:
-        raise ValueError("Blocked: endpoint is not in the verified video-only allowlist. Use codex-image for stills.")
+        raise ValueError("Blocked: endpoint is not in the verified video-only allowlist. Stills follow core/skills/image-prompt/SKILL.md.")
     if action == "submit" and not approved:
         raise ValueError("Submission requires --approve-spend after reviewing current pricing and reference-upload consent.")
 
@@ -40,7 +49,7 @@ async def invoke(action, endpoint, input_path=None, request_id=None, approved=Fa
     load_dotenv(ROOT / ".env", override=not bool(os.environ.get("FAL_KEY")))
     key = os.environ.get("FAL_KEY")
     if not key:
-        raise ValueError("BLOCKED: FAL_KEY missing. Add it privately to ~/excerlockmarketing/.env.")
+        raise ValueError("BLOCKED: FAL_KEY missing. Add it privately to the repo-root .env.")
     args = {"endpoint_id": endpoint}
     if action == "submit":
         if not input_path:
@@ -60,7 +69,7 @@ async def invoke(action, endpoint, input_path=None, request_id=None, approved=Fa
                     raise ValueError("fal returned a tool error; see result above")
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("action", choices=TOOLS)
     parser.add_argument("--endpoint", default="bytedance/seedance-2.5/image-to-video")
     parser.add_argument("--input")

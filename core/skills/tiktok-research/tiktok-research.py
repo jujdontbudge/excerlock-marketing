@@ -9,7 +9,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from TikTokApi import TikTokApi
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 load_dotenv(ROOT / ".env", override=False)
 
 
