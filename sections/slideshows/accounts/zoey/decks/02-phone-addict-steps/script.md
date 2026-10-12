@@ -1,6 +1,6 @@
 # Slideshow 02 - how i get my steps in as a phone addict, 6 slides
 
-Written to the captain's 2026-09-19 walkthrough (now `sections/slideshows/rules.md` and `sections/slideshows/skills/write-script/SKILL.md`, plus his image and reference preferences from the 2026-09-19 reviews). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the CTA blocker screen. No Apple Watch in any reference photo or prompt; no Notes screenshots or cheat sheets; the three value slides are three different pieces (after meals, gym treadmill, first thing in the morning). One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go. The prompt lines are legacy prose records; any new generation or regeneration is written as JSON with `core/skills/image-prompt/SKILL.md`, which keeps natural brands instead of the old "no readable brand logos" clause.
+Written to the captain's 2026-09-19 walkthrough (now `sections/slideshows/rules.md` and `sections/slideshows/skills/write-script/SKILL.md`, plus his image and reference preferences from the 2026-09-19 reviews). Format: "how i ..." so every value slide is a REASON / WAY she gets her steps in. CTA on slide 4. Face photos: 1 (slide 1). Screenshots: 1 slide (slide 2), plus the CTA blocker screen. No Apple Watch in any reference photo or prompt; no Notes screenshots or cheat sheets; the three value slides are three different pieces (after meals, gym treadmill, first thing in the morning). One organic reference per slide, none repeated in any deck. Images here are references and prompts only; nothing is generated until the captain says go. The prompt lines are legacy prose records; any new generation or regeneration is written as JSON with the retired image-prompt skill, which keeps natural brands instead of the old "no readable brand logos" clause.
 
 **Character.** Zoey ("our girl"): look, body rules and props in `accounts/zoey/account.md`, reference images in `accounts/zoey/assets.md`.
 
@@ -21,7 +21,7 @@ how i get my steps in as a phone addict
 - @estefanytrevino "Cardio is so important!!", https://www.tiktok.com/@estefanytrevino/photo/7584332790783560990 (811.6K plays, 96.3K likes, 6.1K saves, 4K shares, 2 slides, posted 2025-12-16), slide 2 "weights with cardio": full-body gym mirror selfie in a black-walled gym with hexagon ceiling lights, phone held at chest height with both hands, dark seamless shorts set, hair down, turned slightly to show the side, a red tumbler on the floor and a cable machine behind. The good-looking gym mirror pic the hook needs.
 
 **Our variation**
-- Style: digest slide 2 with `core/skills/style-clone/SKILL.md` (proposed slug `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`), polish: plandid.
+- Style: digest slide 2 with the retired style-clone skill (proposed slug `estefanytrevino-0990-s2-black-gym-mirror-hex-lights`), polish: plandid.
 - Prompt: full-body mirror selfie of our girl in a dark commercial gym with black walls and hexagon LED ceiling lights, phone in a leopard-print case held at chest height with both hands, dark seamless shorts set, dark blonde hair down, silver over-ear headphones around her neck, bare wrists, turned slightly to the side, a tumbler on the black rubber floor and a cable machine behind her, cool white light with warm spill from the ceiling shapes, mirror smudges, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: centred, top 12%, over the dark wall above her head, 2 lines.
 
@@ -59,7 +59,7 @@ i cannot stress enough how effective a short walk after eating is. even 10 minut
 - @savwright "Simple hacks that are slept on" / "Hacks in a body recomp *as a girl who lost 14 pounds of fat", https://www.tiktok.com/@savwright/photo/7658869024830328094 (59K plays, 1.4K likes, 291 saves, 6 slides, posted 2026-07-04), slide 3 "Morning walks! I increased my steps, slept on fat loss tool": phone photo from behind of her walking a quiet coastal road, red sports bra and shorts, low bun, wired earbuds, a small dog on a lead at her side, palm trees and the sea ahead, soft early light, no face. A real walk photo on a tip that says walk.
 
 **Our variation**
-- Style: digest @savwright slide 3 with `core/skills/style-clone/SKILL.md` (proposed slug `savwright-8094-s3-coastal-road-walk-behind`), polish: raw. No face.
+- Style: digest @savwright slide 3 with the retired style-clone skill (proposed slug `savwright-8094-s3-coastal-road-walk-behind`), polish: raw. No face.
 - Prompt: phone photo from behind of our girl walking away down a quiet residential road after dinner, oversized black zip-up, bike shorts, white trainers, dark blonde bun, silver over-ear headphones, hands empty at her sides, low evening sun on the tarmac, trees and parked cars ahead, soft haze, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: line 1 large centred about 12% down; paragraph centred about 25% down over the sky and trees, 4 lines, all above her shoulders. Reference checked at full size: wired earbuds, bare wrists, no watch.
 
@@ -95,7 +95,7 @@ free steps!!!
 - @fitnessa5 "Before or after matters", https://www.tiktok.com/@fitnessa5/photo/7540071199108386103 (835.4K plays, 88.4K likes, 37.8K saves, 2 slides, posted 2025-08-18), slide 2: first-person view over a treadmill console, her hand on the handle, a pink tumbler in the cup holder, wall TV showing football, other treadmills and the gym floor beyond. No face.
 
 **Our variation**
-- Style: digest @fitnessa5 slide 2 with `core/skills/style-clone/SKILL.md` (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
+- Style: digest @fitnessa5 slide 2 with the retired style-clone skill (proposed slug `fitnessa5-8103-s2-treadmill-console-pov`), polish: raw. No face.
 - Prompt: first-person phone photo over a treadmill console in a bright commercial gym, our girl's bare hand resting on the grey handle, the console showing red LED readouts for time, speed 3.0 and incline 12, a pastel tumbler in the cup holder, a wall-mounted TV and a row of treadmills out of focus ahead, flat overhead LED light, glare on the console plastic, tilted, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: line 1 centred about 20% down over the TV wall, 2 lines; "free steps!!!" smaller below it (the one aside line across the four decks).
 
@@ -115,6 +115,6 @@ get up 10 minutes earlier and walk for 10 minutes. this helps make you feel ener
 - @eliepeony "start your day right" / "the POWER of MORNING WALKS", https://www.tiktok.com/@eliepeony/photo/7434799539892112641 (75.3K plays, 1.3K likes, 336 saves, 6 slides, posted 2024-11-08), slide 5 "connect with nature": standing-height phone photo down an empty tree-lined suburban road at sunrise, the low sun flaring through the trees at the end of the road, long shadows across the tarmac, wet-looking road surface, nobody in frame.
 
 **Our variation**
-- Style: digest @eliepeony slide 5 with `core/skills/style-clone/SKILL.md` (proposed slug `eliepeony-2641-s5-sunrise-tree-road`), polish: raw. No face, no person.
+- Style: digest @eliepeony slide 5 with the retired style-clone skill (proposed slug `eliepeony-2641-s5-sunrise-tree-road`), polish: raw. No face, no person.
 - Prompt: standing-height phone photo down an empty tree-lined suburban road at sunrise, the low sun flaring through the trees at the far end, long shadows and dappled light across the tarmac, parked cars and hedges in shadow at the sides, a dewy grass verge, soft haze and blown highlights around the sun, slight tilt, shot on iPhone main 24mm, Smart HDR, 9:16, no film grain, no DSLR look, no readable brand logos
 - Text placement: centred, top third over the sky and tree canopy, 3 lines.

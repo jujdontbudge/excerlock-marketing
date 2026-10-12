@@ -36,7 +36,10 @@ def report(path, lineno, msg):
     errors.append(f"{path}:{lineno}: {msg}")
 
 
-files = tracked()
+def cold(path):
+    return path.startswith(("history/", "log/", "raw/")) or "/archive/" in path or "/decks/" in path
+
+files = [f for f in tracked() if not cold(f)]
 sections = sorted(d for d in os.listdir("sections") if os.path.isdir(os.path.join("sections", d)))
 accounts = sorted(d for d in os.listdir("accounts") if os.path.isdir(os.path.join("accounts", d)))
 
@@ -95,7 +98,7 @@ for f in files:
 
 # 3. backticked repo paths exist
 TOPS = ("core/", "sections/", "accounts/", "library/", "research/", "scripts/", "integrations/",
-        "tools/", "docs/", ".pi/", ".claude/")
+        "tools/", "docs/", "history/", ".pi/", ".claude/", ".agents/")
 ROOTFILES = {"AGENTS.md", "CONTEXT.md", "README.md", "BROWSER.md", "CLAUDE.md", ".env.example"}
 path_rx = re.compile(r"`([^`\s]+)`")
 for f in files:
@@ -109,11 +112,54 @@ for f in files:
                 continue
             if any(c in p for c in "<>*{}$|") or "NN" in p or "/assets/" in p or p.endswith("/assets"):
                 continue
-            p = p.split("#")[0].split("§")[0]
+            p = re.sub(r":\d+(?:[-,]\d+)*$", "", p.split("#")[0].split("§")[0])
             if not os.path.exists(p):
                 report(f, i, f"path does not exist: {p}")
         if "/firstmates/" in line:
             report(f, i, "dead path: the Firstmate home no longer exists; use data/... (the archive)")
+
+# Markdown links (including research): unlike quoted historical paths, links must work.
+from urllib.parse import unquote, urlsplit
+link_rx = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)")
+for f in files:
+    if not f.endswith(".md"):
+        continue
+    body = re.sub(r"```.*?```", "", text(f) or "", flags=re.S)
+    for i, line in enumerate(body.splitlines(), 1):
+        for match in link_rx.finditer(line):
+            target = match.group(1).strip("<>")
+            parsed = urlsplit(target)
+            if parsed.scheme or target.startswith(("#", "raw/", "data/")) or not parsed.path:
+                continue
+            target = unquote(parsed.path)
+            if any(c in target for c in "<>*{}$|") or "/assets/" in target:
+                continue
+            candidate = target if os.path.isabs(target) or target.startswith(TOPS) else os.path.join(os.path.dirname(f), target)
+            if not os.path.exists(candidate):
+                report(f, i, f"Markdown link does not exist: {target}")
+
+# House-rule identifiers must resolve; prose cannot prove policy consistency.
+rule_ids = set(re.findall(r"^### (H-[a-z0-9-]+)$", text("sections/slideshows/rules.md") or "", re.M))
+for f in files:
+    if f.startswith("sections/slideshows/") and f.endswith(".md"):
+        for i, line in enumerate((text(f) or "").splitlines(), 1):
+            for identifier in re.findall(r"`(H-[a-z0-9-]+)`", line):
+                if identifier not in rule_ids:
+                    report(f, i, f"undefined house rule: {identifier}")
+
+# Active runtime extension imports and retired-tool routing.
+for f in files:
+    if not f.startswith(".pi/extensions/") or not f.endswith((".ts", ".mjs")):
+        continue
+    body = text(f) or ""
+    for i, line in enumerate(body.splitlines(), 1):
+        if re.search(r"core/skills/(image-prompt|style-clone)\b", line):
+            report(f, i, "runtime route points to retired image tooling")
+        for target in re.findall(r"from [\"']([^\"']+)[\"']", line):
+            if target.startswith(("/", ".")):
+                candidate = target if target.startswith("/") else os.path.join(os.path.dirname(f), target)
+                if not os.path.exists(candidate):
+                    report(f, i, f"runtime import does not exist: {target}")
 
 # 4. skills
 seen = {}

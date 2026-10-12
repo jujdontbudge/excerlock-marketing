@@ -15,8 +15,7 @@ Without those words, fix only the thing in front of you and save nothing.
 | Script text, slide order, tip choice | every account | the section's writing skill (its `README.md` names it) |
 | The hook or the format | every account | the section's hook or format skill |
 | A house rule for the whole section (slide count, CTA, copy voice) | every account | `sections/<section>/rules.md` |
-| How an image looks | every account | `core/skills/review-images/SKILL.md` (a check), plus `core/skills/image-prompt/SKILL.md` if the prompt caused it |
-| A style digest | every account | `core/skills/style-clone/SKILL.md` |
+| How an image looks | every account | `core/skills/review-images/SKILL.md` (a check), plus `core/skills/reference-swap/SKILL.md` if the reference or prompt caused it |
 | Her face, body, props, voice or audience | one account | `accounts/<name>/account.md` |
 | How one account's decks differ from the house rules | one account | `sections/<section>/accounts/<name>/README.md` (`## Overrides` or its account rules) |
 
@@ -25,7 +24,7 @@ If you can't tell which file, ask the captain before writing.
 
 ## 2. Write it in that file's form
 
-- **Skills that produce things** (write-script, hooks-and-formats, image-prompt, style-clone) and account Character sections: a negative with the reason, under `## Don'ts`.
+- **Skills that produce things** (write-script, hooks-and-formats, reference-swap) and account Character sections: a negative with the reason, under `## Don'ts`.
   `- Don't put two tips on one slide. Why: <the captain's reason>.`
 - **Review skills** (review-script, review-images): a check with pass, fail and reason.
   `- **One tip per slide.** Pass: each value slide gives one tip. Fail: two or more. Why: <reason>.`
@@ -38,8 +37,5 @@ Use the captain's reason in his own words. A rule without a reason doesn't go in
 - If it repeats an existing rule, sharpen that one instead of adding a copy.
 - Other files link to the rule; they never copy it.
 
-## 4. Push it up the ladder when you can
-If the rule is mechanical (a word, prop or field that must never appear), also add it to the section's checker rules (`sections/<section>/image-rules.json`, read by `core/skills/image-prompt/check.py --rules`), so the mistake fails automatically.
-
-## 5. Finish
+## 4. Finish
 Run `scripts/lint`, then tell the captain the exact file and the line you added or replaced.

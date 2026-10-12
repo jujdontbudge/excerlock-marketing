@@ -1,0 +1,25 @@
+# Deck 06 image review — first pass
+
+Scope: Zoey, seven-slide joke-tip list. The captain approved slide 5 as a Zoey gym selfie with the ExcerLock tip, rather than the generic blocker-screen CTA layout. The slide-4 heartbreak line is deliberately the joke interruption. Neither choice changes the general house rules for other decks.
+
+Review inputs: `script.md`, `accounts/zoey/account.md`, the account's watch-free face reference, physique anchor, body benchmark and case reference, the seven `library/styles/gazellleee-1504-*.json` digests and their source JPEGs, validated prompt JSONs under `raw/zoey-06/prompts/`, full-resolution generated images, and 2× crop panels under `raw/zoey-06/review-panels/`. All initial prompts passed `check.py check --rules sections/slideshows/image-rules.json` before generation.
+
+- Slide 1 — `raw/zoey-06/generated/s1-v1.jpg` against source `01.jpg`: squat-rack mirror, correct title band, Zoey's case and body silhouette; zoomed phone grip, legs, shoes and rack geometry coherent; no visible watch or stray text. VERDICT: PASS.
+- Slide 2 — `raw/zoey-06/generated/s2-v1.jpg` against source `02.jpg`: plausible top-down torso-and-water POV by a car, face out of frame, drink and dark caption area; zoomed grip, legs and car geometry acceptable; no watch. VERDICT: PASS.
+- Slide 3 — `raw/zoey-06/generated/s3-v1.png` against source `03.jpg`: top-down homemade chicken/pasta plate on dark counter, no person, open upper caption band; zoomed food and fork physically plausible, no unintended text. VERDICT: PASS.
+- Slide 4 — `raw/zoey-06/generated/s4-v1.jpg` against source `07.jpg`: night-car selfie, tilt and face visibility present, but face and brown hair drift from Zoey's approved dark-blonde identity; expression is too friendly and lighting too bright for the heartbreak beat. VERDICT: FAIL -> revise identity/hair and underexposed mood fields; crop face from the approved character ref for an image-only correction if needed, without transferring its gym background.
+- Slide 5 — `raw/zoey-06/generated/s5-v1.jpg` against source `04.jpg`: dim gym mirror with usable dark upper space and no watch, but legs/body do not match Zoey's required benchmark; cropped gym lettering competes with long CTA, and hands/equipment are soft on zoom. VERDICT: FAIL -> strengthen physique and hands/geometry; remove intrusive gym lettering; preserve caption space. No text has been added to the photo.
+- Slide 6 — `raw/zoey-06/generated/s6-v1.jpg` against source `05.jpg`: beige home mirror and white closet doors, black fitted outfit, case and partial face consistent, room for short tip; 2× crops show plausible hands and no visible watch. VERDICT: PASS.
+- Slide 7 — `raw/zoey-06/generated/s7-v1.jpg` against source `06.jpg`: correct bright cardio floor, outfit and caption area, no watch, but zoomed bottle grip and phone hand look fused; body/leg proportions and several cardio-machine supports drift from the benchmark/physical layout. VERDICT: FAIL -> correct hands, bottle contact and machine geometry while holding Zoey's body benchmark.
+
+Deck verdict after first pass: FAIL — four initial photos passed; slides 4, 5 and 7 needed corrections. The first-pass inspection page is `raw/zoey-06/preview.html`.
+
+## GPT Image 2 corrective groups
+
+The captain requested GPT Image 2 only for the failed slides, generated together. Two concurrent groups of three low-quality `gpt-image-2` edit calls were made. Every edit used a validated `sN-gpt2-vV.json` prompt, the preceding image as edit target, and Zoey's approved reference images; outputs are at 720×1280. The source creator's image was not attached. No caption was burned into an image.
+
+- Slide 4 v2 — correct night car, darker mood, but the face/hair still did not read as Zoey. FAIL. Slide 4 v3 — the car, angle, mood and caption space held, but it remained a highlighted brunette with the prior face rather than Zoey's approved face. FAIL. Latest: `raw/zoey-06/generated/s4-gpt2-v3.png`.
+- Slide 5 v2 — the dark gym, case, hands and signage improved, but a frontal stance hid the body benchmark's glute shape. FAIL. Slide 5 v3 — the three-quarter stance now shows the required full glutes, thighs, chest and tight waist with soft arms; zoomed limbs, hands, mirror, case and cable equipment show no definite break; no watch or visible gibberish. Upper-left dark space remains for the exact multiline CTA. PASS. Latest: `raw/zoey-06/generated/s5-gpt2-v3.png`.
+- Slide 7 v2 — the bottle/hand defect was removed and the cardio gym survived, but the hips/thighs became too exaggerated for Zoey's benchmark. FAIL. Slide 7 v3 — empty free hand, phone grip, cardio equipment and text space are usable, but the hip/thigh width still does not match the approved body benchmark. FAIL. Latest: `raw/zoey-06/generated/s7-gpt2-v3.png`.
+
+Current deck verdict: FAIL — slides 1, 2, 3, 5 and 6 have reviewed photo PASSes. Slides 4 and 7 do not. The latest draft inspection page is `raw/zoey-06/preview-gpt-v3.html`, with the exact script text below the images. No failed image is designated final, and no text-overlay/final deck is claimed.

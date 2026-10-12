@@ -1,0 +1,63 @@
+#!/bin/sh
+# Deploy the creator system to the always-on Mac (default: the MacBook Air over Tailscale) and (re)start it.
+#   sections/creators/deploy            code + env + services
+# Services (launchd, user agents): dashboard on the tailnet only (Tailscale Serve, :8443), creator portal on localhost behind
+# Tailscale Funnel (public HTTPS), jobs every 3 hours, store backup every night.
+set -eu
+HOST="${CREATORS_HOST:-johansardar@100.78.200.121}"
+TS_IP="${CREATORS_TS_IP:-100.78.200.121}"
+DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(cd "$DIR/../.." && pwd)"
+APP='$HOME/excerlock-creators'
+
+rsync -az --delete --exclude data --exclude __pycache__ --exclude '*.pyc' "$DIR/" "$HOST:excerlock-creators/sections/creators/"
+# Keep the deployed agents on the same instructions as agents in the source workspace.
+rsync -az "$ROOT/AGENTS.md" "$ROOT/CLAUDE.md" "$HOST:excerlock-creators/"
+# only the keys this system uses
+grep -E '^(RESEND_[A-Z_]+|CREATORS_[A-Z_]+|PAYPAL_[A-Z_]+|WISE_[A-Z_]+|IG_SCRAPER_[A-Z]+)=' "$ROOT/.env" | ssh "$HOST" "umask 077; cat > excerlock-creators/.env"
+
+ssh "$HOST" TS_IP="$TS_IP" 'sh -s' <<'REMOTE'
+set -eu
+APP="$HOME/excerlock-creators"
+UV="$HOME/.local/bin/uv"
+TS=/Applications/Tailscale.app/Contents/MacOS/Tailscale
+cd "$APP"
+[ -x .venv/bin/python ] || "$UV" venv --python 3.12 .venv -q
+"$UV" pip install -q --python .venv/bin/python requests yt-dlp python-dotenv playwright
+URL="https://$($TS status --json | /usr/bin/python3 -c 'import json,sys;print(json.load(sys.stdin)["Self"]["DNSName"].rstrip("."))')"
+grep -q '^CREATORS_PUBLIC_URL=' .env || echo "CREATORS_PUBLIC_URL=$URL" >> .env
+# The Air's Claude CLI isn't logged in; its Codex is (T3 Code), so the AI judge runs there.
+grep -q '^CREATORS_JUDGE_CMD=' .env || echo "CREATORS_JUDGE_CMD=\"$HOME/.local/bin/codex exec --skip-git-repo-check -m gpt-6.1-sol -\"" >> .env
+mkdir -p "$APP/logs" "$HOME/Library/LaunchAgents"
+CLI="$APP/sections/creators/creators"
+
+agent() {  # label, keepalive(true/false), interval-seconds or "", args...
+  label=$1; keep=$2; every=$3; shift 3
+  plist="$HOME/Library/LaunchAgents/com.excerlock.creators.$label.plist"
+  {
+    echo '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><dict>'
+    echo "<key>Label</key><string>com.excerlock.creators.$label</string><key>ProgramArguments</key><array><string>$CLI</string>"
+    for a in "$@"; do echo "<string>$a</string>"; done
+    echo "</array><key>WorkingDirectory</key><string>$APP</string>"
+    echo "<key>StandardOutPath</key><string>$APP/logs/$label.log</string><key>StandardErrorPath</key><string>$APP/logs/$label.log</string>"
+    echo "<key>EnvironmentVariables</key><dict><key>PATH</key><string>$APP/.venv/bin:$HOME/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string></dict>"
+    [ "$keep" = true ] && echo "<key>KeepAlive</key><true/><key>RunAtLoad</key><true/>"
+    [ -n "$every" ] && echo "<key>StartInterval</key><integer>$every</integer><key>RunAtLoad</key><true/>"
+    echo '</dict></plist>'
+  } > "$plist"
+  launchctl bootout "gui/$(id -u)/com.excerlock.creators.$label" 2>/dev/null || true
+  # bootout returns before the old job is gone; bootstrapping too early fails with "Input/output error"
+  for _ in 1 2 3 4 5 6 7 8 9 10; do launchctl print "gui/$(id -u)/com.excerlock.creators.$label" >/dev/null 2>&1 || break; sleep 1; done
+  launchctl bootstrap "gui/$(id -u)" "$plist"
+}
+agent dashboard true "" serve --host 127.0.0.1 --port 8765
+agent portal true "" portal --host 127.0.0.1 --port 8766
+agent jobs false 10800 jobs
+agent backup false 86400 backup
+# Funnel must be switched on once for the tailnet; until then the CLI prints the link and waits, so cap it.
+perl -e 'alarm 40; exec @ARGV' "$TS" funnel --bg 8766 2>&1 | grep -E "https://login|not enabled" || true
+# dashboard: private HTTPS on port 8443, reachable only from devices in the tailnet
+perl -e 'alarm 40; exec @ARGV' "$TS" serve --bg --https=8443 http://127.0.0.1:8765 2>&1 | grep -E "https://login|not enabled" || true
+echo "dashboard: $URL:8443 (tailnet only)"
+echo "portal:    $URL"
+REMOTE

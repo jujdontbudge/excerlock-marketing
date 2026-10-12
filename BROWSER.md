@@ -7,6 +7,12 @@ The workspace uses `@amaster.ai/pi-browser-use` with `chrome-devtools-mcp` in he
 - Use this dedicated profile rather than personal Chrome.
 - Call `browser_list_pages` before page-scoped browser tools and pass `pageId` explicitly.
 
+## Proxy routing
+
+Never change macOS system proxy settings with `networksetup` or System Settings > Network. If a proxy is needed, configure it only in one browser profile and include its authentication. Why: system-wide proxy routing also affects the local model connection; an unauthenticated proxy cut off that connection with HTTP 407 (captain, 2026-10-08).
+
+Before finishing browser work involving a proxy, confirm `scutil --proxy` still shows `HTTPEnable : 0` and `HTTPSEnable : 0`.
+
 ## User-initiated login
 
 When a platform requires login, the user may explicitly run:

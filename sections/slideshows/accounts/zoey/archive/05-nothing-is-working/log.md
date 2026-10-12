@@ -1,0 +1,16 @@
+# Deck 05 image log
+
+Built 2026-09-19 to 2026-09-20. Everything is in the archive at `data/slideshows-02-05-images/` (see `AGENTS.md`): `out/05/sN.png` with `.prompt.txt`, `.digest.json`, `.usage.json` and edit prompts beside each, reference slides in `out/refs/`, verdicts in `verdicts/05-s1.txt`, `05-s2.txt`, `05-s6.txt`, `05-s6-A.txt`, `05-s6-B.txt`, review pages `review.html`, `review.md`, `review.json`. Costs are estimates from token counts.
+
+| Slide | Model and settings | Calls | Est. cost (USD) | Outcome |
+|---|---|---|---|---|
+| s1 | `gemini-2.5-flash-image`, batch | 3 in rounds 1 to 3; the cap of two regenerations plus one edit in rounds 7 to 9; a rebuild in rounds 10 to 14 | 0.12 for rounds 1 to 3; later rounds only in the build totals | Round 1 PASS by the reviewer, FAILED by the captain (fat and wiry); round 2 slim; round 3 with the anchor PASS. Rounds 7 to 9: remade with the anchor and benchmark in one Batch call, two regenerations to reach the benchmark body, one edit (soft arms, blank locker plates in the mirror). Rounds 10 to 14: rebuilt at a three-quarter back angle with a hip pop, PASS by a fresh reviewer (reviewer 3). |
+| s2 | `gemini-2.5-flash-image`, batch | 1 in the physique redo; remade in rounds 7 to 9; regenerated in rounds 10 to 14; 1 Nano Banana 2 edit in rounds 3 to 6 | 0.04 for the first build; later rounds only in the build totals | Before picture (baggy black tee) regenerated so the face matches the new hooks. Rounds 7 to 9: passed after a sock edit. Rounds 10 to 14: failed for a hidden body, regenerated with the reviewer's fix lines, PASS. |
+| s3 | none | 0 | 0 | `steps-final-16349.png` full-bleed. |
+| s4 | none | 0 | 0 | The blocker screen, unedited. |
+| s5 | none | 0 | 0 | Reuses the slideshow 01 slide 4 meal-prep base. The build log names it `data/slideshow-01-final/images/reimagine/yermospam-1793-s5-gpt2-low-01.png` (matched against `build/slide-04.jpg`), while `script.md` names `gabylrei-1069-s4-gpt2-low-0N.png`; check which one before a rebuild. |
+| s6 | `gemini-2.5-flash-image`, batch | 3 in rounds 1 to 3; 3 Nano Banana 2 edits in rounds 3 to 6; regenerations to the cap and edits in rounds 10 to 14 | 0.12 for rounds 1 to 3; later rounds only in the build totals | Round 1 PASS, superseded; round 2 came out in blue shorts (the digest's "blue shorts pop" line leaked, now stripped); round 3 black shorts with the anchor PASS. Rounds 10 to 14: failed for a hidden body and props, regenerated to the cap, then edits for marks the model keeps adding (sock swooshes, shoe panels, a second headphone set, forearm tattoos). Variant A (`s6-A-socks.png`) passes every line except the left hand hidden behind the rail pad; variant B (`s6-B-hand.png`), the hand-placement edit, gave a malformed hand. A is the candidate for the captain's call. |
+
+Rounds 10 to 14 overall: 7 Nano Banana 2.5 generations (one more was blocked by Google's safety filter, unbilled) and 9 Nano Banana 2 edits, about USD 0.91, across 02 s3, 05 s1, 05 s2 and 05 s6. Build totals for decks 02 to 05: about USD 4.11.
+
+Every image call was made before the 2026-09-22 rule that makes regular Nano Banana 2 at 512 the default; a regeneration today follows the retired image-prompt skill.

@@ -7,7 +7,7 @@ The captain's decisions for this deck. Rules that hold for all of Zoey's decks a
 - **Slide 2** is the before picture `data/slideshow-01-final/images/round10-before/before-final.png`, made on 2026-09-17 with a heavier body, before the body rules existed. The before-body exemption was later deleted, so a regeneration follows her body in `account.md`.
 - **Slide 5** became the steps receipt, full frame, with no generated picture (captain, 2026-09-20).
 - **Slide 7** became the ExcerLock blocker screen as the CTA image (captain, 2026-09-20).
-- Slide 3's Notes screenshot and the CTA on slide 7 predate `H-no-cheat-sheet` and `H-cta-slide-4` (both 2026-09-19). The deck is final and was not rewritten to them.
+- Slide 3's Notes screenshot and the CTA on slide 7 predate `H-no-cheat-sheet` and the old slide-4 CTA rule (both 2026-09-19). The deck is final and was not rewritten to them.
 
 ## Open question
 

@@ -38,7 +38,7 @@ TOOLS = {"schema": "get_model_schema", "pricing": "get_pricing", "submit": "subm
 
 def validate(action, endpoint, approved=False):
     if endpoint not in ENDPOINTS:
-        raise ValueError("Blocked: endpoint is not in the verified video-only allowlist. Stills follow core/skills/image-prompt/SKILL.md.")
+        raise ValueError("Blocked: endpoint is not in the verified video-only allowlist. Stills follow core/skills/reference-swap/SKILL.md.")
     if action == "submit" and not approved:
         raise ValueError("Submission requires --approve-spend after reviewing current pricing and reference-upload consent.")
 

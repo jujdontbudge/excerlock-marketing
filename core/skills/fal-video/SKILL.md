@@ -1,6 +1,6 @@
 ---
 name: fal-video
-description: Generate realistic video through verified fal.ai video endpoints, with live schema and pricing checks before any spend. Use when a still (usually a `video_first_frame` image) needs to become a video clip.
+description: Generate realistic video through verified fal.ai video endpoints, with live schema and pricing checks before any spend. Use when a still (usually a reference-swapped first frame) needs to become a video clip.
 ---
 # fal.ai video generation
 
@@ -9,7 +9,7 @@ Supported video families include Seedance 2.0/2.5, Kling 2.6/V3, Kling LipSync, 
 ## Inputs
 
 - The first frame or reference images, the motion wanted, the format and the budget.
-- Stills, including first frames, come from `core/skills/image-prompt/SKILL.md` (`video_first_frame` mode).
+- First frames come from `core/skills/reference-swap/SKILL.md`: a real video frame with the character swapped in.
 
 ## Steps
 
@@ -24,6 +24,10 @@ Supported video families include Seedance 2.0/2.5, Kling 2.6/V3, Kling LipSync, 
 ## Outputs
 
 - The video file and its request ID, saved outside the repo or in `raw/`.
+
+## Before posting
+
+- Run `core/skills/ugc-finish/SKILL.md` on the final cut (2-3% grain, 1080p, one compression round, metadata stripped). Post only its output.
 
 ## Don'ts
 

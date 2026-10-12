@@ -8,17 +8,18 @@ Agents start at `AGENTS.md`. The layout and its rules are drawn in `docs/repo-ma
 
 | Folder | What's in it |
 |---|---|
-| `sections/` | One folder per kind of marketing work. Today: `slideshows/`, organic TikTok photo slideshows. |
+| `sections/` | Slideshow production and creator-recorded UGC; each owns its assignments and workflow. |
 | `accounts/` | Our TikTok accounts: who each character is, and her reference images (gitignored). |
-| `core/` | Skills and workflows every section uses (research, image prompting, style clone, image review, video, make-universal) and `product.md`. |
-| `library/` | Style digests of other creators' photos. |
+| `core/` | Skills and workflows every section uses (research, reference swap, image review, video, make-universal) and `product.md`. |
 | `research/` | Finished evidence reports. |
 | `scripts/`, `integrations/`, `tools/` | `lint`, `link-skills`, the crawler, Mem0 and the rich Markdown editor. |
 | `docs/adr/` | Why the big decisions were made. |
+| `history/` | Superseded plans and retired experiments, outside active routing. |
 
 ## Everyday commands
 
 - `pi-marketing`: start Pi in this workspace.
 - `scripts/lint`: check the module rules and links.
 - `scripts/link-skills`: register skills after adding one.
+- `scripts/test`: run offline regression tests for production helpers and context routing.
 - `scripts/rich-md FILE.md`: edit a Markdown file in a rich editor.

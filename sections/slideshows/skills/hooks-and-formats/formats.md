@@ -1,6 +1,6 @@
 # Slideshow formats
 
-The deck shapes from the three articles, each with its slide-by-slide shape, when it fits and the hook types (numbers from `hooks.md`) that lead into it. Slide counts below are the authors'. Our decks keep their own length and CTA slot: H-slide-count and H-cta-slide-4 in `sections/slideshows/rules.md`. Fit a format into those slots; don't stretch the slots to fit a format.
+The deck shapes from the three articles, each with its slide-by-slide shape, when it fits and the hook types (numbers from `hooks.md`) that lead into it. Slide counts below are the authors'. Our decks keep their own length and CTA slot: H-slide-count and H-cta-last-slide in `sections/slideshows/rules.md`. Fit a format into those slots; don't stretch the slots to fit a format.
 
 The basic unit, per Sulfur: a slideshow is about four to eight still images with text and music, and each slide is one image plus one sentence. The text can be baked into the image or added with TikTok's own text tool.
 

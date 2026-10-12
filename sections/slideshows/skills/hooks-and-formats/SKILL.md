@@ -1,6 +1,6 @@
 ---
 name: hooks-and-formats
-description: Names the hook type of a slideshow title, picks the deck format that pays it off and plans the deck around it; also writes new hook ideas for an account. Use it first whenever the captain gives a slideshow title, and whenever he asks for hooks.
+description: Classifies captain-written hooks, selects existing captain hooks and plans the deck format that pays their promise. Use when the captain gives a title or asks to choose hooks. Never invent hooks.
 ---
 
 # Hooks and formats
@@ -10,6 +10,7 @@ description: Names the hook type of a slideshow title, picks the deck format tha
 - Either a title from the captain (job A) or a request for hook ideas (job B).
 
 ## Reference files
+- `core/creative-rules.md`: the captain-only hook rule. Apply it before any hook selection; it overrides older hook-writing directions.
 - `hooks.md`: the 24 hook types, with examples and why each works.
 - `formats.md`: the deck formats, slide by slide, with the hook types that lead into each.
 - `sections/slideshows/hook-bank.md`: the captain's own hooks, filed under the same 24 type names.
@@ -21,7 +22,7 @@ description: Names the hook type of a slideshow title, picks the deck format tha
 2. Name its hook type from `hooks.md`. If it is two types, name both and mark the one whose promise the deck has to pay (a numbered promise must pay the number; a curiosity gap must close the loop).
 3. Write the title's promise in one line: what the reader expects to get by the last slide.
 4. Pick the format from `formats.md` whose "Leads in from" list has that hook type and whose shape can pay the promise. Say in one line why it fits.
-5. Lay the format onto our slots: H-slide-count, H-cta-slide-4, H-one-story. The slot structure and the wording of each slide belong to `sections/slideshows/skills/write-script/SKILL.md`.
+5. Lay the format onto our slots: H-slide-count, H-cta-last-slide, H-one-story. The slot structure and the wording of each slide belong to `sections/slideshows/skills/write-script/SKILL.md`.
 6. Hand over the deck plan.
 
 Output, the deck plan:
@@ -33,14 +34,11 @@ Format: <name>, because <one line>
 Slide 1: hook. Slide 2: <job>. Slide 3: <job>. ... (one job per slide, each one paying part of the promise)
 ```
 
-## Job B: hook ideas
-1. State how many hooks you will write and for which hook types before starting (H-scope-confirm).
-2. Read the account's `## Audience` and `## Voice` in `account.md`. Write in that voice.
-3. Read `sections/slideshows/hook-bank.md`. Don't repeat a hook that is already there. Its `## Gaps` list shows the types that have no hook yet; fill those first unless the captain named types.
-4. Take the wording from real top posts in the niche and their most-liked comments (research with `core/skills/tiktok-research/SKILL.md`), not from your own head.
-5. Write each hook to the shape facts below.
-6. For each hook give: the hook, its type, the format it would open, and what slide 2 shows to pay it.
-7. The captain picks. Only hooks he accepts go into `sections/slideshows/hook-bank.md`, under their type heading.
+## Job B: select existing hooks
+1. Read the captain's current message and the captain-written hook bank.
+2. Select only his existing hooks, verbatim, under `core/creative-rules.md`. Do not fill gaps with new hooks or adapt third-party wording.
+3. For each selected hook, give its source, type, suitable format and what slide 2 shows to pay its promise.
+4. If none fits, leave a blank for the captain. The shape facts below help evaluate existing hooks, not write replacements.
 
 ## Hook shape: what our own data shows
 Figures are views and saves at capture, not installs.

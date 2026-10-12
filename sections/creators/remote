@@ -1,0 +1,13 @@
+#!/bin/sh
+# Run a creator-system command on the always-on Mac, where the real store lives:
+#   sections/creators/remote add tt:name      sections/creators/remote list
+#   sections/creators/remote tunnel           dashboard at http://127.0.0.1:8765 until Ctrl-C
+HOST="${CREATORS_HOST:-johansardar@100.78.200.121}"
+TS_IP="${CREATORS_TS_IP:-100.78.200.121}"
+if [ "${1:-}" = tunnel ]; then
+  echo "dashboard: http://127.0.0.1:8765"
+  exec ssh -N -L 8765:127.0.0.1:8765 "$HOST"
+fi
+args=""
+for a in "$@"; do args="$args '$(printf %s "$a" | sed "s/'/'\\\\''/g")'"; done
+exec ssh "$HOST" "cd excerlock-creators && sections/creators/creators$args"

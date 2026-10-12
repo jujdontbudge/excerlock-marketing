@@ -12,27 +12,6 @@
         "run_model",
         "submit_job"
       ]
-    },
-    "x-docs": {
-      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
-      "args": [
-        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
-        "x-docs"
-      ]
-    },
-    "xapi": {
-      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
-      "args": [
-        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
-        "xapi"
-      ]
-    },
-    "youtube-transcript": {
-      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
-      "args": [
-        "/Users/johansardar/.local/share/agent-capabilities/mcp-launch.py",
-        "youtube-transcript"
-      ]
     }
   }
 }

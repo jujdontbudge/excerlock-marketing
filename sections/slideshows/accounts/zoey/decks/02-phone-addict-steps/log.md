@@ -13,4 +13,4 @@ Built 2026-09-19 to 2026-09-20. Everything is in the archive at `data/slideshows
 
 Build totals for decks 02 to 05: GPT Image 2, 21 calls, about USD 0.23; Nano Banana 2.5, 41 calls, about USD 1.64; Nano Banana 2 (`gemini-3.1-flash-image`) edits, 32, about USD 2.24; about USD 4.11 in all. Gemini credits ran out once mid-build and the captain topped them up.
 
-Batch notes: `batchGenerateContent` on `gemini-2.5-flash-image` with inline requests worked on the paid tier. Every image call was made before the 2026-09-22 rule that makes regular Nano Banana 2 at 512 the default; a regeneration today follows `core/skills/image-prompt/SKILL.md`.
+Batch notes: `batchGenerateContent` on `gemini-2.5-flash-image` with inline requests worked on the paid tier. Every image call was made before the 2026-09-22 rule that makes regular Nano Banana 2 at 512 the default; a regeneration today follows the retired image-prompt skill.

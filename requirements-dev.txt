@@ -1,0 +1,3 @@
+# Offline production-helper regression tests use stdlib unittest.
+# Integration-specific pytest dependencies remain in their own environments.
+-r requirements.txt

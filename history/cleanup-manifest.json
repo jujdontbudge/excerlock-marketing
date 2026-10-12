@@ -1,0 +1,155 @@
+{
+  "checkpoint": "ck_0muzzoxo7hkja5nn",
+  "files": [
+    {
+      "source": "research/skeleton-pipeline-review.md",
+      "destination": "history/research/skeleton-pipeline-review.md",
+      "sha256": "b19ea954cc73da80a4b0d632763f101e4d56667e6b3b8361bfa8838eb3bb9881"
+    },
+    {
+      "source": "research/skeleton-pipeline-review-pi.md",
+      "destination": "history/research/skeleton-pipeline-review-pi.md",
+      "sha256": "485fc084663da119b147d37f19de233b831bcf7b88fe92487409029f72c42ef1"
+    },
+    {
+      "source": "research/ai-ugc-reference-first/audit.md",
+      "destination": "history/research/ai-ugc-reference-first/audit.md",
+      "sha256": "8427774dde007baf7354c148951b058da7221bb3c63e53771b26419f76f89ac6"
+    },
+    {
+      "source": "research/ai-ugc-reference-first/swap-method.md",
+      "destination": "history/research/ai-ugc-reference-first/swap-method.md",
+      "sha256": "b0834da13a907228716d89e898065a233cb81e3aa21527ce5815e04c5f4d4d94"
+    },
+    {
+      "source": "research/ai-ugc-omni-notes.md",
+      "destination": "history/research/ai-ugc-omni-notes.md",
+      "sha256": "f525b3119a598202df897a550183d412e70b918fc78ec11134bb41f3761dfdb7"
+    },
+    {
+      "source": "research/slideshow-formats-2026/top2.md",
+      "destination": "history/research/slideshow-formats-2026/top2.md",
+      "sha256": "b66369340262f71416cb1bd884fca8563eb18c4452aff57ce74cf85b2ec4b371"
+    },
+    {
+      "source": "research/slideshow-formats-2026/four-decks.md",
+      "destination": "history/research/slideshow-formats-2026/four-decks.md",
+      "sha256": "76c432a5d1b0f1cce1b556d51b3254398be55ef81303e0dcb8c5f59c219c4b75"
+    },
+    {
+      "source": "research/slideshow-formats-2026/captain-hooks.md",
+      "destination": "history/research/slideshow-formats-2026/captain-hooks.md",
+      "sha256": "b456d06a8437c14e24792e6d338ebdaac15850c6cb840cd15e6b7b317e3c3ff0"
+    },
+    {
+      "source": "research/ugc-formats-2026/current-creative-direction.md",
+      "destination": "history/research/ugc-formats-2026/current-creative-direction.md",
+      "sha256": "d79ba7cac372d285bc74e9235f0902bc3502f7efcc28009f1800b1a9cfbf9a05"
+    },
+    {
+      "source": "research/ugc-formats-2026/shoot-today.md",
+      "destination": "history/research/ugc-formats-2026/shoot-today.md",
+      "sha256": "c429723a045faa13e7309eb61784ed8790c6776db15989ab349a22e9c7c106d9"
+    },
+    {
+      "source": "research/ugc-formats-2026/jake-creator-plan-review.md",
+      "destination": "history/research/ugc-formats-2026/jake-creator-plan-review.md",
+      "sha256": "95e3743e77cca6f0462cabf6270fb00ceff5f8214c02373c24d0660bc1db23ef"
+    },
+    {
+      "source": "research/ugc-formats-2026/captain-picks.md",
+      "destination": "history/research/ugc-formats-2026/captain-picks.md",
+      "sha256": "999849465fee353434ecc22b2e51c9096bfe7d69ed1c1ac66be175fb9db94c61"
+    },
+    {
+      "source": "sections/slideshows/hook-bank.md",
+      "destination": "history/slideshows/normalized-hook-bank.md",
+      "sha256": "9b82dc76893fb2cea056dc07eabb8ca9cc1ced9fd5a8260cc29b84e52b147ec5"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/03-didnt-want-10k-steps/log.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/03-didnt-want-10k-steps/log.md",
+      "sha256": "085f259e06f9635e0e2436cbf029dd6489472b22daf3959578b6e0e6efb32ee2"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/03-didnt-want-10k-steps/review.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/03-didnt-want-10k-steps/review.md",
+      "sha256": "3315949198df7c647f2f6167850584911de8ede865de81c2462560592c28123c"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/03-didnt-want-10k-steps/script.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/03-didnt-want-10k-steps/script.md",
+      "sha256": "f4a3a1528de24c046373e49d10b75020b30626198042a130062c95ec789a77cf"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/04-not-your-legs/log.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/04-not-your-legs/log.md",
+      "sha256": "f7a59425109526aff5d70610e8656c1f3e32557fb5a6abbd7bcfd0a31b946159"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/04-not-your-legs/review.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/04-not-your-legs/review.md",
+      "sha256": "77b116c9d5854a67b5b96a24bc94a1aaa5764033d29a72cca483e605a62fb74a"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/04-not-your-legs/script.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/04-not-your-legs/script.md",
+      "sha256": "469c36db92c57944777b624de0b0aec0bdeea52eeba31dd2ba1c158e02c9b67b"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/05-nothing-is-working/log.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/05-nothing-is-working/log.md",
+      "sha256": "84c0b71a316823e5a8d844423737cf8f95e724b05fda875184bc81a7a61c1b1b"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/05-nothing-is-working/review.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/05-nothing-is-working/review.md",
+      "sha256": "1a539b0fc5723619e4068a694118a083fb5d4e19c3a369ec4bbe55e9e7bfba01"
+    },
+    {
+      "source": "sections/slideshows/accounts/zoey/decks/05-nothing-is-working/script.md",
+      "destination": "sections/slideshows/accounts/zoey/archive/05-nothing-is-working/script.md",
+      "sha256": "4908ee17dbaeaa524e85dedf5aec8dc717afa32bc40f840696c5b7aee695b8a8"
+    },
+    {
+      "source": "core/skills/reference-swap/batch.py",
+      "destination": "history/experiments/reference-swap/batch.py.disabled",
+      "sha256": "f8e0f6459494096583599fc79b6c2add1fdb95c12266cb449ff2873f448d1b86"
+    },
+    {
+      "source": "core/skills/reference-swap/fal_swap.py",
+      "destination": "history/experiments/reference-swap/fal_swap.py.disabled",
+      "sha256": "f3156d28ef2ab5e0392994f758518b198a6b946a2c68425bf3758a628d329557"
+    },
+    {
+      "source": "integrations/mem0-local/worker.py",
+      "destination": "history/experiments/mem0-local/worker.py.disabled",
+      "sha256": "091919fb25650c131037c6e435f5fa9af1ef36af928e0997f0e4a6dd954108d5"
+    },
+    {
+      "source": "integrations/mem0-local/pi_luna.py",
+      "destination": "history/experiments/mem0-local/pi_luna.py.disabled",
+      "sha256": "50fb1e5003031ae53349f76b162baa7e0f4686bffd2bec6301142622d9c57a24"
+    },
+    {
+      "source": "integrations/mem0-local/luna-bridge.mjs",
+      "destination": "history/experiments/mem0-local/luna-bridge.mjs.disabled",
+      "sha256": "388cd399eeae8cb5b05607b9ace1675da001f8f453a7f08496d824e632f74eea"
+    },
+    {
+      "source": "integrations/mem0-local/test_worker.py",
+      "destination": "history/experiments/mem0-local/test_worker.py.disabled",
+      "sha256": "f028d5e48a9703c31272c932457b40b5982681f8cd43c37e07332c4b80ab6695"
+    },
+    {
+      "source": "integrations/mem0-local/requirements.txt",
+      "destination": "history/experiments/mem0-local/requirements.txt.disabled",
+      "sha256": "856b58c3d2a1f7a0c2f33e695e1b504584ee23e940f8be01c1f0db367b0cff26"
+    },
+    {
+      "source": "integrations/mem0-local/requirements.lock.txt",
+      "destination": "history/experiments/mem0-local/requirements.lock.txt.disabled",
+      "sha256": "4ab2371d9da8b9511d6e8a287795bb191343cda34ffa86d1fe7058426bd7c9a8"
+    }
+  ]
+}

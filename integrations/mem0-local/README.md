@@ -1,42 +1,19 @@
-# Local Mem0 OSS for Pi
+# Project memory integration
 
-This is a local implementation of the official Mem0 Pi workflow using Mem0 OSS, embedded Qdrant, local FastEmbed embeddings, and `openai-codex/gpt-5.6-luna` at maximum reasoning for inferred memory extraction.
+One implementation owner: the machine-level shared engine at `~/.local/share/firstmate-projects/local-memory.ts` and its `mem0/worker.py`. The project extension imports it through `project-policy.mjs`; the former separate Luna worker is archived under `history/experiments/mem0-local/`.
 
-## Features
+## Effective project policy
 
-- Automatic semantic recall before every agent response
-- Git-root project detection
-- Project, session, and global scopes
-- Default relevance threshold `0.3`
-- Categories: identity, preferences, goals, projects, decisions, technical, relationships, routines, lessons, and work
-- Tool actions: status, add, search, list/get_all, get, update, delete, and delete_all
-- No automatic conversation capture or recurring approval prompt
-- Approval-gated mutations
-- Local storage under `~/.pi/mem0-oss`
+- **Manual recall only.** No automatic memory hooks are registered here. Existing project records remain searchable, not always-loaded rules.
+- **No automatic capture or queue flush.** No conversation extraction/model calls originate from these project hooks. Fleet-wide configuration and other projects are unchanged.
+- Explicit approved CRUD, project/session isolation, local embeddings/storage, and commands are owned by the shared engine. Current behavior is queried, not copied into this README.
+- `/mem0-status` and `local_memory` status show effective `autoCapture=false` / `automaticRecall=false`, alongside `engineAutoCapture` / `engineAutomaticRecall`. Those engine defaults may still be true for other integrations.
+- The reviewed 291 records are retained as evidence; keyword flags were not sufficient grounds to delete them. Follow canonical project files over recalled historical rules. Never store secrets.
 
-## Commands
-
-- `/mem0-remember <text>`
-- `/mem0-forget <query>`
-- `/mem0-search <query>`
-- `/mem0-tour [project|session|global]`
-- `/mem0-scope project|session|global`
-- `/mem0-status`
-- `/memory-review`
-
-Relevant memories are recalled automatically. New memories are stored only after an explicit request.
-
-## Components
-
-- Memory tool is provided by the shared Pi launcher
-- `worker.py`
-- `pi_luna.py`
-- `luna-bridge.mjs`
-- `.venv/`
+Commands: `/mem0-search`, `/mem0-remember`, `/mem0-forget`, `/mem0-tour`, `/mem0-scope`, `/mem0-status`, `/memory-review`. Mutation requests retain the engine’s approval gate.
 
 ## Verification
 
-```bash
-integrations/mem0-local/.venv/bin/python -m pytest -q integrations/mem0-local/test_worker.py
-uv pip check --python integrations/mem0-local/.venv/bin/python
-```
+`node --test integrations/mem0-local/test_project_policy.mjs` loads the actual shared extension through installed Pi’s Jiti/package resolution, checks its registration and real read-only status, and exercises rejection of unapproved mutations. No provider extraction call or memory write is made.
+
+Prerequisites: this Mac’s shared engine/Python environment and installed Pi runtime. A standalone checkout without them cannot run this integration; it must not silently substitute the archived worker. Existing sessions need an extension reload/restart to receive the new registration policy. A launcher that bypasses project extensions does not receive this adapter.

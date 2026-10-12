@@ -62,18 +62,20 @@ export default function (pi: ExtensionAPI) {
     description: "Generate or edit an image through the locally authenticated Codex image_gen bridge. Accepts an exact final prompt, optional reference images, edit mode, and an optional output path. Existing output files are never overwritten.",
     promptSnippet: "Generate or edit still images with the subscription-backed Codex image bridge",
     promptGuidelines: [
-      "Use codex_image only when the user requests actual still-image generation or editing.",
+      "Use codex_image only when the captain explicitly requests this provider. For person images, read core/skills/reference-swap/SKILL.md and record approval of the provider exception; it is never the default.",
       "For image requests, clarify requirements when needed and prepare a suitable final prompt; once finalized, pass that prompt to codex_image unchanged.",
       "Use codex_image images for local reference files, set edit=true for edits, and provide a project output path when the result should be retained.",
       "Use fal.ai rather than codex_image for video generation.",
     ],
     parameters: Type.Object({
+      authorization: Type.String({ minLength: 1, description: "Current captain approval for the explicit Codex provider exception; never invent authorization" }),
       prompt: Type.String({ minLength: 1, description: "The user's final image prompt, passed unchanged to the bridge" }),
       images: Type.Optional(Type.Array(Type.String({ description: "Readable local reference or edit-target image path" }))),
       edit: Type.Optional(Type.Boolean({ description: "Treat every attached image as an edit target" })),
       output: Type.Optional(Type.String({ description: "New destination path; the tool refuses to overwrite an existing file" })),
     }),
     async execute(_toolCallId, params, signal, onUpdate, ctx) {
+      if (!params.authorization?.trim()) throw new Error("Explicit provider-exception authorization required");
       onUpdate?.({ content: [{ type: "text", text: params.edit ? "Editing image with Codex…" : "Generating image with Codex…" }], details: {} });
       const value = await runBridge(pi, params, ctx.cwd, signal);
       return { content: await resultContent(value), details: value };
@@ -81,12 +83,12 @@ export default function (pi: ExtensionAPI) {
   });
 
   pi.registerCommand("image", {
-    description: "Start an image workflow using the codex_image tool",
+    description: "Start the project image workflow; provider exceptions require explicit approval",
     handler: async (args, ctx) => {
       const request = args.trim();
       const instruction = request
-        ? `Use the codex_image tool for this image request. Interpret the request, clarify important missing requirements when necessary, prepare a suitable final prompt, and then generate or edit the image. Do not treat the text below as an exact final prompt unless I explicitly say it is one.\n\nImage request:\n${request}`
-        : "Start an image workflow using the codex_image tool. Ask what image I want to generate or edit and gather any important missing requirements before using the tool.";
+        ? `Read the project image policy first. Use the reference-swap workflow by default; use codex_image only if I explicitly authorize the provider exception for this request. Interpret the request, clarify important missing requirements when necessary, prepare a suitable final prompt, and then generate or edit the image. Do not treat the text below as an exact final prompt unless I explicitly say it is one.\n\nImage request:\n${request}`
+        : "Start an image workflow under core/skills/reference-swap/SKILL.md. Gather the request and references; codex_image requires an explicitly authorized provider exception.";
       await ctx.sendUserMessage(instruction);
     },
   });

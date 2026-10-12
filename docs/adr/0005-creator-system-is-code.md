@@ -1,0 +1,9 @@
+# The creator pipeline is code, inside its own section
+
+On 2026-10-08 the captain asked for a fully automated system for finding, signing and tracking UGC creators and influencers, with a dashboard, built as deep modules. A spreadsheet or Markdown records cannot refresh stats, send follow-ups, find live posts or count "what app is this?" comments on their own, so this section is the first one that is mostly software.
+
+It stays a section (`sections/creators/`): deleting the folder removes it and nothing else breaks. One SQLite store sits under eight modules with small interfaces (intake, snapshot, vetting, pipeline, outreach, deals, deliverables, performance). Seams exist only where something really varies: platform (TikTok, Instagram) and message channel (email, DM).
+
+Everything that spends money or speaks for the brand waits in the dashboard's approval inbox unless the captain switches a message kind to auto-send. TikTok and Instagram DMs are never automated because automated DMs get accounts flagged. Instagram is read with a logged-in spare account because it refuses anonymous reads. AI judging runs through a Claude agent, never the Gemini image key.
+
+Later the same day the captain asked for hosting, payments and contracts with as little paid tooling as possible. The section runs on his always-on MacBook Air: the dashboard is reachable only on his tailnet, and the creator portal is public through Tailscale Funnel. Contracts are signed click-to-sign on the portal, with the exact text, a hash and an audit trail, instead of a paid e-signature service or a self-hosted DocuSeal. Payouts are a third seam (manual, PayPal Payouts, Wise) because which provider he uses is still open. Instagram is read through page views in a logged-in browser, because its JSON API rate-limits scripts.

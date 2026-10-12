@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+"""Run a set of reference-swap prompts as one Gemini Batch Mode job (half price, async).
+
+Usage:
+  batch.py submit JOBS.json [--model pro|flash] [--size 1K]
+  batch.py fetch JOBS.json          # polls until done, then saves each image
+
+JOBS.json is a list of {"key", "prompt", "ref", "face" (optional), "out"}. Each entry is one
+image, built exactly like swap.py builds it (image 1 = the real reference, image 2 = the
+account master, aspect from the reference). The batch name is saved next to JOBS.json.
+Reads GEMINI_API_KEY from the repo-root .env. Image generation only.
+"""
+import argparse, base64, json, mimetypes, os, sys, time, urllib.error, urllib.request
+from PIL import Image
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+MODELS = {"pro": "gemini-3-pro-image", "flash": "gemini-3.1-flash-image"}
+RATIOS = ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"]
+API = "https://generativelanguage.googleapis.com/v1beta"
+
+ap = argparse.ArgumentParser()
+ap.add_argument("cmd", choices=["submit", "fetch"])
+ap.add_argument("jobs")
+ap.add_argument("--model", default="pro", choices=list(MODELS))
+ap.add_argument("--size", default="1K", choices=["1K", "2K", "4K"])
+a = ap.parse_args()
+
+key = os.environ.get("GEMINI_API_KEY")
+if not key:
+    for line in open(os.path.join(ROOT, ".env")):
+        if line.startswith("GEMINI_API_KEY="):
+            key = line.split("=", 1)[1].strip().strip('"')
+if not key:
+    sys.exit("GEMINI_API_KEY not found")
+
+
+def call(method, url, body=None):
+    req = urllib.request.Request(url, data=json.dumps(body).encode() if body else None, method=method,
+                                 headers={"Content-Type": "application/json", "x-goog-api-key": key})
+    try:
+        return json.load(urllib.request.urlopen(req, timeout=300))
+    except urllib.error.HTTPError as e:
+        sys.exit(f"HTTP {e.code}: {e.read().decode()[:600]}")
+
+
+jobs = json.load(open(a.jobs))
+state_file = a.jobs.replace(".json", ".batch.json")
+
+if a.cmd == "submit":
+    reqs = []
+    for j in jobs:
+        w, h = Image.open(j["ref"]).size
+        aspect = min(RATIOS, key=lambda r: abs(int(r.split(":")[0]) / int(r.split(":")[1]) - w / h))
+        parts = []
+        for i, p in enumerate([x for x in (j["ref"], j.get("face")) if x], 1):
+            parts.append({"text": f"Image {i}:"})
+            parts.append({"inline_data": {"mime_type": mimetypes.guess_type(p)[0] or "image/jpeg",
+                                          "data": base64.b64encode(open(p, "rb").read()).decode()}})
+        parts.append({"text": open(j["prompt"]).read()})
+        reqs.append({"request": {"contents": [{"role": "user", "parts": parts}],
+                                 "generationConfig": {"responseModalities": ["IMAGE"],
+                                                      "imageConfig": {"aspectRatio": aspect, "imageSize": a.size}}},
+                     "metadata": {"key": j["key"]}})
+    body = {"batch": {"display_name": os.path.basename(a.jobs), "input_config": {"requests": {"requests": reqs}}}}
+    print("payload MB", round(len(json.dumps(body)) / 1e6, 1))
+    r = call("POST", f"{API}/models/{MODELS[a.model]}:batchGenerateContent", body)
+    json.dump({"name": r["name"], "model": a.model, "n": len(jobs)}, open(state_file, "w"))
+    print("submitted", r["name"], len(jobs), "images on", MODELS[a.model], a.size)
+
+else:
+    name = json.load(open(state_file))["name"]
+    while True:
+        r = call("GET", f"{API}/{name}")
+        st = r.get("metadata", {}).get("state") or r.get("state")
+        print(time.strftime("%H:%M:%S"), st, flush=True)
+        if r.get("done") or st in ("BATCH_STATE_SUCCEEDED", "BATCH_STATE_FAILED", "BATCH_STATE_CANCELLED", "BATCH_STATE_EXPIRED",
+                                   "JOB_STATE_SUCCEEDED", "JOB_STATE_FAILED", "JOB_STATE_CANCELLED", "JOB_STATE_EXPIRED"):
+            break
+        time.sleep(30)
+    out_by_key = {j["key"]: j["out"] for j in jobs}
+    resp = r.get("response") or r.get("metadata", {}).get("output") or {}
+    inl = (resp.get("inlinedResponses") or {}).get("inlinedResponses") or resp.get("inlinedResponses") or []
+    if not inl:
+        print(json.dumps(r)[:1500])
+    for item in inl:
+        k = (item.get("metadata") or {}).get("key")
+        res = item.get("response") or {}
+        saved = False
+        for c in res.get("candidates", []):
+            for p in c.get("content", {}).get("parts", []):
+                d = p.get("inlineData") or p.get("inline_data")
+                if d and k in out_by_key:
+                    open(out_by_key[k], "wb").write(base64.b64decode(d["data"]))
+                    print("saved", out_by_key[k])
+                    saved = True
+        if not saved:
+            fr = (res.get("candidates") or [{}])[0].get("finishReason")
+            print("NO IMAGE", k, fr or item.get("error"))

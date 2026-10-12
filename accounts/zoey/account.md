@@ -1,7 +1,7 @@
 # Zoey
-<!-- lint-names: Zoey, Grace, our girl, leopard, grace-final-leopard-case, grace-ref-no-watch, body-benchmark-02-s1, @graceelizabethlifts -->
+<!-- lint-names: Zoey, Grace, our girl, @gabymsanchezz -->
 
-Zoey is the existing TikTok account. Its character is called "our girl" in the deck scripts and "Grace" in old file names (her first approved picture was remade from a @graceelizabethlifts gym mirror photo in the `round8-grace` folder). Slideshow decks 01 to 05 are hers.
+Zoey is the existing TikTok account. Its character is called "our girl" in the deck scripts and "Grace" in old file names. Slideshow decks 01 to 05 are hers, made with the retired JSON pipeline (`docs/adr/0004-reference-swap-images.md`).
 
 ## Audience
 
@@ -9,43 +9,32 @@ Gym girls, about 16 to 26, who save and share "dream body" posts. The account se
 
 ## Character
 
-### Look
+Her face and hair are her master reference, `accounts/zoey/assets/master.png` (`assets.md`), attached as image 2 to every swap that shows her. Approved by the captain on 2026-10-04.
 
-- A young adult woman with long dark blonde hair, worn down, in a ponytail or in a low bun.
-- Tanned golden skin with real texture: pores, visible sports-bra tan lines and a light sweat sheen.
-- Gym clothes that look bought and worn: matching seamless sets (sage green or black), white crew socks, white trainers.
-- Silver-grey over-ear headphones, on her head or around her neck.
-- Her phone has a leopard-print case (tan and black spots) with a dark reddish-brown raised rim and a large square camera cutout in the top corner. Reference: `case-leopard.png` in `assets.md`.
-- Her face is the face in her approved reference picture (`assets.md`). There is no written face sheet yet.
+- The captain's description: a young blonde girl, conventionally very pretty with a sharp jawline, fair skin (not tanned) and natural golden blonde hair, never platinum. A gym girl. She looks 19 to 20: grown, but still youthful.
+- Body (captain, 2026-10-06, replacing the softer 2026-10-04 body): unrealistically skinny and toned, the "dream body" the account sells. A tiny, very narrow waist, a flat stomach with clearly defined abs and visible ab lines, slim toned thighs, slim arms with no bulk, and a full chest. Why: the captain wants her noticeably skinnier and more toned than the girls in the reference photos, and sent a mirror selfie of a very lean girl with visible abs as the target.
+- Makeup: natural (see the makeup line).
 
-### Body (HARD rule, captain 2026-09-19 and 2026-09-20)
+**Body line.** Paste this into every swap prompt that shows her, because the model otherwise keeps the reference woman's body:
 
-In every picture that shows her body she looks very good: an hourglass, curvy figure with round full glutes, thick toned thighs and legs, big breasts, a small tight waist and slim, soft, feminine arms. The body in `body-benchmark-02-s1.png` is the target: copy its legs, chest and waist; make the arms as slim and soft as the benchmark or softer. Every body-visible prompt states this body in plain words, and the physique anchor and benchmark are attached (`assets.md`).
+> She is 20, clearly a grown woman but still youthful, conventionally very pretty, with natural golden blonde hair, not platinum. She is extremely skinny and toned, much leaner than the woman in image 1: a tiny, very narrow waist, a completely flat stomach with clearly defined abs and visible ab lines, slim toned thighs, slim arms with no bulk, and a full C-cup chest.
 
-- Don't render her fat, soft, flat, shapeless, wiry or like a beginner gym girl. Why: the captain rejected this three times (deck 05 slide 1 looked "fat and wiry"); a girl who looks worse than the viewer makes the deck a lie, and the viewer scrolls.
-- Don't give her muscular arms: no visible biceps, triceps or shoulder definition. Why: muscular arms read as a lifter or bodybuilder look this audience does not want; the aspiration is thick legs and a small waist with slim arms (captain, 2026-09-20).
-- Don't make her legs thin. Why: the 2026-09-17 note "keep her slim, thick arms and legs were rejected" is superseded for the legs by the 2026-09-19 rule "thick toned legs"; only the arms stay slim.
-- Don't show a worse body on a before slide. The before is told by the setting, outfit, posture, light and caption. Why: the story works with the same body, and a softer body breaks the body rule; the old before-slide exemption was deleted.
-- Don't let clothes hide the body. A baggy tee is tucked, cropped or fitted, and shorts show the thick legs. Why: deck 02 slide 3, 05 slide 2 and 05 slide 6 failed review for hidden bodies (oversized or knotted tops, square-on angles).
-- Don't show a visible vein. At most a barely noticeable faint vein on the left forearm. Why: the captain rejected a visible vein (2026-09-17).
-- Don't give her tattoos. Why: the generator kept adding forearm tattoos she does not have, and each one had to be edited out.
+**Identity line.** Paste this too. It names her own traits from the master reference so her face holds from slide to slide (written 2026-10-04 from `master.png`):
 
-### Body versus the organic reference (captain 2026-09-20, after the fourth rejection of deck 05 slide 1)
+> Keep her exactly as in image 2: fair skin with a warm peach undertone, visible pores and a light natural flush on her cheeks and nose, pale blue-grey eyes, soft straight dark-blonde brows, a slim straight nose, natural rosy lips, and dark ash-blonde roots blending into medium golden blonde lengths, fine and straight, with a few fine flyaways at her temples.
 
-1. Don't let the organic reference decide her body. The reference gives camera, light, place, framing and outfit only; her body comes from the benchmark. Why: when the reference girl was flat or wiry, the model copied her, four times.
-2. Don't attach the organic reference photo to a body shot in the `character_new_image` workflow. Attach only her character reference, the physique anchor and the benchmark, and pass the reference's style as text. Why: an attached flat body outweighs any words. The newer exception (captain, 2026-09-22) is the `character_replaces_person` workflow in `core/skills/image-prompt/SKILL.md`: there the organic photo is attached with its face and body under `must_not_transfer`, and the anchor and benchmark are still attached. If the source body leaks in, redo the slide without the photo.
-3. Don't keep a reference pose that hides her body. Use a three-quarter back angle, a slight hip pop and a visible chest; a flat side profile fails. Why: the hook sells the body, and a pose that hides it fails the job even when it matches the reference.
-4. Don't accept "it matches the reference" in review. Her body is judged only against the benchmark. Why: the reviewer compares to a picture, not to words, and the reference is not the target.
+**Makeup line.** Paste this too:
 
-### Props and details
+> She wears natural no-makeup makeup: her real skin texture and pores show through a sheer skin tint, with a soft natural flush on her cheeks, brushed-up natural brows, a little brown mascara and a tinted balm close to her own lip colour. No contour, no false lashes, no eyeliner, no lip gloss.
 
-- Don't treat the phone case as part of her body, and don't force her phone into a picture. The case shows only in a mirror selfie, where the phone's back faces the mirror. A front-camera selfie shows no phone (the phone is the camera); a scrolling scene shows the phone edge-on with the screen toward her. Why: the case was once listed with her hair and skin, and every face prompt then forced a phone held camera-out into the picture, even on a couch (captain, 2026-09-19: "why are you forcing the phone into every pic").
-- Don't put her phone or the leopard case into a picture that does not show her face or body. Why: on the walking-pad slide the generator turned an iPad into a leopard "phone" with the pattern painted on the bezel.
-- Don't attach the case reference except to mirror-selfie calls, and never let its hand, nails or rings transfer. Why: the case crop comes from a real person's photo; only the case belongs to her.
-- Don't give the leopard case or her headphones to another account's character. Why: another account's casting render inherited the leopard case and was marked non-canonical for it.
-- Don't render two sets of headphones. One pair, on her head or around her neck, never both. Why: the generator kept adding a second pair (twice on deck 03 slide 1, and again in later rounds) and each needed an edit.
-- Don't attach `grace-final-leopard-case.png` as it is. Attach `grace-ref-no-watch.png`. Why: the approved picture shows a smartwatch on her left wrist, the captain banned watches, and a watch in a reference ends up in the image.
-- Don't crop tighter than the source photo when remaking one of her pictures. Why: a closer crop was rejected as "too close to screen" (captain, 2026-09-17).
+### Don'ts
+
+- Don't swap her into a reference whose girl hides the body the hook sells, or whose body is flat, wiry or heavier. Pick another reference. Why: the model keeps the reference body, and the captain rejected "fat and wiry" deck 05 slide 1 four times; a girl who looks worse than the viewer makes the deck a lie.
+- Don't give her bulky or veiny arms, or tattoos. Her arms are slim and toned (captain, 2026-10-04, replacing "no muscular arms" from 2026-09-20). Why: a lifter look and a visible vein were rejected, and tattoos aren't hers. Remove the reference's tattoos in the prompt.
+- Don't show a worse body on a before slide. The before is told by the setting, outfit, posture, light and caption. Why: the story works with the same body.
+- Don't render two sets of headphones. Why: the generator kept adding a second pair.
+- Don't crop tighter than the reference. Why: a closer crop was rejected as "too close to screen" (captain, 2026-09-17).
+- Don't describe her face trait by trait in a prompt; attach the master reference. Why: long face lists came out uncanny (G66 v4, 2026-10-02).
 
 ## Voice
 
@@ -60,4 +49,28 @@ In every picture that shows her body she looks very good: an hourglass, curvy fi
 
 ## Assets
 
-Her reference pictures, physique anchor, body benchmark and case reference: `accounts/zoey/assets.md`.
+Her master reference: `accounts/zoey/assets.md`.
+
+## Platform accounts and profile setup
+
+Updated 2026-10-09 after the captain authorized creation and the YouTube Create clicks. Keep the existing TikTok account unchanged.
+
+- Display name: **Zoey**.
+- Bio: `gym days, 10k steps + getting out of my own way`.
+- YouTube profile picture: her approved master reference from `assets.md`, uploaded and saved.
+- Instagram profile configuration remains pending because the account is restricted.
+- YouTube banner, if wanted: `gym days + everyday movement`. Proposed copy; no banner asset exists.
+
+| Platform | Handle | Verified status |
+|---|---|---|
+| Instagram | `@zoey.fitness__` | Registered; email and fresh NYC SMS verified. Captain-provided selfie submitted on 2026-10-09; appeal under review. Instagram says review usually takes about an hour. Still restricted and not fully configured. |
+| TikTok | Existing `@zoey54411` | Preserved; no rename or replacement account created. |
+| YouTube | [`@zoey.fitness`](https://www.youtube.com/@zoey.fitness) | Created and usable. Portrait, bio and contact email saved in Studio. |
+
+YouTube channel ID: `UCiBNbGhOHZ9lEO-zU_D5bjg`. This is a separately managed Brand Account channel under the captain's existing Google login, with no independent Google password.
+
+Receiving alias and YouTube contact email: **`zoey@excerlock.com`**. Instagram confirmation mail arrived through Namecheap's existing catch-all forwarding to the captain's Gmail. No mailbox purchase or DNS change was needed; the alias is not a separate mailbox or sending identity.
+
+The verification screen asked for a photo clearly showing the account operator's face. The captain supplied his own selfie and authorized upload; the original file was submitted without alteration on 2026-10-09. No generated character portrait was submitted. One $0.80 NYC 917 verification expired unused and was refunded; a fresh $0.80 verification succeeded on 2026-10-09. The captain approved up to $1.60 in existing credits for the two pending Instagram verifications; no top-up or recurring rental was authorized in this continuation.
+
+Evidence: `raw/profile-plans-2026-10-08/youtube-three-channels-created.png`, `zoey-youtube-configured.png`, `zoey-youtube-contact-saved.png`, `zoey-instagram-selfie-required.png`, and `zoey-instagram-appeal-submitted.png`. The next required step is Instagram's appeal decision. Handles follow the [complete-word username rules](../../core/workflows/new-account.md#handles-and-platform-accounts).

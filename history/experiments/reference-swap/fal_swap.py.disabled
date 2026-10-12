@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+"""Run reference-swap jobs on fal.ai's Nano Banana Pro edit endpoint, all in parallel.
+
+Usage: fal_swap.py JOBS.json [--resolution 1K]
+
+JOBS.json is the same list batch.py takes: {"key", "prompt", "ref", "face" (optional), "out"}.
+Image 1 = the real reference, image 2 = the account master (when "face" is set). Images go up
+as data URIs; the aspect ratio follows the reference. FAL_KEY comes from the repo-root .env.
+Prices at the time of writing: pro $0.15, nb2 $0.08, nb1 (original Nano Banana) $0.04 per image.
+Use nb1 only for slides with no person (caption cleanup, added items). On person slides it does NOT swap
+the character in: it keeps the source woman's face and body and only edits hair and props (tested
+2026-10-04, captain caught it). Person slides go on pro.
+"""
+import argparse, base64, json, mimetypes, os, sys, time, urllib.error, urllib.request
+from concurrent.futures import ThreadPoolExecutor
+from PIL import Image
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+EPS = {"pro": "fal-ai/nano-banana-pro/edit", "nb1": "fal-ai/nano-banana/edit", "nb2": "fal-ai/nano-banana-2/edit"}
+RATIOS = ["21:9", "16:9", "3:2", "4:3", "5:4", "1:1", "4:5", "3:4", "2:3", "9:16"]
+
+ap = argparse.ArgumentParser()
+ap.add_argument("jobs")
+ap.add_argument("--resolution", default="1K", choices=["1K", "2K", "4K"])
+ap.add_argument("--model", default="pro", choices=list(EPS))
+a = ap.parse_args()
+EP = EPS[a.model]
+
+key = os.environ.get("FAL_KEY")
+if not key:
+    for line in open(os.path.join(ROOT, ".env")):
+        if line.startswith("FAL_KEY="):
+            key = line.split("=", 1)[1].strip().strip('"')
+if not key:
+    sys.exit("FAL_KEY not found")
+H = {"Authorization": f"Key {key}", "Content-Type": "application/json"}
+
+
+def req(method, url, body=None):
+    r = urllib.request.Request(url, data=json.dumps(body).encode() if body is not None else None, method=method, headers=H)
+    return json.load(urllib.request.urlopen(r, timeout=300))
+
+
+def data_uri(p):
+    return f"data:{mimetypes.guess_type(p)[0] or 'image/jpeg'};base64," + base64.b64encode(open(p, "rb").read()).decode()
+
+
+def run(j):
+    try:
+        w, h = Image.open(j["ref"]).size
+        ar = min(RATIOS, key=lambda r: abs(int(r.split(":")[0]) / int(r.split(":")[1]) - w / h))
+        body = {"prompt": open(j["prompt"]).read(), "image_urls": [data_uri(p) for p in (j["ref"], j.get("face")) if p],
+                "aspect_ratio": ar, "num_images": 1, "output_format": "png"}
+        if a.model != "nb1":
+            body["resolution"] = a.resolution
+        sub = req("POST", f"https://queue.fal.run/{EP}", body)
+        while True:
+            st = req("GET", sub["status_url"])
+            if st.get("status") == "COMPLETED":
+                break
+            time.sleep(4)
+        res = req("GET", sub["response_url"])
+        url = res["images"][0]["url"]
+        open(j["out"], "wb").write(urllib.request.urlopen(url, timeout=120).read())
+        return f"saved {j['out']} ({ar})"
+    except urllib.error.HTTPError as e:
+        return f"FAIL {j['key']} HTTP {e.code}: {e.read().decode()[:400]}"
+    except Exception as e:
+        return f"FAIL {j['key']} {e!r}"[:500]
+
+
+jobs = json.load(open(a.jobs))
+with ThreadPoolExecutor(len(jobs)) as ex:
+    for line in ex.map(run, jobs):
+        print(line, flush=True)

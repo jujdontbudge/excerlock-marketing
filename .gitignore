@@ -23,3 +23,13 @@ storage/
 # real images stay on disk only; each folder's assets.md lists what should be there
 accounts/*/assets/
 sections/*/assets/
+sections/*/data/
+
+# decision log: full transcripts and watcher state stay on this machine
+log/transcripts/
+log/work/
+log/LOG.md
+log/LOG-all.md
+log/views/
+sections/*/accounts/*/assets/
+sections/*/accounts/*/decks/*/assets/

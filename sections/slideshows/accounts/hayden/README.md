@@ -1,15 +1,21 @@
-# Hayden's slideshows
+# Hayden’s slideshows
 
-Who she is and the state of her design: `accounts/hayden/account.md`. Her design is not approved, so no deck can be illustrated yet. The house rules in `sections/slideshows/rules.md` apply to every deck here.
+Identity/master and approval status: `accounts/hayden/account.md`. The current master was approved 2026-10-04. House rules: `sections/slideshows/rules.md`.
 
 ## Overrides
 
 None.
 
-## Rules for Hayden's decks
+## Work index
 
-- **Slide 1 picture.** Not described yet. Her audience is walking girls, but the captain has not said what her slide 1 picture looks like; ask him before writing her first deck.
+| Stored work | Status / verification limit |
+|---|---|
+| [01 — joke tip list](decks/01-joke-tip-list/) | Recast script; identical text also exists in the other account’s deck 06. Preserve both records |
+| [02 — signs](decks/02-signs-gym-routine/) | Historical seven-image build/review; CTA was excluded. Not a complete new handoff |
+| [01 — weight](decks/01-couldnt-lose-weight-till-this/) | Historical script/review; no current production assignment inferred |
+| [02 — phone addict](decks/02-phone-addict-10k/) | Historical script/review; no current production assignment inferred |
+| [03 — walk](decks/03-almost-skipped-my-walk/) | Historical script/review; no current production assignment inferred |
+| [04 — shoes](decks/04-not-your-shoes/) | Historical script/review; no current production assignment inferred |
+| [05 — trying](decks/05-trying-to-lose-weight/) | Historical script/review; no current production assignment inferred |
 
-## Decks
-
-None yet.
+Posting is not independently reverified here. Old scripts/reviews are artifacts, not active rules; review any assigned reuse against current product truth, copy and picture policies.

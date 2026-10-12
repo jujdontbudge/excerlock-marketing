@@ -1,0 +1,1573 @@
+{
+  "records": 291,
+  "flag_counts": {
+    "behavioral mandate": 23,
+    "transient execution": 13,
+    "numeric commercial terms": 10,
+    "retired tooling": 6,
+    "old CTA slot": 1
+  },
+  "duplicate_text_groups": [],
+  "note": "Flags are triage candidates, not findings or deletion authorization; inspect original messages before curating records. No raw memory text exported.",
+  "records_inventory": [
+    {
+      "id": "gASVKAAAAAAAAACMJGQ0NzgzMjc2LTk2ZDYtNDFlMi1iYTk3LTlmZTc1ZjYxNDA2M5Qu",
+      "characters": 118,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDgyMjg3OTg2LWQxMDktNDA3Yy05NDBhLTIwYjVkYjI4MTFlMZQu",
+      "characters": 139,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQ0YWI3MjIzLTU3MGQtNDYzNi1hMjYyLTQ1MWRkNDMyYjQxYpQu",
+      "characters": 144,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg5NDIzZmQ1LTY3NDEtNGMyZi1iODViLTVmYTU5MTk2Njk2ZZQu",
+      "characters": 183,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY3NzRlZmU4LWUzYjgtNDA0MC1iNDQ2LTUzMTI4NDZiZmI0MZQu",
+      "characters": 99,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZjNzJmMGRhLWY1ZGUtNGRhNC1hYmM5LWViNjMyN2MzYjNhOJQu",
+      "characters": 136,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDhhZWQ5MjhiLTcxNGQtNDQ4Yi04NzA3LTZkNzUyMGQ1YzFkZpQu",
+      "characters": 113,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA2Y2UyZGMwLTk3MWQtNDk1My05YWZkLTIzNmJjMmUwMDgxY5Qu",
+      "characters": 161,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI4YTY2ZGM4LTJmMDgtNDRhYS04NDZkLTA2ZmFhZTYwZGE4NJQu",
+      "characters": 125,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY0ODU3YzYzLTY2MjktNGZmYi05ZTMyLTQ5MjQxYTgwYTdiM5Qu",
+      "characters": 290,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGJhMTQ4NDU5LTQzNzktNDQ5NC1hOTNkLWQ4NWZlYWI1ZjQyOZQu",
+      "characters": 299,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDIzOTFmYTk3LTJjYWQtNGE1MC1hNGE1LTM2ZWJiZTRlODQ1Y5Qu",
+      "characters": 253,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE1MjdjZWFiLWJmNzctNDY4ZS04MmZmLWVmNmVkMmFjY2ZhNJQu",
+      "characters": 195,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZjNDYwODNkLTY2YjUtNDIxYy1hZDMzLTNmNWY4OTE2MDFiZZQu",
+      "characters": 127,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZjYmFlZTVlLTc4MGMtNDUzYy05YjAwLWRkYTE4NzY3ZTM5OZQu",
+      "characters": 293,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQwNzQxZmQyLTMyZGQtNDcyMC05ODMzLTc4MWQyZDVjOWQyNZQu",
+      "characters": 335,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY2YjAyM2YyLTBkYWEtNGNiOS05MDM4LTBjNjYwMzMzNzM0MpQu",
+      "characters": 183,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGFlMWM0MjczLTMwNWMtNDNjNS1iYTFkLTNkYjY1ZWE5MWE2N5Qu",
+      "characters": 330,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDI0MjliODgzLTY3MWYtNDA2NS04OTQ4LWI2ZmM2ZWQzYjk2N5Qu",
+      "characters": 191,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDRmZjdlYTI2LTNjZTEtNDJjNi05MmJkLWMxMzE2Y2ZlZGE2ZpQu",
+      "characters": 226,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQ0MWNjNTYxLWRhMzItNDQxZS1hMTk3LTkyM2M0NGMyYTNhOZQu",
+      "characters": 186,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZlYzUzMDJhLTM0NGMtNDY0Ny05ZTJiLWJhM2FkYTkzMTUwN5Qu",
+      "characters": 327,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZjNjJlNzM3LWFhOTYtNDVjZS04ZTY3LWE3MGVhZGUzODhmM5Qu",
+      "characters": 250,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI0ZDE0ZGZmLTM5MGQtNGIxZi05YzUzLTc1OWNhMmI2MzNjOZQu",
+      "characters": 169,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRhMjE5MDJiLWM2YzctNDFhMS1hM2ZiLTAyNjkwODdkMzdjN5Qu",
+      "characters": 114,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY5NjIwYWQ4LWUyMTEtNDM4Zi05ZGE4LTljMDYzMTZiNzZmNZQu",
+      "characters": 348,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE5ZDQzYzA2LWNiMWItNGUyYi04NGFhLTUwZjU2NTQ1ZTgwM5Qu",
+      "characters": 366,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRkNmExMWY4LTFiODEtNDY3My1iMzUzLTg5Y2I1MTA2MjFhZJQu",
+      "characters": 299,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM5NjFlODAyLTZlZTYtNDVhZC04NzMxLTBhM2U0NDBiNWJmNZQu",
+      "characters": 268,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBmMjZhNzU1LTRmZjktNDQ5YS04ZTljLTY0MzYxMWY5OWM4MJQu",
+      "characters": 250,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDEyYjdmZTA4LWUzMjAtNDc5ZC04MTcxLWUxYThjZjRhYWNjN5Qu",
+      "characters": 256,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDAxZjY2YjkwLWRkNzgtNDYwZC05MzQ0LTRmNDAxM2Y0NWNkZZQu",
+      "characters": 301,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGYzYTU4OWZmLTI4MmUtNGNiMS04ZTMzLTViY2VjOWY0MzRjOZQu",
+      "characters": 324,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY3ODUwMDhjLTRjMTYtNDM2Mi04MGQ2LTgyM2QxOTgyNzc5YZQu",
+      "characters": 315,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE5ZjZlMTM2LWYyMzEtNDA0NC1iYzRlLWE0ZDU0MDAwN2FmZpQu",
+      "characters": 195,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDkxMjQ5NmJkLWY5OWItNDc4NS05NmYxLWFmNTRiMTFlY2Y3M5Qu",
+      "characters": 179,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQ5ZThkMDkwLThlYzAtNDdlNi04YTVkLTlmZDZlNDdiOTY5M5Qu",
+      "characters": 210,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDJkMmRiMTI1LTlmNTEtNGNlZi1iMTZmLTZhM2VlYjk0NWRkNZQu",
+      "characters": 200,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg3ZTVhMjNkLTNjMDQtNDA5MC1hZjQ3LTllNjY2MGQ3MGVjN5Qu",
+      "characters": 198,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0MzBjOTlhLTNiMGQtNDNiNC04ODNlLTE1YWE3MWRkMDlmNJQu",
+      "characters": 134,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc1MDliMDAzLTRiNGMtNGZkOC04MWRhLTU5OTIwNTc4OThhZpQu",
+      "characters": 341,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRjYjFlNjc3LTI4NmMtNDg4NC1hMzg5LWRjZGNjMjhhMDhjZZQu",
+      "characters": 387,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0MjFmYWJmLWRlZGEtNDVmNy05YzA3LThjYmIwN2QwOGU4Y5Qu",
+      "characters": 288,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDVlN2FiMDczLTJiZWYtNGNlOC05ZjgyLWViYzk1NThhZWMyM5Qu",
+      "characters": 264,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGE4NzViOWYyLTM0NDMtNDI2Mi05Yjg3LWZlNDQxOTc2ZDViMpQu",
+      "characters": 438,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRjNGVlMmMzLTlkNGMtNGJkZC1hNDg2LWIyOGRjYjA3MGQwOZQu",
+      "characters": 365,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRmNjJiNzgyLTRkMjQtNDkyYi04MjQ4LWU2YWY4MDFiY2YwOJQu",
+      "characters": 231,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE3ZDI5NWY4LWFkM2QtNDEyMy1hNzI0LWJlZWI5MDJmMjc4MJQu",
+      "characters": 337,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY5ZjhjOGJiLTE2ZjMtNDI0YS04NzFjLWI2OGNlMDU3MWJlY5Qu",
+      "characters": 297,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU5MzkzMDEwLTY5ZWUtNGY1MS1iYjcxLTNhOGExNGM2Zjk3YZQu",
+      "characters": 260,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDllYTI2MDgzLTkwODMtNDZmNC05ODYzLWI4N2ViMjRlMjkyM5Qu",
+      "characters": 282,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY2ZDY3MmJiLTIzMDctNGU1Yy1hNzkxLWY5NzdmYjQ1NzkxZpQu",
+      "characters": 325,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDllYjk2ZjBlLWNiM2UtNGFmMC04OTE2LWNiNTBmNjYxNjI0ZJQu",
+      "characters": 155,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY3ZDBjOTU5LTA1ZWQtNGM1MS04MWU0LTIzYWMyNjNjZTlhNpQu",
+      "characters": 165,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDJiNjA5MzUyLWJjZmYtNGU2My04ODI3LTRlY2JiMDU3OTA2N5Qu",
+      "characters": 340,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDNiMzQ1ODEyLTk3ZWEtNDc0NS04NTcwLTAwNGZjNDRjNGU3YZQu",
+      "characters": 355,
+      "flags": [
+        "transient execution",
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE3NGYxYjEyLTU1Y2EtNDQ3Yi05NDVmLTJhYjQ4ZmRlNzRhOZQu",
+      "characters": 157,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDgwM2FkOTBmLTY4NzAtNDY3OS05MmM0LTJhOTQ1YjQzNjU3YZQu",
+      "characters": 223,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYyNjUwZDMzLTNlYmEtNGM0NC1hZWJmLTkzMzA0M2Y1NWExN5Qu",
+      "characters": 190,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDcxY2RhZmI3LWYwZWUtNDcxNi04MzgwLWIyMzZjMjg3ZDQxOJQu",
+      "characters": 260,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU3ZWE1ZTI2LTEyNDgtNDhjNi05ZmMyLTdlY2EwODMyZGUxOZQu",
+      "characters": 151,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk3MjBmMmE3LTBiZGEtNDc2Mi1iNzhiLWU2MGVlMTc4ZTAxNJQu",
+      "characters": 96,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGFlMzBiZTE1LTQyZDYtNGY5ZS1iNDA1LWM0NjIyMmQwMTk3NJQu",
+      "characters": 205,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZmMzZhZWZmLTRmYzUtNDRmMC1iODM4LTdiYmFmY2M0M2JiN5Qu",
+      "characters": 109,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY1ZGFiM2JmLTBhNGYtNDRiMC1hMmNiLTYzNDNhMmRmMjgwMZQu",
+      "characters": 262,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQyMjBmNzgzLTg5NTctNGYwNC1hM2JiLTY5NTBiZmEyMWUzZpQu",
+      "characters": 253,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUzMjBkNWM1LWI1MDAtNGY2Yy04NmJhLTExODFkOTdjYjc3MJQu",
+      "characters": 213,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFlYzdmOWNmLWQzMTgtNDk3ZC04NjZhLTk5NzE1Y2VmMTQ2OZQu",
+      "characters": 116,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdiOTlkYjZhLTYwY2MtNGRlNi1hZGI0LWUzODUwZWUwNWU4ZZQu",
+      "characters": 111,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDNjYmNkNTA0LTIyZDgtNDEzNS1hMDg2LTczYTNjOTk0NzQ5OZQu",
+      "characters": 121,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU4OGE0Nzg2LWZmNTEtNDcwNi05NzYxLTY3ZjQ3NmI3Yjc5YpQu",
+      "characters": 257,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDI3ZjA3OTA3LTZjYjgtNGFmNS04YWUwLTZiMjAwNTBkNjM0ZpQu",
+      "characters": 137,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDExNzQ0ZDNkLWFmYjQtNGNlNS1hZWNlLTVlMjM5ZGZiNjljOJQu",
+      "characters": 185,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZkZGNjN2Q5LTNjNTYtNGJiMS1hNjAxLTY3NmIwYmJmYjM5NZQu",
+      "characters": 103,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE3YjQ5ZTk0LTU0NjAtNGYzZS1iODJhLTFiMmQwMWIxNWI4YpQu",
+      "characters": 148,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVmYTY2NzRhLWI2MDQtNGVhMi05MThjLTZiMzU1YjAxOGM5ZpQu",
+      "characters": 190,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFmZjI1NDE1LWMzMzQtNDYyMC05OGFlLTg2Mjg3MDFkOGI0MJQu",
+      "characters": 122,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFhNDgyMmM1LTY2MGUtNDMzYi05MDExLTk4MTUzODc1YTVlMJQu",
+      "characters": 219,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU3MGJhMWJiLTI1NTgtNDFhMi05YmZhLTRjZjc1MGM1NWI0YpQu",
+      "characters": 129,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA3MjVkMzI1LTlhOWItNDYxNi1iNjEzLTQ2ZmU1OTkyMjY5ZpQu",
+      "characters": 99,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0Y2JmNGUxLTdlYTgtNGEwMS04ZDliLTM5NWViNzI1NmMyYZQu",
+      "characters": 137,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUyMzFiNzg1LTZkNzMtNGJmNC04MjIyLTc1OWQyYWRiNmIwYpQu",
+      "characters": 183,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDRjMzY5ZDMxLWE5OTgtNGMzZS1iOWFmLThmMTE5MTdhOGQ5N5Qu",
+      "characters": 394,
+      "flags": [
+        "retired tooling"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk4M2YwNGNiLWZhYjItNGExYS05NTY4LTBjOTU0NGIxNzg3NJQu",
+      "characters": 266,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNkN2QwNWRjLTYzZTYtNGVjNS1hYjM5LTJlODJhZmZmZjU2ZpQu",
+      "characters": 309,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZlNGQ5MDNhLTUyYWMtNGYwZS04ZjMyLThhNDhiN2VjYjVkN5Qu",
+      "characters": 161,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYyZTYxNDE2LTdkZmQtNGRlYS1hNzVjLWNjYjNiZGVlNmMxY5Qu",
+      "characters": 224,
+      "flags": [
+        "retired tooling"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA1ZGUzZmFhLTAzN2UtNGQxOS1hYTc5LTdkNmExYWNjMWJkNJQu",
+      "characters": 209,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0NzJjMTRkLTk3NmUtNDllNy1hMjdlLWYyYjMwNmVlOTk1M5Qu",
+      "characters": 177,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRjZjFkYjczLTQ3NTAtNGNkMS1iOWUyLTcwNDJlNzMwZWE5MZQu",
+      "characters": 321,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGUwMmE4NTNkLTJmNzEtNDI0ZC04NmMwLWJmNzIzZGQwZmU4OZQu",
+      "characters": 332,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY2NDc1NTdjLTVlMGUtNDgzYS1hZGUyLTc0NjI4YzFlMjBjMpQu",
+      "characters": 283,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYzYjAxMzNjLWRiZGUtNGI5MS04NWE4LTMyOWEwZWViNTlhMZQu",
+      "characters": 147,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBjMGFkYjZlLWNmZDEtNDM1MC05MDc4LWI5YWYwZTMwMDgzZpQu",
+      "characters": 150,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNkNmU1MDRkLTliYjQtNDljNS05NDU4LTEyMTM1OTEzMWEwZZQu",
+      "characters": 156,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg0YTNlNzE3LWE2MjQtNDEzMi04ODg4LWU3OGFiNTQxMDliOJQu",
+      "characters": 126,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDIzNTNjOGRmLWJhNWItNGQ5MS1hMDMwLTQ0ZTcyNmMxMTgxNpQu",
+      "characters": 187,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBkY2RlMGI0LTM1ZGMtNDcyYi04ZDg4LTRjNDI2YWQ2NmQ1ZZQu",
+      "characters": 105,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI0YzAwMDQyLWI3M2UtNDVlOS05Y2YwLWVlMTFjZmYyZTdmNZQu",
+      "characters": 338,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk1YmNhYjBhLTMwZDItNDZlZi05Zjg1LTM5NTQyZGUyNGE2NJQu",
+      "characters": 279,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIxNWIyNDQ5LWEyM2MtNDU1Ni1iNzNiLThmNmY3YTFiYTk5NJQu",
+      "characters": 276,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY2NTRiMzIxLTQ1NTktNDQ3YS1hNmI1LTJiMzVhZWU2OWVhYpQu",
+      "characters": 345,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM4ZGVkYzI1LTUxM2EtNGE2OS05ZjA4LTgwMDY5YWNlZDM5YZQu",
+      "characters": 194,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdmMDI3Zjc1LWU3YzAtNGNiNS05MThlLTVjMTU4YTRlODkxMJQu",
+      "characters": 277,
+      "flags": [
+        "retired tooling"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGYzODQwMTJlLTBmNTAtNDQ5NS1iMGZmLWVkOTA1MjZhZjE5MpQu",
+      "characters": 276,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDI3YjU1ZTk4LTBlYTEtNGU5Ny1iMjM2LTgyZTZkYWIxZWQwZJQu",
+      "characters": 223,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg5ZDY1ZTkyLThiYzItNDRhZS04MTExLTc2ODgwMDFkNDI2NpQu",
+      "characters": 262,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVkOTEyMWZjLWE2ODktNDYzNy1iZDI2LTMxZDczODNhMDlkOJQu",
+      "characters": 207,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc1OWE1YzdmLWZhOTctNGNiYi1iYzg0LTQ5ZjhmYjE2Y2RhNJQu",
+      "characters": 98,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFhYmJlY2Y4LTAyZDYtNGJhOS1iZDhjLTUxN2NhMGRhOTZkYZQu",
+      "characters": 224,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUxNGYyZmE5LTA3MjMtNDRiMC04ZjZjLTQ3ZGVhZTBjZjJkOZQu",
+      "characters": 294,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM2ZGExMzI5LWI1NGEtNGQ5ZC04MDM1LTI0ZGFlMDkxYjczOJQu",
+      "characters": 283,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDllMDU4NmFjLTgxNDAtNDU2OC05MDc5LTdkMjZkZGMzODMwN5Qu",
+      "characters": 230,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQ4ZWY4MWJlLTJlOTctNDkzMC1iYjcwLTE1ODNmZmU1MGU1MJQu",
+      "characters": 121,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDkxMzYwN2I5LTJjNmMtNDE5Mi04ODA1LTc3NzgyMDhhN2MwMZQu",
+      "characters": 271,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIzNDQxNDQ0LTdhNzEtNDk0Zi05MDhkLTQ0ZTFiOWE2YTVjZZQu",
+      "characters": 197,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU4ODcwMGUxLWQzMGUtNDA2Ni05NmNjLWVhNzMxYWExMTcyN5Qu",
+      "characters": 354,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDkxMzBkOGE2LWNhNjYtNGQ2Ni1hMzU0LTBhOTI4ZTkwZjIyY5Qu",
+      "characters": 321,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIyZjA2MDNhLTg0NTktNDcxMS04MTQ0LTc4NWM5NjU5ZDliYpQu",
+      "characters": 196,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDhlMDNjMmViLWEyN2YtNDZiNS05NjI0LTE0YzNmNWI1ZmM3MZQu",
+      "characters": 203,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY2N2QxNzRlLTQ3MzYtNDk0Yi1iN2YwLWU2MTQxMmFmZDcwN5Qu",
+      "characters": 212,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDVjODE1NzJmLWFjN2EtNGUwOS1iMjUzLTAxZTM4NGY3ZWVjMpQu",
+      "characters": 298,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQ0M2QyZjUwLTc5MjItNDk5Ny1hZGEyLWFkZmQ2NGY1YzMzZJQu",
+      "characters": 259,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZlNTRjYWY0LTYxMWMtNDcxNS1iYzM1LTJiODMwYTNiMzdjN5Qu",
+      "characters": 297,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVmOGVkMWI3LTlhZGUtNDI0YS04ZjM2LTFjY2UzZDQ0MmQ4OZQu",
+      "characters": 330,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDgzZTYyZDQ2LWUxM2UtNGE5My1iZThlLTBjODgwNDM0YmE0MZQu",
+      "characters": 255,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVmYzYxYjgxLWE3MzEtNDA0OC1hYmRlLTlkYjgwYTM4MmFjZZQu",
+      "characters": 188,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk3ZGExNzZkLWVmNzItNDBkMC1iYWQ3LTM0Y2VhNTQxYTM2Y5Qu",
+      "characters": 333,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYyNGZmOTI1LTI1Y2ItNDY4MS1iMmNhLTdkMzA0Yjk3MzJhYZQu",
+      "characters": 371,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc2ZDZmZTljLTljNTYtNGU5Ny1hYjRiLTA2ZDA0YjJhYzA3N5Qu",
+      "characters": 257,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUzNzcwMWYxLTVhMTctNDBjMi1iZjE5LTI1ZTUxMzNlMjI5MpQu",
+      "characters": 244,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZkZjEwOTE0LTg4NGUtNGQ2MC05OTQ0LWVjNzY0ODFkY2ZmNJQu",
+      "characters": 240,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA2NzQwYzBkLTdiZWEtNDgyZS1iOGIzLTY5NjgyZWI1ZTQ2YZQu",
+      "characters": 331,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU1ZGZjZDg0LTZiZTAtNDY3ZS04OGY5LTk5NGE1Mjg0OGNkNZQu",
+      "characters": 325,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA1ZDVhYjliLTk0OTktNDcwYS05YTZlLTkwODc2ZWEzZGJiY5Qu",
+      "characters": 323,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDAyZWU1MWViLTBjYTEtNDZmYi1iY2I2LTdhZGRiZWFmMzQ3ZJQu",
+      "characters": 132,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQzYWJiMjBhLTMyNzUtNGYxYS04NmY4LTUxNmYwNDI5Nzc4YZQu",
+      "characters": 253,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDViYmIyZmNjLWZmYjMtNGQxYS1iMjA0LThiMWM3MDBiZDA5ZZQu",
+      "characters": 125,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFlZTdlZTI5LWJiMTAtNDQyNi1iNzFmLTZiOWExYWY3ZDY4YZQu",
+      "characters": 155,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU4OTNjNzczLThjNzctNDZiYS04MWU4LWM5MzE5YWFkZDVhNpQu",
+      "characters": 184,
+      "flags": [
+        "old CTA slot"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZmZjA3NDIzLWRhM2QtNGVkNi1iYWMyLThhZTFkNTY0ZTUwMJQu",
+      "characters": 161,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYzOTI3NDRlLTBkNWUtNDllMC05OTM0LTg2NTMzZWY2N2VkNJQu",
+      "characters": 174,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQ2NmY0MGE0LTQ4OGYtNDI0Zi05YWQxLTk1N2Y1YWYxZDBmMZQu",
+      "characters": 124,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc0ZDNlNzQzLTU4NWMtNDNmYS05YmMyLWU2N2FlNzU2MGU5YZQu",
+      "characters": 111,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGViMTdlZTMwLWFlYmYtNGM3Ny1iYmRkLTYxMGVjOWQzNTU4ZJQu",
+      "characters": 169,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDczZGY3MWFiLWNhZDMtNGU4OS1iOTRkLTQyOGZiY2I5MzY5MZQu",
+      "characters": 116,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVhODdlY2FhLWQzY2ItNDJiOC04M2RiLTg2N2VkNzBkZDFiYpQu",
+      "characters": 257,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU2NTNjZTdlLTgzNjctNDA5NC1iNDQ5LWQ0OTdkZDMzNDJjZZQu",
+      "characters": 231,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDVhZWNlYmRhLWMwMzYtNDEzZC04NzdmLTU0OWI3NDdjY2IwOZQu",
+      "characters": 216,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDIxMDVlOGQyLWVlNmItNDdiNy1hNWYxLWI0ZTc5YmI0YWZhM5Qu",
+      "characters": 243,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGMwOWRiNGZmLWU4MTctNDM1MS04M2EzLTU1MzNjZGNhNGRmYpQu",
+      "characters": 295,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU4ZDIyNjAyLTY2YjYtNDQxOC05NWMzLTIzMmEyOGM4ZmQ0Y5Qu",
+      "characters": 215,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRmYTdiYTk3LTgzYTMtNGQ4ZS1hNzY5LTU0MjYxZGIzNmJiMpQu",
+      "characters": 174,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIxYjQ3ZDI5LWExOTgtNDA0Yy1iMTQzLTVkNWI4ZmY2NWQ3ZJQu",
+      "characters": 355,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDAwNGYxNmY1LTNmYTYtNGYxYS1hZDhiLTExYTBhYTBmODU3OZQu",
+      "characters": 473,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBlODIzMWI4LWIyMWItNDhjNC1hNTdhLWM4M2Q5OGIzN2I4YZQu",
+      "characters": 524,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDJlMjRjMzk5LTRlMjAtNDhhYS1iYmI0LTZlNGJjZTgwNTRkOZQu",
+      "characters": 265,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRkNjg4NmVkLTRiYzUtNDQ5Yi1iZWNkLWNmODc2Nzc0YTRhMpQu",
+      "characters": 247,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDcyNDE1YzcyLTE4Y2MtNGQ5OC1hNTc2LWQxNWQzZjg2NmQxZpQu",
+      "characters": 127,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRmNjY5NDcwLTNjNGYtNDliOC05ODVmLTg1ZGUyOWRkOTZiOJQu",
+      "characters": 181,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA3NWI4ZjI4LWNhMzQtNGM2ZS1iZDI1LWQyMTczN2U5Y2JkYZQu",
+      "characters": 123,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDIyMjRiZWI1LWIyMDAtNDRiZi1iMjlkLTZhZDcyZDBhNzM0YZQu",
+      "characters": 230,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDcwNDliN2IwLTYzMjktNDRiYy05YmEyLWMzYTc2MWQ0YjdiMZQu",
+      "characters": 228,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDYwYjgzYWM4LWVmMjUtNDhiNi05YzllLWYyMDNkMmU4MmM3ZpQu",
+      "characters": 112,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA0NWZiMjRiLTQwNDItNGFkMC05NjM5LTFiMDllN2UzNjhkOZQu",
+      "characters": 279,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU1NDdiMzhiLWMyNzUtNDdmNC1hYjc0LTNhNTczZTk5ZTcxM5Qu",
+      "characters": 266,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGYxMGUwZWFlLTNhYmUtNGE4OC1iZTFkLTQ3M2QzMThmYWUzZZQu",
+      "characters": 176,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBhODJjZGQyLTBiNjEtNDY1Zi1hNzA4LWQwMTRkY2UwNWZhOJQu",
+      "characters": 218,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDExNDdhOWNhLWQ2YWUtNDZmZS1iOWM2LTRmY2VkOTZiNzU1YZQu",
+      "characters": 393,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdhOTI2NDFjLTMyODEtNGNhMS04NGIxLWExZWY2ZDM2MWVmM5Qu",
+      "characters": 310,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVjYWQ1MGUxLTJkZDMtNDZhMC05YTM0LTMzYTRiYTAwYmFmNJQu",
+      "characters": 222,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDlkYmM5ZWFhLTNhOTAtNGY3MS1iZWJlLWZkYzJmOGMwOTJhNZQu",
+      "characters": 296,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0ZWNlMjA4LTE1NmItNGZiZC1hOWU5LTVkMjNhY2VlMWI0MZQu",
+      "characters": 185,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDlkOTllZTc0LWM2N2YtNGNjMi04ZjI1LTYxZjE2MmQxOWQ5YZQu",
+      "characters": 152,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGFjMGVjYjQzLTVjZDUtNGNlMy05Y2U5LTJhODFmNjUwNWY0YZQu",
+      "characters": 148,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdmYTc5YjEwLTI4OWUtNDA2MS1iMzQyLTk0OWYyMDRjMTFlY5Qu",
+      "characters": 177,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE3YjQxYTA2LTFlZjgtNGIwNC04NzdlLTliYWE2YjI5YzhiYpQu",
+      "characters": 181,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQxMTJiODY5LTFmZDQtNDk2OS05M2ZlLTgxMjZkZGI0ZmNhZpQu",
+      "characters": 246,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGEzOTE2NTQ2LTI3MDktNDg1MC05Yjk4LTk4NTJiZGUzNmRmZZQu",
+      "characters": 209,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk5YmYyZWRjLWRiYjUtNGQzNy05YjBjLWQ4Zjg4OTFiYjlmOJQu",
+      "characters": 186,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZmOWMwYjUyLTYwMzgtNDJkYS04MjUzLWVmZjI4ZTE2OWY3YZQu",
+      "characters": 167,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUwMjhmZWRkLWUwY2ItNGFiZS04OGNkLTQyMWJhMDBiMGFmM5Qu",
+      "characters": 206,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDM5MzRlNTZjLTcxMWEtNDk4Ny04MjkyLWFkZDYyZmJhZmY3MpQu",
+      "characters": 127,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBhOGNlMGI1LTgwYzEtNDZhOC04N2M0LTlhNTQ3ZDZkOGQ2ZJQu",
+      "characters": 277,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDEyZTUwY2FiLTAzNmYtNDI2Yy1hMWY0LTVjYzBiMzYxZDE5YZQu",
+      "characters": 184,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNlODE3ZWY2LTA1OWEtNDk0Zi05NmM4LWQ1MzQyNjAwMDVhMJQu",
+      "characters": 182,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM0NGJhOTBmLWJhOTctNDBiMy1hYzA2LTgyNGVkNWMwMThjYZQu",
+      "characters": 232,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGUzMTFjYTQwLWZiYmEtNGQ2NS05ODU2LWI3MTM2YzIxMmRmN5Qu",
+      "characters": 247,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdiNzk3YmIwLWE0MjktNDIyMy1iZGNmLTcyNjZhODVlNjQyMZQu",
+      "characters": 100,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU5MDliNmRiLTgxMTItNDdhNy1iNzdiLWZlMzBmNzRkMmM0N5Qu",
+      "characters": 211,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNmZGMwYzFmLWU0YzYtNGQ1MC1hZjEyLThiYjI3YmVmMTFlY5Qu",
+      "characters": 189,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDNjZGI3YzE2LTJkMWItNDA2MC05ZGJmLTRkOTk3Y2Y4NzFjM5Qu",
+      "characters": 131,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZiYTRlZDFmLTQzNTEtNDRjYy1hMzAzLWY0YTc2NjFlZTgxZJQu",
+      "characters": 314,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY1NWZmMWFhLWVmMzYtNDk3Ny1hZGIzLWU1MWNkNzdjNjA0YZQu",
+      "characters": 273,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM5OWNhNzljLWIzYTYtNDIyZS04MmRmLTZhMTk1NzcyNThjZZQu",
+      "characters": 99,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDJlZTJmZWM3LTAxY2EtNDM4Mi1iMmQ2LTIxZGI4Yjc0YzdmNJQu",
+      "characters": 115,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDRkZGVhYjVmLWUwMGUtNGE0Yi1hNDhlLWM0MjA5OGViM2YxMJQu",
+      "characters": 178,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY2MmQxZTUzLTFiYjYtNGZkMC1iODQ5LTExZTdkMzhiNmM1NpQu",
+      "characters": 316,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGE0MDhmZjQwLWQyZjgtNDBiMy04YTIxLWNhNGQ1YjAyNjMxMZQu",
+      "characters": 94,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU0NWJmMDhjLTZjOWMtNDAyNi1hMzdjLWE4MmFhMzA1ODNlMZQu",
+      "characters": 524,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY0YzFjODEwLTUzMzktNDdhZC1iYjdlLTc4ZDkzMjE5ZTFjN5Qu",
+      "characters": 276,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVjYzZmM2M4LTNlYTMtNDk5Zi1hOTUzLWJhNDEyY2VhOTNkMpQu",
+      "characters": 330,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI4NWY4YjJjLTFiMGMtNGE5Mi05NTIwLWU2ZTNlZTY2MWFkZZQu",
+      "characters": 243,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDVmNTE3OWEwLWI4M2QtNGIyMy1iYTk3LTE3NzZlNDdlNDJhM5Qu",
+      "characters": 285,
+      "flags": [
+        "retired tooling"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUyNTNkMjNmLWYwMDAtNDA1MC1iNTUwLWZhMjExM2ViOTA0NZQu",
+      "characters": 133,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGUyMDFjZWY3LWM5YjEtNDUxMy04NGFiLWFhMjgxMmY2OGUwMZQu",
+      "characters": 233,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY1ZDZiMGYzLTYxYmQtNDJiNi1hYTBjLWNlYmIxODg5OWVkOZQu",
+      "characters": 188,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDIwMDFjNWEwLWM5MWEtNDJlYy05OGJhLTJiYjc4ZGVlMWQ5NJQu",
+      "characters": 120,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg3MzJhYjU3LTQ5MTMtNDU0My05Y2FkLWE3MTdjMDBhMGZlZZQu",
+      "characters": 178,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDBkMGI2NWRlLTRkYjktNGI2Zi05YTQ3LWI2M2JhMDBlOGU3OZQu",
+      "characters": 107,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGRkZjYyM2I4LWVkOTYtNDc2Yy1iMzZjLTJhMDg4OGM3OTgyNZQu",
+      "characters": 124,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQxN2Q4YWZmLTE1MzItNDZhZS1iNDgyLWFiYTdlYTFhMGEwY5Qu",
+      "characters": 139,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM3NzJkMWFkLTlhNDItNDIwMi04OGJhLThhYjhjMjYyMjkxMJQu",
+      "characters": 236,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE3NTYwZDE3LTRlYTAtNDBkNy1hZjRjLTZlMjE3YmZlYTJlZZQu",
+      "characters": 134,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDk3ZmE2MzRmLWVhMjAtNDZhMC04NTI4LTgxYjQzMDZjYWQxMZQu",
+      "characters": 293,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDVhMzcxN2NlLTA5OTktNGY0YS04MmE4LThhYmJkZWFlNTE0Y5Qu",
+      "characters": 158,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNkZWYwZWRkLTI2MWItNGI0NS04YzYyLTExZDk0MzUxNWRmNpQu",
+      "characters": 311,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZlYzc0NzAzLTQzZWEtNGRmZi05OTc4LWY3ZTRjMDRiNTUzNJQu",
+      "characters": 227,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVhZGVhN2U1LTk2ODktNGU3MC04YThmLTA1N2E4YjE1ZjJiZJQu",
+      "characters": 145,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI1MjhmYjQ2LWRiNWQtNGIwMS1iMGVlLTA2ZDEzZWFkZDE5YpQu",
+      "characters": 219,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDEwMDM2MjU2LWM1ODgtNDUyNy05ZGViLTFjM2I1NWQzZGIwZpQu",
+      "characters": 229,
+      "flags": [
+        "transient execution"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA1YzYwODViLTc5MWUtNDhkNy04NGI3LTg5OGFiZmNiNmNiMJQu",
+      "characters": 285,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIwMDNmZjk3LWU3ZTMtNGFiZS1hYjJlLTk5OGZhMGQ5MmEyNpQu",
+      "characters": 272,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZmNTc4ZjU5LTJhOTgtNDJjMS1hZGExLTE3OWU0YTMzY2MwOZQu",
+      "characters": 101,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGMxMTM0MGE4LWJkMzktNDcyYS05YWI5LWE4YmI2MDgxYzQzMpQu",
+      "characters": 263,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZhMGMyN2IxLTM5NzgtNGViMy1hMjdiLWM1NzI0NWExNWQwMZQu",
+      "characters": 173,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGY1MWU1OWY4LWEwMmItNDUxYS05MzNmLWNhZWRjODI4ZmUzMZQu",
+      "characters": 174,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDgyOGQwMTlhLTJlMmUtNGQ3YS1hODE0LTgyYzg0MDQ5NDRlMJQu",
+      "characters": 271,
+      "flags": [
+        "numeric commercial terms"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVlZjQxNDY2LWU5NGEtNDY5MC1iNGI4LWUwNWE3MGIwYTU5OJQu",
+      "characters": 184,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDkwNjg3ZTkzLTk0YjgtNGU0OC04MDhjLWRhMjA2YTEyODA4YZQu",
+      "characters": 255,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA5MTYyM2Y1LWZmZGEtNDUyMS1iOGQxLTZiYmU4MzJmYjY5N5Qu",
+      "characters": 254,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU2NmFmNzIyLTcyZTctNGQ1Zi05MTliLWNlOGRhMGNmMGVjYZQu",
+      "characters": 146,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY5MGNkMDZiLWM4MjctNGYzMy05YjIyLWI2NTgxMjQ3ZjhiY5Qu",
+      "characters": 149,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUxMTAyN2U4LTU3ODYtNDk2My05YzZjLWM1ZmQ3N2E5NTcxMpQu",
+      "characters": 129,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUxZWRkYTU0LWRhNWYtNGMwZS05ZTdiLWFkZDdhYjI0MmE5NZQu",
+      "characters": 361,
+      "flags": [
+        "retired tooling"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGYwZjc3MGU5LTY3ODItNDMwOC1hMTJkLTcwZDllNDBmY2YwMpQu",
+      "characters": 346,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIyZmUzMWI1LTM1NGMtNDE1Yi1hNTBmLWY4NTZlODIyYjAyZpQu",
+      "characters": 242,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDAwNWQzZmYxLTE1ZmMtNGIwMS05MGY4LWM1Yjk2ZGQwNzdmZJQu",
+      "characters": 189,
+      "flags": [
+        "retired tooling",
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc2M2Y3MWYzLTFkZWUtNGNiZi1hZTQyLTIwNTg1M2IwNjI0OJQu",
+      "characters": 173,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFlZGI5MGU0LWQ1YjEtNGQ5Ny05ZGQ0LTc0NmZlODBlYjVjMZQu",
+      "characters": 233,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc4NjVmMDYwLTlkM2ItNGE1Ny1iM2QwLTcwMGZiMTMyNmM4NZQu",
+      "characters": 283,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA0NDdjYTE5LTA3ZTEtNDAxNi05ODBiLThkNTE5ZDExZGJkOJQu",
+      "characters": 308,
+      "flags": [
+        "behavioral mandate"
+      ]
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDMxZDM4YmU0LWMyZDctNGIzMi04NDBhLWU2MGRmMDQyYjA3ZZQu",
+      "characters": 317,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZjMzEwZmE0LTA4OGItNGMyZC1iNWRmLTBmZjc0MzIyZjczOJQu",
+      "characters": 213,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU0MTgwMTk5LTI4NGUtNDRiOC04NjFmLTQyMWU5NDVmM2JkY5Qu",
+      "characters": 317,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQ4Y2E1MmNmLTJhMWUtNDM3Ni04M2JhLWQ5MjlmZmFhMjkwNJQu",
+      "characters": 425,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDkzZDY5ZTIwLWJhNTYtNDg2MC1iNjZjLWI1OWRhY2UyNjQ1ZpQu",
+      "characters": 234,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGViODdmZWY1LTViMzMtNDEwNy1hZGJjLTczODA3N2IzMWFhMZQu",
+      "characters": 245,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQ1OTMzNGFjLTBiMTMtNGIzNC04ZjM3LWZmN2EyZjIxOWFjYZQu",
+      "characters": 418,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNhOTAxODc3LTA4YWQtNDJjNy04NzM5LTE3MzU1NDY2NGRjZpQu",
+      "characters": 200,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGFlMzNmNmY3LWRjYmItNDZlYi05OWQ2LTQyNmYzNjFiYmU0OZQu",
+      "characters": 422,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU0MmNlNDdlLTJmMjUtNGFhMS04MzdiLWVmYTM2YjQzZDk1MpQu",
+      "characters": 354,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGE4NDBmOWEzLTdkNjktNDFjZS1iNjY5LTNmNTQ0ZWQxN2Y4OJQu",
+      "characters": 330,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGMzMjc3N2ZkLTNiMTUtNDBiOS1iNTgzLWQxNTczNWNlMjBlOZQu",
+      "characters": 269,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGQ1N2EzZGQ4LTc4NGUtNDNlMi1hMTdmLWVkMzYwNTU4YmYyYZQu",
+      "characters": 167,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGNhMTEzMTg1LWJiODMtNGIxYS04ODE2LWM1YWFiMDhlYjMyNZQu",
+      "characters": 153,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDhlMzg5NmMwLWYwNGMtNDAxOC1hYmEyLWY5MzE3ZWVlYTE1M5Qu",
+      "characters": 211,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGVhNTE3ZjU2LTkyNDUtNDMwMy04Mzc3LTFkMTIwZTZhNjZhMJQu",
+      "characters": 199,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDg3NGIwZjQ3LWJjNGEtNDJkZi1iMDNiLWFmNGNhZDAwNWY2YpQu",
+      "characters": 181,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDQ3M2I2MmRkLWEyZmUtNGRiYS1hMTk2LTgxOGM3NWE0ZDY3MpQu",
+      "characters": 210,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDc0YmEyY2NjLWFmYjYtNDI0Yy05ZjA5LTM5YzFjYjQ3MjJhNJQu",
+      "characters": 145,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDUxNjdkYTM3LTE3ZDktNDFmNy1iN2Q4LTVkNDQxYTQyYTU5Y5Qu",
+      "characters": 210,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGIxNTgwZmMyLTY4NGEtNGUzZi1iYWZiLTM4YmY3ZWMxZWM4NJQu",
+      "characters": 109,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDZmMjkyOWM5LWE2MWMtNDVlMi05NGQ5LTYzY2YyZWY3Y2JhM5Qu",
+      "characters": 210,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM2YWIyM2Y5LWQyMzAtNGQ0NS04MmQ0LWExMjY1NmQzMTZiN5Qu",
+      "characters": 158,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGViYWQzMGE1LWEyNGMtNDU1MS04NjIxLTJiNDVkNmQ4OTA0ZZQu",
+      "characters": 231,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGE0NjkyOWM5LTM1YzgtNDI1Yi1iOWFmLTVhNzQ5N2Q2NjQ4Y5Qu",
+      "characters": 172,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDFlM2JhODY4LTQ4MDAtNDYzZS04Y2IyLTRkNjQ4MmE3OGYzNZQu",
+      "characters": 314,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGU2YmY0MzZhLTM1NjQtNDQwOS05MGExLWNkYmJmNmVjZDJlZZQu",
+      "characters": 168,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDEyMjQxMzAwLWMxOWUtNGFjOC1hZGNkLTk3NzFjN2ZjMTQzMJQu",
+      "characters": 143,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGEwNjk2YjZiLTYxZGUtNGI0NS1iYzFlLTgxMzkyODk5MzU0YZQu",
+      "characters": 144,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU4NzhjYjE1LTNjNjgtNDA2Yi04NmI3LWYwODYxZjJmMmUyN5Qu",
+      "characters": 186,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGI2ZDlkZTFiLTkyMmQtNDE2OS04ZDE4LTg5MWEwZDZlOWEwNpQu",
+      "characters": 269,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDU4MmIzZThmLTU4MzItNDBhYi04NDcxLWU1YjE3NjdiMjI2YZQu",
+      "characters": 103,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDE5N2Q5MDMyLTNjNzAtNDk1My1iM2UzLTJkMmM4NTAxMWMyZpQu",
+      "characters": 194,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdhMjkyMDQ3LWQ0YTEtNGVhNi05YmY5LTBjMWU3NDhiOTJlZZQu",
+      "characters": 157,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGE0N2RkMTZmLTIxOTgtNGI5My1hYzRlLTQ3ODNhOGQyNzMxNZQu",
+      "characters": 140,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDM1YWE0NGQ1LTI5OWMtNDE1ZS05YTBhLTU5MGNlN2E4NDIyN5Qu",
+      "characters": 202,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDY1MDY1ZTczLWIwMWUtNGRjOS1iMDk4LWFjOTQ5MWQ3NTQ0ZZQu",
+      "characters": 209,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDhiZTI2YTE1LTkwNjEtNDVhMS1iN2M3LTkwZmJiZjBhMjY2ZpQu",
+      "characters": 258,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGJmYWJjMzU2LTQ4ZDYtNGViNC1iZWNhLTA3MGY2MWM1NTM4ZZQu",
+      "characters": 275,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdhNjBiOTU3LTY5MDctNGIwMi1iNjdlLWY5OGRiNTgwODMzZZQu",
+      "characters": 184,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDdhYTdhOTkxLThhYTEtNGIzZC04N2JkLWEyODU2NzcyOTVmOZQu",
+      "characters": 300,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGMzOTI5MjMzLTExN2UtNDA3MS04MDZlLWYxNDdhYzkwOTc5MpQu",
+      "characters": 349,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGM4MDYwYTUxLTQyZjctNDQxMi1hNDY1LTI3NmJhM2VlMDRkZpQu",
+      "characters": 162,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGZkZDRiMGIwLTVjMTctNGEyZS04OGQ0LTNlMzExYTk1YmM5NJQu",
+      "characters": 342,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDEwY2ZjODY3LWVhNzMtNGZhMC04YjQ2LTM3YWZkOWVlOGI4ZZQu",
+      "characters": 101,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGEzODJiNDMxLTBlYzYtNGE3My04MDQ1LWExOGRlMjA2MGQ3MZQu",
+      "characters": 114,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJGFmMGRjZjZhLTUwZGItNDEzMy04YzA2LWQ1YzdhNzk4MGEwYZQu",
+      "characters": 109,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDA4YzNmOTlhLWRiYmEtNGJiNy04ZDYzLTc5ZWI2ZmNjMDMwOZQu",
+      "characters": 121,
+      "flags": []
+    },
+    {
+      "id": "gASVKAAAAAAAAACMJDRmMDExNjRiLTZmM2YtNDE0Ny04YTBiLThkMWU5Njg3ZWFmMJQu",
+      "characters": 144,
+      "flags": []
+    }
+  ]
+}
