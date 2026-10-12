@@ -39,10 +39,11 @@ def handle_str(conn, pid):
                     conn.execute("SELECT platform, username FROM handles WHERE person_id=?", (pid,)))
 
 
-def inbox(conn):
+def inbox(conn, extensions=()):
     out = ["<h1>Approval inbox</h1>",
            "<div class=card><form method=post action='/add'><input name=text size=50 placeholder='TikTok/IG link or tt:handle'>"
            "<button>Add lead</button></form> " + btn("/jobs", "Run jobs now") + "</div>"]
+    out.extend(extension.render(conn) for extension in extensions)
     rows = conn.execute("SELECT p.*, s.score, s.track, s.reasons, s.judgement FROM people p JOIN scores s ON s.person_id=p.id"
                         " WHERE p.stage='scored' AND s.id=(SELECT MAX(id) FROM scores WHERE person_id=p.id)"
                         " ORDER BY s.score DESC").fetchall()
@@ -190,7 +191,7 @@ def deal_page(conn, did):
     return page(f"Deal {did}", "".join(out))
 
 
-def make_handler(db_path, platforms_factory, channels_factory):
+def make_handler(db_path, platforms_factory, channels_factory, extensions=()):
     class H(BaseHTTPRequestHandler):
         def _send(self, html, code=200):
             b = html.encode()
@@ -205,7 +206,7 @@ def make_handler(db_path, platforms_factory, channels_factory):
             path = urlparse(self.path).path.strip("/").split("/")
             try:
                 if path == [""]:
-                    self._send(inbox(conn))
+                    self._send(inbox(conn, extensions))
                 elif path[0] == "board":
                     self._send(board(conn))
                 elif path[0] == "person":
@@ -226,10 +227,14 @@ def make_handler(db_path, platforms_factory, channels_factory):
             route = urlparse(self.path).path
             back = self.headers.get("Referer", "/")
             try:
-                if route == "/add":
+                if any(extension.action(conn, route, f) for extension in extensions):
+                    pass
+                elif route == "/add":
                     pid = intake.add(conn, f["text"], "dashboard", platforms_factory())
                     back = f"/person/{pid}"
                 elif route == "/jobs":
+                    for extension in extensions:
+                        extension.sync(conn)
                     jobs.run(conn, platforms_factory(), channels_factory())
                 elif route == "/stage":
                     advance(conn, int(f["pid"]), f["ev"])
@@ -281,10 +286,10 @@ def make_handler(db_path, platforms_factory, channels_factory):
     return H
 
 
-def serve(db_path=None, host="127.0.0.1", port=8765, platforms_factory=None, channels_factory=None):
+def serve(db_path=None, host="127.0.0.1", port=8765, platforms_factory=None, channels_factory=None, extensions=()):
     from .channels import default_channels
     from .platforms import default_platforms
     srv = ThreadingHTTPServer((host, port), make_handler(db_path, platforms_factory or default_platforms,
-                                                         channels_factory or default_channels))
+                                                         channels_factory or default_channels, extensions))
     print(f"dashboard on http://{host}:{port}")
     srv.serve_forever()

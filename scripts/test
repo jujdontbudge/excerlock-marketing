@@ -5,6 +5,7 @@ import subprocess
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 commands = [
+    [str(ROOT / '.venv/bin/python'), 'integrations/contacts-mcp/test_offline.py'],
     [str(ROOT / '.venv/bin/python'), 'sections/creators/tests/test_offline.py'],
     [str(ROOT / '.venv/bin/python'), '-m', 'unittest', 'discover', '-s', 'tools/tests', '-v'],
     ['node', '--test', 'integrations/mem0-local/test_project_policy.mjs'],

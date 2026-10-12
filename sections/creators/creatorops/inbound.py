@@ -65,12 +65,16 @@ def strip_quoted(text: str) -> str:
     return "\n".join(out).strip()
 
 
-def record(conn: sqlite3.Connection, from_addr: str, subject: str, body: str, provider_id: str | None = None) -> int | None:
-    """Store one reply and act on it. Returns the person id it matched, if any."""
+def record(conn: sqlite3.Connection, from_addr: str, subject: str, body: str, provider_id: str | None = None,
+           *, person_id: int | None = None) -> int | None:
+    """Store one reply and act on it. Adapters may supply an already verified person ID."""
     conn.executescript(SCHEMA)
     if provider_id and conn.execute("SELECT 1 FROM replies WHERE provider_id=?", (provider_id,)).fetchone():
         return None
-    p = conn.execute("SELECT * FROM people WHERE lower(email)=lower(?)", (from_addr,)).fetchone()
+    p = (conn.execute("SELECT * FROM people WHERE id=?", (person_id,)).fetchone() if person_id is not None
+         else conn.execute("SELECT * FROM people WHERE lower(email)=lower(?)", (from_addr,)).fetchone())
+    if person_id is not None and p is None:
+        raise ValueError("Unknown reply person")
     new = strip_quoted(body)
     conn.execute("INSERT INTO replies(received_at, provider_id, from_addr, subject, body, person_id) VALUES (?,?,?,?,?,?)",
                  (now(), provider_id, from_addr, subject, new or body, p["id"] if p else None))

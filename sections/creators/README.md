@@ -50,10 +50,11 @@ Picking who to contact, every message (unless its kind is listed in `CREATORS_AU
 - Email: `RESEND_API_KEY` (send), `RESEND_FULL_API_KEY` (read received mail), `RESEND_WEBHOOK_SECRET`, `CREATORS_FROM`, `CREATORS_REPLY_TO`.
 - Instagram: `IG_SCRAPER_USER`, `IG_SCRAPER_PASSWORD` (the research account, used by `ig-login`).
 - Payouts: `CREATORS_PAYOUTS` (`manual` default, `paypal`, `wise`); `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, `PAYPAL_ENV` (`sandbox`/`live`); `WISE_TOKEN`, `WISE_ENV`.
+- Contacts: `CONTACTS_MCP_URL`, `CONTACTS_MCP_TOKEN` in the repository `.env`. The optional [contacts-mcp composition adapter](../../integrations/contacts-mcp/README.md) provides the connected dashboard, sync command and jobs wrapper; no deployment is performed automatically.
 - Other: `CREATORS_AUTO_SEND`, `CREATORS_ROUTING_MEDIAN` (15000), `CREATORS_PUBLIC_URL` (set by `deploy`), `CREATORS_JUDGE_CMD` (default `claude -p --model haiku`; on the Air `deploy` sets `codex exec`, because Codex is logged in there and Claude is not).
 
 ## Seams
-Only three, because only these vary: platform (`creatorops/platforms/`: TikTok, Instagram), message channel (`creatorops/channels.py`: email, DM) and payout provider (`creatorops/payouts.py`: manual, PayPal, Wise). Tests use the fakes in `tests/fakes.py` and a fake HTTP layer as the second adapter.
+Domain adapters: platform (`creatorops/platforms/`: TikTok, Instagram), message channel (`creatorops/channels.py`: email, DM) and payout provider (`creatorops/payouts.py`: manual, PayPal, Wise). Tests use the fakes in `tests/fakes.py` and a fake HTTP layer as the second adapter. The dashboard also accepts generic inbox extensions (render, action, sync), and inbound replies accept a verified person ID from an adapter. Composition stays outside this section; see the [integration](../../integrations/contacts-mcp/README.md).
 
 ## Tests
 - Offline, whole lifecycle including portal signing, webhook signatures and payout idempotency: `.venv/bin/python sections/creators/tests/test_offline.py` (part of `scripts/test`).
