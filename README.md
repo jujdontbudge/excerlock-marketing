@@ -8,7 +8,7 @@ Agents start at `AGENTS.md`. The layout and its rules are drawn in `docs/repo-ma
 
 | Folder | What's in it |
 |---|---|
-| `sections/` | Slideshow production and creator-recorded UGC; each owns its assignments and workflow. |
+| `sections/` | Slideshow production, creator-recorded UGC, creator operations and inbox automation; each owns its assignments and workflow. |
 | `accounts/` | Our TikTok accounts: who each character is, and her reference images (gitignored). |
 | `core/` | Skills and workflows every section uses (research, reference swap, image review, video, make-universal) and `product.md`. |
 | `research/` | Finished evidence reports. |

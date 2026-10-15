@@ -7,6 +7,14 @@ from .db import event, now
 from .platforms import parse_link
 
 
+def create(conn: sqlite3.Connection, name: str, source: str = "intake") -> int:
+    """Create a person without a public handle; external adapters own deduplication."""
+    cur = conn.execute("INSERT INTO people(name, created_at) VALUES (?,?)", (name, now()))
+    event(conn, "lead_added", cur.lastrowid, source=source)
+    conn.commit()
+    return cur.lastrowid
+
+
 def _person_for(conn, platform, username):
     row = conn.execute("SELECT person_id FROM handles WHERE platform=? AND username=?", (platform, username)).fetchone()
     return row["person_id"] if row else None

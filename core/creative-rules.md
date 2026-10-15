@@ -2,7 +2,7 @@
 
 ## Hooks belong to the captain
 
-Do not write new hooks, rewrite his hooks, or supply AI-made alternatives. Use only hooks the captain wrote, copied exactly from his message or `core/approved-hooks.md`. Cleaned historical lists and third-party frameworks are inspiration, not approved wording. If a concept has no suitable captain-written hook, leave it blank for him. Why: the captain rejected the agent-written hooks and said AI is the worst at hook writing.
+Do not write new hooks, rewrite his hooks, or supply AI-made alternatives. Use only hooks the captain wrote, copied exactly from `core/approved-hooks.md` or his message (with only typos fixed). Cleaned historical lists and third-party frameworks are inspiration, not approved wording. If a concept has no suitable captain-written hook, leave it blank for him. Why: the captain rejected the agent-written hooks and said AI is the worst at hook writing.
 
 ## Creative briefs stay creative
 

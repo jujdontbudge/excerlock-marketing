@@ -99,6 +99,53 @@ class Lifecycle(unittest.TestCase):
         intake.merge(self.conn, pid, other)
         self.assertEqual(self.conn.execute("SELECT COUNT(*) FROM handles WHERE person_id=?", (pid,)).fetchone()[0], 3)
 
+    def test_overlapping_senders_send_each_email_once(self):
+        # Review T03 (2026-10-15): the 3-hourly job and the dashboard approve both called send_approved on the same row.
+        pid = self.lead()
+        vetting.vet(self.conn, pid, use_judge=False)
+        advance(self.conn, pid, "shortlist")
+        mid = outreach.draft(self.conn, pid, "first")
+        outreach.approve(self.conn, mid)
+        other = sqlite3.connect(self.path) if hasattr(self, "path") else None
+        chans = self.chans
+        inner = chans["email"].send
+
+        def send_while_another_run_starts(*a, **kw):
+            # a second run starts while the first one's provider call is in flight
+            self.assertEqual(outreach.send_approved(self.conn, chans), [])
+            return inner(*a, **kw)
+        chans["email"].send = send_while_another_run_starts
+        outreach.send_approved(self.conn, chans)
+        self.assertEqual(len(chans["email"].sent), 1)
+
+    def test_uncertain_send_is_never_retried(self):
+        pid = self.lead()
+        vetting.vet(self.conn, pid, use_judge=False)
+        advance(self.conn, pid, "shortlist")
+        mid = outreach.draft(self.conn, pid, "first")
+        outreach.approve(self.conn, mid)
+
+        def timeout(*a, **kw):
+            raise TimeoutError("read timed out")
+        self.chans["email"].send = timeout
+        outreach.send_approved(self.conn, self.chans)
+        self.assertEqual(self.conn.execute("SELECT status FROM messages WHERE id=?", (mid,)).fetchone()[0], "uncertain")
+        self.chans["email"] = type(self.chans["email"])("email")
+        outreach.send_approved(self.conn, self.chans)
+        self.assertEqual(self.chans["email"].sent, [])
+
+    def test_provider_gets_a_stable_idempotency_key(self):
+        pid = self.lead()
+        vetting.vet(self.conn, pid, use_judge=False)
+        advance(self.conn, pid, "shortlist")
+        mid = outreach.draft(self.conn, pid, "first")
+        outreach.approve(self.conn, mid)
+        keys = []
+        inner = self.chans["email"].send
+        self.chans["email"].send = lambda to, subject, body, idempotency_key=None: keys.append(idempotency_key) or inner(to, subject, body)
+        outreach.send_approved(self.conn, self.chans)
+        self.assertEqual(keys, [f"creatorops-message-{mid}"])
+
     def test_outreach_to_no_reply(self):
         pid = self.lead()
         vetting.vet(self.conn, pid, use_judge=False)

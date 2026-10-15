@@ -8,14 +8,14 @@ from .db import event
 # event -> {from stage: to stage}
 TRANSITIONS = {
     "scored":      {"new": "scored", "scored": "scored"},
-    "shortlist":   {"scored": "shortlisted"},           # captain picks who to contact
+    "shortlist":   {"new": "shortlisted", "scored": "shortlisted"},  # owner can pick an unscored applicant
     "skip":        {"new": "skipped", "scored": "skipped"},
     "contacted":   {"shortlisted": "contacted"},
     "followed_up": {"contacted": "followed_up", "followed_up": "followed_up"},
     "replied":     {"contacted": "replied", "followed_up": "replied"},
     "negotiating": {"replied": "negotiating"},
     "signed":      {"replied": "signed", "negotiating": "signed", "signed": "signed"},
-    "declined":    {s: "declined" for s in ("contacted", "followed_up", "replied", "negotiating")},
+    "declined":    {s: "declined" for s in ("new", "scored", "shortlisted", "contacted", "followed_up", "replied", "negotiating")},
     "no_reply":    {"contacted": "no_reply", "followed_up": "no_reply"},
     "reopen":      {s: "scored" for s in ("skipped", "declined", "no_reply")},
 }

@@ -9,6 +9,7 @@ import os
 import sqlite3
 from pathlib import Path
 
+from .channels import ChannelRejected
 from .db import SECTION, event, now
 from .pipeline import advance
 
@@ -73,21 +74,42 @@ def reject(conn: sqlite3.Connection, message_id: int) -> None:
 
 
 def send_approved(conn: sqlite3.Connection, channels: dict) -> list[int]:
-    """Send every approved message. DMs become 'ready' for a human to paste. Returns sent ids."""
+    """Send every approved message exactly once. DMs become 'ready' for a human to paste. Returns sent ids.
+
+    Each row is claimed atomically ('approved' -> 'sending') before any network call, so two overlapping runs (the
+    3-hourly job and a dashboard approve) can never both send it. The provider gets a stable idempotency key. If the
+    call fails in a way that may have reached the provider, the row becomes 'uncertain' and is never retried
+    automatically: a person checks Resend first (review T03, 2026-10-15).
+    """
     sent = []
-    for m in conn.execute("SELECT * FROM messages WHERE status='approved'").fetchall():
+    for (mid,) in conn.execute("SELECT id FROM messages WHERE status='approved' ORDER BY id").fetchall():
+        claimed = conn.execute("UPDATE messages SET status='sending' WHERE id=? AND status='approved'", (mid,)).rowcount
+        conn.commit()
+        if claimed != 1:
+            continue
+        m = conn.execute("SELECT * FROM messages WHERE id=?", (mid,)).fetchone()
+        channel = channels[m["channel"]]
         try:
-            pid = channels[m["channel"]].send(m["to_addr"], m["subject"], m["body"])
-        except Exception as e:
-            conn.execute("UPDATE messages SET status='failed', error=? WHERE id=?", (str(e)[:300], m["id"]))
+            try:
+                pid = channel.send(m["to_addr"], m["subject"], m["body"], idempotency_key=f"creatorops-message-{mid}")
+            except TypeError:  # channels without idempotency support (the manual DM channel)
+                pid = channel.send(m["to_addr"], m["subject"], m["body"])
+        except ChannelRejected as e:  # the provider refused it: nothing was sent
+            conn.execute("UPDATE messages SET status='failed', error=? WHERE id=?", (str(e)[:300], mid))
+            conn.commit()
+            continue
+        except Exception as e:  # timeout, 5xx, crash: it may have been sent
+            conn.execute("UPDATE messages SET status='uncertain', error=? WHERE id=?", (f"{type(e).__name__}: {str(e)[:280]}", mid))
+            event(conn, "message_uncertain", m["person_id"], m["deal_id"], kind=m["kind"], message_id=mid)
+            conn.commit()
             continue
         status = "ready" if m["channel"] == "dm" else "sent"
-        conn.execute("UPDATE messages SET status=?, sent_at=?, provider_id=? WHERE id=?", (status, now(), pid, m["id"]))
-        event(conn, "message_" + status, m["person_id"], m["deal_id"], kind=m["kind"], message_id=m["id"])
+        conn.execute("UPDATE messages SET status=?, sent_at=?, provider_id=? WHERE id=?", (status, now(), pid, mid))
+        event(conn, "message_" + status, m["person_id"], m["deal_id"], kind=m["kind"], message_id=mid)
         if status == "sent":
             _after_send(conn, m)
-        sent.append(m["id"])
-    conn.commit()
+        conn.commit()
+        sent.append(mid)
     return sent
 
 
@@ -104,7 +126,7 @@ def mark_dm_sent(conn: sqlite3.Connection, message_id: int) -> None:
 def _after_send(conn, m) -> None:
     """A message actually reached the creator: move their stage."""
     stage = conn.execute("SELECT stage FROM people WHERE id=?", (m["person_id"],)).fetchone()["stage"]
-    if m["kind"] in ("first", "invite") and stage == "shortlisted":
+    if m["kind"] in ("first", "invite", "cold_invite") and stage == "shortlisted":
         advance(conn, m["person_id"], "contacted")
     elif m["kind"] == "followup" and stage in ("contacted", "followed_up"):
         advance(conn, m["person_id"], "followed_up")

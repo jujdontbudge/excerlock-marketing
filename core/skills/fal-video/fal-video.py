@@ -33,6 +33,14 @@ ENDPOINTS = {
     "fal-ai/kling-video/lipsync/audio-to-video",
     "fal-ai/bytedance/omnihuman",
     "fal-ai/wan-i2v",
+    "google/gemini-omni-flash/v1.1/edit",
+    "google/gemini-omni-flash/v1.1/image-to-video",
+    "fal-ai/wan/v2.2-14b/animate/replace",
+    "fal-ai/kling-video/o3/standard/video-to-video/edit",
+    "minimax/h3-max/recast",
+    "fal-ai/wan-vace-14b/inpainting",
+    "fal-ai/sam-3/video",
+    "alibaba/wan-3.0/reference-to-video",
 }
 TOOLS = {"schema": "get_model_schema", "pricing": "get_pricing", "submit": "submit_job", "status": "check_job", "result": "get_job_result", "cancel": "cancel_job"}
 

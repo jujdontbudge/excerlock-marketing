@@ -61,7 +61,7 @@ def inbox(conn, extensions=()):
         for r in short:
             out.append(f"<div class=card>{escape(r['name'] or '')} {handle_str(conn, r['id'])} "
                        + btn("/draft", "Draft first message", pid=r["id"]) + "</div>")
-    msgs = conn.execute("SELECT m.*, p.name FROM messages m JOIN people p ON p.id=m.person_id WHERE m.status IN ('draft','ready','failed')").fetchall()
+    msgs = conn.execute("SELECT m.*, p.name FROM messages m JOIN people p ON p.id=m.person_id WHERE m.status IN ('draft','ready','failed','uncertain')").fetchall()
     out.append(f"<h2>✋ Messages ({len(msgs)})</h2>")
     for m in msgs:
         head = f"<b>{m['kind']}</b> to {escape(m['name'] or '')} via {m['channel']} {escape(m['to_addr'] or '')} <span class=tag>{m['status']}</span>"

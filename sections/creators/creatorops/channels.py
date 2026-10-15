@@ -14,6 +14,10 @@ class ChannelError(RuntimeError):
     pass
 
 
+class ChannelRejected(ChannelError):
+    """The provider definitely refused the message (HTTP 4xx): nothing was sent, safe to fix and retry."""
+
+
 class ResendEmail:
     name = "email"
 
@@ -22,14 +26,17 @@ class ResendEmail:
         self.sender = sender or os.environ.get("CREATORS_FROM", "ExcerLock <onboarding@resend.dev>")
         self.reply_to = os.environ.get("CREATORS_REPLY_TO")
 
-    def send(self, to: str, subject: str, body: str) -> str:
+    def send(self, to: str, subject: str, body: str, idempotency_key: str | None = None) -> str:
         if not self.key:
-            raise ChannelError("RESEND_API_KEY missing")
+            raise ChannelRejected("RESEND_API_KEY missing")
         r = requests.post("https://api.resend.com/emails", timeout=30,
-                          headers={"Authorization": f"Bearer {self.key}"},
+                          headers={"Authorization": f"Bearer {self.key}",
+                                   **({"Idempotency-Key": idempotency_key} if idempotency_key else {})},
                           json={"from": self.sender, "to": [to], "subject": subject, "text": body,
                                 **({"reply_to": self.reply_to} if self.reply_to else {})})
-        if r.status_code >= 300:
+        if 400 <= r.status_code < 500 and r.status_code not in (408, 409, 429):
+            raise ChannelRejected(f"resend HTTP {r.status_code}: {r.text[:200]}")
+        if r.status_code >= 300:  # 5xx, 408, 409, 429: may or may not have been accepted
             raise ChannelError(f"resend HTTP {r.status_code}: {r.text[:200]}")
         return r.json()["id"]
 
