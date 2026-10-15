@@ -73,7 +73,10 @@ def telegram_roundtrip(path, is_video, chat):
     req = urllib.request.Request(f"https://api.telegram.org/bot{tok}/send{kind.title()}", data=body,
                                  headers={"Content-Type": f"multipart/form-data; boundary={b}"})
     msg = json.load(urllib.request.urlopen(req, timeout=300))["result"]
-    fid = (msg["video"] if is_video else max(msg["photo"], key=lambda p: p["width"] * p["height"]))["file_id"]
+    # Telegram files a video without an audio track as an "animation", not a "video".
+    media = (msg.get("video") or msg.get("animation") or msg.get("document")) if is_video else \
+        max(msg["photo"], key=lambda p: p["width"] * p["height"])
+    fid = media["file_id"]
     fp = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{tok}/getFile?file_id={fid}", timeout=60))["result"]["file_path"]
     returned = urllib.request.urlopen(f"https://api.telegram.org/file/bot{tok}/{fp}", timeout=300).read()
     if not returned:

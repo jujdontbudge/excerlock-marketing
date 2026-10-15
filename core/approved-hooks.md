@@ -16,3 +16,7 @@ This is copy permission, not a current assignment. New exact current-message hoo
 - "how to hit 20k step eveyrday during your winter arc"
 - "how to never miss the gyma singel day during your winter atc"
 - "how to stsy consint during your winter arc"
+
+Added from the captain's message on 2026-10-12:
+
+- "how do i explain to somebody..."

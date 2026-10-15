@@ -5,7 +5,9 @@ Zoey is the existing TikTok account. Its character is called "our girl" in the d
 
 ## Audience
 
-Gym girls, about 16 to 26, who save and share "dream body" posts. The account sells a body result, and she is the result.
+Gym girls aged **18–25** (captain, 2026-10-12), who save and share "dream body" posts. The account sells a body result, and she is the result. Choose script ideas for this audience; do not default to parenting, children's activities, office lunch breaks or work-commute routines. Why: the captain rejected those contexts as the wrong audience on 2026-10-12.
+
+Source selection follows [Audience and comment sources](../../core/creative-rules.md#audience-and-comment-sources).
 
 ## Character
 

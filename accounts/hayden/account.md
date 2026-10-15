@@ -3,31 +3,31 @@
 
 Hayden is a TikTok account. She must look clearly different from Zoey. Inspiration account: @lilyterpfr (https://www.tiktok.com/@lilyterpfr, 507 public posts from 2022-07-24 to 2026-09-17, analysed 2026-09-22; full analysis in the archive at `data/hayden-inspiration-analysis.md` and `data/hayden-reference-appearance-reanalysis/report.md`).
 
-**Design status: recast and approved 2026-10-04.** The captain dropped the old "Kinsley" casting and picked a new master reference made with the reference-swap workflow: `accounts/hayden/assets/master.png` (see `assets.md`). The old `hayden-ref-approved.png` is retired; never use it.
+**Design status: "Kinsley" reinstated 2026-10-14.** The captain rejected the 2026-10-04 elevator master as "bad" and picked the original Kinsley casting (first approved 2026-09-26) again. It is now `accounts/hayden/assets/master.png` (see `assets.md`); the elevator master is retired.
 
 ## Audience
 
-Walking girls. The inspiration account is an approachable American gym and lifestyle creator whose page reads as a person first and a fitness account second.
+Gym, workout and fitness girls aged **18–25** (captain, 2026-10-12), with walking and everyday movement as fitness interests. The inspiration account is an approachable American gym and lifestyle creator whose page reads as a person first and a fitness account second. Choose script ideas for this audience; do not default to parenting, children's activities, office lunch breaks or work-commute routines. Why: the captain rejected those contexts and clarified the fitness audience on 2026-10-12. Source selection follows [Audience and comment sources](../../core/creative-rules.md#audience-and-comment-sources).
 
 ## Character
 
 ### Look (captain, 2026-10-03)
 
-Her face and hair come from her master reference (`assets.md`) (approved 2026-10-04). Her body comes from the body line below, which every swap prompt must paste in:
+Her face and hair come from her master reference (`assets.md`) (reinstated 2026-10-14). Her body comes from the body line below, which every swap prompt must paste in:
 
 - Looks 19 to 20: clearly grown, but still youthful (captain, 2026-10-04; prompt says 20). Why: he rejected 18-year-old rolls as "too young" and asked for grown but youthful; a face that reads as a teen must never get a curvier body.
 - Very conventionally attractive. The captain's picture is a much younger Megan Fox, but the prompt says only "conventionally very pretty". Why: spelling out the face shape (heart-shaped, high cheekbones, sharp jaw) gave her a face he called "so weird"; naming the celebrity risks a lookalike.
-- Long, loose, voluminous natural near-black hair, fair skin and light green eyes.
+- Long, voluminous medium-brown hair, light warm skin with faint freckles and light hazel eyes (from the Kinsley master, 2026-10-14).
 - Body (captain, 2026-10-04): very slim, with a tiny waist that is much narrower than her hips and everything above it, a medium B-cup chest, and extremely toned, skinny arms and legs. Light visible abs. Replaces the 2026-10-03 "full large bust, thick thighs".
 - Makeup: natural (see the makeup line).
 
 **Body line.** Paste this into every swap prompt that shows her, because the model otherwise keeps the reference woman's body:
 
-> She is 20, clearly a grown woman but still youthful, conventionally very pretty, with long, loose, voluminous natural near-black hair. She is very slim, with a tiny waist that is much narrower than her hips and her ribcage, so her hips clearly flare out from it, a medium B-cup chest, a flat stomach with light visible abs, and skinny, extremely toned arms and legs with visible muscle definition and no bulk.
+> She is 20, clearly a grown woman but still youthful, conventionally very pretty, with long, voluminous medium-brown hair. She is very slim, with a tiny waist that is much narrower than her hips and her ribcage, so her hips clearly flare out from it, a medium B-cup chest, a flat stomach with light visible abs, and skinny, extremely toned arms and legs with visible muscle definition and no bulk.
 
-**Identity line.** Derived from the approved master inspected 2026-10-08. Lighting makes exact skin/eye tone uncertain; the attached master remains the visual authority:
+**Identity line.** Derived from the Kinsley master inspected 2026-10-14. The file is low resolution, so exact eye colour is uncertain; the attached master remains the visual authority:
 
-> Her face and hair are the woman in the approved master: light skin with a warm cast in this photograph, light gray-green eyes, dark defined softly arched brows, long near-black loose waves with a central part, and natural pink-nude lips. Preserve her visible skin texture; do not substitute the source woman’s identity.
+> Her face and hair are the woman in the approved master: light warm skin with faint freckles across her nose and cheeks, light hazel eyes, dark defined softly arched brows, long medium-brown hair, a soft oval face, and natural pink-nude lips. Preserve her visible skin texture; do not substitute the source woman’s identity.
 
 **Makeup line.** Paste this too:
 
@@ -58,7 +58,7 @@ Updated 2026-10-09 after the captain approved Instagram Submit and YouTube Creat
 
 - Display name: **Hayden**.
 - Saved bio: `walks, gym days + a little less scrolling`.
-- Profile picture on Instagram and YouTube: her approved master reference from `assets.md`, uploaded and saved.
+- Profile picture on Instagram and YouTube: still the retired elevator master (uploaded 2026-10-09). Swapping it for the Kinsley master waits on the captain.
 - Instagram **AI-generated profile** label is **off**. Disabled at the captain's request on 2026-10-09; the off state persisted after reloading settings and the label disappeared from the profile.
 - YouTube banner, if wanted: `walks + gym days`. Proposed copy; no banner asset exists.
 

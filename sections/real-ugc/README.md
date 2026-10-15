@@ -1,6 +1,6 @@
 # Creator-recorded UGC
 
-Current work: `sections/real-ugc/two-format-test/brief.md`. Format ideas for later briefs: `sections/real-ugc/formats.md`. It is a working draft for captain review, not an approved creator offer.
+Current work: `sections/real-ugc/two-format-test/brief.md`. Format ideas for later briefs: `sections/real-ugc/formats.md`. Warm-up for new canvas accounts: `sections/real-ugc/canvas-warmup.md`. It is a working draft for captain review, not an approved creator offer.
 
 ## Workflow
 1. Read the assigned goal, formats and references; product facts come from `core/product.md`, hook permissions from `core/creative-rules.md`.

@@ -10,6 +10,7 @@ Words used here are defined in `CONTEXT.md`. Why the repo is shaped this way: `d
 | Make or change a slideshow | `sections/slideshows/README.md`, then `sections/slideshows/workflows/make-slideshow.md` |
 | Creator-recorded UGC or the current creator brief | `sections/real-ugc/README.md` |
 | Finding, contacting, signing or tracking creators and influencers | `sections/creators/README.md` |
+| Automatic replies to incoming messages: add, change or turn off a rule | `sections/inbox/README.md` |
 | Anything about one account's character, voice or audience | `accounts/<name>/account.md` (accounts: `zoey`, `hayden`) |
 | Research competitors, TikTok posts, ads or videos | `core/workflows/research-competitors.md` and the `core/skills/*-research` skills |
 | Any image with a person in it, image review, video | `core/skills/reference-swap/`, `review-images/`, `fal-video/` |

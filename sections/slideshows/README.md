@@ -17,6 +17,7 @@ Start with `workflows/make-slideshow.md`.
 | `skills/review-script/SKILL.md` | Review a script yourself, right after writing it. |
 | `accounts/<name>/README.md` | One account's slideshow notes and its `## Overrides` of house rules. |
 | `accounts/<name>/decks/NN-slug/` | One deck: `script.md`, `review.md`, `log.md`. |
+| `reference-shortlists/` | Numbered image-bank selections with original image paths and source-post/slide provenance. [20 mixed references, 2026-10-13](reference-shortlists/2026-10-13/manifest.json); [20 slimmer gym references, 2026-10-13](reference-shortlists/2026-10-13-slim-gym/manifest.json). |
 
 ## Core skills it uses
 
