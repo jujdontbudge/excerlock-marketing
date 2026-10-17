@@ -42,7 +42,7 @@ messages. The old system (`raw/retired-inbox-2026-10-15/`) is retired.
 | Let the inbox send replies by itself | `touch sections/inbox/INBOX_AUTO`. Without it (the default) every reply the inbox proposes is a draft for the captain, whatever its type's mode, except free Premium (`app-access`), which always goes out by itself when she sends her email (captain, 2026-10-15); scheduled flow messages (reminders, warm-up guide, email request) follow their own modes. |
 | One message type on/off/draft | `mode:` in `messages/<id>.md` |
 | New or changed wording | `approved: pending` forces draft until the captain approves the exact words |
-| The jobs | `launchctl bootstrap gui/$(id -u) sections/inbox/launchd/com.excerlock.flow.plist` (and `.propose`); `launchctl bootout gui/$(id -u)/com.excerlock.flow` to stop. Copy the plist to `~/Library/LaunchAgents/` only if it should survive a restart. |
+| The jobs | They run on the Ubuntu server (captain, 2026-10-17) as systemd user timers from `systemd/`: `systemctl --user enable --now excerlock-flow.timer excerlock-propose.timer` to start, `systemctl --user disable --now excerlock-flow.timer excerlock-propose.timer` to stop. Only one machine may run them at once, or creators get every message twice. `excerlock-contacts-tunnel.service` reaches contacts-mcp on the Air (iMessage needs a Mac). The send journal keeps its macOS path (`~/Library/Application Support/ExcerLock/inbox-gate.db`) on the server too. On a Mac: `launchctl bootstrap gui/$(id -u) sections/inbox/launchd/com.excerlock.flow.plist` (and `.propose`); `launchctl bootout gui/$(id -u)/com.excerlock.flow` to stop. |
 
 ## Message types (`messages/`)
 One file each; the front matter is documented in `gate/policy.py`. Today:

@@ -1,0 +1,11 @@
+[Unit]
+Description=contacts-mcp on the Air at 127.0.0.1:8787, through the Air's reverse tunnel (ssh host "air")
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/ssh -N -o BatchMode=yes -o ExitOnForwardFailure=yes -o ServerAliveInterval=15 -o ServerAliveCountMax=3 -L 127.0.0.1:8787:127.0.0.1:8787 air
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=ExcerLock inbox propose (the gate sends; see sections/inbox/README.md)
+Wants=excerlock-contacts-tunnel.service
+After=excerlock-contacts-tunnel.service network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/excerlockmarketing/sections/inbox/run-propose.sh

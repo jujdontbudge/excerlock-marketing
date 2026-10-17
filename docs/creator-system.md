@@ -10,7 +10,7 @@ A map of every part that finds, signs, messages and tracks creators, and where e
 | **Creator database** (`sections/creators`) | Every creator we look at: handles, stats snapshots, vetting score, stage, deals, contracts, posts, payouts | Air, `~/excerlock-creators/`, SQLite `data/creators.db`, backed up daily | `sections/creators/README.md` |
 | **SideShift** | The marketplace where creators apply, chat with us, sign the contract and link their accounts | SideShift's servers; we use its API | `integrations/sideshift/README.md` |
 | **contacts-mcp** | One person ID per human across every channel (SideShift, iMessage, email, TikTok, Instagram), every message stored, the only thing that sends | Air, separate repo `JohanSardar/contacts-mcp`, daemon on `127.0.0.1:8787` | `~/contacts-mcp/README.md`, `integrations/contacts-mcp/README.md` |
-| **Send gate** (`sections/inbox`) | Every automatic message to a creator: which types may go, when, and the checks before each one | Air, launchd jobs every 15 minutes | `sections/inbox/README.md` |
+| **Send gate** (`sections/inbox`) | Every automatic message to a creator: which types may go, when, and the checks before each one | Ubuntu server, systemd timers every 15 minutes (contacts-mcp stays on the Air) | `sections/inbox/README.md` |
 | **Free Premium** | Giving a signed creator ExcerLock Premium by email | Air, `excerlock-access` skill | `~/.claude/skills/excerlock-access/SKILL.md` |
 | **Dashboard** | One page for the captain: approval inbox, boards, what the gate is holding | Air, tailnet only | `sections/creators/README.md` |
 
