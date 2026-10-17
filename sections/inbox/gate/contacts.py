@@ -101,7 +101,8 @@ class ContactsMCP:
                     f"sideshift:{h['value_normalized']}" for h in (raw if isinstance(raw, list) else [])
                     if isinstance(h, dict) and h.get('channel') == 'sideshift'
                     and isinstance(h.get('value_normalized'), str) and h['value_normalized'].strip()])
-            raise DefiniteNoSend('person is tagged do-not-contact')
+            if not getattr(self, 'captain_ordered', False):   # "when I say send, you send" (captain, 2026-10-15)
+                raise DefiniteNoSend('person is tagged do-not-contact')
         if not all(isinstance(t, str) for t in tags):   # every tag must be readable text (live: all strings) (BL01)
             raise DefiniteNoSend('a tag on this person can\'t be read (do-not-contact unknown)')
         # a captain's do-not-contact on ANY account linked to this person stops this one too (review CN01)
@@ -112,6 +113,8 @@ class ContactsMCP:
             ch, val = h.get('channel'), h.get('value_normalized')
             if not isinstance(ch, str) or not ch.strip() or (ch == 'sideshift' and (not isinstance(val, str) or not val.strip())):
                 raise DefiniteNoSend('a linked account of this person can\'t be read (do-not-contact unknown)')
+        if getattr(self, 'captain_ordered', False):   # his order passes do-not-contact; unreadable records still stop it
+            return
         person_restricted = getattr(self, 'person_restricted', None)
         if person_restricted is not None and person_restricted(action.person_id):
             raise DefiniteNoSend('an account ever linked to this person is do-not-contact')   # (CP01)

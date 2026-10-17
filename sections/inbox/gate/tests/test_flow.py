@@ -82,7 +82,7 @@ class FlowTests(unittest.TestCase):
 
     def test_reminder_schedule(self):
         for hours, expected in ((5, []), (6, ['contract-reminder-1']), (11.9, ['contract-reminder-1']),
-                                (12, ['contract-reminder-2']), (35.9, ['contract-reminder-2']), (36, [])):
+                                (12, ['contract-reminder-2']), (23.9, ['contract-reminder-2']), (24, [])):   # 24h close (captain 2026-10-15)
             f, gate = self.flow(self.contract(), chat(), hours)
             f.run()
             self.assertEqual(self.types(gate), expected, hours)

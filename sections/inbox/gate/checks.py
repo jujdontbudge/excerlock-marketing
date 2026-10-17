@@ -19,7 +19,7 @@ from .model import IN, OUT, UNKNOWN, Msg
 
 EASTERN = ZoneInfo('America/New_York')
 WINDOW = (9, 21)  # 09:00 inclusive to 21:00 exclusive, US Eastern (captain, 2026-10-14)
-INVITE_TTL = timedelta(hours=36)
+INVITE_TTL = timedelta(hours=24)   # invites close 24h after they're sent (captain, 2026-10-15; was 36h)
 INVITE_AGE = {'invite_6h': 6, 'invite_12h': 12}   # reminder schedule: hours since the current invite (review AJ03)
 SYSTEM_KINDS = {'handle_request', 'handle_approved', 'invite_link', 'system'}
 ONBOARDING_STATUSES = {'active'}
@@ -100,6 +100,32 @@ def invite_time(conv, contract=None):
     if not links or any(t is None for t in times):   # an edit with an unusable time: no clock, automation holds (BQ01)
         return None
     return max(times)
+
+
+_WORDS = {w: i for i, w in enumerate('zero one two three four five six seven eight nine ten eleven twelve thirteen '
+                                     'fourteen fifteen sixteen seventeen eighteen nineteen twenty'.split())}
+_WORDS.update({'a': 1, 'an': 1, 'twenty-four': 24, 'twenty four': 24, 'thirty': 30, 'thirty-six': 36,
+               'forty-eight': 48, 'a couple of': 2, 'couple of': 2, 'a few': 3, 'few': 3})
+_NUM = r'(\d+|' + '|'.join(sorted((re.escape(w) for w in _WORDS), key=len, reverse=True)) + r')'
+_UNIT = r'(hours?|hrs?|days?)'
+_PROMISE = [re.compile(r'\b' + _NUM + r'\s+(?:more|additional|extra)\s+' + _UNIT + r'\b', re.I),
+            re.compile(r'\b(?:another|next|the next)\s+' + _NUM + r'\s+' + _UNIT + r'\b', re.I)]
+_CLOSING = re.compile(r'\b(clos(e|es|ed|ing)|expir\w*|withdraw\w*|deadline|last chance|stays? open|keep (?:your|the) (?:invite|spot|contract) open)\b', re.I)
+UNKNOWN_SPAN = timedelta.max   # closing words without a duration we can read: the captain decides (review DJ01)
+
+
+def promised_open(text):
+    """How long a message of ours promised the invite stays open ("open for 12 more hours", "twelve more hours",
+    "about one more day", "another 12 hrs"), as a timedelta; UNKNOWN_SPAN when it talks about closing or staying open
+    but no duration can be read; None when it promises nothing. Any wording counts, the captain's own too (DI01, DJ01)."""
+    spans = []
+    for pattern in _PROMISE:
+        for n, unit in pattern.findall(text or ''):
+            count = int(n) if n.isdigit() else _WORDS[n.lower()]
+            spans.append(timedelta(hours=count * (24 if unit.lower().startswith('d') else 1)))
+    if spans:
+        return max(spans)
+    return UNKNOWN_SPAN if _CLOSING.search(text or '') else None
 
 
 def content_time(m):

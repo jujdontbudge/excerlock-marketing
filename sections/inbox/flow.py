@@ -5,8 +5,8 @@ Per contract in campaign v4mH50Sz9sUdkssqcd2L:
 - she accepted (a handle request in her chat, or the contract is active):
     record it once, check the requested handles are new (gate/handles.py) and record the verdict,
     then propose `ask-app-email` (once per creator);
-- invite open and not accepted: 6h after the invite propose `contract-reminder-1`, 12h after propose `contract-reminder-2`;
-- 36h after the invite, still not accepted: record `withdraw-due`. Withdrawing is a separate, explicit step
+- invite open and not accepted: 6h after the invite propose `contract-reminder-1`, 12h after propose `contract-reminder-2` (the last-call: open 12 more hours);
+- 24h after the invite (and 12h after the last-call), still not accepted: record `withdraw-due`. Withdrawing is a separate, explicit step
   (withdraw.py) and never sends a message (captain, 2026-10-14).
 Usage: .venv/bin/python sections/inbox/flow.py [--dry-run]
 """
@@ -34,7 +34,7 @@ CAMPAIGN = 'v4mH50Sz9sUdkssqcd2L'
 WARMUP_DOC = '1guNLxDR65XXBlYbMOgHIeUw_aRi8cT8J3fSS71vNIEY'
 COMPANY = 'L9suC60QYBRzy8rRY16r1FtjyPT2'
 REMINDERS = ((checks.INVITE_AGE['invite_6h'], 'contract-reminder-1'), (checks.INVITE_AGE['invite_12h'], 'contract-reminder-2'))   # the gate enforces the same ages
-WITHDRAW_AFTER = timedelta(hours=36)
+WITHDRAW_AFTER = timedelta(hours=24)
 
 
 def first_name(contract):
@@ -258,6 +258,11 @@ class Flow:
             return [f'{name}: no invite link from us found in the chat, needs a person']
         age = self.now() - invited
         if age >= WITHDRAW_AFTER:
+            # not due before every "open N more hours" we told her has run out (review DI03)
+            deadline = withdraw.close_after(checks.with_history(conv, self.journal.events(key)), invited, self.journal.delivered_texts(key))
+            if deadline is None or self.now() < deadline:
+                until = 'unknown, the captain decides' if deadline is None else f'{deadline:%Y-%m-%d %H:%M} UTC'
+                return [f'{name}: invite past 24h, but we told her it stays open until {until}']
             self.journal.event(key, 'withdraw-due', f"{contract['id']}:{checks.invite_generation(conv, contract)}", {'invited': invited.isoformat()})
             uid = key.split(':', 1)[-1]
             def fresh_apps():   # rows read before a failed page still count as signing evidence (AD01)
@@ -271,11 +276,19 @@ class Flow:
             held = self.identity_check(base)   # who she is in contacts, read now, before any withdrawal (review CV01)
             if held:
                 self.journal.event(key, 'withdraw-held', f"{contract['id']}:{self.now():%Y-%m-%dT%H}", {'reasons': held})
-                return [f'{name}: 36h → withdraw held ({"; ".join(held)[:200]})']
+                return [f'{name}: 24h → withdraw held ({"; ".join(held)[:200]})']
             outcome, reasons = withdraw.withdraw(contract['id'], self.fetch_contract, lambda: self.live.read(conv.external_id, list(conv.creator_ids)),
                                                  self.journal, key, self.now(), self.write_client, fresh_apps,
                                                  started=started)
-            return [f'{name}: 36h → withdraw {outcome} ({"; ".join(reasons)[:200]})']
+            return [f'{name}: 24h → withdraw {outcome} ({"; ".join(reasons)[:200]})']
+        # the warm-up guide always goes with the contract (captain, 2026-10-15): once per invite round, unless a
+        # message of ours after this invite already carries it. Fresh invites only (the job runs every 15 minutes), so
+        # invites from before this rule get their reminders as before
+        guide_type = getattr(self.gate, 'types', {}).get('contract-invite')   # switch it off with mode: off
+        if guide_type is not None and guide_type.effective_mode == 'auto' and age < timedelta(hours=checks.INVITE_AGE['invite_6h']) and not any(WARMUP_DOC in (m.text or '') and m.direction == 'out' and checks.ts(m.at) >= invited for m in conv.messages):
+            d = self.gate.run(Action(message_type='contract-invite', fields={'First': name, 'first': (name or '').lower()},
+                                     trigger=f'contract {contract["id"]} invited, no warm-up guide since', **base))
+            return [f'{name}: invited → contract-invite with warm-up guide {d.outcome} ({"; ".join(d.reasons)[:160]})']
         for hours, message_type in reversed(REMINDERS):
             if age >= timedelta(hours=hours):
                 d = self.gate.run(Action(message_type=message_type, fields={'First': name},

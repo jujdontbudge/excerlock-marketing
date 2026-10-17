@@ -1,8 +1,9 @@
-"""Withdraw unsigned contract invites after 36 hours, silently (captain, 2026-10-14: no message when withdrawn).
+"""Withdraw unsigned contract invites after 24 hours, silently (captain, 2026-10-14: no message when withdrawn;
+2026-10-15: 24 hours, not 36, and only 12 hours after the last-call message told her so).
 
 Withdrawing is irreversible for that invite, so every condition must hold, checked fresh right before the call:
   1. the contract is still `pending` in SideShift (fresh GET, not the list from earlier);
-  2. the invite is at least 36 hours old;
+  2. the invite is at least 24 hours old, and any last-call (contract-reminder-2) has been in her chat 12 hours;
   3. the live chat shows no handle request (she didn't sign) and no message from her in the last 24 hours
      (2026-10-15: Dakota was actively trying to make accounts at hour 21; never cut off someone who is trying);
   4. nothing from her is waiting for an answer from us;
@@ -17,12 +18,39 @@ from datetime import timedelta
 from gate import checks, clock
 from gate.model import IN
 
-WITHDRAW_AFTER = timedelta(hours=36)
+WITHDRAW_AFTER = timedelta(hours=24)
+LAST_CALL = 'stays open for 12 more hours'   # words of messages/contract-reminder-2.md (checks.promised_open reads any wording)
 RECENT = timedelta(hours=24)
 SPAN = 10   # seconds: handle requests, chat and contract must all be read within this window
 
 
-def blockers(contract_now, conv, now, journal_events, has_write_key, creator_key=None, requested_id=None):
+def close_after(conv, invited, receipts=()):
+    """When this invite may close: 24h after it AND after every "open N more hours/days" we told her for this invite
+    ran out. conv must include every revision ever seen (checks.with_history); receipts are our own journaled sends,
+    counted even if their row was never read back (DI01). Timed by when the words appeared, so an edit counts from the
+    edit (DI02). None when such a promise's time is unknown: hold."""
+    deadline = invited + WITHDRAW_AFTER
+    for m in conv.messages:
+        span = checks.promised_open(m.text) if m.direction != IN else None
+        if span is None:
+            continue
+        at = checks.content_time(m)
+        if at is None:
+            return None
+        if at >= invited:
+            if span == checks.UNKNOWN_SPAN:   # closing words, no readable duration: the captain decides (DJ01)
+                return None
+            deadline = max(deadline, at + span)
+    for r in receipts:   # journal.delivered_texts: sent or possibly sent; definite no-sends promised nothing (DJ03)
+        span = checks.promised_open(r.get('text'))
+        if span is not None and checks.ts(r['at']) >= invited:
+            if span == checks.UNKNOWN_SPAN:
+                return None
+            deadline = max(deadline, checks.ts(r['at']) + span)
+    return deadline
+
+
+def blockers(contract_now, conv, now, journal_events, has_write_key, creator_key=None, requested_id=None, receipts=()):
     reasons = []
     contract_now = {**contract_now, 'recorded_invites': checks.recorded_invites(contract_now, journal_events)}   # AT01
     if requested_id is not None and contract_now.get('id') != requested_id:
@@ -40,7 +68,13 @@ def blockers(contract_now, conv, now, journal_events, has_write_key, creator_key
     if invited is None:
         reasons.append('no invite time')
     elif now - invited < WITHDRAW_AFTER:
-        reasons.append('invite is younger than 36 hours')
+        reasons.append('invite is younger than 24 hours')
+    if invited is not None:   # the last-call promised "12 more hours": keep every such promise (captain, 2026-10-15)
+        deadline = close_after(conv, invited, receipts)
+        if deadline is None:
+            reasons.append('we told her how long the invite stays open, but when is unknown; the captain decides')
+        elif now < deadline and now - invited >= WITHDRAW_AFTER:
+            reasons.append(f'we told her the invite stays open until {deadline:%Y-%m-%d %H:%M} UTC')
     if contract_now.get('applications') is None and contract_now.get('applications_required'):
         reasons.append('her handle requests could not be read from SideShift')                # review R07
     if checks.maybe_accepted(conv, contract_now) or checks.recorded_signing(contract_now, journal_events):   # recorded earlier, even if redacted now (V04)
@@ -134,7 +168,8 @@ def withdraw(contract_id, fetch_contract, read_chat, journal, creator_key, now, 
     for m in conv.messages:   # every revision read, then decide on everything ever seen (review AY01)
         journal.remember_message(creator_key, m)
     events = journal.events(creator_key)
-    reasons = blockers(contract_now, checks.with_history(conv, events), now, events, write_client is not None, creator_key, contract_id)
+    reasons = blockers(contract_now, checks.with_history(conv, events), now, events, write_client is not None, creator_key, contract_id,
+                       journal.delivered_texts(creator_key))
     if reasons:
         journal.event(creator_key, 'withdraw-held', f'{contract_id}:{now:%Y-%m-%dT%H}', {'reasons': reasons})
         return 'held', reasons
@@ -154,4 +189,4 @@ def withdraw(contract_id, fetch_contract, read_chat, journal, creator_key, now, 
         journal.event(creator_key, 'withdraw-uncertain', contract_id, {'response': str(result)[:200]})
         return 'held', ['SideShift did not confirm the withdrawal; check by hand']
     journal.event(creator_key, 'withdrawn', contract_id, {'at': now.isoformat(), 'silent': True})
-    return 'withdrawn', ['36 hours without signing; no message sent']
+    return 'withdrawn', ['24 hours without signing and 12 hours after the last-call; no message sent']

@@ -20,13 +20,11 @@ Entries marked "from creator docs" repeat what the brief, agreement, warm-up gui
 ### agreed-awaiting-contract · off · 2026-10-14 · captain (no short acknowledgements, captain 2026-10-14)
 **They say:** "Sounds great!" · "I'm in" · "How do we begin?" (has the brief, no contract yet)
 **Answer:** Yay, so happy to have you, {first_name}! 🙌 We're getting everything ready on our side and we'll be in touch really soon with the next steps.
-
-Johan, ExcerLock
 *Note:* never send or promise a contract; the captain decides. Escalate too so he sees she's ready.
 
 ### what-to-film · auto · 2026-10-14 · from creator docs
 **They ask:** "What kind of videos?" · "What are the formats?"
-**Answer:** Three super quick formats, all raw (no editing needed): walking laps around a room with your phone propped up, walking outside or on a treadmill selfie-style, and a quick app demo where your apps lock when you stop walking. You'll get the full filming guide with examples once you sign.
+**Answer:** Four super quick formats, all raw (no editing needed): walking laps around a room with your phone propped up, walking outside or on a treadmill selfie-style, a quick app demo where your apps lock when you stop walking, and a storm green screen where you walk or run in circles in front of a huge storm. You'll get the full filming guide with examples once you sign.
 
 ### own-workflow · auto · 2026-10-14 · captain
 **They ask:** "I batch film / I have a manager who edits and posts / can I schedule posts, does that work?"
@@ -36,8 +34,6 @@ Johan, ExcerLock
 2. The formats change every 2 weeks, so each new batch gets filmed once we send the new formats.
 
 If that sounds good, just let us know and we'll send you the contract!
-
-Johan, ExcerLock
 
 ## Pay
 
@@ -54,6 +50,10 @@ Johan, ExcerLock
 ### finish-early · auto · 2026-10-14 · captain
 **They ask:** "If I finish my 15 videos early, do I have to wait?" · "Can I film everything at once?" · "Can I get paid early?"
 **Answer:** Payments go out at the end of each 2 weeks. We just ask that you film about 1 week of videos at a time, since we may tweak the formats slightly as we go, so you'll never have to redo a big batch.
+
+### 15-or-30 · auto · 2026-10-16 · captain
+**They ask:** "Is it 15 videos including Instagram and TikTok, or 30?"
+**Answer:** It's 15 videos, and each one goes on both TikTok and Instagram, so not 30.
 
 ### rate-negotiation · captain
 **They ask:** "Can you do more?" · "My rate is $X" · "Can I get paid upfront?"
@@ -84,6 +84,10 @@ Johan, ExcerLock
 
 ## Filming and posting
 
+### film-during-warmup · auto · 2026-10-16 · captain
+**They ask:** "Can I start making videos while I'm warming up?" · "My TikTok is already warmed up, can I start?"
+**Answer:** Yeah, you can start filming now (here's what to film: the formats doc). Just don't post anything until both accounts have had their 3 warm-up days. (Captain told Kamila and Jillian to start filming on 2026-10-16.)
+
 ### editing · auto · 2026-10-14 · from creator docs
 **They ask:** "Do I need to edit?" · "Do I add captions or music?"
 **Answer:** Nope! Just send the raw clip (vertical, 10–20 seconds, no captions, music or filters). We add the caption, filter and hook, then send it back for you to post.
@@ -113,8 +117,6 @@ Johan, ExcerLock
 ### at-capacity · auto · 2026-10-14 · captain
 **They say:** "I'm fully booked / at capacity right now."
 **Answer:** Hey {first_name}, thank you so much for your response! You seem really talented, and we'd love to possibly work with you in the future. Let us know when you have room for another campaign 😊
-
-Johan, ExcerLock
 
 ## Ending
 

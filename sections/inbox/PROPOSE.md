@@ -13,7 +13,7 @@ Propose exactly one of:
   `fields.email`: the email exactly as she wrote it. Never invent fields; names are filled in by the runner.
 - `escalate`: anything else, including: no type fits exactly, she asked more than one thing and one type doesn't cover
   all of it, money, rates, terms, contracts, legal, complaints, upset or unsure, anything new. Give `summary` (one line)
-  and `suggested_reply` (short: 1–3 lines, her own name in any examples, at most one emoji, signed "Johan, ExcerLock").
+  and `suggested_reply` (short: 1–3 lines, her own name in any examples, usually no emoji, no sign-off).
   If the knowledge base has no answer, start `summary` with `NEW QUESTION:`.
 - `ignore`: only automated mail, newsletters, receipts, bounces, out-of-office or spam. Give `reason`.
 

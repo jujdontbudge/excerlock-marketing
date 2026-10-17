@@ -1,6 +1,6 @@
 ---
 id: contract-invite
-mode: auto
+mode: off   # test fixture: older suites test reminders alone; test_flow_guide.py switches it on
 channel: sideshift
 approved: 2026-10-15   # captain approved these exact words ("yes approve")
 fields: [First, first]

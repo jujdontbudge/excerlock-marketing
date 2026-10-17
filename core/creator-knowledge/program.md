@@ -7,9 +7,10 @@ Plain facts for agents. Not creator copy: write replies in the creator voice (`.
 |---|---|---|
 | Creator brief | First, when they say they're interested | `1GfeqoP9he9kZlnPoWoIJNn9swWoCp7VAlEwGcDfCA7Q` (public link) |
 | Creator agreement | Before signing (outside SideShift) | `1YTQ061QiR61Zy9jQUppId7-kPz5rPUfcH3OYFJuL_dM` |
-| SideShift contract | The SideShift campaign invite, campaign "ExcerLock — Fitness & Gym Girls ($300/mo + $1 CPM)", id `v4mH50Sz9sUdkssqcd2L`. SideShift's sections 1–11 plus our section 12 "ExcerLock Campaign Terms" | in SideShift |
-| Warm-up guide | Right after signing (sent automatically) | `1guNLxDR65XXBlYbMOgHIeUw_aRi8cT8J3fSS71vNIEY` (public link) |
-| Formats doc ("What to film") | After signing, once the warm-up is under way | `1bab54xn1KYk7MKwn4hOkC87gjktm4_FF54GVc6uK8dI` |
+| SideShift contract | The SideShift campaign invite, campaign "ExcerLock — Fitness & Gym Girls ($300/mo + $1 CPM)", id `v4mH50Sz9sUdkssqcd2L`. SideShift's sections 1–11 plus our section 12 "ExcerLock Campaign Terms". Section 2 is the campaign Description (the job post) pasted in. On 2026-10-16 section 12 got the new rules (film in TikTok, send in SideShift, at least 1 a day by 11am US Eastern the day before, post the exact file on both apps, posting directions, brand-new accounts with the name/pic/bio rules, not new or not warmed up = not paid); it applies to new contracts only. Editing the Description makes SideShift notify every signed creator and ask them to review an updated contract, so it still has the old text until the captain decides | in SideShift |
+| New accounts guide (was the warm-up guide; renamed 2026-10-16, same link) | With the contract invite (sent automatically): how to make the 2 accounts (name, profile pic, bio, with real examples), then the 3-day warm-up | `1guNLxDR65XXBlYbMOgHIeUw_aRi8cT8J3fSS71vNIEY` (public link) |
+| Formats doc ("What to film") | Right after signing, with the email ask (captain, 2026-10-16) | `1bab54xn1KYk7MKwn4hOkC87gjktm4_FF54GVc6uK8dI` (public link) |
+| Profile pic examples (image) | Inside the brief and the New accounts guide | Drive `1fUv3k_S99YyHZc2KmQ17E6w0uB6Z1D12` (public link) |
 
 ## What ExcerLock is
 An iPhone app that locks the apps you pick (TikTok, Instagram…) until you move. Walk and they open; stop and they lock. Works inside, outside and on a treadmill. Product details: `../product.md`.
@@ -31,31 +32,38 @@ Girls about 18–25, in the US, somewhat good-looking, into fitness, the gym or 
 ## The work
 - **Videos:** 15 every 2 weeks. Raw only: vertical 9:16, 10–20 seconds, no captions, music or filters. About 10 minutes to film 5 of one format.
 - **We do the editing:** caption, Snapchat filter, hook text, app screen recording.
-- **Approval:** they send every video before anything is posted; we reply within 24 hours and may ask for a re-record.
-- **Formats:** three now: (1) walking laps around a room, phone propped up; (2) walking outside or on a treadmill, selfie-style; (3) app demo: subtle face reaction, then walk, stop (apps lock), walk again (apps open), filmed on a second phone. Details and filming tips: the formats doc and `quality.md`.
-- **Minimum mix per 15 videos** (captain, 2026-10-14; formats doc): format 1 at least 4 (at least 2 outside, each with at least 20 seconds of steady walking); format 2 at least 4 (at least 2 on a treadmill and 2 outside); format 3 at least 4 (one inside, one outside, one on a treadmill, one filmed by someone else in 3rd person), each clearly showing the apps lock on stopping and unlock on walking again. The other 3 are any format. Format 1 clips are 20 seconds or longer; the rest 10–20 seconds.
+- **How videos move** (captain, 2026-10-16): she films in the TikTok app and sends each clip to us in the SideShift chat; we edit and send back the finished file; she posts that same file on TikTok and on Instagram, never a copy saved from TikTok (the TikTok watermark gets it shown less on Instagram). We reply within 24 hours and may ask for a re-record.
+- **1 video a day, by 11am** (captain, 2026-10-16): from her first post (after the warm-up), at least 1 a day until her 15 are in (about 2 weeks), then she's paid. Each day's video reaches us by 11am US Eastern the day before it goes up.
+- **Posting directions:** she follows what we send with each video (when to post, caption). Missing them, the profile pic/name/bio rules or the 11am deadline: we ask her to fix it, and those videos don't count until she does (agreement, 2026-10-16).
+- **Formats:** four now: (1) walking laps around a room, phone propped up; (2) walking outside or on a treadmill, selfie-style; (3) app demo: subtle face reaction, then walk, stop (apps lock), walk again (apps open), filmed on a second phone; (4) storm green screen, added 2026-10-15 by the captain: filmed with TikTok's Green Screen Video effect over our storm clip (Drive `1GIrMUOcnoxkGXZpzsZeRx2JjKhl8r9as`), version A walking in circles while scrolling, version B running in circles with no phone. Details and filming tips: the formats doc and `quality.md`.
+- **Minimum mix per 15 videos** (captain, 2026-10-14; formats doc): format 1 at least 4 (at least 2 outside, each with at least 20 seconds of steady walking); format 2 at least 4 (at least 2 on a treadmill and 2 outside); format 3 at least 4 (one inside, one outside, one on a treadmill, one filmed by someone else in 3rd person), each clearly showing the apps lock on stopping and unlock on walking again; format 4 at least 2 (1 of each version; captain, 2026-10-15). The other 1 is any format (was 3 before format 4). Format 1 clips are 20 seconds or longer; the rest 10–20 seconds.
 - **Film about 1 week at a time** (captain, 2026-10-14): creators record roughly one week of formats at once, because formats may be tweaked slightly. Pay is still at the end of each 2-week cycle; finishing early doesn't pay early.
 - **Formats change every 2 weeks** (captain, 2026-10-14). The contract says new formats will be just as short and easy to film.
 - **Own ideas:** welcome, but run them by us first.
 - **Own workflow:** batch filming, a manager or editor helping, or scheduling is fine, as long as the accounts are properly warmed up and she films each new batch when the new formats arrive (captain, 2026-10-14).
 
 ## The accounts (canvas UGC)
-- She makes a **new** TikTok and Instagram account just for this, on her everyday phone, VPN off, and only uses them on that phone. Never posts on her personal account. Her friends and followers never see it.
+- She makes a **new** TikTok and Instagram account just for this (videos on an account that isn't new or wasn't warmed up aren't paid; agreement, 2026-10-16), on her everyday phone, VPN off, and only uses them on that phone. Never posts on her personal account. Her friends and followers never see it.
 - **She makes both accounts before she signs:** SideShift won't let her sign until she links them (creators, 2026-10-14). Brief and agreement say so (captain, 2026-10-14).
-- **Logins:** she keeps the email and password safe; she *may* share them with us later. We don't ask for them now (captain, 2026-10-14).
+- **Logins:** she keeps the email and password safe and shares both logins with us. The signed SideShift contract (12.2) already says so, and the New accounts guide asks for them (2026-10-16; replaces the captain's 2026-10-14 "may share later", pending his OK).
 - ExcerLock owns the new accounts (handle, logins, followers, content) and she hands back full access when the deal ends.
 - **"New" means created in the last 3 days** when she links them, both TikTok and Instagram (captain, 2026-10-14). Handles that pass may be approved; anything else goes to the captain.
-- Instagram set to a Creator account; a photo of her and a name that sounds like her; no links in bio. Never use a VPN or buy followers.
-- **Username** (captain, 2026-10-14; warm-up guide): simple, like a normal girl's account. Her first name plus fitness or walking, or her name with a few numbers, e.g. `emma_fitness`, `emma.fitness`, `emma.walks`, `emmacarter27`. Never ExcerLock or UGC in it (captain, 2026-10-15: no "ugc" in usernames).
+- Instagram set to a Creator account. Never use a VPN or buy followers.
+- **Profile pic** (captain, 2026-10-16): a normal phone photo of her, like a gym mirror selfie, a selfie on a walk or a smiley pic at home; same one on both apps; no logos, photoshoots, bikini pics or pics with other people. Real examples (Stompers' UGC and ambassador accounts and small creators): @anaswalks3, @jocelynwalking, @walkwithmichy, @kel.fitxo, @chanwalks, @bearyspacey; image above.
+- **Bio** (captain, 2026-10-16): one or two normal lines about her, not about walking; no links, email or ExcerLock. Real ones: "U of A 2028 🏫", "nj | nyc", "I love fruit 🍉", "all things cute, cozy & ghibli 🌸", "I make silly videos & gym 🤓". Or her city, age or school and something she loves ("22 | austin").
+- **Username** (captain, 2026-10-14; warm-up guide): simple, like a normal girl's account. Her first name plus fitness or walking, or her name with a few numbers, e.g. `emma_fitness`, `emma.fitness`, `emma.walks`, `emmacarter27`. Never ExcerLock or UGC in it (captain, 2026-10-15: no "ugc" in usernames). Real accounts like this: @anaswalks3, @jocelynwalking, @kel.fitxo, @walkwithmichy.
 - Why new accounts: unbranded, low-follower accounts feel like a real person, which people trust more than an influencer ad.
 
 ## Timeline
 1. She says she's interested → we send the brief (automatic on SideShift).
-2. She says she wants in → we send the contract (SideShift campaign invite) **together with** the account-setup message and the warm-up guide (message type `contract-invite`). **The captain decides who gets a contract.**
-3. Unsigned contract invites get reminders at 6 and 12 hours (9am–9pm US Eastern only) and are withdrawn silently after 36 hours, with no message (captain, 2026-10-14).
+2. She says she wants in → we send the contract (SideShift campaign invite) **together with** the New accounts guide (message type `contract-invite`): make the 2 accounts, link them, sign, and start the warm-up. **The captain decides who gets a contract.**
+3. Unsigned contract invites get one reminder at 6 hours and a last-call at 12 hours ("stays open for 12 more hours, then we'll close it"), 9am–9pm US Eastern only, and are withdrawn silently after 24 hours, never sooner than 12 hours after the last-call (captain, 2026-10-15; was reminders at 6 and 12 hours and 36 hours).
 4. She signs = she links her handles (a SideShift handle request). Her contract only goes `active` once the handles are approved; `pending` does NOT mean unsigned.
 5. Warm-up, every session split between TikTok and Instagram so both accounts get warmed up (captain, 2026-10-15): day 1 scroll 10 minutes twice; day 2 search the niche 10 minutes twice; day 3 scroll 10 minutes; day 4 first post.
-6. We send the formats doc; she films, sends the raw videos, we edit and send them back, she posts.
+6. As soon as she signs → the formats doc and the email ask for her free account (captain, 2026-10-16), then her free Premium.
+7. From day 4 of the warm-up: she films in TikTok, sends each clip in the SideShift chat by 11am US Eastern the day before, we send it back, she posts it on TikTok and Instagram. At least 1 a day until her 15 are in, then she's paid.
+
+When a creator asks what's next, answer from this list. Messages say what comes next only when it fits (captain, 2026-10-16: not a hard rule).
 
 ## The app (free Premium)
 - After she signs we ask for the email she'll sign in with, then grant free Premium with `excerlock-access grant <email> --note "UGC @handle, campaign, approved by Johan"` (skill: `~/.claude/skills/excerlock-access/SKILL.md`; captain, 2026-10-14). Use exactly her email; `check` shows whether she has signed in; `revoke` when the deal ends.

@@ -6,6 +6,8 @@ This file owns product facts and their verification limits, not campaign priorit
 
 ExcerLock turns attachment to chosen apps into motivation to move and follow through on fitness goals. Users choose the apps to restrict, an exercise condition, and when it applies. It does not lock the entire phone.
 
+**The problem it solves** (captain, 2026-10-16): people who aren't consistent at the gym, struggle to lose fat, spend too much time on their phone or need to burn more calories. ExcerLock hacks the brain by tying the screen-time reward to exercise, so people move and go to the gym more. The creator brief states it in creator voice.
+
 The captain described these distinct conditions; verify the particular condition in the current build before filming proof:
 
 | Condition | Access behavior |

@@ -30,7 +30,7 @@ class Round62(Case):
         self.rows[0]['createdAt'] = (self.clock - timedelta(hours=70 if withdrawal else 8)).isoformat()
         # This is a genuine later invite, with independently readable company ID,
         # contract link and creation time. Only its display metadata is broken.
-        age = (40 if old_enough else 30) if withdrawal else (7 if old_enough else 4)
+        age = (40 if old_enough else 20) if withdrawal else (7 if old_enough else 4)   # adapted 2026-10-15: invites close at 24h, so 'too young' is 20h (was 30h)
         row = self.raw('reinvite', 'https://app.sideshift.app/campaign-invite/C1',
                        self.clock - timedelta(hours=age))
         if malformed:
@@ -60,7 +60,7 @@ class Round62(Case):
     def test_BX01_rescued_reinvite_must_reset_draft_only_withdrawal_clock(self):
         report = self.rescued_reinvite(withdrawal=True)
         self.assertEqual(self.writes, [],
-                         f'Contract rejected only 30h15m after observed re-invite: {report}')
+                         f'Contract rejected only 20h15m after observed re-invite: {report}')
 
     def test_control_readable_vanished_reinvite_resets_reminder_clock(self):
         report = self.rescued_reinvite(malformed=False)

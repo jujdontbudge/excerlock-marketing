@@ -49,6 +49,25 @@ class Tests(unittest.TestCase):
         self.assertEqual(self.run_it(conv())[0], 'withdrawn')
         self.assertEqual(self.writer.calls, [('POST', '/contracts/C1/reject', 'withdraw-C1')])
 
+    def test_last_call_promise_is_kept(self):   # captain 2026-10-15: "open for 12 more hours, then we'll close it"
+        policy_text = (Path(__file__).resolve().parents[2] / 'messages/contract-reminder-2.md').read_text()
+        self.assertIn(W.LAST_CALL, policy_text, 'the withdrawal rule must track the approved last-call words')
+        late = Msg('l', (INV + timedelta(hours=20)).isoformat(), OUT, 'company',
+                   "Hey Ada! Your ExcerLock invite above stays open for 12 more hours, then we'll close it.", 'text')
+        outcome, reasons = self.run_it(conv(late), hours=25)   # invite is 25h old, but the last-call went out only 5h ago
+        self.assertEqual(outcome, 'held')
+        self.assertTrue(any('stays open until 2026-10-15 13:00' in r for r in reasons), reasons)   # last-call at 20h + 12h
+        self.assertEqual(self.writer.calls, [])
+
+    def test_last_call_promise_then_close(self):
+        late = Msg('l', (INV + timedelta(hours=12)).isoformat(), OUT, 'company',
+                   "Hey Ada! Your ExcerLock invite above stays open for 12 more hours, then we'll close it.", 'text')
+        self.assertEqual(self.run_it(conv(late), hours=24.5)[0], 'withdrawn')
+
+    def test_closes_at_24_hours_not_36(self):
+        self.assertEqual(self.run_it(conv(), hours=23.9)[0], 'held')
+        self.assertEqual(self.run_it(conv(), hours=24.1)[0], 'withdrawn')
+
     def test_dakota_case_recent_message_blocks(self):
         c = conv(Msg('d', (INV + timedelta(hours=21)).isoformat(), IN, 'creator', "i'm struggling to make a gmail", 'text'))
         outcome, reasons = self.run_it(c)
@@ -58,7 +77,7 @@ class Tests(unittest.TestCase):
 
     def test_each_blocker(self):
         accepted = conv(Msg('h', '2026-10-14T06:00:00Z', IN, 'creator', '📨 Requested handle @x (instagram) for this contract.', 'handle_request'))
-        cases = [dict(c=conv(), hours=35.9), dict(c=conv(), status='active'), dict(c=conv(), status='rejected'),
+        cases = [dict(c=conv(), hours=23.9), dict(c=conv(), status='active'), dict(c=conv(), status='rejected'),   # adapted 2026-10-15: 24h close
                  dict(c=accepted), dict(c=conv(), events=[('keep-invite', 'C1')]), dict(c=conv(), writer=False),
                  dict(c=conv(Msg('q', '2026-10-14T06:00:00Z', IN, 'creator', 'what do i film?', 'text')))]
         for kw in cases:

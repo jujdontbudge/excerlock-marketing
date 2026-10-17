@@ -312,6 +312,20 @@ class Journal:
             self.event(creator_key, 'notice-seen', ref,   # dated by its content time; unknown edit -> no date (counts)
                        {'at': None if m.edited_at == 'unknown' else (m.edited_at or m.at), 'kind': m.kind})
 
+    def delivered_texts(self, creator_key):
+        """What we told her that may have reached her: confirmed or uncertain sends and attempts still open, each with
+        its time and words. An attempt closed by a definite no-send told her nothing (review DJ03)."""
+        out = []
+        keys = [r['idempotency_key'] for r in self.conn.execute(
+            'SELECT DISTINCT idempotency_key FROM decisions WHERE creator_key=?', (creator_key,))]
+        for key in keys:
+            _, open_rows = self._attempts(key)
+            rows = list(self.conn.execute("SELECT id, at, text, outcome FROM decisions WHERE idempotency_key=? ORDER BY id", (key,)))
+            open_ids = {r['id'] for r in open_rows}
+            out += [{'at': r['at'], 'text': r['text']} for r in rows
+                    if r['outcome'] in ('sent', 'uncertain') or r['id'] in open_ids]
+        return out
+
     def outcomes(self, key):
         """Every outcome recorded for one idempotency key, oldest first."""
         return [r['outcome'] for r in self.conn.execute('SELECT outcome FROM decisions WHERE idempotency_key=? ORDER BY id', (key,))]

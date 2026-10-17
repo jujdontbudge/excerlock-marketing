@@ -137,9 +137,13 @@ def ask_claude(messages, types):
                               '--allowedTools', *READ_ONLY_TOOLS, '--disallowedTools', 'Bash', 'Edit', 'Write', 'NotebookEdit',
                               *CONTACTS_WRITES, '--no-session-persistence'],
                              capture_output=True, text=True, timeout=1200, cwd=str(REPO))
-    except Exception:
+    except Exception as exc:
+        print(f'inbox agent did not run: {type(exc).__name__}: {exc}'[:300], file=sys.stderr)
         return ''
-    return out.stdout if out.returncode == 0 else ''   # a failed run proposes nothing (review N05)
+    if out.returncode != 0:   # a failed run proposes nothing (review N05), but says why in the log
+        print(f'inbox agent failed (exit {out.returncode}): {(out.stderr or out.stdout)[-300:]}', file=sys.stderr)
+        return ''
+    return out.stdout
 
 
 def claimed_ids(claim, requested):
@@ -274,7 +278,12 @@ def inbox_types(types):
     if INBOX_AUTO.exists():
         return types
     from dataclasses import replace as _replace
-    return {k: (_replace(t, mode='draft') if t.effective_mode == 'auto' else t) for k, t in types.items()}
+    # Premium is the exception: when she sends her email she gets her account at once (captain, 2026-10-15)
+    return {k: (_replace(t, mode='draft') if t.effective_mode == 'auto' and k not in AUTO_ALWAYS else t)
+            for k, t in types.items()}
+
+
+AUTO_ALWAYS = {'app-access'}
 
 
 def still_covered(gate, action, inbound):

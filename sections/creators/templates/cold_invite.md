@@ -7,4 +7,4 @@ We're paying creators $200–1,000/month + a view bonus for super easy video for
 
 Interested? Just reply and I'll send you the brief.
 
-Johan, ExcerLock
+Johan

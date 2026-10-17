@@ -29,6 +29,13 @@ For reviewing creator videos, writing feedback, and later auto-grading and editi
 - Of every 4: one inside, one outside, one on a treadmill, and one filmed by someone else in 3rd person.
 - Reference demo: https://drive.google.com/file/d/1H4Yrs-bqEwHzumXjEWRlZfXz5IlVJSk4/view (copy the walk-and-stop part; keep the reaction subtler)
 
+## Format 4: storm green screen (captain, 2026-10-15)
+- Recorded with TikTok's Green Screen Video effect over our storm clip only (Drive `1GIrMUOcnoxkGXZpzsZeRx2JjKhl8r9as`), never another background.
+- Version A: walking in small circles while scrolling. Version B: running in small circles, no phone. One of each per batch.
+- She stays completely calm and never looks at or reacts to the storm.
+- Whole body in frame the whole clip; a cutout that glitches badly or loses her body = re-record.
+- Example: https://www.instagram.com/reel/DeDdGJTBW_C/ (running on the same storm; ours goes in circles).
+
 ## Common reasons to ask for a re-record
 - Looking straight into the camera the whole time.
 - Over-acted reaction or shocked face.

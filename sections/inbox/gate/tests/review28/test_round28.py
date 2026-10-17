@@ -1,3 +1,4 @@
+from dataclasses import replace
 """Offline regressions: intentionally fail on the reviewed snapshot.
 
 Run: python3 -m unittest discover -s out/tests -t .
@@ -71,6 +72,7 @@ class InvitationFields(ReviewCase):
         source = clean_source({'U1': raw_invite(hours=10)})
         contract = self.contract_for()
         gate, sender = self.configured(source, contract)
+        gate.types = {**gate.types, 'contract-invite': replace(gate.types['contract-invite'], mode='auto', source=None)}   # adapted 2026-10-15: on here, not re-read from the fixture file
         detail = dict(id='route1', channel='sideshift', external_id='sideshift:chat1',
                       participants=[dict(value_normalized='U1', person_id='person1',
                                          profile={'display_name': 'Ada Example'})], messages=[])
@@ -79,7 +81,8 @@ class InvitationFields(ReviewCase):
             dict(id='in1', external_id='sideshift:in1', channel='sideshift',
                  conversation_id='route1', text='Yes, please send the signing instructions.'),
             dict(action='template', message_type='contract-invite'), contacts,
-            policy.load(), [contract], self.j, gate, False)
+            {**policy.load(), 'contract-invite': replace(policy.load()['contract-invite'], mode='auto')},   # adapted 2026-10-15: off in the fixture copy
+            [contract], self.j, gate, False)
         # adapted 2026-10-15 (review CC01): its source message isn't in this chat, so after the send the item goes to
         # the captain instead of 'done'; the point here is that the invitation renders and is delivered
         self.assertTrue(outcome == 'done' or (outcome == 'escalated' and 'gate sent contract-invite' in note), note)

@@ -19,7 +19,7 @@ A map of every part that finds, signs, messages and tracks creators, and where e
 1. **Found.** From the hunts (`raw/creators/`), SideShift applicants (`sideshift-creators sync`) or a link the captain adds (`creators add`). Each becomes one record in the creator database, scored by Jake's 20-second test.
 2. **Contacted.** Outreach drafts wait for the captain unless their kind is switched on. On SideShift, the conversation happens in its chat.
 3. **Invited.** The captain sends the SideShift contract (`contract-invite`).
-4. **Reminded.** If she hasn't accepted, `flow.py` proposes `contract-reminder-1` at 6 hours and `contract-reminder-2` at 12. At 36 hours it records that a withdrawal is due; withdrawing is a separate step and never messages her.
+4. **Reminded.** If she hasn't accepted, `flow.py` proposes `contract-reminder-1` at 6 hours and the last-call `contract-reminder-2` at 12 ("stays open for 12 more hours"). At 24 hours, and at least 12 hours after the last-call, it records that a withdrawal is due; withdrawing is a separate step and never messages her.
 5. **Accepted ("maybe signed").** She links her new TikTok and Instagram, and a "📨 Requested handle" notice appears. SideShift still says `pending`, which does **not** mean unsigned. From here no reminder or withdrawal can fire. `gate/handles.py` checks the accounts are new.
 6. **Signed.** The captain approves her handles and the contract turns `active`. The flow sends the `warmup-guide` (if she never got one), then `ask-app-email`.
 7. **Premium.** She sends her email. The inbox proposes `app-access`; the gate grants Premium as its very last step, one account per creator, then the message goes.

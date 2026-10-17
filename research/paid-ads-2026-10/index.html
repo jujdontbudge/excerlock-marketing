@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meta and TikTok ads, explained</title>
+<style>
+.viz-root{
+  color-scheme:light;
+  --surface-0:#f4f3ef; --surface-1:#fcfcfb; --surface-2:#efeee9; --line:#dddbd3;
+  --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#7a7873;
+  --series-1:#2a78d6; --series-2:#eb6834; --series-3:#1baf7a; --series-7:#6250d6;
+  --seq-1:#cfe0f6; --seq-2:#8fb8ec; --seq-3:#2a78d6; --seq-4:#1a4f91;
+  --tag-off:#2a78d6; --tag-data:#1baf7a; --tag-prac:#eb6834; --tag-claim:#6250d6;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])) .viz-root{
+    color-scheme:dark;
+    --surface-0:#121211; --surface-1:#1a1a19; --surface-2:#242422; --line:#38372f;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8d8b82;
+    --series-1:#3987e5; --series-2:#d95926; --series-3:#199e70; --series-7:#9085e9;
+    --seq-1:#1d3352; --seq-2:#245a99; --seq-3:#3987e5; --seq-4:#8fb8ec;
+    --tag-off:#3987e5; --tag-data:#199e70; --tag-prac:#d95926; --tag-claim:#9085e9;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-0);color:var(--text-primary);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+.wrap{display:grid;grid-template-columns:240px minmax(0,1fr);max-width:1180px;margin:0 auto}
+nav{position:sticky;top:0;height:100vh;overflow:auto;padding:28px 18px;border-right:1px solid var(--line);font-size:14px}
+nav b{display:block;margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
+nav a{display:block;color:var(--text-secondary);text-decoration:none;padding:4px 0}
+nav a:hover{color:var(--text-primary)}
+nav .grp{margin-top:14px;font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em}
+main{padding:36px 44px 80px;min-width:0}
+h1{font-size:34px;line-height:1.15;margin:0 0 8px}
+h2{font-size:24px;margin:56px 0 6px;padding-top:12px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:26px 0 6px}
+p{margin:8px 0;max-width:72ch;color:var(--text-primary)}
+.lede{font-size:18px;color:var(--text-secondary);max-width:68ch}
+.sub{color:var(--text-secondary);font-size:14px}
+a{color:var(--series-1)}
+.card{background:var(--surface-1);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px}
+.mini{background:var(--surface-1);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.mini h4{margin:0 0 4px;font-size:15px}
+.mini p{font-size:14px;margin:4px 0;color:var(--text-secondary)}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:99px;border:1.5px solid;margin-right:4px;vertical-align:1px;text-transform:uppercase}
+.t-off{color:var(--text-primary);border-color:var(--tag-off)} .t-data{color:var(--text-primary);border-color:var(--tag-data)}
+.t-prac{color:var(--text-primary);border-color:var(--tag-prac)} .t-claim{color:var(--text-primary);border-color:var(--tag-claim)}
+.key{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;color:var(--text-secondary)}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--text-secondary);font-weight:600;font-size:13px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.src{font-size:12.5px;color:var(--text-muted)}
+.src a{color:var(--text-muted)}
+svg text{font-family:inherit}
+.dia{width:100%;height:auto;display:block}
+.dia .box{fill:var(--surface-2);stroke:var(--line)}
+.dia .boxa{fill:var(--surface-1);stroke:var(--series-1);stroke-width:1.5}
+.dia .t{fill:var(--text-primary);font-size:14px}
+.dia .ts{fill:var(--text-secondary);font-size:12px}
+.dia .tm{fill:var(--text-muted);font-size:11px}
+.dia .ar{stroke:var(--text-muted);stroke-width:1.5;fill:none;marker-end:url(#ah)}
+.dia .ahh{fill:var(--text-muted)}
+/* bar charts */
+.bars{margin:10px 0 4px}
+.bar{display:grid;grid-template-columns:minmax(120px,240px) 1fr 72px;gap:10px;align-items:center;margin:7px 0;font-size:14px;position:relative}
+.bar .lab{color:var(--text-secondary)}
+.bar .trk{height:18px;position:relative}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;background:var(--series-1);border-radius:0 4px 4px 0}
+.bar .val{text-align:right;font-variant-numeric:tabular-nums;color:var(--text-primary)}
+.bar:hover .fill{filter:brightness(1.12)}
+.axisnote{font-size:12px;color:var(--text-muted);margin-left:250px}
+.tip{position:fixed;pointer-events:none;background:var(--surface-1);color:var(--text-primary);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px;box-shadow:0 4px 14px rgba(0,0,0,.12);display:none;max-width:280px;z-index:9}
+.formula{font-family:ui-monospace,Menlo,monospace;font-size:14px;background:var(--surface-2);padding:8px 12px;border-radius:8px;display:inline-block;margin:6px 0}
+.big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.bigl{font-size:13px;color:var(--text-secondary)}
+ul{padding-left:20px;max-width:72ch} li{margin:4px 0}
+.myth td:first-child{width:38%}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}nav{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 18px}.bar{grid-template-columns:110px 1fr 60px}.axisnote{margin-left:120px}}
+</style>
+</head>
+<body class="viz-root">
+<div class="tip" id="tip"></div>
+<div class="wrap">
+<nav>
+<b>Contents</b>
+<a href="#start">How to read this</a>
+<div class="grp">How ads work</div>
+<a href="#chain">The chain from ad to payer</a>
+<a href="#auction">The auction</a>
+<a href="#structure">Campaign, ad set, ad</a>
+<a href="#event">What you ask the machine for</a>
+<a href="#learning">Learning and budgets</a>
+<a href="#creative">Creative is the targeting</a>
+<a href="#testing">Testing</a>
+<a href="#targeting">Targeting and its limits</a>
+<div class="grp">Apps specifically</div>
+<a href="#ios">iOS measurement</a>
+<a href="#store">After the click: store, onboarding, paywall</a>
+<a href="#bench">Health &amp; fitness numbers</a>
+<a href="#economics">Unit economics</a>
+<a href="#scaling">Measuring and scaling</a>
+<a href="#geo">Countries</a>
+<a href="#formats">Ad formats in the wild</a>
+<div class="grp">People and learning</div>
+<a href="#scalers">Founders who scaled apps</a>
+<a href="#learn">Best videos and teachers</a>
+<a href="#myths">Myths and what changed</a>
+<a href="#sources">Sources</a>
+</nav>
+<main>
+
+<h1 id="start">Meta and TikTok ads, explained</h1>
+<p class="lede">A plain-English map of how paid social ads work, and how subscription apps use them. Synthesised from ten research lanes run on 16 October 2026, each reading 25 to 40 sources: platform documentation, data reports, respected practitioners, YouTube teachers and founders on X.</p>
+<div class="card">
+<p style="margin-top:0"><b>Every claim is tagged by how much to trust it.</b></p>
+<div class="key">
+<span><span class="tag t-off">Official</span> what Meta, TikTok or Apple document</span>
+<span><span class="tag t-data">Data</span> a measured report, with its sample</span>
+<span><span class="tag t-prac">Practitioner</span> what a known operator teaches or observed</span>
+<span><span class="tag t-claim">Claim</span> self-reported results, not verified</span>
+</div>
+<p class="sub" style="margin-bottom:0">Ads advice goes stale fast. Dates are kept on every number. This page explains; it does not recommend what to do.</p>
+</div>
+
+<!-- CHAIN -->
+<h2 id="chain">The chain from ad to paying user</h2>
+<p>Every paid user is the end of a chain. Each step has its own rate, and the cost of a paying user is the ad spend divided through all of them. A problem anywhere in the chain looks like "the ads don't work".</p>
+<svg class="dia" viewBox="0 0 900 190" role="img" aria-label="Funnel: impressions, clicks, installs, trials, paid">
+<defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path class="ahh" d="M0,0 L8,4 L0,8 z"/></marker></defs>
+<g>
+<rect class="box" x="4" y="40" width="150" height="70" rx="10"/><text class="t" x="79" y="70" text-anchor="middle">Impression</text><text class="ts" x="79" y="92" text-anchor="middle">cost: CPM</text>
+<rect class="box" x="190" y="40" width="150" height="70" rx="10"/><text class="t" x="265" y="70" text-anchor="middle">Click</text><text class="ts" x="265" y="92" text-anchor="middle">rate: CTR</text>
+<rect class="box" x="376" y="40" width="150" height="70" rx="10"/><text class="t" x="451" y="70" text-anchor="middle">Install</text><text class="ts" x="451" y="92" text-anchor="middle">cost: CPI</text>
+<rect class="box" x="562" y="40" width="150" height="70" rx="10"/><text class="t" x="637" y="70" text-anchor="middle">Trial</text><text class="ts" x="637" y="92" text-anchor="middle">cost per trial</text>
+<rect class="boxa" x="748" y="40" width="148" height="70" rx="10"/><text class="t" x="822" y="70" text-anchor="middle">Paying user</text><text class="ts" x="822" y="92" text-anchor="middle">paid CAC</text>
+<path class="ar" d="M156,75 L186,75"/><path class="ar" d="M342,75 L372,75"/><path class="ar" d="M528,75 L558,75"/><path class="ar" d="M714,75 L744,75"/>
+<text class="tm" x="171" y="132" text-anchor="middle">the ad</text>
+<text class="tm" x="357" y="132" text-anchor="middle">App Store page</text>
+<text class="tm" x="543" y="132" text-anchor="middle">onboarding</text>
+<text class="tm" x="729" y="132" text-anchor="middle">trial → paywall</text>
+<text class="ts" x="450" y="172" text-anchor="middle">Ads only control the first arrow. Everything after the click is the app, the store page and the offer.</text>
+</g>
+</svg>
+<div class="card">
+<p style="margin-top:0"><b>Worked example</b> <span class="sub">(invented inputs, only to show the arithmetic; from the Meta lane)</span></p>
+<div class="grid3">
+<div><div class="big">$20</div><div class="bigl">CPM: cost per 1,000 views</div></div>
+<div><div class="big">$2.00</div><div class="bigl">per click at 1% CTR</div></div>
+<div><div class="big">$6.67</div><div class="bigl">per install at 30% click→install</div></div>
+<div><div class="big">$33</div><div class="bigl">per trial at 20% install→trial</div></div>
+<div><div class="big">$83</div><div class="bigl">per paying user at 40% trial→paid</div></div>
+</div>
+<p class="sub">Doubling CTR halves every later cost only if all the later rates stay the same, which they often don't: a different ad attracts different people.</p>
+</div>
+<table>
+<tr><th>Metric</th><th>Formula</th><th>What it tells you</th></tr>
+<tr><td>CPM</td><td>spend ÷ impressions × 1,000</td><td>What attention cost. Cheap CPM is not proof of a good ad.</td></tr>
+<tr><td>Hook rate</td><td>3-second plays ÷ impressions</td><td>Did the opening stop the scroll. An operator metric, not a platform standard.</td></tr>
+<tr><td>Hold rate</td><td>e.g. 15-second plays ÷ 3-second plays</td><td>Did people keep watching.</td></tr>
+<tr><td>CTR</td><td>link clicks ÷ impressions</td><td>Did the ad make people want to act.</td></tr>
+<tr><td>CPI</td><td>spend ÷ installs</td><td>Cost of an install. Not a customer yet.</td></tr>
+<tr><td>Cost per trial</td><td>spend ÷ trial starts</td><td>Cost of a trial. Still not revenue.</td></tr>
+<tr><td>Paid CAC</td><td>spend ÷ new paying users</td><td>Cost of a customer. The number that has to be lower than what a customer is worth.</td></tr>
+<tr><td>ROAS</td><td>attributed revenue ÷ spend</td><td>Revenue credited so far. Not profit, and not proof the ad caused it.</td></tr>
+</table>
+
+<!-- AUCTION -->
+<h2 id="auction">The auction</h2>
+<p>Every time someone scrolls, Meta and TikTok run an auction for that slot. The highest bid does not simply win. <span class="tag t-off">Official</span> Meta names three inputs: your bid, the <b>estimated action rate</b> (how likely this person is to do the thing you asked for), and <b>ad quality</b>.</p>
+<div class="formula">total value = bid × estimated action rate + ad quality</div>
+<p>So a more relevant ad can beat a bigger bid, and a better ad effectively makes every impression cheaper. TikTok describes the same idea: bid plus relevance.</p>
+<svg class="dia" viewBox="0 0 900 200" role="img" aria-label="Meta delivery pipeline: retrieval, ranking, auction">
+<rect class="box" x="10" y="50" width="200" height="90" rx="10"/><text class="t" x="110" y="85" text-anchor="middle">All eligible ads</text><text class="ts" x="110" y="108" text-anchor="middle">tens of millions</text>
+<rect class="box" x="250" y="50" width="200" height="90" rx="10"/><text class="t" x="350" y="85" text-anchor="middle">Retrieval (Andromeda)</text><text class="ts" x="350" y="108" text-anchor="middle">→ a few thousand candidates</text>
+<rect class="box" x="490" y="50" width="200" height="90" rx="10"/><text class="t" x="590" y="85" text-anchor="middle">Ranking models</text><text class="ts" x="590" y="108" text-anchor="middle">predict action + quality</text>
+<rect class="boxa" x="730" y="50" width="160" height="90" rx="10"/><text class="t" x="810" y="85" text-anchor="middle">Auction</text><text class="ts" x="810" y="108" text-anchor="middle">one ad shown</text>
+<path class="ar" d="M212,95 L246,95"/><path class="ar" d="M452,95 L486,95"/><path class="ar" d="M692,95 L726,95"/>
+<text class="tm" x="450" y="180" text-anchor="middle">Andromeda (Dec 2024) is the retrieval step. GEM (Nov 2025) and Adaptive Ranking (Mar 2026) improved ranking after it.</text>
+</svg>
+<p><span class="tag t-off">Official</span> <span class="tag t-prac">Practitioner</span> Andromeda made Meta much better at matching many different ads to many different people. It is often blamed for every drop in results; Jon Loomer argues against that, and Meta's engineering posts don't support claims like "you must post a fixed number of ads a week".</p>
+<p class="src">Sources: <a href="https://www.facebook.com/business/help/430291176997542">Meta auction</a> · <a href="https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/">Andromeda, 2024-12-02</a> · <a href="https://pubcast.jonloomer.com/stop-blaming-andromeda-for-your-results/">Loomer, 2025-12-03</a> · <a href="https://ads.tiktok.com/resources/help/article/about-auction-ads?lang=en">TikTok auction ads</a></p>
+
+<!-- STRUCTURE -->
+<h2 id="structure">Campaign, ad set, ad</h2>
+<p>Both platforms use three levels. Each level holds a different kind of decision.</p>
+<svg class="dia" viewBox="0 0 900 250" role="img" aria-label="Campaign contains ad sets which contain ads">
+<rect class="boxa" x="320" y="10" width="260" height="62" rx="10"/><text class="t" x="450" y="36" text-anchor="middle">Campaign</text><text class="ts" x="450" y="57" text-anchor="middle">objective · optional shared budget (CBO)</text>
+<rect class="box" x="90" y="100" width="300" height="62" rx="10"/><text class="t" x="240" y="126" text-anchor="middle">Ad set / ad group</text><text class="ts" x="240" y="147" text-anchor="middle">optimisation event · audience · placements · bid</text>
+<rect class="box" x="510" y="100" width="300" height="62" rx="10"/><text class="t" x="660" y="126" text-anchor="middle">Ad set / ad group</text><text class="ts" x="660" y="147" text-anchor="middle">its own budget if ABO</text>
+<rect class="box" x="30" y="186" width="120" height="50" rx="8"/><text class="t" x="90" y="216" text-anchor="middle">Ad</text>
+<rect class="box" x="180" y="186" width="120" height="50" rx="8"/><text class="t" x="240" y="216" text-anchor="middle">Ad</text>
+<rect class="box" x="330" y="186" width="120" height="50" rx="8"/><text class="t" x="390" y="216" text-anchor="middle">Ad</text>
+<rect class="box" x="560" y="186" width="200" height="50" rx="8"/><text class="t" x="660" y="216" text-anchor="middle">Ad: video, image, copy</text>
+<path class="ar" d="M400,74 L280,98"/><path class="ar" d="M500,74 L620,98"/>
+<path class="ar" d="M200,164 L110,184"/><path class="ar" d="M240,164 L240,184"/><path class="ar" d="M280,164 L370,184"/><path class="ar" d="M660,164 L660,184"/>
+</svg>
+<div class="grid2">
+<div class="mini"><h4>CBO vs ABO</h4><p><span class="tag t-off">Official</span> CBO (campaign budget) moves one budget between ad sets toward results, unequally on purpose. ABO gives each ad set its own budget. On Meta, ABO can still share up to 20% between ad sets unless sharing is off.</p></div>
+<div class="mini"><h4>Advantage+ and Smart+</h4><p><span class="tag t-off">Official</span> The automated campaign types. They pick audiences, placements and bids for you. You still supply the app, the event, the budget and the ads. "Advantage+ worked" means nothing without saying which event, controls and measurement.</p></div>
+<div class="mini"><h4>Consolidate</h4><p><span class="tag t-off">Official</span> <span class="tag t-prac">Practitioner</span> Both platforms warn that many small ad sets split the learning signal. Practitioners add a separate campaign or ad set only for a real business reason: a different event, country, budget commitment or a controlled test.</p></div>
+<div class="mini"><h4>Daily budget isn't a cap</h4><p><span class="tag t-off">Official</span> Meta can spend up to 75% over a daily budget on a good day, and up to 7× the daily budget over a full week. $100/day can be $175 one day.</p></div>
+</div>
+<p class="src">Sources: <a href="https://www.facebook.com/business/help/153514848493595">Meta campaign budget</a> · <a href="https://www.facebook.com/business/help/1388266028979935">budget sharing</a> · <a href="https://www.facebook.com/business/help/190490051321426">daily budgets</a> · <a href="https://www.facebook.com/business/help/309994246788275">Advantage+ app campaigns</a> · <a href="https://ads.tiktok.com/resources/help/article/about-smart-plus-app-campaigns">TikTok Smart+ App</a> · <a href="https://ads.tiktok.com/resources/help/article/campaign-budget-optimization?lang=en">TikTok CBO</a></p>
+
+<!-- EVENT -->
+<h2 id="event">What you ask the machine for</h2>
+<p>The optimisation event is an instruction: "find me people who will do <i>this</i>." Installers, trial starters and buyers overlap, but they are not the same people. A cheap installer is often not a subscriber.</p>
+<svg class="dia" viewBox="0 0 900 170" role="img" aria-label="Deeper events: fewer signals, better users">
+<rect class="box" x="10" y="30" width="200" height="66" rx="10"/><text class="t" x="110" y="58" text-anchor="middle">Install</text><text class="ts" x="110" y="80" text-anchor="middle">most signals, weakest users</text>
+<rect class="box" x="240" y="30" width="200" height="66" rx="10"/><text class="t" x="340" y="58" text-anchor="middle">Trial start</text><text class="ts" x="340" y="80" text-anchor="middle">fewer, closer to money</text>
+<rect class="box" x="470" y="30" width="200" height="66" rx="10"/><text class="t" x="570" y="58" text-anchor="middle">Purchase / subscribe</text><text class="ts" x="570" y="80" text-anchor="middle">fewest, actual payers</text>
+<rect class="box" x="700" y="30" width="190" height="66" rx="10"/><text class="t" x="795" y="58" text-anchor="middle">Value (VBO)</text><text class="ts" x="795" y="80" text-anchor="middle">needs revenue signals</text>
+<path class="ar" d="M212,63 L236,63"/><path class="ar" d="M442,63 L466,63"/><path class="ar" d="M672,63 L696,63"/>
+<text class="ts" x="450" y="132" text-anchor="middle">deeper event → fewer conversions per week → slower, pricier learning, but closer to real customers</text>
+</svg>
+<p><span class="tag t-off">Official</span> <span class="tag t-prac">Practitioner</span> The common teaching: optimise for the deepest event that is tracked correctly <i>and</i> happens often enough. Cal AI optimised for trial starts and modelled trial→paid. Chart Detector AI (hard paywall, no trial) optimised for purchases. On TikTok, value optimisation (VBO) is Android-only inside Smart+ App as of August 2026.</p>
+<p class="src">Sources: <a href="https://ads.tiktok.com/resources/help/article/bidding-optimization-considerations-ios14?lang=en">TikTok iOS optimisation</a> · <a href="https://ads.tiktok.com/resources/help/article/value-based-optimization-app?lang=en">TikTok app VBO</a> · <a href="https://www.youtube.com/watch?v=5fQ-JyHggBI">Cal AI interview, 2026-03-02</a></p>
+
+<!-- LEARNING -->
+<h2 id="learning">Learning and budgets</h2>
+<p>After launch or a big edit, the system explores who responds. Results are noisier and usually pricier in this "learning phase". It settles once it has seen enough conversions.</p>
+<table>
+<tr><th>Platform</th><th>Rough settling point</th><th>Budget floors and guidance</th></tr>
+<tr><td>Meta</td><td><span class="tag t-off">Official</span> about <b>50 results per ad set</b> in the week after the last significant edit</td><td>Goal-based bidding works best with 50–100+ weekly conversions</td></tr>
+<tr><td>TikTok</td><td><span class="tag t-off">Official</span> volatility drops after about <b>25 results or 7 days</b>; Smart+ docs say up to 50 events in 7 days</td><td>Campaign budget must exceed <b>$50/day</b>, ad group <b>$20/day</b>. Guidance: 20× CPI for install campaigns, or $200 with no history; Smart+ 10× historical CPA daily</td></tr>
+</table>
+<p>The arithmetic that follows from "about 50 a week": the cost of each conversion sets the budget needed to learn.</p>
+<div class="card">
+<p style="margin-top:0"><b>Weekly spend for 50 conversions</b> <span class="sub">= 50 × cost per conversion. Hypothetical costs.</span></p>
+<div class="bars" data-max="4000">
+<div class="bar" data-tip="50 installs at $3 = $150/week"><span class="lab">installs at $3</span><span class="trk"><span class="fill" data-v="150"></span></span><span class="val">$150</span></div>
+<div class="bar" data-tip="50 trials at $10 = $500/week (~$71/day)"><span class="lab">trials at $10</span><span class="trk"><span class="fill" data-v="500"></span></span><span class="val">$500</span></div>
+<div class="bar" data-tip="50 trials at $20 = $1,000/week (~$143/day)"><span class="lab">trials at $20</span><span class="trk"><span class="fill" data-v="1000"></span></span><span class="val">$1,000</span></div>
+<div class="bar" data-tip="50 payers at $80 = $4,000/week (~$571/day)"><span class="lab">payers at $80</span><span class="trk"><span class="fill" data-v="4000"></span></span><span class="val">$4,000</span></div>
+</div>
+<p class="sub" style="margin-bottom:0">This is why many apps optimise for trials rather than purchases at first: the deeper the event, the more money it takes to give the machine enough examples.</p>
+</div>
+<p><span class="tag t-off">Official</span> Edits that restart learning on Meta: targeting, creative, optimisation event, adding an ad, bid strategy, a pause of 7+ days. Big budget changes too. Learning is a delivery diagnostic, not a profit certificate: "learning complete" doesn't mean it's working, and "learning limited" doesn't mean it isn't.</p>
+<p class="src">Sources: <a href="https://www.facebook.com/business/help/112167992830700">Meta learning phase</a> · <a href="https://www.facebook.com/business/help/316478108955072">significant edits</a> · <a href="https://www.facebook.com/business/help/1619591734742116">bid strategies</a> · <a href="https://ads.tiktok.com/resources/help/article/learning-phase?lang=en">TikTok learning phase</a> · <a href="https://ads.tiktok.com/resources/help/article/budget?lang=en">TikTok budget</a></p>
+
+<!-- CREATIVE -->
+<h2 id="creative">Creative is the targeting</h2>
+<p>With broad audiences, the ad itself decides who it finds. A video about missing the gym finds people who miss the gym. This is why practitioners now spend most of their effort on creative, not on audience settings.</p>
+<svg class="dia" viewBox="0 0 900 230" role="img" aria-label="Iteration versus diversification">
+<text class="t" x="220" y="22" text-anchor="middle">Iteration</text>
+<text class="t" x="680" y="22" text-anchor="middle">Diversification</text>
+<g><rect class="box" x="70" y="40" width="300" height="150" rx="12"/>
+<circle cx="170" cy="100" r="22" fill="var(--series-1)"/><circle cx="220" cy="100" r="22" fill="var(--series-1)" opacity=".8"/><circle cx="270" cy="100" r="22" fill="var(--series-1)" opacity=".6"/>
+<text class="ts" x="220" y="150" text-anchor="middle">same reason, same look</text><text class="tm" x="220" y="170" text-anchor="middle">new CTA, new colour, new first line</text></g>
+<g><rect class="box" x="530" y="40" width="300" height="150" rx="12"/>
+<circle cx="610" cy="95" r="22" fill="var(--series-1)"/><circle cx="680" cy="95" r="22" fill="var(--series-2)"/><circle cx="750" cy="95" r="22" fill="var(--series-3)"/>
+<text class="ts" x="680" y="150" text-anchor="middle">different reasons, people, formats</text><text class="tm" x="680" y="170" text-anchor="middle">couch → walks · missed gym · phone habit</text></g>
+<text class="tm" x="450" y="215" text-anchor="middle">Meta groups visually and thematically similar ads together and shares their learning.</text>
+</svg>
+<div class="grid2">
+<div class="mini"><h4>Diversify reasons, not pixels</h4><p><span class="tag t-off">Official</span> Meta (Dec 2025): changing a CTA on the same visual is iteration; different customer situations, messages, visuals and formats are diversification. Both are useful; only diversification finds new people.</p></div>
+<div class="mini"><h4>Say it in 3 seconds</h4><p><span class="tag t-off">Official</span> TikTok: 9:16, at least 720p, introduce the proposition in the first 3 seconds, hook within 6. People, sound, a DIY feel, and keep text out of the UI "safe zones".</p></div>
+<div class="mini"><h4>Native ≠ bad</h4><p><span class="tag t-prac">Practitioner</span> Barry Hott: "native" means it looks like what that audience already watches. Polished can be native; expensive-looking ads can trigger instant skipping.</p></div>
+<div class="mini"><h4>Fatigue is a diagnosis</h4><p><span class="tag t-prac">Practitioner</span> Foxwell says keep a steady creative pipeline. Loomer says "fatigue" is often something else, like running out of easy buyers. Neither gives a fixed expiry date. Rising costs can also be auction prices or a broken step later in the funnel.</p></div>
+</div>
+<p class="src">Sources: <a href="https://www.facebook.com/business/news/demystifying-creative-diversification">Meta creative diversification, 2025-12-16</a> · <a href="https://ads.tiktok.com/resources/help/article/creative-best-practices?lang=en">TikTok creative best practices</a> · <a href="https://www.youtube.com/watch?v=6jvIXIjieyA">Barry Hott</a> · <a href="https://www.foxwelldigital.com/blog/what-counts-as-a-real-iteration">Foxwell</a> · <a href="https://pubcast.jonloomer.com/why-you-are-misdiagnosing-creative-fatigue/">Loomer on fatigue</a></p>
+
+<!-- TESTING -->
+<h2 id="testing">Testing</h2>
+<p>Putting five ads in one ad set is not a fair test: the system pours money into whichever looks best early. An ad that got little spend is "unknown", not "lost".</p>
+<table>
+<tr><th>Method</th><th>What it answers</th><th>Mechanics</th></tr>
+<tr><td>Normal delivery</td><td>Can this set of ads find customers at all?</td><td>Spend goes unequally, by design</td></tr>
+<tr><td>Meta creative test</td><td>Does this new concept get a fair shot?</td><td><span class="tag t-off">Official</span> 2–7 ads, ≤20% of budget suggested, results have <b>no confidence level</b></td></tr>
+<tr><td>Meta A/B test</td><td>Is strategy A better than B?</td><td><span class="tag t-off">Official</span> non-overlapping audiences, equal budgets</td></tr>
+<tr><td>TikTok split test</td><td>Same, on TikTok</td><td><span class="tag t-off">Official</span> separate audiences; picks a winner at <b>90% confidence</b></td></tr>
+</table>
+<p><span class="tag t-prac">Practitioner</span> The famous debate (Faris vs Bachman, 2024): let the system allocate against cost controls, or pay for separate testing campaigns to learn faster. Both sides agree separate testing can waste money for inexperienced teams and pays off more at larger scale. Among app founders, a common shape is a testing campaign (ABO, a few concepts) and a scaling campaign (CBO) that receives the winners.</p>
+<p class="src">Sources: <a href="https://www.facebook.com/business/help/1423851372208214">Meta creative testing</a> · <a href="https://www.facebook.com/business/help/1738164643098669">Meta A/B testing</a> · <a href="https://ads.tiktok.com/resources/help/article/split-testing?lang=en">TikTok split testing</a> · <a href="https://www.youtube.com/watch?v=9yNHt7KR2HQ">Faris vs Bachman</a></p>
+
+<!-- TARGETING -->
+<h2 id="targeting">Targeting and its limits</h2>
+<div class="grid2">
+<div class="mini"><h4>Broad is the default now</h4><p><span class="tag t-off">Official</span> <span class="tag t-prac">Practitioner</span> Both platforms recommend few restrictions so delivery can explore. Interest and lookalike splits overlap heavily once the platform expands audiences anyway.</p></div>
+<div class="mini"><h4>Suggestions vs hard limits</h4><p><span class="tag t-off">Official</span> Meta's Advantage+ app campaigns list <b>gender, interests, behaviours and lookalikes as unsupported</b>. Country, language, OS and a minimum age are real controls. "Women 18–30" can describe who the ad talks to, but isn't enforced there.</p></div>
+<div class="mini"><h4>Teens are different</h4><p><span class="tag t-off">Official</span> Meta removed gender and interest targeting for under-18s and bans weight-loss ads to them. TikTok restricts detailed targeting of minors and allows weight-loss and muscle-gain claims to adults only, with no body shaming or guaranteed transformations.</p></div>
+<div class="mini"><h4>iOS-only is about compatibility</h4><p><span class="tag t-off">Official</span> An iOS-only app runs iOS app campaigns. TikTok's iOS Smart+ and Android Smart+ have different features; tutorials for one often don't apply to the other.</p></div>
+</div>
+<p class="src">Sources: <a href="https://www.facebook.com/business/help/309994246788275">Advantage+ app campaigns</a> · <a href="https://about.fb.com/news/2023/01/age-appropriate-ads-for-teens/">Meta teen ads</a> · <a href="https://ads.tiktok.com/resources/help/article/broad-targeting?lang=en">TikTok broad targeting</a> · <a href="https://ads.tiktok.com/resources/help/article/tiktok-ads-policy-weight-management?lang=en">TikTok weight policy</a> · <a href="https://ads.tiktok.com/resources/help/article/about-advertising-to-people-under-the-age-of-18?lang=en">TikTok under-18</a></p>
+
+<!-- IOS -->
+<h2 id="ios">iOS measurement</h2>
+<p>Since iOS 14.5, apps can't see who came from which ad unless the user allows tracking (ATT). Platforms get partial, delayed, privacy-safe signals instead. This is the single biggest difference between app ads and website ads.</p>
+<div class="grid2">
+<div class="mini"><h4>ATT</h4><p>Apple's permission prompt for cross-app tracking. Separate from Screen Time, Health or subscription permissions.</p></div>
+<div class="mini"><h4>SKAN / AdAttributionKit</h4><p>Apple's privacy-safe attribution. Sends delayed, coarse "postbacks". AAK builds on SKAN (iOS 18+ adds re-engagement).</p></div>
+<div class="mini"><h4>Meta AEM</h4><p>Meta's own aggregated measurement. Can run alongside SKAN on eligible campaigns.</p></div>
+<div class="mini"><h4>MMP</h4><p>AppsFlyer, Adjust, Singular: combine costs and attribution across networks. Not required to start; useful once several networks run.</p></div>
+</div>
+<p><b>Apple's SKAN timeline</b> <span class="tag t-off">Official</span> Conversion windows after first launch, then a random delay before the network hears anything.</p>
+<svg class="dia" viewBox="0 0 900 180" role="img" aria-label="SKAN windows: days 0-2, 3-7, 8-35 with delays">
+<line x1="40" y1="70" x2="870" y2="70" stroke="var(--line)" stroke-width="2"/>
+<rect x="40" y="52" width="60" height="36" rx="4" fill="var(--series-1)"/>
+<rect x="104" y="52" width="100" height="36" rx="4" fill="var(--seq-2)"/>
+<rect x="208" y="52" width="660" height="36" rx="4" fill="var(--seq-1)"/>
+<text class="t" x="70" y="40" text-anchor="middle">day 0–2</text><text class="t" x="154" y="40" text-anchor="middle">3–7</text><text class="t" x="538" y="40" text-anchor="middle">8–35</text>
+<text class="ts" x="70" y="112" text-anchor="middle">fine value</text><text class="ts" x="154" y="112" text-anchor="middle">coarse</text><text class="ts" x="538" y="112" text-anchor="middle">coarse</text>
+<text class="tm" x="70" y="132" text-anchor="middle">+24–48h delay</text><text class="tm" x="154" y="132" text-anchor="middle">+24–144h</text><text class="tm" x="538" y="132" text-anchor="middle">+24–144h</text>
+<text class="ts" x="450" y="168" text-anchor="middle">Low-volume campaigns can get only the first postback with no conversion value. A blank value means "withheld", not "did nothing".</text>
+</svg>
+<div class="grid2">
+<div class="mini"><h4>TikTok real-time iOS</h4><p><span class="tag t-off">Official</span> Since Aug 2026, eligible apps get real-time iOS reporting through major MMPs or TikTok's SDK 1.5.0+. TikTok suggests ~90 daily installs per SKAN AEO campaign to reduce withheld data.</p></div>
+<div class="mini"><h4>Double counting</h4><p><span class="tag t-off">Official</span> RevenueCat sends <code>StartTrial</code> and <code>Subscribe</code> (including renewals) to Meta. If the Meta SDK also sends purchases, they can double count. Meta and TikTok can both claim the same customer: never add their numbers together.</p></div>
+</div>
+<p class="src">Sources: <a href="https://developer.apple.com/app-store/ad-attribution/">Apple ad attribution</a> · <a href="https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows">Apple conversion windows</a> · <a href="https://support.appsflyer.com/hc/en-us/articles/19228737402129-Meta-Ads-Aggregate-Event-Measurement-AEM-for-iOS">AppsFlyer AEM</a> · <a href="https://ads.tiktok.com/resources/help/article/about-ios-real-time-conversion-reporting">TikTok iOS real-time</a> · <a href="https://www.revenuecat.com/docs/integrations/attribution/meta-ads">RevenueCat Meta</a></p>
+
+<!-- STORE -->
+<h2 id="store">After the click: store, onboarding, paywall</h2>
+<p>A great ad sends people into the rest of the funnel. Practitioners repeatedly say the paywall can move customer cost as much as the ad does.</p>
+<div class="grid2">
+<div class="mini"><h4>Custom Product Pages</h4><p><span class="tag t-off">Official</span> Up to <b>70</b> App Store pages, each with its own screenshots and video, linked from a specific ad so the store continues that ad's promise. Apple reports an average <b>+2.5 points</b> conversion over a 1.6% default page (its own average, not a controlled test).</p></div>
+<div class="mini"><h4>Product Page Optimization</h4><p><span class="tag t-off">Official</span> Apple's built-in A/B test of icon, screenshots and preview: up to 3 variants, one test at a time, up to 90 days, 90% confidence suggested.</p></div>
+<div class="mini"><h4>App preview videos</h4><p><span class="tag t-off">Official</span> Up to 3 per language, 30 seconds each, autoplay muted. Must be on-device footage, not hands holding a phone.</p></div>
+<div class="mini"><h4>Onboarding</h4><p><span class="tag t-data">Data</span> RevenueCat 2026: <b>82.1%</b> of Health &amp; Fitness trial starts happen on day 0. People decide in the first session.</p></div>
+</div>
+<div class="grid2">
+<div class="card">
+<p style="margin-top:0"><b>Trial length vs trial→paid</b> <span class="sub">median, all categories, RevenueCat 2026</span></p>
+<div class="bars" data-max="50">
+<div class="bar" data-tip="Trials of 4 days or less: 25.5% convert to paid"><span class="lab">≤ 4 days</span><span class="trk"><span class="fill" data-v="25.5"></span></span><span class="val">25.5%</span></div>
+<div class="bar" data-tip="Trials of 5–9 days: 37.4%"><span class="lab">5–9 days</span><span class="trk"><span class="fill" data-v="37.4"></span></span><span class="val">37.4%</span></div>
+<div class="bar" data-tip="Trials of 17–32 days: 42.5%"><span class="lab">17–32 days</span><span class="trk"><span class="fill" data-v="42.5"></span></span><span class="val">42.5%</span></div>
+</div>
+<p class="sub" style="margin-bottom:0">Observational groups, not a controlled test. 55% of 3-day-trial cancellations happen on day 0.</p>
+</div>
+<div class="card">
+<p style="margin-top:0"><b>Download→paid by day 35</b> <span class="sub">median, RevenueCat 2026</span></p>
+<div class="bars" data-max="12">
+<div class="bar" data-tip="Hard paywall apps: 10.7% of downloads pay by day 35"><span class="lab">hard paywall</span><span class="trk"><span class="fill" data-v="10.7"></span></span><span class="val">10.7%</span></div>
+<div class="bar" data-tip="Freemium apps: 2.1%"><span class="lab">freemium</span><span class="trk"><span class="fill" data-v="2.1"></span></span><span class="val">2.1%</span></div>
+</div>
+<p class="sub" style="margin-bottom:0">Different apps, not the same app tested both ways. Superwall: multi-page onboarding paywalls 12.41% vs 9.07% single-page (vendor data).</p>
+</div>
+</div>
+<h3>Web-to-app funnels</h3>
+<p>Sending ads to a website (quiz, web paywall) instead of the App Store avoids Apple's commission and gives better tracking, but adds friction. <span class="tag t-data">Data</span> RevenueCat's Dipsea experiment (~3,100 US users per arm): in-app purchase only converted <b>27.0%</b> initially vs <b>18.1%</b> web-only; paid 6.3% vs 5.3%; take-home <b>$2.09</b> vs <b>$1.96</b> per user despite Apple's 30% fee. <span class="tag t-off">Official</span> Since May 2025, US apps may link to external purchase. Apple's Small Business Program cuts the fee to 15% for eligible enrolled developers under $1M; subscriptions pay 70% in year one and 85% after.</p>
+<p class="src">Sources: <a href="https://developer.apple.com/app-store/custom-product-pages/">Apple CPP</a> · <a href="https://developer.apple.com/app-store/product-page-optimization/">Apple PPO</a> · <a href="https://developer.apple.com/app-store/app-previews/">App previews</a> · <a href="https://www.revenuecat.com/state-of-subscription-apps/">RevenueCat 2026</a> · <a href="https://superwall.com/solutions/onboarding-flow-optimization">Superwall</a> · <a href="https://www.revenuecat.com/blog/growth/iap-vs-web-purchases-conversion-test/">Dipsea test</a> · <a href="https://developer.apple.com/app-store/small-business-program/">Small Business Program</a></p>
+
+<!-- BENCH -->
+<h2 id="bench">Health &amp; fitness numbers</h2>
+<p>Benchmarks are a sanity check. Each comes from a different sample with a different denominator, so they can't be multiplied together into a forecast.</p>
+<div class="card">
+<p style="margin-top:0"><b>Health &amp; Fitness conversion, median</b> <span class="sub">RevenueCat 2026 (115,000+ apps, mostly 2025 data)</span></p>
+<div class="bars" data-max="40">
+<div class="bar" data-tip="Downloads that start a trial within 30 days: 6.9%"><span class="lab">download → trial (30 d)</span><span class="trk"><span class="fill" data-v="6.9"></span></span><span class="val">6.9%</span></div>
+<div class="bar" data-tip="Trials that convert to paid: 37.7% (top quarter above 51.4%)"><span class="lab">trial → paid</span><span class="trk"><span class="fill" data-v="37.7"></span></span><span class="val">37.7%</span></div>
+<div class="bar" data-tip="Downloads that pay by day 35: 2.9% (top quarter above 6.2%)"><span class="lab">download → paid (35 d)</span><span class="trk"><span class="fill" data-v="2.9"></span></span><span class="val">2.9%</span></div>
+</div>
+</div>
+<div class="grid3">
+<div class="mini"><div class="big">$0.48</div><p>revenue per install by day 14, H&amp;F median <span class="tag t-data">Data</span></p></div>
+<div class="mini"><div class="big">$0.66</div><p>revenue per install by day 60 <span class="tag t-data">Data</span></p></div>
+<div class="mini"><div class="big">$9.07</div><p>H&amp;F CPI, iOS global, Oct 2023–Dec 2024 (AppsFlyer) <span class="tag t-data">Data</span></p></div>
+</div>
+<p class="sub">No reliable country-by-country Meta/TikTok CPI for fitness apps was found. Adjust's lower "eCPI" figures (NA $1.19) include organic installs, so they aren't comparable. AppsFlyer's US fitness benchmark page showed no data.</p>
+<p class="src">Sources: <a href="https://www.revenuecat.com/state-of-subscription-apps/">RevenueCat 2026</a> · <a href="https://www.revenuecat.com/state-of-subscription-apps-2025/">RevenueCat 2025 (AppsFlyer CPI)</a> · <a href="https://www.adjust.com/blog/ecpi-benchmarks/">Adjust eCPI</a></p>
+
+<!-- ECONOMICS -->
+<h2 id="economics">Unit economics</h2>
+<p>The whole game is one inequality: what a paying user costs must be less than what they bring in, within a time you can afford to wait.</p>
+<div class="formula">cost per payer = CPI ÷ (install→trial × trial→paid)</div>
+<table>
+<tr><th class="num">CPI</th><th class="num">install→trial</th><th class="num">trial→paid</th><th class="num">cost / trial</th><th class="num">cost / payer</th></tr>
+<tr><td class="num">$2</td><td class="num">5%</td><td class="num">30%</td><td class="num">$40</td><td class="num">$133</td></tr>
+<tr><td class="num">$3</td><td class="num">10%</td><td class="num">40%</td><td class="num">$30</td><td class="num">$75</td></tr>
+<tr><td class="num">$5</td><td class="num">15%</td><td class="num">50%</td><td class="num">$33</td><td class="num">$67</td></tr>
+<tr><td class="num">$8</td><td class="num">5%</td><td class="num">30%</td><td class="num">$160</td><td class="num">$533</td></tr>
+</table>
+<p class="sub">Assumed inputs, from the app-ads lane. The $5 CPI row beats the $2 one: a pricier install can be a cheaper customer.</p>
+<div class="grid2">
+<div class="mini"><h4>LTV and payback</h4><p>Lifetime value is net money per user (after Apple's cut, refunds) over time. Payback is how long until a user has repaid their cost. A good long-term LTV can still run out of cash short-term.</p></div>
+<div class="mini"><h4>Cohorts</h4><p>Group users by the week they were acquired and compare groups at the same age. A two-week-old cohort can't be judged on renewals yet.</p></div>
+<div class="mini"><h4>Two clocks</h4><p>The attribution window (how long after an ad a conversion is credited) and the ROAS window (how long you wait to count revenue) are different things.</p></div>
+<div class="mini"><h4>Trials aren't revenue</h4><p>A trial start is an early signal. With a 7-day trial, the real answer arrives a week or more after the spend.</p></div>
+</div>
+
+<!-- SCALING -->
+<h2 id="scaling">Measuring and scaling</h2>
+<p><b>Attribution</b> asks who gets credit. <b>Incrementality</b> asks what would have happened without the ad. They can disagree a lot.</p>
+<div class="grid2">
+<div class="mini"><h4>Platforms over-credit</h4><p><span class="tag t-data">Data</span> Fubo (AppsFlyer case): one well-attributed campaign showed <b>no incremental lift</b> and was cut, freeing six figures a month. Sleep Cycle (Adjust): up to <b>50%</b> of credited installs would have come organically.</p></div>
+<div class="mini"><h4>Blended CAC</h4><p>Total spend ÷ all new payers. A useful reality check on the business, though it can't say which ad caused what.</p></div>
+<div class="mini"><h4>Vertical vs horizontal</h4><p>Vertical: raise the budget on what works. Horizontal: new concepts, new countries, new platforms. The next dollar usually buys a pricier customer than the average so far.</p></div>
+<div class="mini"><h4>Budget-change rules</h4><p><span class="tag t-off">Official</span> TikTok's own docs disagree (July: ≤40% in learning, ≤30% after, 2 days apart; August: within 50%). <span class="tag t-claim">Claim</span> App founders commonly cite +20% every 3 days while LTV beats CAC.</p></div>
+</div>
+<p><b>When to kill an ad.</b> A statistics rule of thumb from the scaling lane: if an ad spends 3× your target cost per conversion with zero conversions, that happens by bad luck only about 5% of the time when the ad is truly on target. That's grounds for a review, but delayed attribution breaks it if the spend is too recent.</p>
+<h3>Case studies (all self-reported)</h3>
+<table>
+<tr><th>Case</th><th>Reported</th><th>Lesson</th></tr>
+<tr><td>Zumba</td><td>$4.5M ARR, 30k subscribers in 14 months; 52% lower CPA in three weeks</td><td>Concentrated on Meta, aligned ad and paywall message, more creative variety once scaling raised CPA</td></tr>
+<tr><td>GainFrame (small fitness app)</td><td>$5,674 spent over ~3 months; ~$114 per payer vs $18 LTV</td><td>Install and trial spikes hid bad payer economics until tracking improved. Founder stopped paid.</td></tr>
+<tr><td>LES MILLS+</td><td>Geo-lift 700% ROAS; MMM shows TikTok ROI 53% above other social</td><td>Big brand, celebrity creators; combined attribution with causal tests</td></tr>
+</table>
+<p class="src">Sources: <a href="https://www.appsflyer.com/customers/fubotv-incrementality-use-case/">Fubo</a> · <a href="https://www.adjust.com/resources/case-studies/sleep-cycle/">Sleep Cycle</a> · <a href="https://ads.tiktok.com/help/article/budget?lang=en">TikTok budget</a> · <a href="https://www.revenuecat.com/blog/growth/zumba-perceptycs-growth-case-study/">Zumba</a> · <a href="https://gainframe.app/blog/spent-5k-on-app-ads/">GainFrame</a> · <a href="https://ads.tiktok.com/business/en/inspiration/les-mills-case-study">LES MILLS+</a></p>
+
+<!-- GEO -->
+<h2 id="geo">Countries</h2>
+<p>A country isn't just a different media price. It's a different customer: different willingness to pay, language, App Store price and trial behaviour.</p>
+<svg class="dia" viewBox="0 0 900 170" role="img" aria-label="US only, English-speaking group, worldwide">
+<rect class="boxa" x="20" y="30" width="260" height="90" rx="10"/><text class="t" x="150" y="62" text-anchor="middle">US only</text><text class="ts" x="150" y="86" text-anchor="middle">cleanest read on your main market</text><text class="tm" x="150" y="104" text-anchor="middle">highest CPMs</text>
+<rect class="box" x="320" y="30" width="260" height="90" rx="10"/><text class="t" x="450" y="62" text-anchor="middle">"Tier 1": US, UK, CA, AU</text><text class="ts" x="450" y="86" text-anchor="middle">more volume, similar buyers</text><text class="tm" x="450" y="104" text-anchor="middle">shorthand, not an official list</text>
+<rect class="box" x="620" y="30" width="260" height="90" rx="10"/><text class="t" x="750" y="62" text-anchor="middle">Worldwide / cheap geos</text><text class="ts" x="750" y="86" text-anchor="middle">cheap installs and fast signal</text><text class="tm" x="750" y="104" text-anchor="middle">the system chases the cheapest events</text>
+<text class="ts" x="450" y="152" text-anchor="middle">Grouped countries let the system choose where to spend; split countries protect a budget and a clean read per market.</text>
+</svg>
+<div class="grid2">
+<div class="mini"><h4>Cheap geos screen, they don't prove</h4><p><span class="tag t-prac">Practitioner</span> Creatives can be screened cheaply in Latin America or Southeast Asia, but a US winner still has to win in the US. Buying cheap events to "exit learning" doesn't transfer economics.</p></div>
+<div class="mini"><h4>Country ≠ language</h4><p><span class="tag t-off">Official</span> They're separate targeting settings. TikTok's account registration country can limit which countries you're allowed to target.</p></div>
+<div class="mini"><h4>Price per country</h4><p><span class="tag t-claim">Claim</span> Mojo raised annual prices 50% in the US and Germany and lowered them in Brazil, reporting 60% ARPU growth. Currency conversion isn't price optimisation.</p></div>
+<div class="mini"><h4>States and cities</h4><p><span class="tag t-off">Official</span> US state and city targeting exists on both platforms. No evidence was found that it's a better place to start.</p></div>
+</div>
+<p class="src">Sources: <a href="https://www.revenuecat.com/blog/growth/mojo-60-percent-arpu-growth-five-months/">Mojo pricing</a> · <a href="https://ads.tiktok.com/help/article/learning-phase">TikTok learning</a> · full lane: <code>lanes/app-geo-targeting.md</code></p>
+
+<!-- FORMATS -->
+<h2 id="formats">Ad formats in the wild</h2>
+<p>Long-running ads from apps near this space, pulled from the Meta Ad Library on 16 Oct 2026. Long-running means the advertiser kept paying; it doesn't prove profit.</p>
+<div class="card">
+<p style="margin-top:0"><b>Days the ad has been live</b> <span class="sub">start date in Meta Ad Library → 16 Oct 2026</span></p>
+<div class="bars" data-max="1060">
+<div class="bar" data-tip="one sec: rotate the phone to unlock Instagram. Since 24 Nov 2023, 15s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=3605358243085702">one sec · hands-only demo</a></span><span class="trk"><span class="fill" data-v="1057"></span></span><span class="val">1,057</span></div>
+<div class="bar" data-tip="Ladder: two women at the gym, Q&amp;A skit, 9s, 7-day trial"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=1283409179875847">Ladder · gym skit</a></span><span class="trk"><span class="fill" data-v="177"></span></span><span class="val">177</span></div>
+<div class="bar" data-tip="Ladder: 5-card quote carousel"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=1411351110800069">Ladder · carousel</a></span><span class="trk"><span class="fill" data-v="172"></span></span><span class="val">172</span></div>
+<div class="bar" data-tip="Cal AI: scan a cooked meal, see nutrition, 9s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=2922821464729858">Cal AI · meal scan demo</a></span><span class="trk"><span class="fill" data-v="135"></span></span><span class="val">135</span></div>
+<div class="bar" data-tip="Opal: man in a meadow, offline-time overlay and streak, 12s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=1943671807020482">Opal · life off the phone</a></span><span class="trk"><span class="fill" data-v="121"></span></span><span class="val">121</span></div>
+<div class="bar" data-tip="Opal: calm man in a forest talking, 46s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=1481638080667941">Opal · calm talking head</a></span><span class="trk"><span class="fill" data-v="94"></span></span><span class="val">94</span></div>
+<div class="bar" data-tip="one sec: the builder explains why he made it, 41s. Since 20 Aug 2026"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=1378351350430706">one sec · founder story</a></span><span class="trk"><span class="fill" data-v="57"></span></span><span class="val">57</span></div>
+<div class="bar" data-tip="Strava: cheetah to runners with metrics, 6s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=2052043098851676">Strava · branded edit</a></span><span class="trk"><span class="fill" data-v="45"></span></span><span class="val">45</span></div>
+<div class="bar" data-tip="WeWard: coffee bought with steps, 20s"><span class="lab"><a href="https://www.facebook.com/ads/library/?id=943589178786822">WeWard · reward story</a></span><span class="trk"><span class="fill" data-v="44"></span></span><span class="val">44</span></div>
+</div>
+</div>
+<div class="grid3">
+<div class="mini"><h4>Hands-and-phone demo</h4><p>One sec, Cal AI, Zaad: show the one action and its result. No face needed. Makes an unfamiliar rule concrete.</p></div>
+<div class="mini"><h4>Talking head + demo</h4><p>A person gives the frustration; the screen gives the proof. <span class="tag t-data">Data</span> TikTok's Headway case: adding green-screen commentary lowered subscription CPA.</p></div>
+<div class="mini"><h4>Skit / POV</h4><p>Ladder's gym chat, WeWard's coffee: a small story where the app resolves the conflict.</p></div>
+<div class="mini"><h4>Green screen</h4><p>Creator in front of the app screen or a post. <span class="tag t-data">Data</span> LC Waikiki on TikTok: early in-app UI 37% lower CPI; green screen 16% lower CPI.</p></div>
+<div class="mini"><h4>Static and carousel</h4><p>Cheap to test whether the promise is understood. Ladder runs a 5-card quote carousel. <span class="tag t-off">Official</span> TikTok carousel ads now support App Promotion (Sep 2026).</p></div>
+<div class="mini"><h4>Founder ad</h4><p>One sec runs a 41-second "why I built this" with the intervention screens shown during the story. Earns its place by explaining an unusual product decision.</p></div>
+</div>
+<p><span class="tag t-prac">Practitioner</span> Savannah Sanchez's point for apps: the product is an action on a screen. Relatable situations earn attention; real app screens explain the mechanism. <span class="tag t-claim">Claim</span> Alex Vech (Boost App Social) found one winner in a batch of 85 ads. Organic virality and paid performance are different tests: a slideshow with millions of views can convert poorly as an ad.</p>
+<p><b>Competitor note.</b> <span class="tag t-claim">Claim</span> WeWard announced on 8 July 2026 an optional iOS mode that blocks chosen apps until a step goal is hit. Its ads seen on 16 Oct still sell rewards, not this mode. On TikTok's ad library, searches for these competitors returned no ads clearly from them in the last 30 days (searches can miss alternate payer names). <a href="https://www.wewardapp.com/blog/walking-mode">WeWard walking mode</a></p>
+<p class="src">Sources: <a href="https://www.facebook.com/ads/library/">Meta Ad Library</a> (links above) · <a href="https://ads.tiktok.com/business/creativecenter/quicktok/online/METAPCPMSHOWCASE/pc/en">Headway</a> · <a href="https://ads.tiktok.com/business/creativecenter/quicktok/online/success_story_lcw/pc/en">LC Waikiki</a> · <a href="https://www.youtube.com/watch?v=jAc63K9lRIQ">Savannah Sanchez, 43 hooks for apps</a> · <a href="https://superwall.com/blog/how-alex-vech-burned-800k-on-meta-ads-and-still-walked-away-with-a-7-figure-exit">Alex Vech</a></p>
+
+<!-- SCALERS -->
+<h2 id="scalers">Founders who scaled apps with ads</h2>
+<p>People on X who describe scaling consumer apps past ~$20k/month with paid ads. Every revenue number is <span class="tag t-claim">Claim</span>: self-reported, not audited. Followers as of 16 Oct 2026.</p>
+<table>
+<tr><th>Person</th><th class="num">Followers</th><th>App · claim</th><th>Their playbook</th></tr>
+<tr><td><a href="https://x.com/zach_yadegari">@zach_yadegari</a></td><td class="num">86.6k</td><td>Cal AI · $5.7M in a month (all channels); acquired by MyFitnessPal</td><td>Influencers first, then paid Meta/TikTok. Testing campaign + CBO scaling campaign, broad targeting, optimise for trial starts, AppsFlyer, Custom Product Pages. Videos made to sell beat subtle influencer mentions.</td></tr>
+<tr><td><a href="https://x.com/jakecastilloooo">@jakecastilloooo</a></td><td class="num">19.1k</td><td>Cal AI operations</td><td>"UGC buys creative attempts; paid ads buy distribution; influencers rent trust." Mid-tier creators, goals not scripts, paid $100 upfront.</td></tr>
+<tr><td><a href="https://x.com/LinoLeighton">@LinoLeighton</a></td><td class="num">6.3k</td><td>AbMaxx · $2k/day at 45% margin</td><td>AppsFlyer before spend; ABO tests $50–100/day for 7 days; winners to a scaling campaign; +20% every 3 days; hard paywall. Claims Meta 2–2.5× ROAS, TikTok 4–5× with the same creative.</td></tr>
+<tr><td><a href="https://x.com/timoxkoehler">@timoxkoehler</a></td><td class="num">2.4k</td><td>Chart Detector AI · $56k/month</td><td>TikTok Smart+, broad, 6 ads at $50/day, optimise for subscription purchase, hard paywall, 30 new ads a month. Example month: $43.7k revenue, $20k spend, ~$11.5k profit.</td></tr>
+<tr><td><a href="https://x.com/aureliuscajigas">@aureliuscajigas</a></td><td class="num">3.4k</td><td>Cut Coach and another app · ~$20k/month each at peak</td><td>Paid testing instead of waiting for virality: ABO to test, CBO to scale, broad audience with specific creative, 5 creatives at $20–50/day per ad set, distinct concepts before variations.</td></tr>
+<tr><td><a href="https://x.com/benjiianc">@benjiianc</a></td><td class="num">2.4k</td><td>Snag · $30k MRR</td><td>Organic creators first, then their winning videos as Meta ads. One ad scaled $50 → $300/day and died after ~$3k total.</td></tr>
+<tr><td><a href="https://x.com/VechAlex">@VechAlex</a></td><td class="num">2.3k</td><td>Boost App Social · $100k MRR, $1.5M Meta spend, ~$800k he calls wasted</td><td>Green-screen UGC with the real app; own the footage rights; cut many edits from one shoot. One winner in 85 ads.</td></tr>
+</table>
+<p><b>What repeats:</b> broad targeting with specific creative; a testing structure feeding a scaling one; optimising for trials or purchases rather than installs; an MMP or solid tracking before spending; constant new creative; hard paywalls are common among this group. Big followings on X were rarer than detailed small accounts.</p>
+
+<!-- LEARN -->
+<h2 id="learn">Best videos and teachers</h2>
+<p>Ranked for usefulness to someone new, not by subscriber count.</p>
+<h3>Watch these five first</h3>
+<table>
+<tr><th>#</th><th>Video</th><th class="num">Length</th><th>Why</th></tr>
+<tr><td>1</td><td><a href="https://www.youtube.com/watch?v=BZrio_G_1Cs">Ben Heath: Facebook Ads Tutorial for Beginners</a> (Jan 2025)</td><td class="num">74 min</td><td>The interface and what each level controls</td></tr>
+<tr><td>2</td><td><a href="https://www.youtube.com/watch?v=jAc63K9lRIQ">Savannah Sanchez: Top 43 Ad Hooks for Apps</a> (Feb 2025)</td><td class="num">41 min</td><td>How apps become understandable ads; she's made ads for Bumble and Noom</td></tr>
+<tr><td>3</td><td><a href="https://www.youtube.com/watch?v=-E9sjb2msjo">Dara Denney: How to Diagnose a Brand</a> (Jun 2026)</td><td class="num">68 min</td><td>Turning customer reasons into what to test</td></tr>
+<tr><td>4</td><td><a href="https://www.youtube.com/watch?v=tuqlIKBlTao">Meredith Unger: Winning TikTok Ad Formats</a> (Jun 2024)</td><td class="num">47 min</td><td>What "native" TikTok actually looks like</td></tr>
+<tr><td>5</td><td><a href="https://www.youtube.com/watch?v=9yNHt7KR2HQ">Faris vs Bachman: Creative Testing Showdown</a> (Jul 2024)</td><td class="num">55 min</td><td>The real trade-off in how to test</td></tr>
+</table>
+<h3>Then</h3>
+<ul>
+<li><a href="https://www.jonloomer.com/meta-ads-master-brief/">Jon Loomer: The Master Brief</a> (Jul 2026). His whole Meta system in one document.</li>
+<li><a href="https://www.youtube.com/watch?v=oO_9CefhuDE">Evan Lee: How to Analyze Facebook Ads</a>. Reading metrics as a funnel.</li>
+<li><a href="https://www.youtube.com/watch?v=DqFjak694PQ">Evan Lee: the jobs of a hook</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=lTW3iyjB118">Sarah Levinger: advanced ad research</a>. Finding why people buy.</li>
+<li><a href="https://www.youtube.com/watch?v=MT2MzrTGC5w">Savannah Sanchez: 200+ ads a week production process</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=NP7gsiwoVpA">Abir Syed: financial metrics for marketers</a>. Why ROAS isn't profit.</li>
+<li><a href="https://www.youtube.com/watch?v=6jvIXIjieyA">Barry Hott: making AI ads look human</a>. (His charts in it are made up, he says so.)</li>
+<li><a href="https://www.youtube.com/watch?v=hS47--F7290">Savannah Sanchez: 12 budget-friendly ad formats</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=lCHDHrwurNU">Mirella Crespi: shipping 2,000 ads a month</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=5fQ-JyHggBI">Zach Yadegari on scaling Cal AI</a>. App-specific, from a founder.</li>
+</ul>
+
+<!-- MYTHS -->
+<h2 id="myths">Myths and what changed, 2024–2026</h2>
+<table class="myth">
+<tr><th>You'll hear</th><th>What the evidence says</th></tr>
+<tr><td>"Andromeda changed everything last month"</td><td>Published Dec 2024; ranking upgrades followed in 2025 and 2026. It's not a universal explanation for any one account's drop.</td></tr>
+<tr><td>"You must post X new ads a week"</td><td>No platform requirement. Meta asks for genuinely different ads and also warns against too many ads splitting the signal.</td></tr>
+<tr><td>"Interest targeting is how you reach your audience"</td><td>Meta's Advantage+ app campaigns don't support interests or gender at all; both platforms now default to broad.</td></tr>
+<tr><td>"A daily budget is a hard cap"</td><td>Meta can spend 75% over on a given day.</td></tr>
+<tr><td>"Run engagement ads to exit learning"</td><td>Old advice. It teaches the system to find engagers, not buyers.</td></tr>
+<tr><td>"TikTok iOS only reports through SKAN, days late"</td><td>Since Aug 2026 eligible apps get real-time iOS reporting through MMPs or TikTok's SDK.</td></tr>
+<tr><td>"Creative dies after N days"</td><td>No source supports a fixed expiry. Fatigue shows up as worsening customer cost on comparable cohorts.</td></tr>
+<tr><td>"Web checkout saves 30%, so it makes more money"</td><td>Dipsea's test: in-app purchase earned more per user despite the fee.</td></tr>
+<tr><td>"Long-running competitor ads are proven winners"</td><td>They show the advertiser kept paying, not that it's profitable.</td></tr>
+<tr><td>"Meta click attribution works the same as always"</td><td>March 2026: for website and in-store conversions, click-through now means link clicks only.</td></tr>
+</table>
+
+<h2 id="sources">Sources</h2>
+<p>Each topic above links its main sources. Full reports, with every source, date and trust rating, plus saved pages and transcripts:</p>
+<ul>
+<li><b>General:</b> <code>meta-fundamentals.md</code> (38 sources) · <code>tiktok-fundamentals.md</code> · <code>best-videos-and-teachers.md</code></li>
+<li><b>Apps:</b> <code>x-app-scalers.md</code> · <code>app-ua-mechanics.md</code> · <code>app-targeting-setup.md</code> · <code>app-funnels-and-store.md</code> · <code>app-scaling-and-measurement.md</code> · <code>app-geo-targeting.md</code> · <code>app-ad-creatives.md</code></li>
+</ul>
+<p class="sub">In <code>research/paid-ads-2026-10/lanes/</code>; saved pages and transcripts in <code>raw/paid-ads-research-2026-10-16/raw/</code>. Researched 16 October 2026 by ten Codex workers; synthesised the same day. No ad account was opened and no money was spent.</p>
+</main>
+</div>
+<script>
+document.querySelectorAll('.bars').forEach(function(b){
+  var max=parseFloat(b.dataset.max);
+  b.querySelectorAll('.fill').forEach(function(f){f.style.width=(parseFloat(f.dataset.v)/max*100)+'%';});
+});
+var tip=document.getElementById('tip');
+document.querySelectorAll('[data-tip]').forEach(function(el){
+  el.addEventListener('mousemove',function(e){tip.textContent=el.dataset.tip;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-300)+'px';tip.style.top=(e.clientY+14)+'px';});
+  el.addEventListener('mouseleave',function(){tip.style.display='none';});
+});
+</script>
+</body>
+</html>

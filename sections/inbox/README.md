@@ -7,12 +7,14 @@ messages. The old system (`raw/retired-inbox-2026-10-15/`) is retired.
 
 ## How a message gets sent
 1. **Something proposes** an `Action` (a message type for one creator):
-   - `flow.py`: the SideShift contract job (reminders at 6h and 12h, "send me your email" once she signs, the 36-hour withdrawal check);
+   - `flow.py`: the SideShift contract job (a reminder at 6h, a last-call at 12h saying the invite stays open 12 more hours, "send me your email" once she signs, the 24-hour withdrawal check, never sooner than 12h after the last-call);
    - `propose.py`: the inbox run. Claude Opus reads new messages with **read-only** tools and proposes an approved
      message type or escalates (`PROPOSE.md`); it cannot send, approve drafts or change rules;
    - `send.py`: a send the captain ordered. It records a **one-use approval** bound to her, the message type and the
-     exact text; only such an approval lets a send skip quiet hours, the gap, draft mode and PAUSED. Words in an
-     Action (`captain_order`) authorize nothing by themselves.
+     exact text. **When the captain says send, it sends** (captain, 2026-10-15): his approval skips every judgment hold
+     (her open questions, attachments, contract state, do-not-contact, quiet hours, the gap, draft mode, PAUSED) and the
+     review only adds a note to the journal. Only the wrong chat, the same text already sent, or an expired approval
+     stops it. Words in an Action (`captain_order`) authorize nothing by themselves.
 2. **The gate decides** (`gate/dispatch.py`, in this order):
    1. the type is switched on, or the captain ordered it;
    2. the send was never made before (idempotency key);
@@ -37,7 +39,7 @@ messages. The old system (`raw/retired-inbox-2026-10-15/`) is retired.
 | What | How |
 |---|---|
 | Stop all automatic sends | `touch sections/inbox/PAUSED` (captain-ordered sends still work). Remove the file to resume. |
-| Let the inbox send replies by itself | `touch sections/inbox/INBOX_AUTO`. Without it (the default) every reply the inbox proposes is a draft for the captain, whatever its type's mode; scheduled flow messages (reminders, warm-up guide, email request) follow their own modes. |
+| Let the inbox send replies by itself | `touch sections/inbox/INBOX_AUTO`. Without it (the default) every reply the inbox proposes is a draft for the captain, whatever its type's mode, except free Premium (`app-access`), which always goes out by itself when she sends her email (captain, 2026-10-15); scheduled flow messages (reminders, warm-up guide, email request) follow their own modes. |
 | One message type on/off/draft | `mode:` in `messages/<id>.md` |
 | New or changed wording | `approved: pending` forces draft until the captain approves the exact words |
 | The jobs | `launchctl bootstrap gui/$(id -u) sections/inbox/launchd/com.excerlock.flow.plist` (and `.propose`); `launchctl bootout gui/$(id -u)/com.excerlock.flow` to stop. Copy the plist to `~/Library/LaunchAgents/` only if it should survive a restart. |

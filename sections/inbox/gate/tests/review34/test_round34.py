@@ -78,7 +78,7 @@ class InviteEvidence(Case):
         self.on_read = withdrawal_read
         first = self.job.run()
         self.assertEqual(self.reads, 2, first)
-        self.assertTrue(any('younger than 36 hours' in line for line in first), first)
+        self.assertTrue(any('younger than 24 hours' in line for line in first), first)   # adapted 2026-10-15: invites close at 24h
         self.assertEqual(self.writes, [])
         self.assertEqual(self.sender.delivered, [])
         # Six hours later the upstream row has vanished. Its last complete

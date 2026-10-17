@@ -10,6 +10,4 @@ min_gap_minutes: 0
 requires: []
 replaces_unanswered: true
 ---
-Hey {First}! That works for us 🙌 Batch filming and a manager helping are fine, as long as the new accounts get warmed up first (3 short days of scrolling) and each new batch is filmed once we send the new formats (they change every 2 weeks).
-
-Johan, ExcerLock
+That works for us 🙌 Batch filming and a manager helping are fine, as long as the new accounts get warmed up first (3 short days of scrolling) and each new batch is filmed once we send the new formats (they change every 2 weeks).

@@ -12,7 +12,7 @@ Order (any failure stops it and is journaled with the reason):
  6. draft-mode types stop here as a draft for the captain;
  7. Claude Opus reads the whole chat and must answer SEND (it can only stop a send);
  8. the chat is read live again and the contract re-read; if anything changed, or ANY veto now fails with the
-    current time and switches (quiet hours, PAUSED, 36h), hold;
+    current time and switches (quiet hours, PAUSED, 24h), hold;
  9. the lock is confirmed still ours, the key re-checked, and a 'dispatching' intent committed BEFORE the send;
 10. send through contacts-mcp with the idempotency key and the chat fingerprint. A failure after the request may
     have left is 'uncertain' and is never retried automatically.
@@ -126,6 +126,7 @@ class Gate:
         if ordered:   # its remaining life, anchored now on the sleep-aware clock: a wall-clock change can't extend it (DD01)
             expires = self.journal.approval_expires(action.approval_id)
             self._approval_budget = (clock.Since(self.now), (expires or 0) - time.time())
+        self.sender.captain_ordered = bool(ordered)   # his order passes his own do-not-contact holds too (2026-10-15)
         try:
             if t.id == CAPTAIN_TEXT and not ordered:
                 return self._done(action, key, Decision('held', ['captain-text needs a one-use captain approval for these exact words'], text))
@@ -146,7 +147,11 @@ class Gate:
                         self.journal.reserve('component-lock:' + min(self.journal.component_accounts(action.creator_key)), holder):
                     # ...and per human across every account/person record ever linked (review CS02)
                     # one send at a time per known person too, so two accounts of hers can't race (review CR01)
-                    return self._guarded(action, t, key, text, ordered, holder)
+                    try:
+                        return self._guarded(action, t, key, text, ordered, holder)
+                    finally:   # expire before any lock is released, so no other worker can take it first (review DH01)
+                        if ordered:
+                            self._approval_expired(action)
             except Busy as exc:
                 return self._done(action, key, Decision('held', [str(exc)], text))
         finally:
@@ -281,6 +286,9 @@ class Gate:
                 reasons.append('free Premium can only be confirmed by a live check (no granter configured)')
         if self.journal.restricted(key):
             reasons.append('do-not-contact')
+        if checks.promised_open(text) and action.contract and any(   # "then we'll close it" vs his keep (DI04)
+                e['kind'] == 'keep-invite' and e['ref'] == action.contract.get('id') for e in self.journal.events(key)):
+            reasons.append('the captain said to keep this invite open; a message saying we will close it contradicts him')
         reasons += self._switch_vetoes(t, ordered)
         if not ordered:
             if t.quiet_hours:
@@ -322,6 +330,11 @@ class Gate:
         waiting = [m for m in checks.unanswered(conv, self.journal.answered(key)) if '?' in m.text]
         if waiting and not t.replaces_unanswered:   # every unmarked question blocks, wherever it sits (review R03)
             reasons.append(f'she asked something nobody has marked answered: "{waiting[-1].text[:120]}"')
+        if ordered:   # his order is his judgment: only mechanical safety stops it, the right chat and no double send
+            # (captain 2026-10-15: "when I say send, you send")
+            keep = set(checks.binding(conv, action)) | {'this exact text is already in the chat',
+                                                        'this exact text was sent to her before (since deleted from the chat)'}
+            reasons = [r for r in reasons if r in keep]
         return reasons
 
     def _fresh_contract(self, action, conv=None):
@@ -426,6 +439,8 @@ class Gate:
         self._reviewed_tokens = {m.id: checks.answer_mark(m) for m in shown.messages
                                  if not m.vanished and not m.deleted}   # exactly what was reviewed (CD01)
         verdict, why, unanswered = self.reviewer(shown, text, t.id, facts) if takes_facts else self.reviewer(shown, text, t.id)
+        if ordered and verdict != 'SEND':   # the review never overrules the captain's order: kept as a note only (2026-10-15)
+            verdict, why, unanswered = 'SEND', f'captain order (review would have held: {why})', []
         if verdict != 'SEND':
             return self._done(action, key, Decision('held', [f'review: {why}'] + [f'unanswered: {u}' for u in unanswered],
                                                      text, fingerprint=conv.fingerprint))

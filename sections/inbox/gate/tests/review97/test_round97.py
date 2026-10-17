@@ -101,6 +101,11 @@ class BeforeIntentExpiry(Fixture):
             self.assertEqual(self.stops, [])
             return first, None
 
+        if stop == 'review' and first.outcome in ('error', 'sent'):
+            # adapted 2026-10-15: a captain order is never held by the review any more ("when I say send, you send"),
+            # so it runs on: an expired approval is caught at the final check (error, nothing delivered), a valid one sends
+            second = worker.gate.run(action) if first.outcome == 'error' else first
+            return first, second
         self.assertEqual(first.outcome, 'held', first)
         self.assertEqual(self.stops, [stop], first)
         self.assertEqual(self.deliveries, [], first)

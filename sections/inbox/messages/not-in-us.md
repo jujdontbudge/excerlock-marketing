@@ -11,5 +11,3 @@ requires: []
 replaces_unanswered: true
 ---
 Hi {First}, thank you so much for letting us know where you're based. Right now we're only working with creators in the US, but we'd love to work with you when we expand. Want us to let you know when that happens?
-
-Johan, ExcerLock

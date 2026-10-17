@@ -11,7 +11,7 @@ class InboxSwitch(unittest.TestCase):
     def test_default_makes_every_automatic_reply_a_draft(self):
         with patch.object(propose, 'INBOX_AUTO', Path('/nonexistent/INBOX_AUTO')):
             types = propose.inbox_types(policy.load())
-        self.assertTrue(all(t.effective_mode != 'auto' for t in types.values()))
+        self.assertTrue(all(t.effective_mode != 'auto' for k, t in types.items() if k not in propose.AUTO_ALWAYS))   # adapted 2026-10-15: Premium always auto (captain)
 
     def test_switch_on_keeps_per_type_modes(self):
         loaded = policy.load()
